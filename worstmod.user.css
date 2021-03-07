@@ -355,16 +355,16 @@ body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
 pageheadernormal "нет, я люблю жирные шапки" <<<EOT  EOT;
 
 }
-@advanced dropdown nameremove " ♻ Убрать имя из шапки:" {
-nameremoveon "нафиг" <<<EOT /* убираем имя из шапки *\/
-.top_profile_name{display:none}
-[dir] .top_nav_link{padding:0}
- EOT;
-	nameavaremoveon "и аву с ним*" <<<EOT /* убираем имя и авку из шапки *\/
+@advanced dropdown nameremove " ♻ Убрать имя и аву из шапки:" {
+	nameavaremoveon "нафиг*" <<<EOT /* убираем имя и авку из шапки *\/
 .top_profile_name,.top_profile_img{display:none}
 #top_nav .top_nav_link{padding:0!important;width:28px;height:42px;display:block;content:' ';background:8px 18px/40% url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat !important;filter:var(--filt2)saturate(.0)brightness(.7)!important}
 [dir] .top_nav_link.active,[dir] .top_nav_link:hover{filter:var(--filt2)brightness(1)saturate(.2)!important;background-color:transparent!important}
 #top_nav a#top_switch_lang.top_nav_link{width:auto!important;background:none!important} EOT;
+nameremoveon "только имя нафиг" <<<EOT /* убираем имя из шапки *\/
+.top_profile_name{display:none}
+[dir] .top_nav_link{padding:0}
+ EOT;
 namestayremoveava "лучше авку" <<<EOT /* убираем авку из шапки *\/
 .top_profile_img{display:none}
 body.new_header_design .top_profile_name{color:#909090}
