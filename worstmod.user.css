@@ -477,6 +477,15 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 /*[[sidebarnotext]]*/
 .left_label{transition:filter .3s}
 .left_label:hover{filter:brightness(1.5)saturate(.7)}
+[dir] #side_bar{position:fixed!important;top:0px!important}
+[dir] #side_bar ol li{margin-left:0px!important}
+[dir] #side_bar ol li .left_row .left_count_wrap,[dir="ltr"] #side_bar ol li .left_row:hover .left_count_wrap{padding:3px 5px!important;height:27px!important}
+[dir] #side_bar ol li .left_row .left_count_wrap{background:var(--color2)!important}
+[dir] #side_bar ol li .left_row:hover .left_count_wrap{background:var(--color1)!important}
+[dir] .LeftNav__icon{color:var(--color1)}
+[dir] a.left_row:hover .LeftNav__icon{filter:brightness(1.5)}
+[dir] #side_bar ol li .left_row:not(:hover) .left_count_wrap,[dir] .ui_rmenu .ui_rmenu_item:not(:hover) .ui_rmenu_count{opacity:.8;transition:opacity .3s}
+[dir] #side_bar_inner svg{filter:none!important}
   
 /* и фиксим левый скролл */
 #stl_bg{border-right:1px solid #2A2A2C!important}
@@ -1201,17 +1210,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir="ltr"] .feed_new_posts:hover{background-color:var(--color1)!important;color:var(--color5)!important}
 [dir="ltr"] .feed_new_posts > b{background-color:transparent!important;color:#888!important;padding:0px;border-radius:0px}
 [dir="ltr"] .feed_new_posts:hover > b{color:var(--color5)!important}
-
-/* фикс левой менюшки */
-[dir] #side_bar{position:fixed!important;top:0px!important}
-[dir] #side_bar ol li{margin-left:0px!important}
-[dir] #side_bar ol li .left_row .left_count_wrap,[dir="ltr"] #side_bar ol li .left_row:hover .left_count_wrap{padding:3px 5px!important;height:27px!important}
-[dir] #side_bar ol li .left_row .left_count_wrap{background:var(--color2)!important}
-[dir] #side_bar ol li .left_row:hover .left_count_wrap{background:var(--color1)!important}
-[dir] .LeftNav__icon{color:var(--color1)}
-[dir] a.left_row:hover .LeftNav__icon{filter:brightness(1.5)}
-[dir] #side_bar ol li .left_row:not(:hover) .left_count_wrap,[dir] .ui_rmenu .ui_rmenu_item:not(:hover) .ui_rmenu_count{opacity:.8;transition:opacity .3s}
-[dir] #side_bar_inner svg{filter:none!important}
 
 /* фикс счётчика сообщений */    
 #side_bar li span.left_count_wrap{background-color:var(--color1)!important}
