@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210307.23.40
+@version        20210307.23.55
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -222,7 +222,8 @@ blackened "ясен красен" <<<EOT /* fade to black *\/
 .like_btns .like_btn.like .like_button_icon{background:transparent url(https://vk.com/images/icons/apps_catalog_icons.png)no-repeat -7px -313px!important;width:16px;height:18px;margin-left:4px}
 .like_wrap.lite .like_button_icon{transform:scale(0.85);width:16px;height:17px;position:relative;bottom:1px}
 .wall_module .reply .like_btn,.wcomments_post_content .like_btn{padding:10px 10px 0 10px!important}
-.like_btn.like .like_button_icon, .like_btn.comment .like_button_icon, .like_btn.share .like_button_icon,.like_button_icon.mv_plus_icon.mv_add_icon_curr{filter:brightness(.3)sepia(100)saturate(1)hue-rotate(170deg)var(--filt2)!important}
+.like_btn.like .like_button_icon{filter:brightness(.3)sepia(1)saturate(1)hue-rotate(170deg)var(--filt2)!important}
+.like_btn.comment .like_button_icon,.like_btn.share .like_button_icon,.like_button_icon.mv_plus_icon.mv_add_icon_curr{filter:brightness(.5)sepia(1)saturate(1)hue-rotate(170deg)var(--filt2)!important}
 .like_btn.like.active .like_button_icon,.like_button_icon.mv_added_icon.mv_add_icon_curr{filter:brightness(.5)sepia(100)saturate(1.8)hue-rotate(170deg)var(--filt2)!important}
 .like_button_count,.like_views._views{color:var(--color2)}
 .like_views._views:before{filter:var(--filt2)}
