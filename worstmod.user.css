@@ -741,11 +741,12 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /* обзываться плохо, пнятненько? */
 .tt.WallCheckComment__tt .tt_text{color:#b9b9b9}
 
-/* счётчик в правом меню */
+/* правое меню */
 [dir] .ui_rmenu .ui_rmenu_count{color:#111!important;background:var(--color2);transition:background .3s;border-radius:2px}
 [dir] .ui_rmenu .ui_rmenu_item:hover .ui_rmenu_count{color:#111!important;background:var(--color1)}
 [dir] .page_actions_item:hover .ui_rmenu_count{background:var(--color1);color:#111!important;transition:opacity .3s}
 [dir] .page_actions_item:not(:hover) .ui_rmenu_count{color:#111!important;opacity:.6;transition:opacity .3s}
+[dir] .feed_filter_icon,[dir] .feed_lists_icon .ui_actions_menu_icons{filter:var(--filt2)!important}
 
 /* иконки фыбора прикреплений */
 .media_selector .ms_item::before{filter:var(--filt2)!important}
