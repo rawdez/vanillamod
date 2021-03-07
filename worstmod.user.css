@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210308.0.0
+@version        20210308.0.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1551,6 +1551,7 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 [dir] .tu_info.tu_info_ok::before{filter:none!important}
 [dir] .tickets_thank_you_form__title,[dir] .tickets_thank_you_form__inner{background:#0000!important}
 [dir] #tickets_msg.msg,[dir] .tickets_thank_you_form{background-color:#3939391c!important}
+[dir] .tickets_extra_fields{border-top:1px solid #222}
 .help_table_question_act.help_table_question_act_do,.help_table_question_act.help_table_question_act_ok{background:#0000;color:#A5A5A5}
 .tickets_new_extra_field__label{color:#999}  
 .tickets_new_extra_field__uploaded{background-color:#141414}
