@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210307.18.7
+@version        20210307.19.16
 @namespace      github
 @author         awesome_doze
-@homepageURL    https://vk.com/worstmod
+@homepageURL    https://github.com/rawdez/vanillamod
 @updateURL      https://github.com/rawdez/vanillamod/raw/main/worstmod.user.css
 @description    ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://33kk.github.io/uso-archive/?style=126419 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал. Паблос в ВКшечке: https://vk.com/worstmod This Fix/Mod IS NOT A STANDALONE THEME. Make sure to install Vanilla Dark 2 first. This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly. Check https://vk.com/worstmod if you have any questions/suggestions.`
 @license        CC-BY-NC-4.0
@@ -2040,6 +2040,9 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--filt2)brightnes
 [dir] #gtop_first_post_to_wall .gtop_image{filter:invert(1)hue-rotate(180deg)var(--filt2)brightness(1.4)saturate(.2)}
 [dir] .group_help_image{filter:invert(1)hue-rotate(180deg)var(--filt2)brightness(1.1)saturate(.3)}
 [dir] .public_help_block::before{border-radius:3px;filter:invert(1)hue-rotate(180deg)var(--filt2)brightness(.6)saturate(.5)}
+[dir] .group_l_row{background-color:#0000!important;border:none!important}
+[dir] .group_l_row.sort_taken{background-color:#44444421!important}
+[dir] .group_l_rows .sort_helper{border-bottom:1px solid #111!important}
 
 /* друзья в паблосе */
 .group_friends_image{border:1px solid #222;width:25px;height:25px;margin-left:3px}
