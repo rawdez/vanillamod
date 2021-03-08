@@ -1729,18 +1729,18 @@ a .app_widget_tiles_title{color:#bbb}
 .post_actions.post_actions_progress::before{filter:saturate(0)}
 
 /* статистика */
-#stats_cont.stats_cont_browse{background-color:rgba(0,0,0,.5)}
+#stats_cont.stats_cont_browse{background-color:#00000080}
 .stats_browse_filter{border-bottom:1px solid var(--color3)}
-.stats_cont_browse_tile{background-color:rgba(0,0,0,.4)}
+.stats_cont_browse_tile{background-color:#0006}
 .stats_cont_browse_tile .stats_cont_browse_tile_caption .stats_cont_browse_tile_caption_title{color:var(--color2)}
 .stats_cont_browse_tile:hover .stats_cont_browse_tile_caption .stats_cont_browse_tile_caption_title{color:var(--color1)}
 .stats_cont_browse_tile{color:var(--color1)}
-.stats_cont_browse_tile svg>g>path[fill="#F5F7FA"]{fill:rgba(26,26,26,.4)!important}
-.stats_cont_browse_tile .stats_cont_browse_tile_desc{background:rgba(26,26,26,.4)}
+.stats_cont_browse_tile svg>g>path[fill="#F5F7FA"]{fill:#1a1a1a66!important}
+.stats_cont_browse_tile .stats_cont_browse_tile_desc{background:#1a1a1a66}
 .stats_cont_browse_tile .stats_cont_browse_tile_desc .desc{color:var(--color2)}
 .stats_cont_browse_tile:hover .stats_cont_browse_tile_desc .desc{color:var(--color1)}
 #stat_cont_browse_filter_tlt_content .stat_cont_browse_filter_item:hover{background:var(--color4)}
-#visitors_graph > div > div > canvas,#members_graph > div > div > canvas,#sections_graph > div > div > canvas,#reach_graph > div > div > canvas,#feedback_graph > div > div > canvas,#activity_graph > div > div > canvas,#country_graph,#city_graph,#sex_age_graph > div > div > canvas,#sex_age_graph > div > div > div[style^="color:rgb"],#sex_graph > div > div > canvas{filter:invert(1)hue-rotate(180deg)}
+#visitors_graph > div > div > canvas,#members_graph > div > div > canvas,#sections_graph > div > div > canvas,#reach_graph > div > div > canvas,#feedback_graph > div > div > canvas,#activity_graph > div > div > canvas,#country_graph,#city_graph,#sex_age_graph > div > div > canvas,#sex_age_graph > div > div > div[style^="color:rgb"],#sex_graph > div > div > canvas,#cm_unique_users_graph > div > div > canvas,#wcm_messages_stat_graph > div > div > canvas{filter:invert(1)hue-rotate(180deg)}
 .stats_head,.stats_time_info{border-color:#111}
 .graph_menu_item, .graph_menu_item:hover{background:#111;color:#666}
 .graph_menu_item.graph_menu_item_sel, .graph_menu_item.graph_menu_item_sel:hover{background:#323232}  
@@ -1750,11 +1750,16 @@ a .app_widget_tiles_title{color:#bbb}
 .piechart_table tr td{border-bottom:1px solid #333}
 .stats_community_messages_info_title{color:var(--color1)}
 [dir] .stats_community_messages_info,[dir] .stats_browse_filter{border-bottom:1px solid var(--color3)}
-[dir] #stats_cont.stats_cont_browse {background-color: transparent}
-[dir] .stats_cont_browse_tile {background-color:rgba(0,0,0,.4)}
-[dir] .stats_cont_browse_tile .stats_cont_browse_tile_desc {background-color:rgba(127,127,127,.1)}
-[dir] .stats_cont_browse_tile:hover .stats_cont_browse_tile_desc {background-color:rgba(127, 127, 127, .37)}
+[dir] #stats_cont.stats_cont_browse {background-color: #0000}
+[dir] .stats_cont_browse_tile {background-color:#0006}
+[dir] .stats_cont_browse_tile .stats_cont_browse_tile_desc {background-color:#7f7f7f1a}
+[dir] .stats_cont_browse_tile:hover .stats_cont_browse_tile_desc {background-color:#7f7f7f5e}
 [dir] .stats_cont_browse_tile .browse_stat_chart > svg > g > path[stroke="#5C9CE6"]{stroke:var(--color1)}
+[dir] #stat_group_weekly_reports_table .paginated_table_header th.paginated_table_cell{background-color:#0000;color:#fff!important}
+[dir] #stat_group_weekly_reports_table .paginated_table_header{background-color:#4d4d4d1a}
+[dir] #stat_group_weekly_reports_table .paginated_table_header .paginated_table_cell,[dir] #stat_group_weekly_reports_table .paginated_table_header .paginated_table_cell *{color:#9c9c9c!important}
+[dir] #stat_group_weekly_reports_table tr.paginated_table_row:hover{background:#7f7f7f1a}
+[dir] #stat_group_weekly_reports_table tr.paginated_table_row{border-bottom:1px solid #0b0b0b}
 
 /* менюшки шапки */
 #ts_cont_wrap.ts_cont_wrap,#top_notify_wrap,#top_profile_menu,.tt_w.top_notify_tt{background-color:#000000e6!important;border:1px solid var(--color5)!important}
