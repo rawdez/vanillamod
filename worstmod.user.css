@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210310.23.30
+@version        20210310.23.55
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2434,6 +2434,9 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .deep_active.wl_post .replies .wl_replies_empty,.deep_active.wl_post.wall_module .replies .wl_replies_empty, .deep_active.wl_post.wall_module .wl_replies_block_wrap .wl_replies_empty,.deep_active.wl_post .wl_replies_block_wrap .wl_replies_empty{border-top:1px solid var(--color4)}
 .deep_active:not(.closed_comments) .replies .reply_form_user_image .checkbox_official,.deep_active.wall_module .wl_replies_block_wrap .reply_form_user_image .checkbox_official{display:block;right:24px;opacity:.7}
 .deep_active:not(.closed_comments) .replies_list .reply_form_user_image .checkbox_official,.deep_active.wall_module .wl_replies_wrap .reply_form_user_image .checkbox_official{right:28px}
+[dir] .deep_active .wl_replies_block_wrap .reply_form_user_image .checkbox_official::before{background-color:#0000!important}
+[dir] .wl_replies_block_wrap .checkbox_official::after{opacity:.5}
+[dir] .wl_replies_block_wrap .checkbox_official:hover::after{opacity:.7}
 .post_field_choose_image{display:none}
 #pv_box .post_field_choose_image{display:block}
 #pv_box .pv_reply_form_wrap .reply_box .submit_post_field,#pv_box .pv_reply_form_wrap .reply_box .submit_post_field~.placeholder .ph_input{padding:0 36px 4px 10px!important}
