@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210310.23.55
+@version        20210311.0.15
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1058,6 +1058,13 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .im-mess .im-mess--post .post_header{padding-top:4px}
 [dir] .nim-dialog.nim-dialog_pinned + .nim-dialog:not(.nim-dialog_pinned)::before{background:var(--color2);opacity:.3}
 [dir] .nim-dialog--pinned-conversation{filter:brightness(.5)var(--filt2)}
+#im_dialogs_creation_name,#im_dialogs_creation{background:#0000!important;padding:0 10px 0 5px!important}
+[dir] .im-create.im-create_chat .im-creation--settings-icon{filter:brightness(.7)var(--filt2)}
+[dir] .BaseModal.im-creation--modal-settings .BaseModal__content,[dir] .ChatSettingsOptions,[dir] .ChatSettingsPresetPanel{background-color:#0000!important}
+[dir] .ChatSettingsPresetPanel__preset--selected{background-color:#0000005c}
+[dir] .ChatSettingsPresetPanel__presetIcon{filter:saturate(.15)var(--filt2)}
+[dir] .ChatSettingsPresetPanel__presetTitle{color:var(--color2)}
+[dir] .ChatSettingsPresetPanel__preset--selected .ChatSettingsPresetPanel__presetTitle{color:var(--color1)}
 
 /* настройки отправки коммента */
 .reply_submit_hint_title{color:var(--color2)}
