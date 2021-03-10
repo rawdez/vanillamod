@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210310.9.55
+@version        20210310.23.30
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1031,8 +1031,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .im-mess.im-mess_gift .im-mess--reply,[dir] .im-mess.im-mess_gift .im-mess--fav{filter:hue-rotate(180deg)var(--filt2)!important}
 [dir] .im-page_classic.im-page .im-page--dialogs{background:rgba(0,0,0,.5)}
 [dir] .im-page_classic.im-page .im-page--dialogs-footer{box-shadow:none}
-[dir] .im-page_classic .im-page--chat-header{border-color:transparent;background-color:rgba(0,0,0,.9)}
-[dir] .im-page_classic .im-page--chat-header-in{box-shadow:none;background-color:transparent!important}
 [dir] .im-page--toolsw{background-color:transparent}
 [dir] .im-page--chat-header{background:rgba(0,0,0,.65)}
 [dir] .im-page--title-main-inner{color:#CCC}
@@ -1058,6 +1056,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .media_selector .ms_items_more .ms_item:hover{color:var(--color1)}
 [dir] .im_msg_media_wall .post_top_info_caption{display:none}
 [dir] .im-mess .im-mess--post .post_header{padding-top:4px}
+[dir] .nim-dialog.nim-dialog_pinned + .nim-dialog:not(.nim-dialog_pinned)::before{background:var(--color2);opacity:.3}
+[dir] .nim-dialog--pinned-conversation{filter:brightness(.5)var(--filt2)}
 
 /* настройки отправки коммента */
 .reply_submit_hint_title{color:var(--color2)}
@@ -1065,9 +1065,11 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .tt_w.tt_default_right{background-color:rgba(0,0,0,.9)!important}
 
 /* чат */
-[dir] .im-page_classic .im-page--chat-header{border-top:7px solid transparent!important;background:rgba(0,0,0,.85)!important}
+[dir] .im-page{padding-top:1px}
+[dir] .im-page--history.page_block._im_page_history{margin-bottom:1px}
+[dir] .im-page_classic .im-page--chat-header{border-top:7px solid transparent!important;background:rgba(0,0,0,.5)!important}
 [dir] .im-page--toolsw{background:transparent!important}
-[dir] .im-page_classic .im-page--chat-header-in{box-shadow:none!important;border-bottom:1px solid var(--color3)!important}
+[dir] .im-page_classic .im-page--chat-header-in{box-shadow:none!important;border-bottom:none!important}
 [dir] .im-page_classic.im-page .im-page--chat-body-wrap-inner{border-color:transparent!important;padding-bottom:0px!important}
 [dir] .im-chat-input .im-chat-input--txt-wrap{background:transparent!important;border:none!important}
 .im-page .im-page--header-inner{border:none}
