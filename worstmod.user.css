@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210308.14.30
+@version        20210310.9.55
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1530,6 +1530,7 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 
 /* фикс колокольчика с уведомлениями */
 [dir] .TopNavBtn .TopNavBtn__notifyCount{color:#e6e6e6;background-color:#841515!important;border:none}
+[dir] .TopNavBtn__notifyCount::after{display:none}
 [dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon{filter:var(--filt2)brightness(.9)}
 [dir] .TopNavBtn:not(.TopNavBtn--active):hover{background:#00000080!important;}
 [dir] .TopNavBtn.TopNavBtn--active{background:var(--color2)!important}
