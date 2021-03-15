@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210316.1.0
+@version        20210316.1.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -40,6 +40,7 @@ vklogo "новый в тёплых ламповых цветах" <<<EOT /* но
 .audio_pl_attach_preview.audio_pl__playing .audio_pl_attach_preview__play{transform:scale(.8)}
 .audio_page_player2 .audio_page_player_play .icon,.audio_page_player2 .audio_page_player_play.audio_playing .icon{background-color:transparent!important;background-position:3px 2px;opacity:.7;transition:opacity .5s}
 .audio_page_player2 .audio_page_player_play .icon:hover,.audio_page_player2 .audio_page_player_play.audio_playing .icon:hover{opacity:1}
+[dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:transparent!important}
  EOT;
 audioplayhollowoff "Неа" <<<EOT  EOT;
 
@@ -775,7 +776,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .audio_page_player2 .audio_page_player_track_slider:not(.slider),.audio_page_player2 .audio_page_player_volume_slider:not(.slider){display:none}
 .audio_layer_container .audio_page_player_wrap{border:none!important}
 .audio_page_player2 .audio_page_player_volume_slider .slider_slide{background-color:#222}
-[dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:transparent!important}
 .audio_row.audio_row_current, .audio_row.audio_row_playing,.audio_row__current .audio_row_content._audio_row_content,.audio_row:hover .audio_row_content._audio_row_content,.audio_row.ui_gridsorter_moveable  .audio_row_content._audio_row_content{background:transparent!important}
 #audio_layer_tt .page_block{background:transparent!important}
 #audio_layer_tt .audio_row.audio_row_current .audio_row_inner,#audio_layer_tt .audio_row.audio_row_playing .audio_row:hover,.audio_row:hover .audio_row_inner,#audio_layer_tt .audio_row.audio_row_current:hover .audio_row_inner,#audio_layer_tt .audio_row.audio_row_playing:hover .audio_row_inner,.audio_row__current,.audio_row.audio_row__current:hover,.audio_row.ui_gridsorter_moveable{background-color:rgba(100,100,100,.12)!important}
