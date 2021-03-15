@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210316.1.20
+@version        20210316.1.30
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -42,7 +42,11 @@ vklogo "новый в тёплых ламповых цветах" <<<EOT /* но
 .audio_page_player2 .audio_page_player_play .icon:hover,.audio_page_player2 .audio_page_player_play.audio_playing .icon:hover{opacity:1}
 [dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:transparent!important}
  EOT;
-audioplayhollowoff "Неа" <<<EOT  EOT;
+audioplayhollowoff "Неа" <<<EOT /* фикс кнопок плеера *\/ 
+[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen::before{filter:invert(1)hue-rotate(180deg)saturate(.5)var(--filt2)!important}
+[dir] .audio_page_player2 .audio_page_player_play .icon{background-color:var(--blue_400)!important;opacity:.9;filter:saturate(.5)brightness(1.2)var(--filt2)!important}
+[dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:var(--blue_400)!important;opacity:1}
+EOT;
 
 }
 
