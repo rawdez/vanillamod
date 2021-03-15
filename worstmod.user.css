@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210316.1.30
+@version        20210316.1.45
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -196,7 +196,7 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 }
 @advanced dropdown hollowhead "Прозрачная шапка:" {
 	hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
-[dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,0.75)!important;border:none!important}
+[dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
 [dir] body.new_header_design .TopSearch__input{background-color:transparent!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
 [dir] .TopSearch__input::selection{background:#4e5e71!important}
 #ts_wrap .input_back .input_back_content{color:#999!important}
@@ -224,7 +224,7 @@ hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\
 hollowheadoffcolor "выкл (цветная шапка)" <<<EOT  EOT;
 
 }
-@advanced text headopaque "➥ Непрозрачность шапки:" ".8"
+@advanced text headopaque "➥ Непрозрачность шапки:" ".75"
 @advanced text opaque "➥ Непрозрачность блоков:" ".77"
 @advanced text wallbrightness "➦ Яркость обоины:" ".75"
 @advanced dropdown wallsetup "Обои:" {
