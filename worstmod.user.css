@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210312.0.0
+@version        20210316.1.0
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -25,71 +25,7 @@ vklogo "новый в тёплых ламповых цветах" <<<EOT /* но
 [dir] .HeaderNav__item--logo:hover .TopHomeLink:after{opacity:.9;transition:opacity 0.5s} EOT;
 
 }
-@advanced dropdown blackaudioplay "Чёрные кнопки плеера + загрузчики:" {
-	blackaudioplaycream "Cream*" <<<EOT /* чёрные кнопки плеера Cream *\/  
-.audio_play {filter:invert(1)hue-rotate(18deg)brightness(1.14)!important}
-.audio_page_player .audio_page_player_play {filter:invert(1)hue-rotate(180deg)brightness(1.8)saturate(0.5)!important}
-  
-/* фикс VK Music Downloader - Cream *\/
-.wall_module .post_share_icon[class="download_all clear_fix post_share_icon "]{opacity: 0.6!important;filter:invert(1)hue-rotate(18deg)brightness(1.15)saturate(1)!important}
 
-/* аудиопоиск - Cream *\/
-.ui_search_new .ui_search_controls{filter:invert(0)saturate(1.5)hue-rotate(0deg)brightness(0.9)!important}
-.ui_search_button_search,/*кнопка отправки сообщения*\/.im-send-btn{filter:invert(0)saturate(1.5)brightness(1)hue-rotate(190deg)!important}
-.ui_multiselect_cnt .token .token_del,.ui_search_filters_pane .token .token_del{filter:brightness(0.9)hue-rotate(190deg)!important}
-.ui_multiselect_cnt .token .token_del:hover,.ui_search_filters_pane .token .token_del:hover{filter:brightness(0.5)hue-rotate(190deg)!important}
-
-/* tweak.pro death fix - Cream *\/  
-:root{--filtw:hue-rotate(190deg)brightness(0.9)}  
- EOT;
-blackaudioplayaqua "Aqua" <<<EOT /* чёрные кнопки плеера Aqua *\/  
-.audio_play {filter:invert(1)hue-rotate(138deg)brightness(1)saturate(1.5)!important}
-.audio_page_player .audio_page_player_play {filter:invert(1)hue-rotate(180deg)brightness(1.2)saturate(1)!important}
-
-/* фикс VK Music Downloader - Aqua *\/
-.wall_module .post_share_icon[class="download_all clear_fix post_share_icon "]{opacity: 0.6!important;filter:invert(1)hue-rotate(138deg)brightness(1.15)saturate(1)!important}
-
-/* аудиопоиск - Aqua *\/
-.ui_search_new .ui_search_progress{filter:invert(0.95)hue-rotate(138deg)brightness(1)saturate(1.5)!important}
-
-/* tweak.pro death fix - Aqua  *\/
-:root{--filtw:hue-rotate(330deg)saturate(1.5)}
- EOT;
-blackaudioplayrose "Rose" <<<EOT /* чёрные кнопки плеера Rose *\/  
-.audio_play {filter:invert(1)hue-rotate(330deg)brightness(1)saturate(2.7)!important}
-.audio_page_player .audio_page_player_play {filter:invert(1)hue-rotate(180deg)brightness(1.4)saturate(1)!important}
-  
-/* фикс VK Music Downloader - Rose *\/
-.wall_module .post_share_icon[class="download_all clear_fix post_share_icon "]{opacity: 0.6!important;filter:invert(1)hue-rotate(330deg)brightness(1)saturate(2.7)!important}
-  
-/* аудиопоиск - Rose *\/
-.ui_search_button_search,/*кнопка отправки сообщения*\/.im-send-btn{filter:invert(0)saturate(3)brightness(1)hue-rotate(160deg)!important}
-.ui_search_new .ui_search_progress{filter:invert(0.92)hue-rotate(330deg)brightness(1)saturate(1.7)}
-
-.im-page.im-page_classic .im-page--back:before,.im-page .im-page--header-icon.im-page--header-icon_search::before{filter:hue-rotate(150deg)saturate(2.7)}
-	
-/* tweak.pro death fix - Rose *\/
-:root{--filtw:hue-rotate(150deg)saturate(2.5)}
- EOT;
-blackaudioplaymint "Mint" <<<EOT /* чёрные кнопки плеера Mint *\/ 
-.audio_play {filter:invert(1)hue-rotate(100deg)brightness(1)saturate(2)!important}
-.audio_page_player .audio_page_player_play {filter:invert(1)hue-rotate(195deg)brightness(1.4)saturate(1)!important}
-  
-/* фикс VK Music Downloader - Mint *\/
-.wall_module .post_share_icon[class="download_all clear_fix post_share_icon "]{opacity: 0.6!important;filter:invert(1)hue-rotate(100deg)brightness(1)saturate(2)!important}
-
-/* аудиопоиск - Mint *\/
-.ui_search_new .ui_search_controls{filter:invert(0)brightness(1)saturate(1.9)!important}
-.ui_search_button_search,/*кнопка отправки сообщения*\/.im-send-btn{filter:hue-rotate(260deg)brightness(1)saturate(3)}
-.ui_multiselect_cnt .token .token_del,.ui_search_filters_pane .token .token_del{filter:brightness(0.9)hue-rotate(260deg)!important}
-.ui_multiselect_cnt .token .token_del:hover,.ui_search_filters_pane .token .token_del:hover{filter:brightness(0.5)hue-rotate(260deg)!important}
-
-/* tweak.pro death fix - Mint *\/
-:root{--filtw:hue-rotate(280deg)saturate(2.5)}
- EOT;
-blackaudioplayoff "off" <<<EOT  EOT;
-
-}
 @advanced dropdown audioplayhollow "Прозрачные кнопки плеера:" {
 	audioplayhollowon "Вкл*" <<<EOT /* прозрачные кнопки плеера *\/  
 [dir] .audio_row__play_btn,.audio_row.audio_row__playing .audio_row__play_btn{width:0px!important}
@@ -108,6 +44,7 @@ blackaudioplayoff "off" <<<EOT  EOT;
 audioplayhollowoff "Неа" <<<EOT  EOT;
 
 }
+
 @advanced dropdown lolsquare "Оквадрачивание:" {
 	lolsquareon "банзай*" <<<EOT /* .............. <ОКВАДРАЧИВАНИЕ> .............. *\/
 
