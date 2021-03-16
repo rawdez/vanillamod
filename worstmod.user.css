@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210316.2.10
+@version        20210316.2.11
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -258,7 +258,7 @@ body{background-color:/*[[backcolor#]]*\/!important}
  EOT;
 
 }
-@advanced color backcolor- "Цвет сплошного цвета:" #070707
+@advanced color backcolor "Цвет сплошного цвета:" #070707
 @advanced dropdown flushshit " ♻ Убрать шлак:" {
 	flushshiton "ну канешн*" <<<EOT /* чистим шлак: нафиг ссылки слева в меню, нафиг сердце на фотках, нафиг вскукареки о заполнении инфы, нафиг рекламу рекомендаций из ленты *\/
 .left_menu_nav_wrap,.pv_cont .pv_hh_like,.profile_rate_warning,.mv_chat_reply_author_photo{display:none}
