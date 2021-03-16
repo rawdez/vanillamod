@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210316.2.11
+@version        20210316.2.12
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -254,7 +254,7 @@ backcoloron "давай (цвет настраивай ниже)" <<<EOT /* цв
 body{background:/*[[backcolor]]*\/!important}
  EOT;
 backgroundvanilla "обои как в Ванилле (цвет настраивай ниже)" <<<EOT /* цвет фона обоины ваниллы *\/
-body{background-color:/*[[backcolor#]]*\/!important}
+body{background-color:/*[[backcolor]]*\/!important}
  EOT;
 
 }
