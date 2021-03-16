@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210316.19.10
+@version        20210316.19.11
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -301,6 +301,7 @@ pageheadernormal "нет, я люблю жирные шапки" <<<EOT  EOT;
 @advanced dropdown nameremove " ♻ Убрать имя и аву из шапки:" {
 	nameavaremoveon "нафиг*" <<<EOT /* убираем имя и авку из шапки *\/
 .TopNavBtn__profileName,.TopNavBtn__profileImg{display:none}
+[dir] .TopNavBtn__profileLink{padding-left:0px}
 #top_nav .top_nav_link{padding:0!important;width:28px;height:42px;display:block;content:' ';background:8px 18px/40% url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat !important;filter:var(--filt2)saturate(.0)brightness(.7)!important}
 [dir] .top_nav_link.active,[dir] .top_nav_link:hover{filter:var(--filt2)brightness(1)saturate(.2)!important;background-color:transparent!important}
 #top_nav a#top_switch_lang.top_nav_link{width:auto!important;background:none!important} EOT;
