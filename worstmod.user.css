@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210316.19.11
+@version        20210317.21.10
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -700,7 +700,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 #profile_photos_about:before{content:'';width:32px;height:32px;display:block;position:absolute;background:transparent url("https://vk.com/images/icons/msg_info.png") no-repeat scroll 0px 0px!important;margin-left:-42px;margin-top:6px;filter:invert(.9)brightness(1.2)!important}
 
 /* посты */
-[dir] .like_cont{padding:7px 0;border-top:none}
+[dir] .like_cont{padding:7px 0;border-top:none;box-shadow:none}
 [dir] .wall_module .wall_text,[dir] .wall_module.wl_postreach_wall_module .post_poster .wall_text{padding:7px 20px 4px!important}
 [dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .media_link:last-child {margin-bottom:0px!important}
 [dir] .post:not(.post_fr_likes):not(.postponed):not(.post_copy) .post_info .audio_pl_snippet2:last-child{margin-bottom:-5px!important}
