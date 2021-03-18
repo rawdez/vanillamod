@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210318.3.20
+@version        20210318.3.22
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -207,7 +207,6 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 /* плеер в шапке фикс *\/
 .top_audio_player .top_audio_player_title{color:#909090!important}
 [dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
-[dir="ltr"] body.new_header_design .top_audio_player{min-width:90%}
  EOT;
 hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\/
 [dir] body.new_header_design #page_header_cont{background-color:var(--color3)!important;border:none!important}
@@ -221,7 +220,7 @@ hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\
 /* плеер в шапке фикс *\/
 .top_audio_player .top_audio_player_title{color:#909090!important}
 [dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
-[dir="ltr"] body.new_header_design .top_audio_player{min-width:90%} EOT;
+ EOT;
 hollowheadoffcolor "выкл (цветная шапка)" <<<EOT  EOT;
 
 }
@@ -1227,7 +1226,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .away_head{filter:saturate(0)brightness(.4)}
     
 /* плеер сверху делаем шире */
-.top_audio_player{max-width:700px}
+[dir] body.new_header_design .top_audio_player{padding:0 0 0 8px;min-width:95%;max-width:700px}
 
 /* всплывающий плеер поиск подсказки */
 [dir] .ui_search_sugg_list{background-color:rgba(0,0,0,.9)!important}
