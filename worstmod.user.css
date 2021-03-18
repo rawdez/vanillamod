@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210318.3.22
+@version        20210319.1.30
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -235,10 +235,9 @@ wallnuthouse "➤ Дурдом" <<<EOT https://pp.userapi.com/c836724/v836724428
 wallgreydots "➤ Точки" <<<EOT https://pp.userapi.com/c836724/v836724428/eff4/ZQCyWMJca2A.jpg EOT;
 wallflowers "➤ Цветочки" <<<EOT https://pp.userapi.com/c628618/v628618428/518fc/iX0weUIDv1U.jpg EOT;
 wallnightbridge "➤ Ночь сказочный мост " <<<EOT https://pp.userapi.com/c624330/v624330499/117e8/gfGTAKr7Oio.jpg EOT;
-
-	wallsetup-custom-dropdown "Custom" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
+wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
 }
-@advanced text wallsetup-custom "Обои: (Custom)" "https://example.com/image.png"
+@advanced text wallsetup-custom "➥Ссылка на собственные обои:" "https://pp.userapi.com/c836724/v836724428/f01c/j5s_HXyOEIY.jpg"
 @advanced dropdown backgroundorcolor "Сплошной цвет вместо обоев:" {
 	backgroundon "нафиг это*" <<<EOT /* обоина *\/
 body:before{content:"";position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1;display:block;
