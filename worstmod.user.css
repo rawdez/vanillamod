@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210317.21.10
+@version        20210318.3.3
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -152,11 +152,12 @@ moveplayeroff "отбой" <<<EOT  EOT;
 
 }
 @advanced dropdown fadetoblack "➤ Затемнять не влезающие в плеер названия:" {
-	nofadetoblack "неа*" <<<EOT  EOT;
-blackened "ясен красен" <<<EOT /* fade to black *\/
+	blackened "ясен красен*" <<<EOT /* fade to black *\/
 [dir] .top_audio_player .top_audio_player_title{width:100%;background:linear-gradient(90deg,#a4a4a4 90%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song{width:100%;background:linear-gradient(90deg,#ccc 75%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song_subtitle{width:100%;background:linear-gradient(90deg,#848484 80%,#0000 100%);background-clip:text;color:#0000!important} EOT;
+
+nofadetoblack "отключить на случай г-нобраузера" <<<EOT  EOT;
 
 }
 @advanced dropdown burnmotherfucker "🔥💔 Сжечь сердца:" {
