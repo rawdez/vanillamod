@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210319.1.40
+@version        20210319.2.0
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -373,7 +373,9 @@ countsfoldoff "выкл" <<<EOT  EOT;
 @advanced dropdown sidebarnotext "Фикс для панельки слева без текста:" {
 	sidebarnotextnope "выкл*" <<<EOT  EOT;
 sidebarnotextyep "вкл" <<<EOT /* фикс для панельки слева без текста *\/
-#side_bar ol{width:26px!important} EOT;
+#side_bar ol{width:36px!important} 
+[dir] body.new_header_design #side_bar ol li .left_row,[dir] body.new_header_design #side_bar ol li:hover{width:28px!important}
+EOT;
 
 }
 
