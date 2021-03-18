@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210318.3.10
+@version        20210318.3.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -299,23 +299,34 @@ body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
 pageheadernormal "нет, я люблю жирные шапки" <<<EOT  EOT;
 
 }
-@advanced dropdown nameremove " ♻ Убрать имя и аву из шапки:" {
-	nameavaremoveon "нафиг*" <<<EOT /* убираем имя и авку из шапки *\/
+@advanced dropdown nameremove " ♻ Убрать имя / аву / стрелку из шапки:" {
+	nameavaremoveon "нафиг имя и авку*" <<<EOT /* убираем имя и авку из шапки *\/
 .TopNavBtn__profileName,.TopNavBtn__profileImg{display:none}
 [dir] .TopNavBtn__profileLink{padding-left:0px}
 #top_nav .top_nav_link{padding:0!important;width:28px;height:42px;display:block;content:' ';background:8px 18px/40% url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat !important;filter:var(--filt2)saturate(.0)brightness(.7)!important}
 [dir] .top_nav_link.active,[dir] .top_nav_link:hover{filter:var(--filt2)brightness(1)saturate(.2)!important;background-color:transparent!important}
 #top_nav a#top_switch_lang.top_nav_link{width:auto!important;background:none!important} EOT;
-nameremoveon "только имя нафиг" <<<EOT /* убираем имя из шапки *\/
+nameremoveon "нафиг имя" <<<EOT /* убираем имя из шапки *\/
 .TopNavBtn__profileName{display:none}
 [dir] .top_nav_link{padding:0}
  EOT;
-namestayremoveava "лучше авку" <<<EOT /* убираем авку из шапки *\/
+namearrowremoveon "нафиг имя и стрелку" <<<EOT /* убираем имя и стрелку из шапки *\/
+.TopNavBtn__profileName{display:none}
+[dir] .top_nav_link{padding:0}
+[dir] .TopNavBtn__profileArrow{display:none}
+ EOT;
+namestayremoveava "нафиг авку" <<<EOT /* убираем авку из шапки *\/
 .TopNavBtn__profileImg{display:none}
+[dir] .TopNavBtn__profileName{margin-right:0}
 body.new_header_design .TopNavBtn__profileName{color:#909090}
  EOT;
+arrowremoveon "нафиг стрелку" <<<EOT /* фикс имени в шапке минус стрелка *\/
+body.new_header_design .TopNavBtn__profileName{color:#909090}
+[dir] .TopNavBtn__profileArrow{display:none}
+ EOT;
 nameremoveoff "пусть будет" <<<EOT /* фикс имени в шапке *\/
-body.new_header_design .TopNavBtn__profileName{color:#909090} EOT;
+body.new_header_design .TopNavBtn__profileName{color:#909090}
+ EOT;
 
 }
 @advanced dropdown chaticonremove " ♻ Выпилить иконку диалога в чате:" {
