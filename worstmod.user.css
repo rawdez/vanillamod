@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210319.1.30
+@version        20210319.1.40
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1712,6 +1712,7 @@ a .app_widget_tiles_title{color:#bbb}
 .graph_menu_item.graph_menu_item_sel, .graph_menu_item.graph_menu_item_sel:hover{background:#323232}  
 #sex_age_chart_graph > div > div > div > div{background:#222!important}
 #sex_age_chart_graph > div > div > canvas,#sex_age_chart_graph > div > div > div > canvas{filter:invert(1)hue-rotate(180deg)contrast(2)saturate(.5)}
+#sex_age_chart_graph > div > div > div > div[style*="position: absolute"]{color:var(--color1)}
 .piechart_col_header th{background-color:#181818}
 .piechart_table tr td{border-bottom:1px solid #333}
 .stats_community_messages_info_title{color:var(--color1)}
