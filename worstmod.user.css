@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210318.3.3
+@version        20210318.3.10
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1487,6 +1487,10 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 [dir] .TopNavBtn:not(.TopNavBtn--active):hover{background:#00000080!important;}
 [dir] .TopNavBtn.TopNavBtn--active{background:var(--color2)!important}
 [dir] .TopNavBtn.TopNavBtn--active .TopNavBtn__icon{filter:var(--filt2)brightness(.1)}
+
+/* стрелка профиля в шапке */
+[dir] .TopNavBtn__profileArrow > svg > path{fill:var(--color2);transition:fill .3s}
+[dir] .TopNavBtn__profileLink:hover .TopNavBtn__profileArrow > svg > path,[dir] .TopNavBtn.active .TopNavBtn__profileArrow > svg > path{fill:var(--color1)}
 
 /* раздел помощи */
 [dir] .tickets_suggests_wrap{border:1px solid #111;background:#000000d9!important}
