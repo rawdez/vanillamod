@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210319.2.0
+@version        20210319.2.22
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -419,7 +419,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 
 
 /* поправляем левую менюшку */
-#side_bar ol{background:rgba(0,0,0,0.75);border:1px solid #111;border-radius:4px}
+#side_bar ol{background:rgba(0,0,0,/*[[opaque]]*/);border:1px solid #111;border-radius:4px}
 #side_bar li span.left_label.inl_bl{opacity:1!important}
 #side_bar .more_div{margin:5px 9px 0px 7px!important;padding-top:2px!important;border-top:1px solid #111!important}
 [dir] body.new_header_design #side_bar ol li .left_row{padding:0}
