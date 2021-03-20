@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210320.7.30
+@version        20210320.7.45
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -20,7 +20,7 @@ wallspace "➤ Космос" <<<EOT https://pp.userapi.com/c10996/u8103765/15184
 
 wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
 }
-@advanced text wallsetup-custom "➥ Ссыль на свою обоину:" "https://pp.userapi.com/c10996/u8103765/151846873/z_e1b20b64.jpg"
+@advanced text wallsetup-custom "➥ Ссыль на свою обоину:" "https://media.giphy.com/media/Ow59c0pwTPruU/giphy.gif"
 @advanced text wallbrightness "➥ Яркость обоины:" ".75"
 @advanced dropdown backgroundorcolor "Сплошной цвет вместо обоев:" {
 	backgroundon "нафиг это*" <<<EOT /* обоина *\/
@@ -699,6 +699,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /* фикс косяка с поиском в VD2 */
 [dir] #video_search_input.ui_search_field{background-image:none!important;padding:8px 70px 8px 12px!important}
+[dir] .search_results.wall_module.page_block .like_cont, [dir] .fans_rows.wall_module .like_cont{box-shadow:inset 0 -1px #222}
 
 /* обзываться плохо, пнятненько? */
 .tt.WallCheckComment__tt .tt_text{color:#b9b9b9}
