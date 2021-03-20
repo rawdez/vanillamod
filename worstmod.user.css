@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210320.3.40
+@version        20210320.7.0
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -8,6 +8,75 @@
 @description    ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://33kk.github.io/uso-archive/?style=126419 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал. Паблос в ВКшечке: https://vk.com/worstmod This Fix/Mod IS NOT A STANDALONE THEME. Make sure to install Vanilla Dark 2 first. This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly. Check https://vk.com/worstmod if you have any questions/suggestions.`
 @license        CC-BY-NC-4.0
 @preprocessor   uso
+@advanced dropdown wallsetup "Обои:" {
+wallyosemiteroad "➤ Дорога Йосемите*" <<<EOT https://pp.userapi.com/c7010/v7010434/d2ae/fUDU1qPsk-Q.jpg EOT;
+wallmountplanets "➤ Горы и планеты" <<<EOT https://pp.userapi.com/c622022/v622022443/27a46/fi30MbHBZ4g.jpg EOT;
+wallminimalglitch "➤ Озеро и горы глитч" <<<EOT https://pp.userapi.com/c836724/v836724428/f080/tsrV8cA4ih8.jpg EOT;
+wallnuthouse "➤ Дурдом" <<<EOT https://pp.userapi.com/c836724/v836724428/f01c/j5s_HXyOEIY.jpg EOT;
+wallgreydots "➤ Точки" <<<EOT https://pp.userapi.com/c836724/v836724428/eff4/ZQCyWMJca2A.jpg EOT;
+wallflowers "➤ Цветочки" <<<EOT https://pp.userapi.com/c628618/v628618428/518fc/iX0weUIDv1U.jpg EOT;
+wallnightbridge "➤ Ночь сказочный мост" <<<EOT https://pp.userapi.com/c624330/v624330499/117e8/gfGTAKr7Oio.jpg EOT;
+wallspace "➤ Космос" <<<EOT https://pp.userapi.com/c10996/u8103765/151846873/z_e1b20b64.jpg EOT;
+wallpyramids "➤ Пирамиды" <<<EOT https://pp.userapi.com/c532036/u14240428/docs/d28/92b3e52f359b/piramidy.jpg EOT;
+walllinus "➤ Linus" <<<EOT https://pp.userapi.com/c536132/u14240428/docs/d3/737d73365e0d/fu_nvidia.jpg EOT;
+wallpixelraingif "➤ Пиксельный дождь" <<<EOT https://pp.userapi.com/c834504/u42135512/docs/d3/3b727ec25d93/pixel_rain.gif EOT;
+wallfxgif "➤ FX" <<<EOT https://pp.userapi.com/c856536/u147314498/docs/d16/22fd58ea4404/neon_lava_loop_03.gif EOT;
+wallq1skygif "➤ Quake" <<<EOT https://pp.userapi.com/c856416/u127766393/docs/d11/8aed099904d0/q1skbx.gif EOT;
+wall29gif "➤ 29" <<<EOT https://pp.userapi.com/c812232/u414276630/docs/2b921e375268/unthemey1ol3pjned592766e23a0bd5266416ecc4.gif EOT;
+
+wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
+}
+@advanced text wallsetup-custom "➥ Ссыль на свою обоину:" "https://pp.userapi.com/c521102/u211108256/docs/24082acecfed/but__nevermind.gif"
+@advanced text wallbrightness "➥ Яркость обоины:" ".75"
+@advanced dropdown backgroundorcolor "Сплошной цвет вместо обоев:" {
+	backgroundon "нафиг это*" <<<EOT /* обоина *\/
+body:before{content:"";position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1;display:block;
+/* ссылка на обои *\/
+  background: #111 url(/*[[wallsetup]]*\/) center fixed;background-size:cover;background-repeat:no-repeat;
+  width:20000px;height:20000px;
+/* фильтры обоев (яркость)*\/
+  filter:brightness(/*[[wallbrightness]]*\/);
+}
+body[onresize]{background:#111!important}
+ EOT;
+backcoloron "давай (цвет настраивай ниже)" <<<EOT /* цвет вместо обоины *\/
+body{background:/*[[backcolor]]*\/!important}
+ EOT;
+backgroundvanilla "обои как в Ванилле (цвет настраивай ниже)" <<<EOT /* цвет фона обоины ваниллы *\/
+body{background-color:/*[[backcolor]]*\/!important}
+ EOT;
+}
+@advanced color backcolor "➥ Цвет сплошного цвета:" #070707
+@advanced dropdown hollowhead "Прозрачная шапка:" {
+	hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
+[dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
+[dir] body.new_header_design .TopSearch__input{background-color:transparent!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
+[dir] .TopSearch__input::selection{background:#4e5e71!important}
+#ts_wrap .input_back .input_back_content{color:#999!important}
+.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
+[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
+
+/* плеер в шапке фикс *\/
+.top_audio_player .top_audio_player_title{color:#909090!important}
+[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
+ EOT;
+hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\/
+[dir] body.new_header_design #page_header_cont{background-color:var(--color3)!important;border:none!important}
+[dir] body.new_header_design .TopSearch__input{background-color:var(--color3)!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
+[dir] .TopSearch__input::selection{background:#4e5e71!important}
+#ts_wrap .input_back .input_back_content{color:#999!important}
+.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
+.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(2)!important}
+[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
+
+/* плеер в шапке фикс *\/
+.top_audio_player .top_audio_player_title{color:#909090!important}
+[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
+ EOT;
+hollowheadoffcolor "выкл (цветная шапка)" <<<EOT  EOT;
+}
+@advanced text headopaque "➥ Непрозрачность шапки:" ".75"
+@advanced text opaque "➥ Непрозрачность блоков:" ".77"
 @advanced dropdown vklogo "Старый ламповый логотип:" {
 	vklogooldbutgold "буква Ж*" <<<EOT /* Ж *\/
 [dir] .TopHomeLink{background:none!important}
@@ -225,69 +294,6 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
  EOT;
 
 }
-@advanced dropdown hollowhead "Прозрачная шапка:" {
-	hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
-[dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
-[dir] body.new_header_design .TopSearch__input{background-color:transparent!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
-[dir] .TopSearch__input::selection{background:#4e5e71!important}
-#ts_wrap .input_back .input_back_content{color:#999!important}
-.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
-[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
-
-/* плеер в шапке фикс *\/
-.top_audio_player .top_audio_player_title{color:#909090!important}
-[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
- EOT;
-hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\/
-[dir] body.new_header_design #page_header_cont{background-color:var(--color3)!important;border:none!important}
-[dir] body.new_header_design .TopSearch__input{background-color:var(--color3)!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
-[dir] .TopSearch__input::selection{background:#4e5e71!important}
-#ts_wrap .input_back .input_back_content{color:#999!important}
-.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
-.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(2)!important}
-[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
-
-/* плеер в шапке фикс *\/
-.top_audio_player .top_audio_player_title{color:#909090!important}
-[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
- EOT;
-hollowheadoffcolor "выкл (цветная шапка)" <<<EOT  EOT;
-
-}
-@advanced text headopaque "➥ Непрозрачность шапки:" ".75"
-@advanced text opaque "➥ Непрозрачность блоков:" ".77"
-@advanced text wallbrightness "➦ Яркость обоины:" ".75"
-@advanced dropdown wallsetup "Обои:" {
-wallmountplanets "➤ Горы и планеты*" <<<EOT https://pp.userapi.com/c622022/v622022443/27a46/fi30MbHBZ4g.jpg EOT;
-wallminimalglitch "➤ Озеро и горы глитч" <<<EOT https://pp.userapi.com/c836724/v836724428/f080/tsrV8cA4ih8.jpg EOT;
-wallyosemiteroad "➤ Дорога Йосемите" <<<EOT https://pp.userapi.com/c7010/v7010434/d2ae/fUDU1qPsk-Q.jpg EOT;
-wallnuthouse "➤ Дурдом" <<<EOT https://pp.userapi.com/c836724/v836724428/f01c/j5s_HXyOEIY.jpg EOT;
-wallgreydots "➤ Точки" <<<EOT https://pp.userapi.com/c836724/v836724428/eff4/ZQCyWMJca2A.jpg EOT;
-wallflowers "➤ Цветочки" <<<EOT https://pp.userapi.com/c628618/v628618428/518fc/iX0weUIDv1U.jpg EOT;
-wallnightbridge "➤ Ночь сказочный мост " <<<EOT https://pp.userapi.com/c624330/v624330499/117e8/gfGTAKr7Oio.jpg EOT;
-wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
-}
-@advanced text wallsetup-custom "➥Ссылка на собственные обои:" "https://pp.userapi.com/c836724/v836724428/f01c/j5s_HXyOEIY.jpg"
-@advanced dropdown backgroundorcolor "Сплошной цвет вместо обоев:" {
-	backgroundon "нафиг это*" <<<EOT /* обоина *\/
-body:before{content:"";position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1;display:block;
-/* ссылка на обои *\/
-  background: #111 url(/*[[wallsetup]]*\/) center fixed;background-size:cover;background-repeat:no-repeat;
-  width:20000px;height:20000px;
-/* фильтры обоев (яркость)*\/
-  filter:brightness(/*[[wallbrightness]]*\/);
-}
-body[onresize]{background:#111!important}
- EOT;
-backcoloron "давай (цвет настраивай ниже)" <<<EOT /* цвет вместо обоины *\/
-body{background:/*[[backcolor]]*\/!important}
- EOT;
-backgroundvanilla "обои как в Ванилле (цвет настраивай ниже)" <<<EOT /* цвет фона обоины ваниллы *\/
-body{background-color:/*[[backcolor]]*\/!important}
- EOT;
-
-}
-@advanced color backcolor "Цвет сплошного цвета:" #070707
 @advanced dropdown flushshit " ♻ Убрать шлак:" {
 	flushshiton "ну канешн*" <<<EOT /* чистим шлак: нафиг ссылки слева в меню, нафиг сердце на фотках, нафиг вскукареки о заполнении инфы, нафиг рекламу рекомендаций из ленты *\/
 .left_menu_nav_wrap,.pv_cont .pv_hh_like,.profile_rate_warning,.mv_chat_reply_author_photo{display:none}
@@ -2547,12 +2553,11 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 }
 
 
-@-moz-document regexp('https?://vk\\.com/doc-?[0-9]*\_[0-9]*.*'),regexp('https?://vk\\.com/away\\.php.*'){
+@-moz-document regexp('https?://vk\\.com/doc-?[0-9]*\\_[0-9]*.*'),regexp('https?://vk\\.com/away\\.php.*'){
 body:before{filter:brightness(.5)!important}
 .can_zoom,.can_zoom_out{box-shadow:0px 0px 30px 10px #000;margin-top:10px}
 .docs_panel{background-color:rgba(0,0,0,/*[[opaque]]*/)}
 .SaveToDocsButton:not(.flat_btn_lock)::before{filter:var(--filt2)}
-.SaveToDocsButton:not(.flat_btn_lock):hover::before{filter:brightness(0)}
 }
 
 @-moz-document regexp('https?://vk\\.com/video.*'),regexp('https?://vk\\.com/audios.*'){
