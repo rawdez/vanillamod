@@ -144,11 +144,27 @@ darkasshitoff "выкл" <<<EOT .audio_layer_rows_cont{background-color:rgba(0,0
  EOT;
 
 }
+@advanced dropdown pageheaderthin " ♻ Сплющить шапку:" {
+	pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем шапку *\/
+[dir] body.new_header_design #page_header_cont{height:34px}
+[dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
+[dir] body.new_header_design{--header-height:33px}
+[dir] body.new_header_design .side_bar_inner{margin-top:32px!important}
+[dir] body.new_header_design #side_bar.side_bar{top:1px!important}
+body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
+[dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)} EOT;
+pageheadernormal "нет, я люблю жирные шапки" <<<EOT 
+[dir] #top_audio_layer_place > #audio_layer_tt{top:48px!important}
+EOT;
+
+}
 @advanced dropdown moveplayer "➤ Всплывающий плеер справа:" {
 	moveplayeron "давай*" <<<EOT /* всплывающий плеер справа *\/
 #top_audio_layer_place > #audio_layer_tt{position:fixed!important;top:40px!important;right:0px!important;left:auto!important}
 #audio_layer_tt > .eltt_arrow_back{display:none} EOT;
-moveplayeroff "отбой" <<<EOT  EOT;
+moveplayeroff "отбой" <<<EOT  
+[dir] #top_audio_layer_place > #audio_layer_tt{top:-1px!important}
+EOT;
 
 }
 @advanced dropdown fadetoblack "➤ Затемнять не влезающие в плеер названия:" {
@@ -283,18 +299,6 @@ body{background-color:/*[[backcolor]]*\/!important}
 
  EOT;
 flushshitoff "пускай остаётся" <<<EOT  EOT;
-
-}
-@advanced dropdown pageheaderthin " ♻ Сплющить шапку:" {
-	pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем шапку *\/
-[dir] body.new_header_design #page_header_cont{height:34px}
-[dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
-[dir] body.new_header_design{--header-height:33px}
-[dir] body.new_header_design .side_bar_inner{margin-top:32px!important}
-[dir] body.new_header_design #side_bar.side_bar{top:1px!important}
-body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
-[dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)} EOT;
-pageheadernormal "нет, я люблю жирные шапки" <<<EOT  EOT;
 
 }
 @advanced dropdown nameremove " ♻ Убрать имя / аву / стрелку из шапки:" {
