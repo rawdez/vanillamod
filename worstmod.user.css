@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210320.2.52
+@version        20210320.3.40
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -46,6 +46,7 @@ audioplayhollowoff "Неа" <<<EOT /* фикс кнопок плеера *\/
 [dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen::before{filter:invert(1)hue-rotate(180deg)saturate(.5)var(--filt2)!important}
 [dir] .audio_page_player2 .audio_page_player_play .icon{background-color:var(--blue_400)!important;opacity:.9;filter:saturate(.5)brightness(1.2)var(--filt2)!important}
 [dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:var(--blue_400)!important;opacity:1}
+[dir] .audio_w_covers .audio_row .audio_row__cover_icon:before{content:' ';display:block;position:relative;background-color:var(--color1);mix-blend-mode:darken;border-radius:50%;width:24px;height:24px;top:8px;left:8px}
 EOT;
 
 }
@@ -70,7 +71,10 @@ EOT;
 [dir] .friends_import_icon,[dir] .friends_import_box_icon{border-radius:2px} 
 
 /* квадратные аудио иконки *\/
-[dir] .audio_play,[dir] .audio_page_player .audio_page_player_play .icon{border-radius:2px}
+[dir] .audio_page_player2 .audio_page_player_play .icon{border-radius:3px}
+.audio_row .audio_row__play_btn, [dir] .audio_row .audio_row__play_btn{background-color:var(--color1);border-radius:3px}
+[dir] .audio_w_covers .audio_row .audio_row__cover_icon:before{border-radius:3px!important}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen::before{background-color:var(--blue_400);border-radius:3px}
 
 /* диалог есть непрочитанные - полоска слева вместо кружка справа, квадрат вместо кружка *\/   
 [dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread {display:block;border-radius:0px!important;min-width:3px;width:0px;bottom:0px;left:-85px;height:100%;opacity:0.7!important}
