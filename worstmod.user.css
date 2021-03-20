@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210320.7.45
+@version        20210320.8.30
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -17,6 +17,7 @@ wallgreydots "➤ Точки" <<<EOT https://pp.userapi.com/c836724/v836724428/e
 wallflowers "➤ Цветочки" <<<EOT https://pp.userapi.com/c628618/v628618428/518fc/iX0weUIDv1U.jpg EOT;
 wallnightbridge "➤ Ночь сказочный мост" <<<EOT https://pp.userapi.com/c624330/v624330499/117e8/gfGTAKr7Oio.jpg EOT;
 wallspace "➤ Космос" <<<EOT https://pp.userapi.com/c10996/u8103765/151846873/z_e1b20b64.jpg EOT;
+wallrain "➤ Дождь" <<<EOT https://i.giphy.com/media/26gshDkE2Nybaa1oY/giphy.gif EOT;
 
 wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
 }
@@ -528,7 +529,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .im-page.im-page_classic .im-page--header{border-top:15px solid rgba(0,0,0,.9)!important;border-left:1px solid #111;border-right:1px solid #111;border-radius:0px;border-bottom:1px solid #111}
 .im-page.im-page_classic .im-page--dialogs-search{border-radius:0px}
 .im-page.im-page_classic .im-page--dialogs,.im-page.im-page_classic .im-page--dcontent{border-radius:0px;border-top:none}
-.im-page.im-page_classic .im-page--dialogs-search,.im-page.im-page_classic .im-page--mess-search{box-shadow:none!important;}
+.im-page.im-page_classic .im-page--dialogs-search,.im-page.im-page_classic .im-page--mess-search{box-shadow:none!important}
+[dir] .im-page .im-page--center-empty,[dir] .im-page .im-page--chat-search-empty{background:none!important}
 .ui_search{border:none}
 .im-page .im-page--dialogs-footer,.im-create.im-create_classic .im-create--footer{background-color:rgba(0,0,0,.9)!important;border-top:1px solid #111!important}
 .video_item .video_item_thumb_wrap,.videocat_featured_video{background-color:rgba(0,0,0,.5)!important}
