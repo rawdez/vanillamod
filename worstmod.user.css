@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210320.2.42
+@version        20210320.2.52
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -144,7 +144,7 @@ darkasshitoff "выкл" <<<EOT .audio_layer_rows_cont{background-color:rgba(0,0
  EOT;
 
 }
-@advanced dropdown pageheaderthin " ♻ Сплющить шапку:" {
+@advanced dropdown pageheaderthin "➤ Сплющить шапку:" {
 	pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем шапку *\/
 [dir] body.new_header_design #page_header_cont{height:34px}
 [dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
@@ -167,13 +167,23 @@ moveplayeroff "отбой" <<<EOT
 EOT;
 
 }
-@advanced dropdown fadetoblack "➤ Затемнять не влезающие в плеер названия:" {
+@advanced dropdown fadetoblack "★ Затемнять не влезающие в плеер названия:" {
 	blackened "ясен красен*" <<<EOT /* fade to black *\/
 [dir] .top_audio_player .top_audio_player_title{width:100%;background:linear-gradient(90deg,#a4a4a4 90%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song{width:100%;background:linear-gradient(90deg,#ccc 75%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song_subtitle{width:100%;background:linear-gradient(90deg,#848484 80%,#0000 100%);background-clip:text;color:#0000!important} EOT;
 
 nofadetoblack "отключить на случай г-нобраузера" <<<EOT  EOT;
+
+}
+@advanced dropdown countsfold "★ Сворачивать счётчики инфы страницы:" {
+	countsfoldon "вкл*" <<<EOT /* сворачивать счётчики *\/
+.counts_module {height:0px!important;transition:height 0.7s;border: none;box-shadow:inset 0px 1px 0px 0px #111;background-color:rgba(0,0,0,0.4)}
+.profile_more_info_link:not(.info_shown){height:0px!important;opacity:0;transition:height .7s, opacity .7s;pointer-events:none}
+#wide_column div:nth-child(1):hover .counts_module{height:70px!important;transition:height 0.7s}
+#wide_column div:nth-child(1):hover .profile_more_info_link{height:34px!important;opacity:1;transition:height 0.7s, opacity .7s;pointer-events:all}
+EOT;
+countsfoldoff "выкл" <<<EOT  EOT;
 
 }
 @advanced dropdown burnmotherfucker "🔥💔 Сжечь сердца:" {
@@ -360,18 +370,6 @@ nomoneysendon "точняк." <<<EOT /* убрать денежные перев
 .page_actions_item[onclick*="Page.moneyTransferBox"]{display:none!important} EOT;
 nomoneysendfuckall "нафиг бабло и воспоминания" <<<EOT /* убрать денежные переводы и воспоминания *\/
 [dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--memories,[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--money-transfer{display:none} EOT;
-
-}
-@advanced dropdown countsfold "★ Сворачивать счётчики инфы страницы:" {
-	countsfoldon "вкл*" <<<EOT /* сворачивать счётчики *\/
-.counts_module {height:0px!important;transition:height 0.7s;border: none;box-shadow:inset 0px 1px 0px 0px #111;background-color:rgba(0,0,0,0.4)}
-.profile_more_info_link:not(.info_shown){height:0px!important;opacity:0;transition:height .7s, opacity .7s;pointer-events:none}
-#wide_column div:nth-child(1):hover .counts_module{height:70px!important;transition:height 0.7s}
-#wide_column div:nth-child(1):hover .profile_more_info_link{height:34px!important;opacity:1;transition:height 0.7s, opacity .7s;pointer-events:all}
-
-
- EOT;
-countsfoldoff "выкл" <<<EOT  EOT;
 
 }
 @advanced dropdown sidebarnotext "Фикс для панельки слева без текста:" {
