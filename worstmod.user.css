@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210320.7.0
+@version        20210320.7.30
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -17,16 +17,10 @@ wallgreydots "➤ Точки" <<<EOT https://pp.userapi.com/c836724/v836724428/e
 wallflowers "➤ Цветочки" <<<EOT https://pp.userapi.com/c628618/v628618428/518fc/iX0weUIDv1U.jpg EOT;
 wallnightbridge "➤ Ночь сказочный мост" <<<EOT https://pp.userapi.com/c624330/v624330499/117e8/gfGTAKr7Oio.jpg EOT;
 wallspace "➤ Космос" <<<EOT https://pp.userapi.com/c10996/u8103765/151846873/z_e1b20b64.jpg EOT;
-wallpyramids "➤ Пирамиды" <<<EOT https://pp.userapi.com/c532036/u14240428/docs/d28/92b3e52f359b/piramidy.jpg EOT;
-walllinus "➤ Linus" <<<EOT https://pp.userapi.com/c536132/u14240428/docs/d3/737d73365e0d/fu_nvidia.jpg EOT;
-wallpixelraingif "➤ Пиксельный дождь" <<<EOT https://pp.userapi.com/c834504/u42135512/docs/d3/3b727ec25d93/pixel_rain.gif EOT;
-wallfxgif "➤ FX" <<<EOT https://pp.userapi.com/c856536/u147314498/docs/d16/22fd58ea4404/neon_lava_loop_03.gif EOT;
-wallq1skygif "➤ Quake" <<<EOT https://pp.userapi.com/c856416/u127766393/docs/d11/8aed099904d0/q1skbx.gif EOT;
-wall29gif "➤ 29" <<<EOT https://pp.userapi.com/c812232/u414276630/docs/2b921e375268/unthemey1ol3pjned592766e23a0bd5266416ecc4.gif EOT;
 
 wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
 }
-@advanced text wallsetup-custom "➥ Ссыль на свою обоину:" "https://pp.userapi.com/c521102/u211108256/docs/24082acecfed/but__nevermind.gif"
+@advanced text wallsetup-custom "➥ Ссыль на свою обоину:" "https://pp.userapi.com/c10996/u8103765/151846873/z_e1b20b64.jpg"
 @advanced text wallbrightness "➥ Яркость обоины:" ".75"
 @advanced dropdown backgroundorcolor "Сплошной цвет вместо обоев:" {
 	backgroundon "нафиг это*" <<<EOT /* обоина *\/
