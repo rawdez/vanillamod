@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210320.22.00
+@version        20210322.1.30
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -20,6 +20,7 @@ wallspace "➤ Космос" <<<EOT https://pp.userapi.com/c10996/u8103765/15184
 wallrain "➤ Дождь" <<<EOT https://i.giphy.com/media/26gshDkE2Nybaa1oY/giphy.gif EOT;
 wallriver "➤ Река" <<<EOT https://wallpapercave.com/wp/wp2758170.gif EOT;
 wallstarsky  "➤ Ночное небо" <<<EOT https://i.pinimg.com/originals/09/24/4c/09244c7f7dd4d17b0484370f32db6641.gif EOT;
+wallpixelstreet  "➤ Улица" <<<EOT https://i.pinimg.com/originals/ee/18/34/ee1834551aa9a5df89ab671b54f73a16.gif EOT;
 wallforestfog "➤ Лесной туман" <<<EOT https://i.giphy.com/media/uFmH8za4E6M5STIiTu/source.gif EOT;
 wallforest "➤ Лес" <<<EOT https://i.giphy.com/media/orTEFD4GoRufhL7ex0/source.gif EOT;
 walllamps "➤ Лампы" <<<EOT https://i.giphy.com/media/3oKIPp33cYYsk7nFle/source.gif EOT;
@@ -28,7 +29,20 @@ wallsunsetriver  "➤ Закат на реке" <<<EOT https://i.giphy.com/media
 wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
 }
 @advanced text wallsetup-custom "➥ Ссыль на свою обоину:" "https://media.giphy.com/media/Ow59c0pwTPruU/giphy.gif"
-@advanced text wallbrightness "➥ Яркость обоины:" ".75"
+@advanced dropdown wallbrightness "➥ Яркость обоины:" {
+wallbrightnesssetup "кастомная (меняй ниже)" <<<EOT /*[[wallbrightness-custom]]*\/ EOT;
+wallbrightness100 "100%" <<<EOT 1 EOT;
+wallbrightness90 "90%" <<<EOT .9 EOT;
+wallbrightness80 "80%" <<<EOT .8 EOT;
+wallbrightness70 "70%" <<<EOT .7 EOT;
+wallbrightness60 "60%" <<<EOT .6 EOT;
+wallbrightness50 "50%" <<<EOT .5 EOT;
+wallbrightness40 "40%" <<<EOT .4 EOT;
+wallbrightness30 "30%" <<<EOT .3 EOT;
+wallbrightness20 "20%" <<<EOT .2 EOT;
+wallbrightness10 "10%" <<<EOT .1 EOT;
+}
+@advanced text wallbrightness-custom "➥ Кастомная яркость обоины:" ".77"
 @advanced dropdown backgroundorcolor "Сплошной цвет вместо обоев:" {
 	backgroundon "нафиг это*" <<<EOT /* обоина *\/
 body:before{content:"";position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1;display:block;
