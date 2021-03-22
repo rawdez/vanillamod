@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210322.1.30
+@version        20210322.2.22
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -30,7 +30,7 @@ wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-cus
 }
 @advanced text wallsetup-custom "➥ Ссыль на свою обоину:" "https://media.giphy.com/media/Ow59c0pwTPruU/giphy.gif"
 @advanced dropdown wallbrightness "➥ Яркость обоины:" {
-wallbrightnesssetup "кастомная (меняй ниже)" <<<EOT /*[[wallbrightness-custom]]*\/ EOT;
+wallbrightnesssetup "кастомная (★ ниже)" <<<EOT /*[[wallbrightness-custom]]*\/ EOT;
 wallbrightness100 "100%" <<<EOT 1 EOT;
 wallbrightness90 "90%" <<<EOT .9 EOT;
 wallbrightness80 "80%" <<<EOT .8 EOT;
@@ -42,7 +42,8 @@ wallbrightness30 "30%" <<<EOT .3 EOT;
 wallbrightness20 "20%" <<<EOT .2 EOT;
 wallbrightness10 "10%" <<<EOT .1 EOT;
 }
-@advanced text wallbrightness-custom "➥ Кастомная яркость обоины:" ".77"
+@advanced text wallbrightness-custom "⠀⠀⠀★" ".75"
+
 @advanced dropdown backgroundorcolor "Сплошной цвет вместо обоев:" {
 	backgroundon "нафиг это*" <<<EOT /* обоина *\/
 body:before{content:"";position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1;display:block;
@@ -62,6 +63,7 @@ body{background-color:/*[[backcolor]]*\/!important}
  EOT;
 }
 @advanced color backcolor "➥ Цвет сплошного цвета:" #070707
+
 @advanced dropdown hollowhead "Прозрачная шапка:" {
 	hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
 [dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
@@ -90,12 +92,44 @@ hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\
  EOT;
 hollowheadoffcolor "выкл (цветная шапка)" <<<EOT  EOT;
 }
-@advanced text headopaque "➥ Непрозрачность шапки:" ".75"
-@advanced text opaque "➥ Непрозрачность блоков:" ".77"
+
+@advanced dropdown headopaque "➥ непрозрачность шапки:" {
+headopaquesetup "кастомная (★ ниже)" <<<EOT /*[[headopaque-custom]]*\/ EOT;
+headopaque100 "100%" <<<EOT 1 EOT;
+headopaque90 "90%" <<<EOT .9 EOT;
+headopaque80 "80%" <<<EOT .8 EOT;
+headopaque70 "70%" <<<EOT .7 EOT;
+headopaque60 "60%" <<<EOT .6 EOT;
+headopaque50 "50%" <<<EOT .5 EOT;
+headopaque40 "40%" <<<EOT .4 EOT;
+headopaque30 "30%" <<<EOT .3 EOT;
+headopaque20 "20%" <<<EOT .2 EOT;
+headopaque10 "10%" <<<EOT .1 EOT;
+}
+@advanced text headopaque-custom "⠀⠀⠀★" ".77"
+
+
+@advanced dropdown opaque "Непрозрачность блоков:" {
+opaquesetup "кастомная (настраивай ниже)" <<<EOT /*[[opaque-custom]]*\/ EOT;
+opaque100 "100%" <<<EOT 1 EOT;
+opaque90 "90%" <<<EOT .9 EOT;
+opaque80 "80%" <<<EOT .8 EOT;
+opaque70 "70%" <<<EOT .7 EOT;
+opaque60 "60%" <<<EOT .6 EOT;
+opaque50 "50%" <<<EOT .5 EOT;
+opaque40 "40%" <<<EOT .4 EOT;
+opaque30 "30%" <<<EOT .3 EOT;
+opaque20 "20%" <<<EOT .2 EOT;
+opaque10 "10%" <<<EOT .1 EOT;
+}
+@advanced text opaque-custom "⠀⠀⠀➥" ".75"
+
+
 @advanced dropdown vklogo "Старый ламповый логотип:" {
 	vklogooldbutgold "буква Ж*" <<<EOT /* Ж *\/
 [dir] .TopHomeLink{background:none!important}
 [dir] .TopHomeLink:after{content:' '; width:40px;height:100%;background:url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2229%22%20height%3D%2217%22%20viewBox%3D%220%200%2029%2017%22%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%232787F5%22%20fill-rule%3D%22evenodd%22%20d%3D%22M28.335%201.151c.201-.663%200-1.151-.96-1.151h-3.172c-.807%200-1.18.421-1.38.886%200%200-1.614%203.881-3.9%206.403-.74.73-1.075.962-1.479.962-.201%200-.504-.232-.504-.896V1.151C16.94.355%2016.717%200%2016.044%200H11.06c-.504%200-.807.37-.807.72%200%20.755%201.142.929%201.26%203.052v4.612c0%201.01-.185%201.194-.588%201.194-1.076%200-3.692-3.899-5.244-8.36C5.376.35%205.071%200%204.26%200H1.088C.18%200%200%20.421%200%20.886c0%20.83%201.076%204.943%205.008%2010.384C7.63%2014.986%2011.324%2017%2014.685%2017c2.016%200%202.266-.447%202.266-1.218v-2.808c0-.895.19-1.074.83-1.074.47%200%201.277.233%203.159%202.024C23.091%2016.047%2023.446%2017%2024.656%2017h3.172c.907%200%201.36-.447%201.099-1.33-.287-.88-1.314-2.157-2.676-3.67-.74-.863-1.849-1.792-2.185-2.256-.47-.597-.336-.863%200-1.394%200%200%203.865-5.374%204.269-7.199z%22%2F%3E%0A%3C%2Fsvg%3E)4px 50% no-repeat!important}
+
 
 /* фильтр буквы Ж слева вверху *\/
 [dir] .TopHomeLink:after{opacity:0.6;transition:opacity 0.5s;filter:var(--filt2)saturate(.15)brightness(1.2);}
