@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210322.2.22
+@version        20210323.20.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -499,8 +499,8 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] #side_bar ol li .left_row .left_count_wrap,[dir="ltr"] #side_bar ol li .left_row:hover .left_count_wrap{padding:3px 5px!important;height:27px!important}
 [dir] #side_bar ol li .left_row .left_count_wrap{background:var(--color2)!important}
 [dir] #side_bar ol li .left_row:hover .left_count_wrap{background:var(--color1)!important}
-[dir] .LeftNav__icon{color:var(--color1)}
-[dir] a.left_row:hover .LeftNav__icon{filter:brightness(1.5)}
+[dir] .LeftMenu__icon{color:var(--color1)}
+[dir] a.left_row:hover .LeftMenu__icon{filter:brightness(1.5)}
 [dir] #side_bar ol li .left_row:not(:hover) .left_count_wrap,[dir] .ui_rmenu .ui_rmenu_item:not(:hover) .ui_rmenu_count{opacity:.8;transition:opacity .3s}
 [dir] #side_bar_inner svg{filter:none!important}
   
