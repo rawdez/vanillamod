@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210325.1.20
+@version        20210325.1.30
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -45,7 +45,7 @@ wallbrightness10 "10%" <<<EOT .1 EOT;
 @advanced text wallbrightness-custom "⠀⠀⠀★" ".75"
 
 @advanced dropdown backgroundorcolor "Сплошной цвет вместо обоев:" {
-	backgroundon "нафиг это*" <<<EOT /* обоина *\/
+backgroundon "нафиг это*" <<<EOT /* обоина *\/
 body:before{content:"";position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1;display:block;
 /* ссылка на обои *\/
   background: #111 url(/*[[wallsetup]]*\/) center fixed;background-size:cover;background-repeat:no-repeat;
@@ -65,7 +65,7 @@ body{background-color:/*[[backcolor]]*\/!important}
 @advanced color backcolor "➥ Цвет сплошного цвета:" #070707
 
 @advanced dropdown hollowhead "Прозрачная шапка:" {
-	hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
+hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
 [dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
 [dir] body.new_header_design .TopSearch__input{background-color:transparent!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
 [dir] .TopSearch__input::selection{background:#4e5e71!important}
@@ -126,7 +126,7 @@ opaque10 "10%" <<<EOT .1 EOT;
 
 
 @advanced dropdown vklogo "Старый ламповый логотип:" {
-	vklogooldbutgold "буква Ж*" <<<EOT /* Ж *\/
+vklogooldbutgold "буква Ж*" <<<EOT /* Ж *\/
 [dir] .TopHomeLink{background:none!important}
 [dir] .TopHomeLink:after{content:' '; width:40px;height:100%;background:url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2229%22%20height%3D%2217%22%20viewBox%3D%220%200%2029%2017%22%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%232787F5%22%20fill-rule%3D%22evenodd%22%20d%3D%22M28.335%201.151c.201-.663%200-1.151-.96-1.151h-3.172c-.807%200-1.18.421-1.38.886%200%200-1.614%203.881-3.9%206.403-.74.73-1.075.962-1.479.962-.201%200-.504-.232-.504-.896V1.151C16.94.355%2016.717%200%2016.044%200H11.06c-.504%200-.807.37-.807.72%200%20.755%201.142.929%201.26%203.052v4.612c0%201.01-.185%201.194-.588%201.194-1.076%200-3.692-3.899-5.244-8.36C5.376.35%205.071%200%204.26%200H1.088C.18%200%200%20.421%200%20.886c0%20.83%201.076%204.943%205.008%2010.384C7.63%2014.986%2011.324%2017%2014.685%2017c2.016%200%202.266-.447%202.266-1.218v-2.808c0-.895.19-1.074.83-1.074.47%200%201.277.233%203.159%202.024C23.091%2016.047%2023.446%2017%2024.656%2017h3.172c.907%200%201.36-.447%201.099-1.33-.287-.88-1.314-2.157-2.676-3.67-.74-.863-1.849-1.792-2.185-2.256-.47-.597-.336-.863%200-1.394%200%200%203.865-5.374%204.269-7.199z%22%2F%3E%0A%3C%2Fsvg%3E)4px 50% no-repeat!important}
 
@@ -145,7 +145,7 @@ vklogo "новый в тёплых ламповых цветах" <<<EOT /* но
 }
 
 @advanced dropdown audioplayhollow "Прозрачные кнопки плеера:" {
-	audioplayhollowon "Вкл*" <<<EOT /* прозрачные кнопки плеера *\/  
+audioplayhollowon "Вкл*" <<<EOT /* прозрачные кнопки плеера *\/  
 [dir] .audio_row__play_btn,.audio_row.audio_row__playing .audio_row__play_btn{width:0px!important}
 [dir] .audio_page_player .audio_page_player_play,[dir] .audio_pl_snippet_play_small{filter:none!important}
 [dir] .audio_row__play_btn:after,[dir] .audio_w_covers .audio_row .audio_row__cover_icon,[dir] .audio_pl_snippet_play_small,[dir] .audio_pl_attach_preview .audio_pl_attach_preview__play,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:hover:before,[dir] .audio_page_player2 .audio_page_player_play .icon,[dir] .audio_artist_snippet__play:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%2224%22%20height%3D%2224%22%20opacity%3D%22.2%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M7%2C18.9991283%20C7%2C19.5518945%207.3722949%2C19.7518034%207.8248086%2C19.4501276%20L18.1751914%2C12.5498724%20C18.6307206%2C12.2461863%2018.6277051%2C11.7518034%2018.1751914%2C11.4501276%20L7.8248086%2C4.5498724%20C7.36927939%2C4.24618626%207%2C4.44463086%207%2C5.00087166%20L7%2C18.9991283%20Z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E")!important}
@@ -170,7 +170,7 @@ EOT;
 }
 
 @advanced dropdown lolsquare "Оквадрачивание:" {
-	lolsquareon "банзай*" <<<EOT /* .............. <ОКВАДРАЧИВАНИЕ> .............. *\/
+lolsquareon "банзай*" <<<EOT /* .............. <ОКВАДРАЧИВАНИЕ> .............. *\/
 
 /* квадратные авки *\/
 .ow_ava.ow_ava_comm,.wddi_img,.feedback_img,.feedback_row_answer .feedback_img,.top_notify_cont .feedback_img,.im-mess.im-mess_fwd .copy_post_img,.like_tt_image, .poll_tt_image,.feed_friend_photo_wrap .ui_zoom_inner, .feed_friend_image,.submit_post_box .thumb_off, .submit_post_box .thumb_on,.ui_zoom_inner,.feedback_group_photo_img,.mention_tt_img,.feed_asc_user_thumb_img,a.fc_msgs_img,.mention_tt_person_img,.group_al_thumb,.tickets_image__i,.like_share_ava.wdd_imgs,img.settings_bl_photo,.apps_feed_user_photo img,.videocat_channel_header .videocat_channel_icon,.apps_frtt_photo,.fave_link_thumb,.olist_item_photo,.flist_sel_list .flist_item_thumb,.flist_sel_list .flist_item_action,.flist_sel_show_all,.flist_item_thumb,.profile_career_img,.ui_ownblock_img,.search_row .ui_zoom_inner,.friends_photo_wrap .ui_zoom_inner,.feedback_sticky_img,.videoplayer_end_info_author_photo,.market_item_owner_img,.im-member-item .im-member-item--photo,.im-member-item .im-member-item--photo img,.im-create .im-creation--avatar,.apps_i_group .apps_i_group_photo img,.apps_access_icon,.notifier_image,.mail_box_single_ava .mail_box_single_ava_img,.blog_entry_author_ava,.group_l_photo,.group_l_photo_img,.group_u_photo_img,.group_blb_user_thumb,.group_u_bigph_wrap .ui_zoom_inner,.group_u_photo,.gedit_admbox_thumb,.gedit_hostbox_thumb,.page_group_image,.im-prebody img,.bd_cell_img,.tu_thumb,.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img,.nim-peer.nim-peer_smaller .nim-peer--photo > img,.notify_tt_img,.notify_tt_thumb,.settings_blb_photo_img,.mv_chat_message_author_thumb_img,.mv_chat_reply_author_photo,.login_sure_thumb,.group_help_image,.post_friend_liked,.post_friend_liked:first-child,.submit_post_box .post_field_choose_image,.post_from_tt_image,.module_body .people_cell_img, .chat_tab_img, .post_img, .page_list_module .cell_img, .page_list_module .thumb, .ow_ava.ow_ava_small, .nim-peer .nim-peer--photo-w, .group_row_photo, .group_row_img, .right_list_img, .search_item_img, .group_box_image_wrap, .group_box_image_link, .fans_fan_img, .friends_phonebook .friends_photo_img, .friends_common_img, img.fc_contact_photo, .ow_ava.ow_ava_mid, .wall_module .reply_img, .wk_poll_usr, .wall_module .copy_post_img, .ts_contact_img, .fans_idolph_wrap, .bp_img, .blst_img, .friends_photo_img, .post_field_user_image, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img,.top_notify_cont .feedback_img,.feedback_img,.ui_zoom_inner,[dir] .TopNavBtn__profileImg, .im-prebody img, to .im_gr, .online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img, .nim-peer.nim-peer_smaller .nim-peer--photo > img, .fave_al_thumb, .fave_link_thumb, .ow_ava.ow_ava_comm,.audio_page_layout .audio_owner_item .audio_owner_item__img,.mv_live_gift_popup_author_thumb,.audio_page_layout .audio_owner_avatar,.app_widget_avatar,.ui_photo_grid_1,.ui_photo_grid_2,.ui_photo_grid_3,.ui_photo_grid_4,a.group_app_button_multi .group_app_button_icon,.feedback_sticky_icon,.feed_to_recomm .feed_to_recomm_icon,.bd_img,.friends_dropdown__list_item .friends_dropdown__list_image,.article_layer .article_layer__header .article_layer__header_owner_img,.article_ed_layer .article_ed_layer__author_img,.audio_page_layout .audio_community_item .audio_community_item__img,.im-page_classic .im-popular--avatar,.feedback_attachments .notification__media.circle,.wk_voting_avatar,.media_voting_footer_voted_friend,.like_tt_image,.voting_tt_image,.friends_photo_img::after,.payments_transfer_to_photo,.im-invitation--chat-photo-src,.audio_block_small_item__img,.poster__slider-item,.poster__slider-item._active:after,.bookmark_page_row .bookmark_page_row__image,.bookmarks_row_header_image,.bookmark_tag,.Avatar__wrapper,.notify_sources_tt_content .line_cell .thumb .cell_img,.bookmark_page_item .bookmark_page_item__image,.index_user_img,.index_new_user_row .index_user_ph,.login_user_img,.mv_author_photo_wrap,.mv_author_photo,.VerticalVideoLayerInfo__authorPhoto,.VideoLayerInfo__authorPhoto,.VerticalVideoLayerInfo__authorPhotoWrap,.VideoLayerInfo__authorPhotoWrap,.top_profile_vkconnect_img,[dir] .ShortVideoPost__avatarImage,[dir] .PhotoRecognizeBlockItem__ava,[dir] .ListAddControl__icon{border-radius:2px!important} 
@@ -246,7 +246,7 @@ lolsquareof "не, кружочки няшные ( ´ ▽ ` ).｡ｏ♡" <<<EOT 
 
 }
 @advanced dropdown darkasshit "Цвета темнее:" {
-	darkasshiton "чутка*" <<<EOT /* цвета темы потемнее *\/
+darkasshiton "чутка*" <<<EOT /* цвета темы потемнее *\/
 :root{--color3:#191919;--color4:#0A0A0A;--color5:#070707;--color9:rgba(20,20,20,0.85)}
 .top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(0.7)opacity(1)}
 .top_nav_btn:hover .top_nav_btn_icon{filter:saturate(0)brightness(4)opacity(1)}
@@ -267,21 +267,24 @@ darkasshitoff "выкл" <<<EOT .audio_layer_rows_cont{background-color:rgba(0,0
 
 }
 @advanced dropdown pageheaderthin "➤ Сплющить шапку:" {
-	pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем шапку *\/
+pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем шапку *\/
 [dir] body.new_header_design #page_header_cont{height:34px}
 [dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
 [dir] body.new_header_design{--header-height:33px}
 [dir] body.new_header_design .side_bar_inner{margin-top:32px!important}
 [dir] body.new_header_design #side_bar.side_bar{top:1px!important}
 body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
-[dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)} EOT;
+[dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)}
+[dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:34px!important}
+EOT;
 pageheadernormal "нет, я люблю жирные шапки" <<<EOT 
 [dir] #top_audio_layer_place > #audio_layer_tt{top:48px!important}
+[dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:48px!important}
 EOT;
 
 }
 @advanced dropdown moveplayer "➤ Всплывающий плеер справа:" {
-	moveplayeron "давай*" <<<EOT /* всплывающий плеер справа *\/
+moveplayeron "давай*" <<<EOT /* всплывающий плеер справа *\/
 #top_audio_layer_place > #audio_layer_tt{position:fixed!important;top:40px!important;right:0px!important;left:auto!important}
 #audio_layer_tt > .eltt_arrow_back{display:none} EOT;
 moveplayeroff "отбой" <<<EOT  
@@ -290,7 +293,7 @@ EOT;
 
 }
 @advanced dropdown fadetoblack "★ Затемнять не влезающие в плеер названия:" {
-	blackened "ясен красен*" <<<EOT /* fade to black *\/
+blackened "ясен красен*" <<<EOT /* fade to black *\/
 [dir] .top_audio_player .top_audio_player_title{width:100%;background:linear-gradient(90deg,#a4a4a4 90%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song{width:100%;background:linear-gradient(90deg,#ccc 75%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song_subtitle{width:100%;background:linear-gradient(90deg,#848484 80%,#0000 100%);background-clip:text;color:#0000!important} EOT;
@@ -299,7 +302,7 @@ nofadetoblack "отключить на случай г-нобраузера" <<<
 
 }
 @advanced dropdown countsfold "★ Сворачивать счётчики инфы страницы:" {
-	countsfoldon "вкл*" <<<EOT /* сворачивать счётчики *\/
+countsfoldon "вкл*" <<<EOT /* сворачивать счётчики *\/
 .counts_module {height:0px!important;transition:height 0.7s;border: none;box-shadow:inset 0px 1px 0px 0px #111;background-color:rgba(0,0,0,0.4)}
 .profile_more_info_link:not(.info_shown){height:0px!important;opacity:0;transition:height .7s, opacity .7s;pointer-events:none}
 #wide_column div:nth-child(1):hover .counts_module{height:70px!important;transition:height 0.7s}
@@ -309,7 +312,7 @@ countsfoldoff "выкл" <<<EOT  EOT;
 
 }
 @advanced dropdown burnmotherfucker "🔥💔 Сжечь сердца:" {
-	burnmotherfuckerburn "жги огнём!*" <<<EOT /* сжечь сердца *\/
+burnmotherfuckerburn "жги огнём!*" <<<EOT /* сжечь сердца *\/
 .like_btns .like_btn.like .like_button_icon{background:transparent url(https://vk.com/images/icons/apps_catalog_icons.png)no-repeat -7px -313px!important;width:16px;height:18px;margin-left:4px}
 .like_wrap.lite .like_button_icon{transform:scale(0.85);width:16px;height:17px;position:relative;bottom:1px}
 .wall_module .reply .like_btn,.wcomments_post_content .like_btn{padding:10px 10px 0 10px!important}
@@ -323,7 +326,7 @@ burnmotherfuckernope "пощадить бабские сердечки" <<<EOT  
 
 }
 @advanced dropdown fastchat "Окна быстрого чата:" {
-	fastchatblack "прозрачно-чёрные*" <<<EOT /* окна быстрого чата (прозрачные) *\/
+fastchatblack "прозрачно-чёрные*" <<<EOT /* окна быстрого чата (прозрачные) *\/
 .fc_tab_head,.fc_tab_txt{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
 .fc_tab{background:rgba(0,0,0,0.9);border-color:#222!important}
 .fc_msgs_wrap:not(.fc_msgs_out) .fc_msgs{background:#111!important}
@@ -344,7 +347,7 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 
 }
 @advanced dropdown flushshit " ♻ Убрать шлак:" {
-	flushshiton "ну канешн*" <<<EOT /* чистим шлак: нафиг ссылки слева в меню, нафиг сердце на фотках, нафиг вскукареки о заполнении инфы, нафиг рекламу рекомендаций из ленты *\/
+flushshiton "ну канешн*" <<<EOT /* чистим шлак: нафиг ссылки слева в меню, нафиг сердце на фотках, нафиг вскукареки о заполнении инфы, нафиг рекламу рекомендаций из ленты *\/
 .left_menu_nav_wrap,.pv_cont .pv_hh_like,.profile_rate_warning,.mv_chat_reply_author_photo{display:none}
 .mv_chat_reply_input_wrap{margin-left:10px}
 .mv_chat_reply_submit_btn{padding-right:10px}
@@ -371,7 +374,7 @@ flushshitoff "пускай остаётся" <<<EOT  EOT;
 
 }
 @advanced dropdown nameremove " ♻ Убрать имя / аву / стрелку из шапки:" {
-	nameavaremoveon "нафиг имя и авку*" <<<EOT /* убираем имя и авку из шапки *\/
+nameavaremoveon "нафиг имя и авку*" <<<EOT /* убираем имя и авку из шапки *\/
 .TopNavBtn__profileName,.TopNavBtn__profileImg{display:none}
 [dir] .TopNavBtn__profileLink{padding-left:0px}
 #top_nav .top_nav_link{padding:0!important;width:28px;height:42px;display:block;content:' ';background:8px 18px/40% url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat !important;filter:var(--filt2)saturate(.0)brightness(.7)!important}
@@ -401,7 +404,7 @@ body.new_header_design .TopNavBtn__profileName{color:#909090}
 
 }
 @advanced dropdown chaticonremove " ♻ Выпилить иконку диалога в чате:" {
-	chaticonremoveon "нафиг*" <<<EOT /* убрать иконку диалога в чате *\/ 
+chaticonremoveon "нафиг*" <<<EOT /* убрать иконку диалога в чате *\/ 
 .im-page--aside-photo{display:none;margin:0px!important}
 .im-page_classic .im-page--aside{padding:0px 7px;min-width:78px}
 .im-page--back{width:92px}
@@ -410,21 +413,21 @@ chaticonremoveoff "пусть будет" <<<EOT  EOT;
 
 }
 @advanced dropdown audiosendremove " ♻ Выпилить отправку аудио в чате:" {
-	audiosendremoveoff "оставить*" <<<EOT  EOT;
+audiosendremoveoff "оставить*" <<<EOT  EOT;
 audiosendremoveon "вжух-вжух" <<<EOT /* убрать кнопку отправки аудио в сообщениях *\/
 .im-send-btn_audio{display:none}
  EOT;
 
 }
 @advanced dropdown fuckstories " ♻ Меня твои истории просто до***ли уже:" {
-	dontfuckstories "та не, нормас.*" <<<EOT  EOT;
+dontfuckstories "та не, нормас.*" <<<EOT  EOT;
 fuckstorieshard "я не могу их больше слушать." <<<EOT /* меня твои истории просто до***ли уже *\/
 #stories_feed_wrap{display:none!important}
  EOT;
 
 }
 @advanced dropdown nomoneysend " ♻ Деньги я лучше оставлю при себе:" {
-	nomoneysendoff "да не, я щедрый.*" <<<EOT  EOT;
+nomoneysendoff "да не, я щедрый.*" <<<EOT  EOT;
 nomoneysendon "точняк." <<<EOT /* убрать денежные переводы *\/
 .page_actions_item[onclick*="Page.moneyTransferBox"]{display:none!important} EOT;
 nomoneysendfuckall "нафиг бабло и воспоминания" <<<EOT /* убрать денежные переводы и воспоминания *\/
@@ -432,7 +435,7 @@ nomoneysendfuckall "нафиг бабло и воспоминания" <<<EOT /*
 
 }
 @advanced dropdown sidebarnotext "Фикс для панельки слева без текста:" {
-	sidebarnotextnope "выкл*" <<<EOT  EOT;
+sidebarnotextnope "выкл*" <<<EOT  EOT;
 sidebarnotextyep "вкл" <<<EOT /* фикс для панельки слева без текста *\/
 #side_bar ol{width:36px!important} 
 [dir] body.new_header_design #side_bar ol li .left_row,[dir] body.new_header_design #side_bar ol li:hover{width:28px!important}
