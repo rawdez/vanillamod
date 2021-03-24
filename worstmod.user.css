@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210325.0.1
+@version        20210325.0.10
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2564,7 +2564,8 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .PageBlock,[dir] .MarketCatalogSkeleton__block,[dir] .MarketCatalogHeader,[dir] .PageBlock.MarketCatalogBlockBanner,[dir] .PageBlock.MarketCatalogBlockKeyMessages,[dir] .PageBlock.MarketCatalogBlockSlider,[dir] .PageBlock.MarketCatalogBlockList{background:rgba(0,0,0,.5)!important;box-shadow:0 1px 0 0 var(--color3),0 0 0 1px var(--color3)}
 [dir] .MarketCatalogHeader--fixed{background:rgba(0,0,0,/*[[headopaque]]*/);border:none}
 [dir] .MarketCatalogSearchInput__field{background-color:#0000!important;filter:var(--filt2)brightness(.7);color:#fff}
-[dir] .MarketCatalogSearchInput__resultItem:hover,[dir] .MarketCatalogSearchInput__resultItem--active{background-color:#1e1e1ed6}
+[dir] .MarketCatalogSearchInput__resultItem{color:#aaa}
+[dir] .MarketCatalogSearchInput__resultItem:hover,[dir] .MarketCatalogSearchInput__resultItem--active{background-color:#1e1e1ed6;color:var(--color1)}
 [dir] .MarketCatalogFilter--opened .MarketCatalogFilter__container{background:rgba(0,0,0,/*[[headopaque]]*/);border:none}
 [dir] .MarketCatalogFilter__container::after {background:rgba(0,0,0,/*[[headopaque]]*/);border-top:1px solid #1e1e1ed6;border-left:1px solid #1e1e1ed6}
 [dir] .MarketCatalogFilter__container .Input{background:#0000!important;color:var(--color1)}
