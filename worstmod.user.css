@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210325.1.11
+@version        20210325.1.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -485,8 +485,8 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 #side_bar .more_div{margin:5px 9px 0px 7px!important;padding-top:2px!important;border-top:1px solid #111!important}
 [dir] body.new_header_design #side_bar ol li .left_row{padding:0}
 [dir] body.new_header_design #side_bar ol li{padding-left:8px}
-[dir="ltr"] body.new_header_design #side_bar ol {margin:0 10px 10px -6px}
-[dir="ltr"] .left_settings{margin:calc(-1*var(--left-menu-row-height)) 0 0 -28px}
+[dir] body.new_header_design #side_bar ol {margin:0 10px 10px -6px}
+[dir] .left_settings{margin:calc(-1*var(--left-menu-row-height)) 0 0 -28px}
 [dir] body.new_header_design #side_bar ol li .left_row .left_label{color:var(--color1);transition:color .3s}
 [dir] body.new_header_design #side_bar ol li .left_row:hover .left_label{color:var(--color1)}
 [dir] body.new_header_design #side_bar ol li .left_row .left_icon{filter:var(--filt2)brightness(1.1)saturate(.5)!important}
@@ -496,7 +496,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 .left_label:hover{filter:brightness(1.5)saturate(.7)}
 [dir] #side_bar{position:fixed!important;top:0px!important}
 [dir] #side_bar ol li{margin-left:0px!important}
-[dir] #side_bar ol li .left_row .left_count_wrap,[dir="ltr"] #side_bar ol li .left_row:hover .left_count_wrap{padding:3px 5px!important;height:27px!important}
+[dir] #side_bar ol li .left_row .left_count_wrap,[dir] #side_bar ol li .left_row:hover .left_count_wrap{padding:3px 5px!important;height:27px!important}
 [dir] #side_bar ol li .left_row .left_count_wrap{background:var(--color2)!important}
 [dir] #side_bar ol li .left_row:hover .left_count_wrap{background:var(--color1)!important}
 [dir] .LeftMenu__icon{color:var(--color1)}
@@ -724,7 +724,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 #payments_box.payments_money_transfer_box .payments_money_transfer_link_copy_input{color: var(--color1);-webkit-text-fill-color:var(--color2)}
 [dir] #payments_box.payments_money_transfer_box .payments_money_transfer_labeled_link{border-bottom: 1px solid var(--color3)}
 #payments_box.payments_money_transfer_box .payments_money_transfer_label{color:#aaa}
-[dir="ltr"] #payments_box.payments_money_transfer_box .payments_money_transfer_qr_box{filter:invert(1)hue-rotate(180deg)var(--filt2)}
+[dir] #payments_box.payments_money_transfer_box .payments_money_transfer_qr_box{filter:invert(1)hue-rotate(180deg)var(--filt2)}
 
 /*[[countsfold]]*/
 
@@ -1234,10 +1234,10 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .CheckBox__input:checked + .CheckBox__indicator{filter:invert(1)hue-rotate(180deg)var(--filt2)saturate(.7)brightness(.6)}
 
 /* фикс плашки новых постов */ 
-[dir="ltr"] .feed_new_posts{border-radius:4px 4px 0px 0px;border-bottom:none}
-[dir="ltr"] .feed_new_posts:hover{background-color:var(--color1)!important;color:var(--color5)!important}
-[dir="ltr"] .feed_new_posts > b{background-color:transparent!important;color:#888!important;padding:0px;border-radius:0px}
-[dir="ltr"] .feed_new_posts:hover > b{color:var(--color5)!important}
+[dir] .feed_new_posts{border-radius:4px 4px 0px 0px;border-bottom:none}
+[dir] .feed_new_posts:hover{background-color:var(--color1)!important;color:var(--color5)!important}
+[dir] .feed_new_posts > b{background-color:transparent!important;color:#888!important;padding:0px;border-radius:0px}
+[dir] .feed_new_posts:hover > b{color:var(--color5)!important}
 
 /* фикс счётчика сообщений */    
 #side_bar li span.left_count_wrap{background-color:var(--color1)!important}
@@ -1500,8 +1500,8 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .CropPanelRatioTabs__button--active::after{border: 2px solid var(--color2);border-radius:3px}
 
 /* редактор пикч */
-[dir="ltr"] .slider .slider_slide{background-color:#414141!important}
-[dir="ltr"] .pe_filter_thumb.pe_filter_selected{background-color:#545454!important}
+[dir] .slider .slider_slide{background-color:#414141!important}
+[dir] .pe_filter_thumb.pe_filter_selected{background-color:#545454!important}
 .pe_actions .pe_action > div{filter:invert(.95)saturate(0)contrast(1.2)!important}
 .pe_text_input.pe_action_bar textarea{background-color:transparent!important;color:#bbb}
 .pe_actions,.pe_text_input,.pe_blur_input{background-color:#1A1A1A!important}
@@ -1612,23 +1612,23 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 [dir] .VideoPlaylistItem__thumbWrap,[dir] .VideoRestriction__boxWrap{background-color:#1c1c1c}
 [dir] .video_item .video_delete_progress{background-color:#000000ab}
 [dir] #mv_pl_tt .mv_tt_private_only + .mv_tt_playlists{border:none}
-[dir] .video_upload__thumb_chooser_wrap .video_tc_item{background-color:rgba(0,0,0,.25);}
-[dir] .video_upload__thumb_chooser_wrap .video_tc_item:hover{background-color:rgba(0,0,0,.5)}
+[dir] .video_upload__thumb_chooser_wrap .video_tc_item{background-color:#00000040;}
+[dir] .video_upload__thumb_chooser_wrap .video_tc_item:hover{background-color:#00000080}
 [dir] .video_upload__thumb_chooser_wrap .video_tc_upload_btn{filter:var(--filt2)}
-[dir="ltr"] .video_upload__progress_bar{filter:saturate(0)brightness(.35)contrast(1.8)}
-[dir="ltr"] .video_upload__progress_text{color:#999!important;}
-[dir="ltr"] .video_upload__progress.video_upload_progress_processing{border-color:#3E3E3E}
-[dir="ltr"] .video_upload__progress_cancel{filter:saturate(0)}
-[dir="ltr"] .video_upload__tab .video_upload_description{width:100%!important}
-[dir] .video_upload__progress._success,[dir="ltr"] .video_upload__progress, [dir="ltr"] .video_upload__progress_bar,[dir] .video_upload__thumb_wrap{background-color:rgba(0,0,0,.25);border:1px solid #222}
-[dir="ltr"] .video_upload__upload_subtitles_left .video_upload__upload_subtitles_text,[dir] .video_upload__leave_editing_box .box_controls #video_upload__publish_later_btn{color:var(--color2)}
-[dir="ltr"] .video_upload__upload_subtitles_left .video_upload__upload_subtitles_text:hover,[dir] .video_upload__leave_editing_box .box_controls #video_upload__publish_later_btn:hover{color:var(--color1)}
+[dir] .video_upload__progress_bar{filter:saturate(0)brightness(.35)contrast(1.8)}
+[dir] .video_upload__progress_text{color:#999!important;}
+[dir] .video_upload__progress.video_upload_progress_processing{border-color:#3E3E3E}
+[dir] .video_upload__progress_cancel{filter:saturate(0)}
+[dir] .video_upload__tab .video_upload_description{width:100%!important}
+[dir] .video_upload__progress._success,[dir] .video_upload__progress,[dir] .video_upload__progress_bar,[dir] .video_upload__thumb_wrap{background-color:rgba(0,0,0,.25);border:1px solid #222}
+[dir] .video_upload__upload_subtitles_left .video_upload__upload_subtitles_text,[dir] .video_upload__leave_editing_box .box_controls #video_upload__publish_later_btn{color:var(--color2)}
+[dir] .video_upload__upload_subtitles_left .video_upload__upload_subtitles_text:hover,[dir] .video_upload__leave_editing_box .box_controls #video_upload__publish_later_btn:hover{color:var(--color1)}
 .ok_msg{border-color:#222}
 .upload_video_error_label{background-color:#292929}
-.video_item .video_delete_progress{background-color:rgba(5,5,5,.86)}
+.video_item .video_delete_progress{background-color:#050505db}
 .video_upload_with_divider:after{border-bottom:1px solid #1d1d1d;background-color:#000}
 #mv_publish{background:var(--color4);border-bottom:1px solid #000}
-#video_dropbox.dropbox.choose{background:rgba(0,0,0,.9)}
+#video_dropbox.dropbox.choose{background:#000000e6}
 #video_dropbox.dropbox.choose:after{content:' ';position:absolute;top:0px;left:0px;width:200px;height:200px;background:transparent url(https://vk.com/images/dropbox_arrow.png) no-repeat 31px 31px;filter:brightness(.5)saturate(2)var(--filt2)}
 [dir] .VideoLayerInfo__description .can_edit:hover{background:rgba(0,0,0,.25)}
 #mv_container #mv_reply_form_wrap div.submit_post_field{padding:6px 36px 0 16px!important}
@@ -2062,7 +2062,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--filt2)brightnes
 .app_widget_donation_bar div{background:var(--color2)}
 .groups_blocked .groups_blocked_acts{border-top:1px solid #222}
 .stories_groups_block_stories_empty .page_upload_label{filter:var(--filt2)saturate(.5)!important}
-[dir="ltr"] .checkbox + .Post__copyrightButton:hover{background:var(--color4)}
+[dir] .checkbox + .Post__copyrightButton:hover{background:var(--color4)}
 [dir] .checkbox + .Post__copyrightButton::after{background:var(--color3)}
 [dir] .PageGroupMenu___marketBadgeNew.PageGroupMenu___marketBadgeNew--show{background:var(--color3);color:var(--color1)}
 [dir] .im-expired-message--in{border:1px solid #111;border-radius:4px}
@@ -2471,7 +2471,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 #pv_box .pv_reply_form_wrap .reply_box .submit_post_field,#pv_box .pv_reply_form_wrap .reply_box .submit_post_field~.placeholder .ph_input{padding:0 36px 4px 10px!important}
 .wall_module .reply.reply_deleted .reply_img{filter:invert(1)saturate(0)}
 .wall_module .reply.reply_deleted .reply_text{color:#696969}
-.post_replies_reorder,[dir="ltr"] .deep_active .post_replies_header .post_replies_reorder,[dir="ltr"] .deep_active.wall_module .post_replies_header .post_replies_reorder{background:none!important}
+.post_replies_reorder,[dir] .deep_active .post_replies_header .post_replies_reorder,[dir] .deep_active.wall_module .post_replies_header .post_replies_reorder{background:none!important}
 .post_replies_reorder:after{content:'';display:inline-block;margin:0 0 0 4px;background:url(https://vk.com/images/icons/multidd.png?2) no-repeat 0 0;width:9px;height:5px;filter:brightness(.4)saturate(2)}
 
 #feed_wall .wall_module .reply_fakebox{margin-left:0!important;padding-left:0!important}
@@ -2556,7 +2556,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .VerticalVideoLayerInfo .audio_row .audio_row__title{color:#ccc}
 [dir] .VerticalVideoLayerInfo .audio_row .audio_row__performers a{color:var(--color1)!important}
 
-[dir="ltr"] .VerticalVideoLayerInfo .ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_bottom,[dir="ltr"] .VerticalVideoLayerInfo .ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_top,[dir="ltr"] .VerticalVideoLayerInfo .emoji_cats_title_helper::after{background:linear-gradient(180deg,#fff 0%,#ffffff00 100%)}
+[dir] .VerticalVideoLayerInfo .ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_bottom,[dir] .VerticalVideoLayerInfo .ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_top,[dir] .VerticalVideoLayerInfo .emoji_cats_title_helper::after{background:linear-gradient(180deg,#fff 0%,#ffffff00 100%)}
 [dir] .VerticalVideoLayerInfo .emoji_tt_wrap{background:rgba(0,0,0,.75)!important}
 [dir] .VerticalVideoLayerInfo .ui_scroll_outer{background:none!important}
 
@@ -2602,11 +2602,11 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .MarketCatalogRightMenu__item{color:var(--color2);transition:color .3s}
 [dir] .MarketCatalogRightMenu__item:hover{color:var(--color1);background-color:var(--color3)}
 .MarketCatalogCategoryMenu--opened .MarketCatalogCategoryMenu__list{background-color:rgba(0,0,0,.85);border:1px solid var(--color3)}
-[dir="ltr"] .MarketCatalogCategoryMenu--opened .MarketCatalogCategoryMenu__button::after{background:rgba(0,0,0,.85);border-left:1px solid var(--color3);border-top:1px solid var(--color3)}
-[dir="ltr"] .MarketCatalogCategoryMenu__rootCategories{border-right:1px solid var(--color3)}
+[dir] .MarketCatalogCategoryMenu--opened .MarketCatalogCategoryMenu__button::after{background:rgba(0,0,0,.85);border-left:1px solid var(--color3);border-top:1px solid var(--color3)}
+[dir] .MarketCatalogCategoryMenu__rootCategories{border-right:1px solid var(--color3)}
 [dir] .MarketCatalogCategoryMenu__rootCategory svg{filter:var(--filt2)saturate(.5)}
 [dir] .MarketCatalogCategoryMenu__childCategoryTitle{color:var(--color1)}
-[dir] .MarketCatalogCategoryMenu__button,[dir="ltr"] .MarketCatalogCity__openButton{filter:var(--filt2)brightness(1.4)saturate(.5)}
+[dir] .MarketCatalogCategoryMenu__button,[dir] .MarketCatalogCity__openButton{filter:var(--filt2)brightness(1.4)saturate(.5)}
 [dir] .MarketCatalogCategoryMenu__rootCategory{color:#aaa}
 [dir] .MarketCatalogCategoryMenu__rootCategory--active,[dir] .MarketCatalogCategoryMenu__rootCategory:hover,[dir] .MarketCatalogCategoryMenu__rootCategory--hover{background:#00000080;border-right:2px solid var(--color1)!important;color:#ccc!important}
 [dir] .MarketCatalogCategoryMenu__childCategory{color:#aaa}
