@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210325.0.10
+@version        20210325.1.11
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2574,7 +2574,6 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .MarketCatalogTabs,[dir] .MarketCatalogBreadcrumbs{background:rgba(0,0,0,.5);box-shadow:0 0 0 1px var(--color3)}
 [dir] .MarketCatalogSkeleton__element{background:rgba(0,0,0,.5)}
 [dir] .MarketCatalogSkeleton__block::after{background:linear-gradient(130deg,rgba(255,255,255,0) 40%,rgba(0, 0, 0, 0.4),rgba(255,255,255,0) 60%) no-repeat -800px 0}
-[dir] .MarketCatalogCategoryMenu__button,[dir="ltr"] .MarketCatalogCity__openButton{filter:var(--filt2)brightness(1.4)saturate(.5)}
 [dir] .MarketCatalogCity{border-left:1px solid var(--color4)}
 [dir] .MarketCatalogHeader__menu{border-right:1px solid var(--color4)}
 .MarketCatalogBlockKeyMessages__itemDescription,.MarketCatalogBlockSlider__title,.MarketCatalogBlockList__titleLink{color:#999;transition:color .7s}
@@ -2605,9 +2604,14 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .MarketCatalogCategoryMenu--opened .MarketCatalogCategoryMenu__list{background-color:rgba(0,0,0,.85);border:1px solid var(--color3)}
 [dir="ltr"] .MarketCatalogCategoryMenu--opened .MarketCatalogCategoryMenu__button::after{background:rgba(0,0,0,.85);border-left:1px solid var(--color3);border-top:1px solid var(--color3)}
 [dir="ltr"] .MarketCatalogCategoryMenu__rootCategories{border-right:1px solid var(--color3)}
-[dir] .MarketCatalogCategoryMenu__rootCategory{color:#999}
-[dir] .MarketCatalogCategoryMenu__rootCategory--active{background-color:#00000080;border-right:2px solid var(--color1)!important;color:#ccc!important}
-[dir] .MarketCatalogProduct__imgWrap{background-color:rgba(0,0,0,.5)}
+[dir] .MarketCatalogCategoryMenu__rootCategory svg{filter:var(--filt2)saturate(.5)}
+[dir] .MarketCatalogCategoryMenu__childCategoryTitle{color:var(--color1)}
+[dir] .MarketCatalogCategoryMenu__button,[dir="ltr"] .MarketCatalogCity__openButton{filter:var(--filt2)brightness(1.4)saturate(.5)}
+[dir] .MarketCatalogCategoryMenu__rootCategory{color:#aaa}
+[dir] .MarketCatalogCategoryMenu__rootCategory--active,[dir] .MarketCatalogCategoryMenu__rootCategory:hover,[dir] .MarketCatalogCategoryMenu__rootCategory--hover{background:#00000080;border-right:2px solid var(--color1)!important;color:#ccc!important}
+[dir] .MarketCatalogCategoryMenu__childCategory{color:#aaa}
+[dir] .MarketCatalogCategoryMenu__childCategory:hover{background:#00000080;color:#ccc}
+[dir] .MarketCatalogProduct__imgWrap{background-color:#00000080}
 [dir] .MarketCatalogBlockBadges__badge{background-color:#3333335c;color: var(--color1)}
 [dir] .MarketCatalogBlockBadges__removeButton{filter:var(--filt2)saturate(.7)}
 [dir] .MarketCatalogBlockBadges__resetButton,[dir] .MarketCatalogCity__hotCity{color:var(--color2)}
