@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210323.20.20
+@version        20210325.0.1
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2562,13 +2562,20 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 
 /* маркет-жуяркет */ 
 [dir] .PageBlock,[dir] .MarketCatalogSkeleton__block,[dir] .MarketCatalogHeader,[dir] .PageBlock.MarketCatalogBlockBanner,[dir] .PageBlock.MarketCatalogBlockKeyMessages,[dir] .PageBlock.MarketCatalogBlockSlider,[dir] .PageBlock.MarketCatalogBlockList{background:rgba(0,0,0,.5)!important;box-shadow:0 1px 0 0 var(--color3),0 0 0 1px var(--color3)}
+[dir] .MarketCatalogHeader--fixed{background:rgba(0,0,0,/*[[headopaque]]*/);border:none}
+[dir] .MarketCatalogSearchInput__field{background-color:#0000!important;filter:var(--filt2)brightness(.7);color:#fff}
+[dir] .MarketCatalogSearchInput__resultItem:hover,[dir] .MarketCatalogSearchInput__resultItem--active{background-color:#1e1e1ed6}
+[dir] .MarketCatalogFilter--opened .MarketCatalogFilter__container{background:rgba(0,0,0,/*[[headopaque]]*/);border:none}
+[dir] .MarketCatalogFilter__container::after {background:rgba(0,0,0,/*[[headopaque]]*/);border-top:1px solid #1e1e1ed6;border-left:1px solid #1e1e1ed6}
+[dir] .MarketCatalogFilter__container .Input{background:#0000!important;color:var(--color1)}
+[dir] .MarketCatalogFilter__menuButton,.MarketCatalogFilter__clearButton{filter:var(--filt2)}
 [dir] .MarketCatalogHeader__row + .MarketCatalogHeader__row{border-top:1px solid var(--color3)}
 [dir] .MarketCatalogTabs,[dir] .MarketCatalogBreadcrumbs{background:rgba(0,0,0,.5);box-shadow:0 0 0 1px var(--color3)}
 [dir] .MarketCatalogSkeleton__element{background:rgba(0,0,0,.5)}
-[dir="ltr"] .MarketCatalogSkeleton__block::after{background:linear-gradient(130deg,rgba(255,255,255,0) 40%,rgba(0, 0, 0, 0.4),rgba(255,255,255,0) 60%) no-repeat -800px 0}
+[dir] .MarketCatalogSkeleton__block::after{background:linear-gradient(130deg,rgba(255,255,255,0) 40%,rgba(0, 0, 0, 0.4),rgba(255,255,255,0) 60%) no-repeat -800px 0}
 [dir] .MarketCatalogCategoryMenu__button,[dir="ltr"] .MarketCatalogCity__openButton{filter:var(--filt2)brightness(1.4)saturate(.5)}
-[dir="ltr"] .MarketCatalogCity{border-left:1px solid var(--color4)}
-[dir="ltr"] .MarketCatalogHeader__menu{border-right:1px solid var(--color4)}
+[dir] .MarketCatalogCity{border-left:1px solid var(--color4)}
+[dir] .MarketCatalogHeader__menu{border-right:1px solid var(--color4)}
 .MarketCatalogBlockKeyMessages__itemDescription,.MarketCatalogBlockSlider__title,.MarketCatalogBlockList__titleLink{color:#999;transition:color .7s}
 .MarketCatalogBlockKeyMessages__itemDescription:hover,.MarketCatalogBlockSlider__title:hover,.MarketCatalogBlockList__titleLink:hover{color:#ccc}
 .MarketCatalogProduct__name,.MarketCatalogBlockSlider__showAllButton{color:var(--color2);transition:color .7s}
@@ -2598,8 +2605,18 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir="ltr"] .MarketCatalogCategoryMenu--opened .MarketCatalogCategoryMenu__button::after{background:rgba(0,0,0,.85);border-left:1px solid var(--color3);border-top:1px solid var(--color3)}
 [dir="ltr"] .MarketCatalogCategoryMenu__rootCategories{border-right:1px solid var(--color3)}
 [dir] .MarketCatalogCategoryMenu__rootCategory{color:#999}
-[dir] .MarketCatalogCategoryMenu__rootCategory--active{background-color:rgba(0,0,0,.5);border-right:2px solid var(--color1)!important;color:#ccc!important}
+[dir] .MarketCatalogCategoryMenu__rootCategory--active{background-color:#00000080;border-right:2px solid var(--color1)!important;color:#ccc!important}
 [dir] .MarketCatalogProduct__imgWrap{background-color:rgba(0,0,0,.5)}
+[dir] .MarketCatalogBlockBadges__badge{background-color:#3333335c;color: var(--color1)}
+[dir] .MarketCatalogBlockBadges__removeButton{filter:var(--filt2)saturate(.7)}
+[dir] .MarketCatalogBlockBadges__resetButton,[dir] .MarketCatalogCity__hotCity{color:var(--color2)}
+[dir] .MarketCatalogBlockBadges__resetButton:hover,[dir] .MarketCatalogCity__hotCity:hover{color:var(--color1)}
+[dir] .ui_tooltipMenu__link:hover{background:#1e1e1ed6}
+[dir] .Select__menu{background:#000000d9;border:none}
+[dir] .Select--secondary .Select__option{background:#0000;color:#999}
+[dir] .Select--secondary .Select__option:hover{background:#1e1e1ed6;color:var(--color1)}
+[dir] .HighlightSearchText__highlighted{background-color:var(--color1);color:#111}
+[dir] .CitySelectItemLabel--bordered::after{background:#111}
 
 }
 
