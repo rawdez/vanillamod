@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210325.1.30
+@version        20210325.1.40
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2563,7 +2563,10 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .VerticalVideoLayerInfo .emoji_tt_wrap{background:rgba(0,0,0,.75)!important}
 [dir] .VerticalVideoLayerInfo .ui_scroll_outer{background:none!important}
 
-/* маркет-жуяркет */ 
+/* маркет-жуяркет */
+[dir] .MarketCatalogProduct__img{opacity:.3;transition:opacity .3s}
+[dir] .MarketCatalogBlockList__list:hover .MarketCatalogProduct__img{opacity:.7}
+[dir] .MarketCatalogProduct:hover .MarketCatalogProduct__img{opacity:1}
 [dir] .PageBlock,[dir] .MarketCatalogSkeleton__block,[dir] .MarketCatalogHeader,[dir] .PageBlock.MarketCatalogBlockBanner,[dir] .PageBlock.MarketCatalogBlockKeyMessages,[dir] .PageBlock.MarketCatalogBlockSlider,[dir] .PageBlock.MarketCatalogBlockList{background:rgba(0,0,0,.5)!important;box-shadow:0 1px 0 0 var(--color3),0 0 0 1px var(--color3)}
 [dir] .MarketCatalogHeader--fixed{background:rgba(0,0,0,/*[[headopaque]]*/);border:none}
 [dir] .MarketCatalogSearchInput__field{background-color:#0000!important;filter:var(--filt2)brightness(.7);color:#fff}
