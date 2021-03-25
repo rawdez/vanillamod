@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.1.0
+@version        20210326.1.1
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1093,6 +1093,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .ChatSettingsPresetPanel__presetIcon{filter:saturate(.15)var(--filt2)}
 [dir] .ChatSettingsPresetPanel__presetTitle{color:var(--color2)}
 [dir] .ChatSettingsPresetPanel__preset--selected .ChatSettingsPresetPanel__presetTitle{color:var(--color1)}
+[dir] .im-mess.im-mess_light{background:#6464641f!important}
 
 /* настройки отправки коммента */
 .reply_submit_hint_title{color:var(--color2)}
