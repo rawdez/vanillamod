@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.1.33
+@version        20210326.1.42
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2521,10 +2521,10 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .box_title_wrap.box_white .box_title:hover{color:var(--color1)}
 .button_action_light_add:before,.box_title_wrap.box_white .box_x_button:hover,.button_action_light:before{filter:var(--filt2)}
 
-/* детсад */
+/* детсад и говнософт */
 [dir] .GamesCatalogFullWidthBanner{box-shadow:0 0 0 1px #111,0 1px 0 0 #111}
-.appAchievementsHeader__title,[dir] .DownloadedGameItem__header,.GamesCatalogCard__appLink,.GameCatalogSearchCard__name,[dir] .GamesCatalogGameOfWeek__name{color:var(--color2)}
-.GamesCatalogCard__appLink:hover,.GameCatalogSearchCard__name:hover,.GameCatalogSearchCard__name:focus,.GameCatalogSearchCard__name:active,[dir] .GamesCatalogGameOfWeek__name:hover{color:var(--color1)}
+.appAchievementsHeader__title,[dir] .DownloadedGameItem__header,.GamesCatalogCard__appLink,.GameCatalogSearchCard__name,[dir] .GamesCatalogGameOfWeek__name,.Button--link,[dir] .AppsCatalogCard__name{color:var(--color2)}
+.GamesCatalogCard__appLink:hover,.GameCatalogSearchCard__name:hover,.GameCatalogSearchCard__name:focus,.GameCatalogSearchCard__name:active,[dir] .GamesCatalogGameOfWeek__name:hover,.Button--link:hover,.Button--link:focus,[dir] .AppsCatalogCard__name:hover{color:var(--color1)}
 .GamesCatalogAppRating__star{filter:var(--filt2)saturate(.5)}
 .appAchievementsHeader__subtitle,.DownloadedGameItem__description,.GamesCatalogGameOfWeek__description{color:#999}
 .ui_tooltipMenu__current{color:#ccc}
@@ -2537,12 +2537,13 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .DownloadedGameItem:hover{background:#6464641f}
 [dir] .GamesCatalogSearchMainContent,[dir] .GamesCatalogProfileBlock{background:rgba(0,0,0,/*[[opaque]]*/);box-shadow:0 1px 0 0 #111,0 0 0 1px #111}
 [dir] .GamesCatalogProfileBlock__header{background:#0000;border-bottom:1px solid #111;color:var(--color2)}
-[dir] .GamesCatalogProfileBlock__content{background:#0000}
+[dir] .GamesCatalogProfileBlock__content,[dir] .AppsCatalogHeader{background:#0000}
 [dir] .GamesCatalog--search_page{box-shadow:none!important}
 [dir] .DownloadedGameItem:hover,[dir] .GamesCatalogSearchStartScreenListItem:hover{background:#6464641f;color:var(--color1)}
 [dir] .GamesCatalogEmptyCardsList--favorite,[dir] .ProfileHeaderSection{border-top:1px solid #111}
 [dir] .GamesCatalogSearchInput.ui_search_new .ui_search_field{background:#0000!important;padding: 14px 44px 13px 12px!important}
-[dir] .GameCatalogSearchCard__screenshotImg{background-color:#6464641f}
+[dir] .GameCatalogSearchCard__screenshotImg,[dir] .AppsCatalogSkeleton__cardIcon,[dir] .AppsCatalogSkeleton__cardName,[dir] .AppsCatalogSkeleton__cardCategory{background-color:#6464641f}
+[dir] .AppsCatalogSkeleton__block::after{background:linear-gradient(130deg,#fff0 40%,#0006,#fff0 60%) no-repeat -800px 0}
 [dir] .GameCatalogSearchCard{box-shadow:inset 0 -1px 0 0 #111}
 
 /* фикс календаря */ 
