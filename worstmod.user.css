@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210325.19.0
+@version        20210325.19.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -852,20 +852,20 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /* треклист / плееры */
 [dir] .TopNavBtn.TopNavBtn__audio .TopNavBtn__icon{filter:var(--filt2)saturate(.8)}
-#audio_layer_tt{background:rgba(0,0,0,.85)!important}
+#audio_layer_tt{background:#000000d9!important}
 [dir] .CatalogSection,[dir] .CatalogSection::before,[dir] .page_block._audio_page_content_block,[dir] .page_block._audio_page_content_block::before{box-shadow:none!important}
 [dir] #audio_layer_tt,[dir] .audio_layer_container .audio_page_player_wrap,[dir] .audio_layer_container .audio_page__footer{border:none!important;box-shadow:none!important}
 [dir] .CatalogBlock__layout--in_block_separator{background-color:var(--color3)}
 .audio_row__more_action{background:transparent!important;color:var(--color2)!important}
-.audio_row__more_action:hover{background:rgba(15,15,15,.9)!important;color:var(--color1)!important}
+.audio_row__more_action:hover{background:#0f0f0fe6!important;color:var(--color1)!important}
 .audio_pl_edit_box .ape_add_audios_btn,.audio_pl_edit_box .ape_add_pl_audios_btn{background:transparent;color:#eee}
 .audio_page_player2 .audio_page_player_track_slider:not(.slider),.audio_page_player2 .audio_page_player_volume_slider:not(.slider){display:none}
 .audio_layer_container .audio_page_player_wrap{border:none!important}
 .audio_page_player2 .audio_page_player_volume_slider .slider_slide{background-color:#222}
 .audio_row.audio_row_current, .audio_row.audio_row_playing,.audio_row__current .audio_row_content._audio_row_content,.audio_row:hover .audio_row_content._audio_row_content,.audio_row.ui_gridsorter_moveable  .audio_row_content._audio_row_content{background:transparent!important}
 #audio_layer_tt .page_block{background:transparent!important}
-#audio_layer_tt .audio_row.audio_row_current .audio_row_inner,#audio_layer_tt .audio_row.audio_row_playing .audio_row:hover,.audio_row:hover .audio_row_inner,#audio_layer_tt .audio_row.audio_row_current:hover .audio_row_inner,#audio_layer_tt .audio_row.audio_row_playing:hover .audio_row_inner,.audio_row__current,.audio_row.audio_row__current:hover,.audio_row.ui_gridsorter_moveable{background-color:rgba(100,100,100,.12)!important}
-.audio_row:not(.audio_row__current):hover{background-color:rgba(0,0,0,.7)!important}
+#audio_layer_tt .audio_row.audio_row_current .audio_row_inner,#audio_layer_tt .audio_row.audio_row_playing .audio_row:hover,.audio_row:hover .audio_row_inner,#audio_layer_tt .audio_row.audio_row_current:hover .audio_row_inner,#audio_layer_tt .audio_row.audio_row_playing:hover .audio_row_inner,.audio_row__current,.audio_row.audio_row__current:hover,.audio_row.ui_gridsorter_moveable{background-color:#6464641f!important}
+.audio_row:not(.audio_row__current):hover{background-color:#000000b3!important}
 .audio_row__playing .audio_row__title_inner{color:var(--color2);transition:color .3s}
 .audio_row__playing:hover .audio_row__title_inner{color:#ccc}
 .audio_row__playing .audio_row__title,.audio_row__playing .audio_row__duration{color:#bbb}
@@ -881,11 +881,11 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .audio_layer_container .audio_page__footer_now_playing_link:hover{color:var(--color1)}
 .audio_page_player_btn_enabled{filter:none!important}
 .audio_page_player_btn_enabled .btn_icon,.audio_page_player_btn_repeat_one .btn_icon{filter:var(--filt2)saturate(.5)brightness(1.5)drop-shadow(0 0 3px #FFF)!important}
-.audio_page_player2 .slider_hint.audio_player_hint, .slider_hint.audio_player_hint{color:var(--color1)!important;background-color:rgba(13,13,13,.85)!important}
-.audio_page_player2 .slider_hint.audio_player_hint:after,.slider_hint.audio_player_hint:after{border-top-color:rgba(13,13,13,.85)!important}
-#wk_content .audio_row__current{background-color:rgba(0,0,0,.25)!important}
-#wk_content .audio_row__current:hover{background-color:rgba(0,0,0,.5)!important}
-#wk_content .audio_row:hover{background-color:rgba(0,0,0,.4)!important}
+.audio_page_player2 .slider_hint.audio_player_hint, .slider_hint.audio_player_hint{color:var(--color1)!important;background-color:#0d0d0dd9!important}
+.audio_page_player2 .slider_hint.audio_player_hint:after,.slider_hint.audio_player_hint:after{border-top-color:#0d0d0dd9!important}
+#wk_content .audio_row__current{background-color:#00000040!important}
+#wk_content .audio_row__current:hover{background-color:#00000080!important}
+#wk_content .audio_row:hover{background-color:#0006!important}
 .audio_page__audio_rows .audio_row.audio_has_lyrics .audio_row__title_inner,.ap_layer__content .audio_row.audio_has_lyrics .audio_row__title_inner,._playlist_page_content_block .audio_row.audio_has_lyrics .audio_row__title_inner,._audio_section__search .audio_row.audio_has_lyrics .audio_row__title_inner,.audio_section_global_search__audios_block .audio_row.audio_has_lyrics .audio_row__title_inner{color:var(--color2)}
 
 /* плейлисты в ленте, диалогах и комментах */
@@ -2606,7 +2606,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .MarketCatalogHint .Tooltip__in{background:#000000bf;color:#999}
 [dir] .MarketCatalogHint .Tooltip__in::before{transform:scale(.75);filter:brightness(0);opacity:.75}
 [dir] .MarketCatalogBlockMyProducts{background-color:#00000080;border:1px solid var(--color3)}
-[dir] .MarketCatalogBlockList__ordersEmptyPlaceholder,[dir] .MarketCatalogBlockList--orders .MarketCatalogBlockList__title{background-color:transparent;border:1px solid var(--color3);color:#999}
+[dir] .MarketCatalogBlockList__ordersEmptyPlaceholder,[dir] .MarketCatalogBlockList--orders .MarketCatalogBlockList__title{background-color:#0000;border:1px solid var(--color3);color:#999}
 .MarketCatalogBlockList__ordersEmptyPlaceholderTitle{color:#999}
 .MarketCatalogBlockMyProducts__placeholderLink{color:var(--color2);transition:color .3s}
 .MarketCatalogBlockMyProducts__placeholderLink:hover{color:var(--color1)}
@@ -2622,9 +2622,9 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .MarketCatalogCategoryMenu__childCategoryTitle{color:var(--color1)}
 [dir] .MarketCatalogCategoryMenu__button,[dir] .MarketCatalogCity__openButton{filter:var(--filt2)brightness(1.4)saturate(.5)}
 [dir] .MarketCatalogCategoryMenu__rootCategory{color:#aaa}
-[dir] .MarketCatalogCategoryMenu__rootCategory--active,[dir] .MarketCatalogCategoryMenu__rootCategory:hover,[dir] .MarketCatalogCategoryMenu__rootCategory--hover{background:#00000080;border-right:2px solid var(--color1)!important;color:#ccc!important}
+[dir] .MarketCatalogCategoryMenu__rootCategory--active,[dir] .MarketCatalogCategoryMenu__rootCategory:hover,[dir] .MarketCatalogCategoryMenu__rootCategory--hover{background:#6464641f;border-right:2px solid var(--color1)!important;color:#ccc!important}
 [dir] .MarketCatalogCategoryMenu__childCategory{color:#aaa}
-[dir] .MarketCatalogCategoryMenu__childCategory:hover{background:#00000080;color:#ccc}
+[dir] .MarketCatalogCategoryMenu__childCategory:hover{background:#6464641f;color:#ccc}
 [dir] .MarketCatalogProduct__imgWrap{background-color:#00000080}
 [dir] .MarketCatalogBlockBadges__badge{background-color:#3333335c;color: var(--color1)}
 [dir] .MarketCatalogBlockBadges__removeButton{filter:var(--filt2)saturate(.7)}
