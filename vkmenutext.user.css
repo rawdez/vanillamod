@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name           VK menu text
+@version        210326.2.0
+@namespace      github
+@author         awesome_doze
+@homepageURL    https://github.com/rawdez/vanillamod
+@updateURL      https://github.com/rawdez/vanillamod/raw/main/vkmenutext.user.css
+@description    Замена текста в главной менюшке
+@license        CC-BY-NC-4.0
+@preprocessor   uso
+@advanced text textsize "Размер текста в px" "12.5"
+@advanced text mypage "Моя страница" "¯\\\_(ツ)_/¯"
+@advanced text news "Новости" "Лента"
+@advanced text blablabla "Мессенджер" "Трёп"
+@advanced text voodoopeople "Друзья" "Вуду пипл"
+@advanced text publos "Сообщества" "Хуяблики"
+@advanced text pics "Фотографии" "Пикчи"
+@advanced text muz "Музыка" "Музончик"
+@advanced text vidz "Видео" "Видосы"
+@advanced text clips "Клипы" "Жуипы"
+@advanced text shitgames "Игры" "Детсад"
+@advanced text sticker "Стикеры" "Купи слона"
+@advanced text shitsoft "Мини-приложения" "Говнософт"
+@advanced text vkpay "VK Pay" "Просрать"
+@advanced text arbaiten "Работа" "Пахать"
+@advanced text magaz "Маркет" "Магаз"
+@advanced text starred "Закладки" "Збс"
+@advanced text files "Файлы" "Файлики"
+@advanced text makeshit "Реклама" "Бабки"
+
+
+
+==/UserStyle== */
+@-moz-document regexp('https?://vk.com/(?!dev/|dev$|apps.act=manage|about$|about.z=|jobs$|jobs.w=|products$|messenger$|ads$|ads/|adscreate$|adsmarket.act=|ads.act=).*'){
+
+.l_comm .left_label.inl_bl{font-size:/*[[textsize]]*/px!important}
+
+/* реплойс тексты */
+#l_pr .left_label.inl_bl{font-size:0!important}
+#l_pr .left_label.inl_bl:before{content:'/*[[mypage]]*/';font-size:/*[[textsize]]*/px}
+#l_nwsf .left_label.inl_bl{font-size:0!important}
+#l_nwsf .left_label.inl_bl:before{content:"/*[[news]]*/";font-size:/*[[textsize]]*/px}
+#l_msg .left_label.inl_bl{font-size:0!important}
+#l_msg .left_label.inl_bl:before{content:"/*[[blablabla]]*/";font-size:/*[[textsize]]*/px}
+#l_fr .left_label.inl_bl{font-size:0!important}
+#l_fr .left_label.inl_bl:before{content:"/*[[voodoopeople]]*/";font-size:/*[[textsize]]*/px}
+#l_gr .left_label.inl_bl{font-size:0!important}
+#l_gr .left_label.inl_bl:before{content:"/*[[publos]]*/";font-size:/*[[textsize]]*/px}
+#l_ph .left_label.inl_bl{font-size:0!important}
+#l_ph .left_label.inl_bl:before{content:"/*[[pics]]*/";font-size:/*[[textsize]]*/px}
+#l_aud .left_label.inl_bl{font-size:0!important}
+#l_aud .left_label.inl_bl:before{content:"/*[[muz]]*/";font-size:/*[[textsize]]*/px}
+#l_vid .left_label.inl_bl{font-size:0!important}
+#l_vid .left_label.inl_bl:before{content:"/*[[vidz]]*/";font-size:/*[[textsize]]*/px}
+#l_svd .left_label.inl_bl{font-size:0!important}
+#l_svd .left_label.inl_bl:before{content:"/*[[clips]]*/";font-size:/*[[textsize]]*/px}
+#l_ap .left_label.inl_bl{font-size:0!important}
+#l_ap .left_label.inl_bl:before{content:"/*[[shitgames]]*/";font-size:/*[[textsize]]*/px}
+#l_stickers .left_label.inl_bl{font-size:0!important}
+#l_stickers .left_label.inl_bl:before{content:"/*[[sticker]]*/";font-size:/*[[textsize]]*/px}
+#l_mini_apps .left_label.inl_bl{font-size:0!important}
+#l_mini_apps .left_label.inl_bl:before{content:"/*[[shitsoft]]*/";font-size:/*[[textsize]]*/px}
+#l_vkp .left_label.inl_bl{font-size:0!important}
+#l_vkp .left_label.inl_bl:before{content:"/*[[vkpay]]*/";font-size:/*[[textsize]]*/px}
+#l_job .left_label.inl_bl{font-size:0!important}
+#l_job .left_label.inl_bl:before{content:"/*[[arbaiten]]*/";font-size:/*[[textsize]]*/px}
+#l_mk .left_label.inl_bl{font-size:0!important}
+#l_mk .left_label.inl_bl:before{content:"/*[[magaz]]*/";font-size:/*[[textsize]]*/px}
+#l_fav .left_label.inl_bl{font-size:0!important}
+#l_fav .left_label.inl_bl:before{content:"/*[[starred]]*/";font-size:/*[[textsize]]*/px}
+#l_doc .left_label.inl_bl{font-size:0!important}
+#l_doc .left_label.inl_bl:before{content:"/*[[files]]*/";font-size:/*[[textsize]]*/px}
+#l_ads .left_label.inl_bl{font-size:0!important}
+#l_ads .left_label.inl_bl:before{content:"/*[[makeshit]]*/";font-size:/*[[textsize]]*/px}
+
+}
