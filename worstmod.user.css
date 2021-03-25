@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210325.19.50
+@version        20210326.0.40
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2148,11 +2148,12 @@ a.group_app_button_multi{border-bottom:1px solid var(--color3)}
 .im_stickerpack_preview:hover{background-color:var(--color1)}
 .im_stickerpack_preview{border-radius:4px;transition:background-color 0.5s}
 .im_stickers_notif_header{color:var(--color1)}
-.im_stickers_notif_text{color:#999}
+.im_stickers_notif_text,.StickersCartItem__title{color:#999}
 .im_stickers_notif_img{filter:invert(.85)hue-rotate(180deg)var(--filt2)}
 [dir] .StickerPackPreview__header{background:#0000;border-bottom:1px solid var(--color4)}
-.StickerPackPreview__title{color:var(--color2)}
-.StickerPackPreview__author{color:#888}
+.StickerPackPreview__title,[dir] .StickerStylesMenuItem__title,.StickersCartItem__remove{color:var(--color2)}
+.StickersCartItem__remove:hover,[dir] .StickerStylesMenuItem__price{color:var(--color1)}
+.StickerPackPreview__author,[dir] .StickerStylesMenu__groupTitle{color:#888}
 .StickerPackPreview__description{color:#999}
 .StickerPackPreview__description:hover{color:#ccc}
 [dir] .StickerPackPreview__footer{background:#0009;border-top:none}
@@ -2162,6 +2163,12 @@ a.group_app_button_multi{border-bottom:1px solid var(--color3)}
 [dir] .Button--size-m.StickerPackPreview__gift,.StickersPriceButton__label,.StickersPriceButton__current,.StickersPriceButton__regular{color:#111}
 [dir] .StickersPriceButton__regular::after{background:#000}
 [dir] .StickerPackPreview__gift::before{filter:invert(.9)}
+[dir] .StickerPackPreview__styles{background:#6464641f}
+[dir] .StickerStylesMenuItem--added:hover{box-shadow: inset 0 0 0 2px var(--color1),0 2px 20px var(--color1)}
+[dir] .StickerStylesMenuItem--added{box-shadow:inset 0 0 0 2px var(--color2)}
+[dir] .Tooltip--light .Tooltip__in{background:#000000d9;border:solid 1px var(--color4);color:#c4c4c4}
+[dir] .Tooltip--b .Tooltip__in::before{border-bottom-color:#222!important}
+[dir] .Tooltip--b .Tooltip__in::after{border-bottom-color:#000000d9!important}
 
 /* сортирова стикеров */
 .ui_gridsorter_moveable,.ui_gridsorter_moveable_notrans{background-color:rgba(20,20,20,.85)!important;border:none!important}
