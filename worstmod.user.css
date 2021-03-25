@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.1.30
+@version        20210326.1.33
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2523,10 +2523,10 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 
 /* детсад */
 [dir] .GamesCatalogFullWidthBanner{box-shadow:0 0 0 1px #111,0 1px 0 0 #111}
-.appAchievementsHeader__title,[dir] .DownloadedGameItem__header,.GamesCatalogCard__appLink,.GameCatalogSearchCard__name{color:var(--color2)}
-.GamesCatalogCard__appLink:hover,.GameCatalogSearchCard__name:hover,.GameCatalogSearchCard__name:focus,.GameCatalogSearchCard__name:active{color:var(--color1)}
+.appAchievementsHeader__title,[dir] .DownloadedGameItem__header,.GamesCatalogCard__appLink,.GameCatalogSearchCard__name,[dir] .GamesCatalogGameOfWeek__name{color:var(--color2)}
+.GamesCatalogCard__appLink:hover,.GameCatalogSearchCard__name:hover,.GameCatalogSearchCard__name:focus,.GameCatalogSearchCard__name:active,[dir] .GamesCatalogGameOfWeek__name:hover{color:var(--color1)}
 .GamesCatalogAppRating__star{filter:var(--filt2)saturate(.5)}
-.appAchievementsHeader__subtitle,.DownloadedGameItem__description{color:#999}
+.appAchievementsHeader__subtitle,.DownloadedGameItem__description,.GamesCatalogGameOfWeek__description{color:#999}
 .ui_tooltipMenu__current{color:#ccc}
 .ui_tooltipMenu__current:hover,.ui_tooltipMenu__item.selected>.ui_tooltipMenu__link{color:var(--color1)}
 .ui_tooltipMenu__link{color:var(--color2)}
