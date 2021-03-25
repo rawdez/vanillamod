@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.1.1
+@version        20210326.1.15
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2522,7 +2522,8 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .button_action_light_add:before,.box_title_wrap.box_white .box_x_button:hover,.button_action_light:before{filter:var(--filt2)}
 
 /* детсад */ 
-.appAchievementsHeader__title,[dir] .DownloadedGameItem__header{color:var(--color2)}
+.appAchievementsHeader__title,[dir] .DownloadedGameItem__header,.GamesCatalogCard__appLink{color:var(--color2)}
+.GamesCatalogCard__appLink:hover{color:var(--color1)}
 .appAchievementsHeader__subtitle,.DownloadedGameItem__description{color:#999}
 .ui_tooltipMenu__current{color:#ccc}
 .ui_tooltipMenu__current:hover,.ui_tooltipMenu__item.selected>.ui_tooltipMenu__link{color:var(--color1)}
@@ -2530,9 +2531,14 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .ui_tooltipMenu__link:hover{background-color:#000000f2;color:var(--color1)}
 .ui_tooltipMenu__item.selected>.ui_tooltipMenu__link:after,.ui_tooltipMenu__current:after{filter:var(--filt2)brightness(.7)saturate(.7)}
 .ui_tooltipMenu__item.selected:hover>.ui_tooltipMenu__link:after,.ui_tooltipMenu__current:hover:after{filter:var(--filt2)saturate(.7)}
-[dir] .DownloadedGameItem{border-top:none;border-bottom:1px solid #222}
+[dir] .DownloadedGameItem{border-top:none;border-bottom:1px solid #111}
 [dir] .DownloadedGameItem:hover{background:#6464641f}
-[dir] .GamesCatalogSearchMainContent{background:rgba(0,0,0,/*[[opaque]]*/)}
+[dir] .GamesCatalogSearchMainContent,[dir] .GamesCatalogProfileBlock{background:rgba(0,0,0,/*[[opaque]]*/);box-shadow:0 1px 0 0 #111,0 0 0 1px #111}
+[dir] .GamesCatalogProfileBlock__header{background:#0000;border-bottom:1px solid #111;color:var(--color2)}
+[dir] .GamesCatalogProfileBlock__content{background:#0000}
+[dir] .GamesCatalog--search_page{box-shadow:none!important}
+[dir] .DownloadedGameItem:hover,[dir] .GamesCatalogSearchStartScreenListItem:hover{background:#6464641f;color:var(--color1)}
+[dir] .GamesCatalogEmptyCardsList--favorite,[dir] .ProfileHeaderSection{border-top:1px solid #111}
 
 /* фикс календаря */ 
 .cal_table>thead{border:0 solid var(--color3);background:transparent!important;border-width:1px 1px 0}
