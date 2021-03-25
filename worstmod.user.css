@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.0.40
+@version        20210326.1.0
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1038,6 +1038,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /* диалоги */
 [dir] .nim-dialog .nim-dialog--content{border-color:#111!important}
 [dir] .im-page_classic.im-page .im-page--dialogs{background-color:rgba(0,0,0,.65)!important}
+[dir] .im-page_classic.im-page .im-page--dcontent{margin-top:14px}
 [dir] .im-page--history-new-bar._im_unread_bar_row{margin-bottom:36px}
 [dir] .im-page--history-new-bar.im-page--history-new-bar_days._im_bar_date{margin-bottom:20px}
 [dir] .im-navigation--to-end .im-navigation__button{background-color:rgba(0,0,0,.5)!important;border:1px solid #222;border-radius:0;filter:var(--filt2);opacity:.5}
@@ -2519,15 +2520,18 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .box_title_wrap.box_white .box_title:hover{color:var(--color1)}
 .button_action_light_add:before,.box_title_wrap.box_white .box_x_button:hover,.button_action_light:before{filter:var(--filt2)}
 
-/* детсад-достижения в играх */ 
-.appAchievementsHeader__title{color:var(--color2)}
-.appAchievementsHeader__subtitle{color:#999}
+/* детсад */ 
+.appAchievementsHeader__title,[dir] .DownloadedGameItem__header{color:var(--color2)}
+.appAchievementsHeader__subtitle,.DownloadedGameItem__description{color:#999}
 .ui_tooltipMenu__current{color:#ccc}
 .ui_tooltipMenu__current:hover,.ui_tooltipMenu__item.selected>.ui_tooltipMenu__link{color:var(--color1)}
 .ui_tooltipMenu__link{color:var(--color2)}
-.ui_tooltipMenu__link:hover{background-color:rgba(0,0,0,.95);color:var(--color1)}
+.ui_tooltipMenu__link:hover{background-color:#000000f2;color:var(--color1)}
 .ui_tooltipMenu__item.selected>.ui_tooltipMenu__link:after,.ui_tooltipMenu__current:after{filter:var(--filt2)brightness(.7)saturate(.7)}
 .ui_tooltipMenu__item.selected:hover>.ui_tooltipMenu__link:after,.ui_tooltipMenu__current:hover:after{filter:var(--filt2)saturate(.7)}
+[dir] .DownloadedGameItem{border-top:none;border-bottom:1px solid #222}
+[dir] .DownloadedGameItem:hover{background:#6464641f}
+[dir] .GamesCatalogSearchMainContent{background:rgba(0,0,0,/*[[opaque]]*/)}
 
 /* фикс календаря */ 
 .cal_table>thead{border:0 solid var(--color3);background:transparent!important;border-width:1px 1px 0}
