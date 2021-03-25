@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.1.42
+@version        20210326.1.55
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2536,7 +2536,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .DownloadedGameItem{border-top:none;border-bottom:1px solid #111}
 [dir] .DownloadedGameItem:hover{background:#6464641f}
 [dir] .GamesCatalogSearchMainContent,[dir] .GamesCatalogProfileBlock{background:rgba(0,0,0,/*[[opaque]]*/);box-shadow:0 1px 0 0 #111,0 0 0 1px #111}
-[dir] .GamesCatalogProfileBlock__header{background:#0000;border-bottom:1px solid #111;color:var(--color2)}
+[dir] .GamesCatalogProfileBlock__header,[dir] .PageBlock__header{background:#0000;border-bottom:1px solid #111;color:var(--color2)}
 [dir] .GamesCatalogProfileBlock__content,[dir] .AppsCatalogHeader{background:#0000}
 [dir] .GamesCatalog--search_page{box-shadow:none!important}
 [dir] .DownloadedGameItem:hover,[dir] .GamesCatalogSearchStartScreenListItem:hover{background:#6464641f;color:var(--color1)}
@@ -2545,6 +2545,11 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .GameCatalogSearchCard__screenshotImg,[dir] .AppsCatalogSkeleton__cardIcon,[dir] .AppsCatalogSkeleton__cardName,[dir] .AppsCatalogSkeleton__cardCategory{background-color:#6464641f}
 [dir] .AppsCatalogSkeleton__block::after{background:linear-gradient(130deg,#fff0 40%,#0006,#fff0 60%) no-repeat -800px 0}
 [dir] .GameCatalogSearchCard{box-shadow:inset 0 -1px 0 0 #111}
+[dir] .AppsCatalogSelectMenu{background:#000000d9;border:none!important}
+[dir] .AppsCatalogSelectMenu__option{color:#999}
+[dir] .AppsCatalogSelectMenu__option:hover{background-color:#6464641f;color:var(--color1)}
+[dir] .AppsCatalogHeader__select .Select__arrow{filter:var(--filt2)brightness(.5)saturate(.7)}
+[dir] .AppsCatalogHeader__search{filter:var(--filt2)}
 
 /* фикс календаря */ 
 .cal_table>thead{border:0 solid var(--color3);background:transparent!important;border-width:1px 1px 0}
