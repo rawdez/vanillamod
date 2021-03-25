@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210325.3.0
+@version        20210325.19.0
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -428,10 +428,13 @@ fuckstorieshard "я не могу их больше слушать." <<<EOT /* �
 }
 @advanced dropdown nomoneysend " ♻ Деньги я лучше оставлю при себе:" {
 nomoneysendoff "да не, я щедрый.*" <<<EOT  EOT;
-nomoneysendon "точняк." <<<EOT /* убрать денежные переводы *\/
+nomoneysendon "нафиг денежные переводы" <<<EOT /* нафиг денежные переводы *\/
 .page_actions_item[onclick*="Page.moneyTransferBox"]{display:none!important} EOT;
-nomoneysendfuckall "нафиг бабло и воспоминания" <<<EOT /* убрать денежные переводы и воспоминания *\/
+nomoneysendfuckall "нафиг денежные переводы и воспоминания" <<<EOT /* нафиг денежные переводы и воспоминания *\/
 [dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--memories,[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--money-transfer{display:none} EOT;
+nomoneysendfuckcombo "нафиг денежные переводы, воспоминания и комбо из меню" <<<EOT /* нафиг денежные переводы, воспоминания и комбо *\/
+[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--memories,[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--money-transfer,#l_combo{display:none} 
+EOT;
 
 }
 @advanced dropdown sidebarnotext "Фикс для панельки слева без текста:" {
