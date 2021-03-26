@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.2.10
+@version        20210326.3.15
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -276,6 +276,7 @@ pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем ш
 body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
 [dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)}
 [dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:34px!important}
+[dir] .im-page_classic .im-page--chat-header{margin-top:-14px}
 EOT;
 pageheadernormal "нет, я люблю жирные шапки" <<<EOT 
 [dir] #top_audio_layer_place > #audio_layer_tt{top:48px!important}
@@ -1104,7 +1105,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /* чат */
 [dir] .im-page{padding-top:1px}
 [dir] .im-page--history.page_block._im_page_history{margin-bottom:1px}
-[dir] .im-page_classic .im-page--chat-header{border-top:7px solid transparent!important;background:rgba(0,0,0,.5)!important}
+[dir] .im-page_classic .im-page--chat-header{border-top:7px solid transparent!important;background:rgba(0,0,0,/*[[headopaque]]*/)!important}
 [dir] .im-page--toolsw{background:transparent!important}
 [dir] .im-page_classic .im-page--chat-header-in{box-shadow:none!important;border-bottom:none!important}
 [dir] .im-page_classic.im-page .im-page--chat-body-wrap-inner{border-color:transparent!important;padding-bottom:0px!important}
