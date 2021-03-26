@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.3.15
+@version        20210326.7.45
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -470,8 +470,9 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 .page_actions_cont.narrow .page_actions_header, .page_actions_cont.narrow .page_extra_actions_btn{color:#93A3BC!important;filter:var(--filtw)}
 .page_actions_item.page_actions_item_lock{filter:var(--filt2)}
 .page_actions_cont.narrow .page_actions_header_inner{color:#93A3BC!important}
-.media_selector .ms_item_more_label,#friend_status .page_actions_header_inner, .page_actions_dd_label, .ui_search_fltr_control, .olist_filter_label,#page_actions_item_lists{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAQAAAC7znxOAAAAR0lEQVQI12P4zzCf8T8DDM5n/c/AMJ9v/rn5zlAB+/n350uAGA3zv4EEgQJf5rcBVf2HCZZDBKBCQMHW+f8hAnAhoKAXjAUAd2U4s6X48xcAAAAASUVORK5CYII=)}
+.media_selector .ms_item_more_label,#friend_status .page_actions_header_inner,.page_actions_dd_label,.ui_search_fltr_control,.olist_filter_label,#page_actions_item_lists,[dir] .ui_tab_group::after{background-image:url(https://vk.com/images/svg_icons/contour_arrow.svg)}
 .im-page .im-page--center-empty,.pv_closed_commments_placeholder,.pv_no_commments_placeholder,.im-page .im-page--chat-search-empty{background-image:url("https://vk.com/images/icons/first_comment.png");opacity:.5}
+[dir] .media_selector .ms_item_more_label{color:#93a3bc;filter:var(--filt2)}
 
 /*[[vklogo]]*/
 
