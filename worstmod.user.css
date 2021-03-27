@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210326.23.23
+@version        20210327.7.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -328,8 +328,11 @@ burnmotherfuckernope "пощадить бабские сердечки" <<<EOT  
 }
 @advanced dropdown fastchat "Окна быстрого чата:" {
 fastchatblack "прозрачно-чёрные*" <<<EOT /* окна быстрого чата (прозрачные) *\/
-.fc_tab_head,.fc_tab_txt{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
-.fc_tab{background:rgba(0,0,0,0.9);border-color:#222!important}
+[dir] .fc_msgs_wrap,[dir] div.fc_editable,[dir] div.fc_editable:focus{background:#0000!important}
+[dir] div.fc_tab_txt{background:#0005!important}
+[dir] div.fc_tab_txt div.fc_editable:focus ~ .placeholder .ph_content{color:#666;padding:0 0 1px 8px}
+[dir] #fc_contacts,.fc_tab_head{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
+.fc_tab{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
 .fc_msgs_wrap:not(.fc_msgs_out) .fc_msgs{background:#111!important}
 .chats_sp.rb_resize{filter:brightness(0.2)!important}
 .fc_clist_filter_wrap{background:rgba(0,0,0,0.9)!important;border-color:#222!important}
@@ -339,7 +342,9 @@ fastchatblack "прозрачно-чёрные*" <<<EOT /* окна быстро
 .fc_tab_pointer::before{border-left-color:#282828!important}
 .fc_tab_pointer::after{border-left-color:#000!important}
 .fc_msgs_unread {background-color:rgba(47,47,47,0.3)!important} EOT;
+
 fastchatsimple "обычные (неплохо для сумрачных личностей)" <<<EOT /* окна быстрого чата (непрозрачные) *\/
+[dir] div.fc_tab_txt div.fc_editable:focus ~ .placeholder .ph_content{color:#666;padding:0 0 1px 8px}
 .fc_clist_filter_wrap{background:var(--color4)!important}
 .fc_contacts,.fc_tab{background:var(--color4)!important}
 .fc_tab_pointer::before{border-left-color:var(--color3)}
