@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210329.9.30
+@version        20210329.11.11
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -198,6 +198,7 @@ lolsquareon "банзай*" <<<EOT /* .............. <ОКВАДРАЧИВАНИ
 [dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread {display:block;border-radius:0px!important;min-width:3px;width:0px;bottom:0px;left:-85px;height:100%;opacity:0.7!important}
 [dir] .nim-dialog--unread._im_dialog_unread_ct{border-radius:2px!important;opacity:0.7!important;font-weight:700}
 [dir] .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread{display:block;border-radius:0px!important;min-width:3px;width:0px!important;bottom:0px;left:-72px;height:100%!important;opacity:0.7!important}
+,[dir] .im-navigation--label-in{border-radius:2px}
 
 /* прямоугольные списки друзей *\/
 [dir] .friends_lists .friends_lists_group{border-radius:2px}
@@ -1124,7 +1125,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .ui_actions_menu_top .ui_actions_menu._ui_menu:before{border-color:var(--color3) transparent transparent transparent !important}
 .ui_actions_menu_top .ui_actions_menu._ui_menu:after{border-color:rgba(0,0,0,.8) transparent transparent transparent !important}
 .ms_items_more._more_items::after{border-color:rgba(0,0,0,.8) transparent transparent transparent !important}
-.im-chat-input.clear_fix.im-chat-input_classic._im_chat_input_parent{background:rgba(0,0,0,.85)!important;box-shadow:none!important;padding:0px 0px 0px 24px!important}
+.im-chat-input.clear_fix.im-chat-input_classic._im_chat_input_parent{background:rgba(0,0,0,/*[[headopaque]]*/)!important;box-shadow:none!important;padding:0px 0px 0px 24px!important}
 .im-page.im-page_classic .im-page--chat-input{border:1px solid #111!important}
 .im_editable.im-chat-input--text._im_text{background-color:transparent!important}
 .im-mess .im-mess--post{border-left:2px solid var(--color3)!important}
@@ -2677,7 +2678,6 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .Select--secondary .Select__option:hover{background:#1e1e1ed6;color:var(--color1)}
 [dir] .HighlightSearchText__highlighted{background-color:var(--color1);color:#111}
 [dir] .CitySelectItemLabel--bordered::after{background:#111}
-
 }
 
 
