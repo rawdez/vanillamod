@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210330.5.0
+@version        20210330.11.40
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -28,8 +28,8 @@ wallsunsetriver  "➤ Закат на реке" <<<EOT https://i.giphy.com/media
 
 wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-custom]]*\/ EOT;
 }
-@advanced text wallsetup-custom "➥ Ссыль на свою обоину:" "https://media.giphy.com/media/Ow59c0pwTPruU/giphy.gif"
-@advanced dropdown wallbrightness "➥ Яркость обоины:" {
+@advanced text wallsetup-custom "➥ ссылочка:" "https://media.giphy.com/media/Ow59c0pwTPruU/giphy.gif"
+@advanced dropdown wallbrightness "➥ яркость обоины:" {
 wallbrightnesssetup "★ ниже" <<<EOT /*[[wallbrightness-custom]]*\/ EOT;
 wallbrightness100 "100%" <<<EOT 1 EOT;
 wallbrightness90 "90%" <<<EOT .9 EOT;
@@ -62,7 +62,7 @@ backgroundvanilla "обои как в Ванилле (цвет выбирай н
 body{background-color:/*[[backcolor]]*\/!important}
  EOT;
 }
-@advanced color backcolor "➥ Цвет сплошного фона:" #070707
+@advanced color backcolor "➥ цвет сплошного фона:" #070707
 
 @advanced dropdown hollowhead "Прозрачная шапка:" {
 hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
