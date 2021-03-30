@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210330.11.40
+@version        20210330.11.45
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -30,7 +30,7 @@ wallsetup "свои (ссылку меняй ниже)" <<<EOT /*[[wallsetup-cus
 }
 @advanced text wallsetup-custom "➥ ссылочка:" "https://media.giphy.com/media/Ow59c0pwTPruU/giphy.gif"
 @advanced dropdown wallbrightness "➥ яркость обоины:" {
-wallbrightnesssetup "★ ниже" <<<EOT /*[[wallbrightness-custom]]*\/ EOT;
+wallbrightnesssetup "⠀★" <<<EOT /*[[wallbrightness-custom]]*\/ EOT;
 wallbrightness100 "100%" <<<EOT 1 EOT;
 wallbrightness90 "90%" <<<EOT .9 EOT;
 wallbrightness80 "80%" <<<EOT .8 EOT;
@@ -94,7 +94,7 @@ hollowheadoffcolor "выкл (цветная шапка)" <<<EOT  EOT;
 }
 
 @advanced dropdown headopaque "➥ непрозрачность шапки:" {
-headopaquesetup "★ ниже" <<<EOT /*[[headopaque-custom]]*\/ EOT;
+headopaquesetup "⠀★" <<<EOT /*[[headopaque-custom]]*\/ EOT;
 headopaque100 "100%" <<<EOT 1 EOT;
 headopaque90 "90%" <<<EOT .9 EOT;
 headopaque80 "80%" <<<EOT .8 EOT;
@@ -110,7 +110,7 @@ headopaque10 "10%" <<<EOT .1 EOT;
 
 
 @advanced dropdown opaque "Непрозрачность блоков:" {
-opaquesetup "➥ ниже" <<<EOT /*[[opaque-custom]]*\/ EOT;
+opaquesetup "⠀➥" <<<EOT /*[[opaque-custom]]*\/ EOT;
 opaque100 "100%" <<<EOT 1 EOT;
 opaque90 "90%" <<<EOT .9 EOT;
 opaque80 "80%" <<<EOT .8 EOT;
