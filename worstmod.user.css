@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210401.3.33
+@version        20210401.17.24
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -480,7 +480,9 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 .media_selector .ms_item_more_label,#friend_status .page_actions_header_inner,.page_actions_dd_label,.ui_search_fltr_control,.olist_filter_label,#page_actions_item_lists,[dir] .ui_tab_group::after{background-image:url(https://vk.com/images/svg_icons/contour_arrow.svg)}
 .im-page .im-page--center-empty,.pv_closed_commments_placeholder,.pv_no_commments_placeholder,.im-page .im-page--chat-search-empty{background-image:url("https://vk.com/images/icons/first_comment.png");opacity:.5}
 [dir] .media_selector .ms_item_more_label{color:#93a3bc;filter:var(--filt2)}
-[dir] .pv_reply_form .page_add_media,[dir] .pv_comments_list .page_add_media{padding:10px 0 0 12px}
+[dir] .pv_reply_form  .media_selector .ms_item_more{padding:0 6px 0 5px;margin:3px 0 0 8px}
+[dir] .reply_text .media_selector .ms_item_more{padding:0 6px 0 5px;margin:3px 0 0 14px}
+[dir] .pv_reply_form .page_add_media,[dir] .pv_comments_list .page_add_media{padding:0}
 
 /*[[vklogo]]*/
 
