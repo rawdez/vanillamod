@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210402.3.37
+@version        20210402.4.2
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2210,9 +2210,10 @@ a.group_app_button_multi{border-bottom:1px solid var(--color3)}
 /* сортирова стикеров */
 .ui_gridsorter_moveable,.ui_gridsorter_moveable_notrans{background-color:rgba(20,20,20,.85)!important;border:none!important}
 
-/* стикер всплывающее описание */ 
+/* стикер всплывающее описание */
 .sticker_extra_tt .tt_text .stickers_extra_text > b{color:var(--color1)}
 img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:none!important}
+.emoji_sticker_image:hover,.sticker_img:hover{background:var(--color2);border-radius:4px}
 
 /* выбор чата/собеседника/паблоса при отправке фотки/записи/видео */
 .wdd_hl{background:var(--color1)!important;color:var(--color5)}
