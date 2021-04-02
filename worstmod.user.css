@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210402.7.40
+@version        20210402.8.25
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1262,11 +1262,28 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /* фикс микрофона в диалогах */
 .im-audio-message-btn{filter:var(--filt2)}
 
-/* диалоги исходящий звонок */
+/* звонки */
 [dir] .CallSnippet{background:#1e1e1e47;border:1px solid #242424;transition:border .3s,background .3s}
 [dir] .CallSnippet:hover{background:#2477131f;border:1px solid var(--color1)}
 [dir] .CallSnippet__users:empty{filter:var(--filt2)saturate(.5)brightness(.8)}
 [dir] .CallSnippet__title{color:var(--color2)}
+[dir] .BaseModal__content{background:#00000080!important}
+[dir] .CallManagementModal__content,[dir] .CallManagementModal__section,[dir] .List,[dir] .ListItem--can-be-hovered.ListItem--selectable{background:#0000!important}
+[dir] .List.List--border,[dir] .List.List--border:hover{box-shadow:none!important}
+[dir] .ListItem--can-be-hovered.ListItem--selectable:hover,[dir] .ListItem--active,[dir] .ListItem--border.ListItem--selectable:last-child:hover{background:#6464641f!important}
+[dir] .ListHeader__text{color:var(--color2)}
+[dir] .ParticipantSuggest::after{filter:invert(.95)hue-rotate(180deg)var(--filt2)saturate(.8)brightness(.8)}
+[dir] .TokenInput__input{background:#0000;color:var(--color1)}
+[dir] .TokenInput__label{background:var(--color2);color:#111}
+[dir] .TokenInput__remove{background-color:#171717!important;filter:var(--filt2)}
+[dir] .ListMore{color:var(--color1)}
+[dir] .ListMore:hover{background:var(--color2);color:#111;border-top:1px solid #0000}
+[dir] .ModalHeader--blue .ModalHeader__back::before{margin:0 0 0 4px}
+[dir] .ModalHeader--blue .ModalHeader__back:hover::before{margin:0 1px 0 3px}
+[dir] .ModalHeader--blue .ModalHeader__back:hover{background:#0000;color:var(--color1)}
+[dir] .ListItem__aside{filter:invert(.95)hue-rotate(180deg)var(--filt2)saturate(.5)brightness(.8)}
+[dir] .ListItem__icon{filter:invert(1)hue-rotate(180deg)var(--filt2)}
+[dir] .ModalHeader--blue .ModalHeader__cross::before{filter:var(--filt2)brightness(.8)}
 
 /* добавить в беседу */
 [dir] .ListAddControl__icon{color:var(--color2);border: 1px solid var(--color2)}
