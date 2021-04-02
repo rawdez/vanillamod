@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210402.3.23
+@version        20210402.3.33
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -755,6 +755,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .PageActionsClosedProfile__icon{color:var(--color2);filter:brightness(1.4)saturate(.6)}
 [dir] .PageActionsClosedProfile{color:#999;border-top:4px solid #0000;opacity:0;height:0;padding:0;margin:0;transition:height .7s,opacity .7s,border-top .7s}
 [dir] .ProfileActions:hover .PageActionsClosedProfile{opacity:1;height:76px}
+[dir] .PageActionsClosedProfile__state{color:#ccc}
 
 /* денежные переводы */
 [dir] .payments_money_transfer_amount_wrap{border:1px solid var(--color3);background-color: #0000}
