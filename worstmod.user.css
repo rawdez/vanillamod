@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210402.3.33
+@version        20210402.3.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -468,7 +468,6 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 /*[[backgroundorcolor]]*/
 
 /* fuck tweak.pro / imgur.com (fix https security issue) */
-.ui_header_ext_search{filter:var(--filtw)}
 .search_filters_minimized_text{background-image:none!important}
 .search_filters_minimized_text:before{position:absolute;display:block;content:' ';width:20px;height:20px;left:16px;top:14px;background:url("https://vk.com/images/icons/advanced_search.png?2")no-repeat;filter:var(--filtw)}
 [dir] .page_actions_dd_label,[dir] .page_actions_header_inner{background:url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat right 6px!important}
@@ -1925,8 +1924,10 @@ hr{border-color:#222}
 .search_status_map{background-color:rgba(0,0,0,.5)} 
 .search_status_map_icon{opacity:.4;filter:saturate(0)}
 
-/* фикс поиск друзей импорт */   
+/* фикс поиск друзей */   
 .friends_search_import{background-color:transparent!important;filter:invert(.95)contrast(.75)brightness(.9)!important}
+.ui_header_ext_search{filter:brightness(.7)saturate(.8)var(--filt2)}
+.ui_header_ext_search:hover{filter:var(--filt2)}
 
 /* разделитель в редактировании руководителя сообщества */
 .gedit_admbox_sep{border-top:1px solid #2A2A2A}
