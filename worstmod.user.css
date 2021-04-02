@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210402.8.25
+@version        20210402.8.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -857,7 +857,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .audio_w_covers .audio_row .audio_row__cover:not([style*="userapi.com"]),.audio_page_player2 .audio_page_player__cover:not([style*="userapi.com"]){background:rgba(0,0,0,.5) url("https://vk.com/images/icons/menu_icon.png?6") no-repeat scroll 11px -155px!important;filter:saturate(0)brightness(.5)}
 .audio_row .audio_row_cover_wrap{background:transparent!important}
 .eltt.eltt_bottom.eltt_arrow_size_normal>.eltt_arrow_back .eltt_arrow{border-bottom:7px solid rgba(0,0,0,.85)}
-.audio_atp_list .ape_check{filter:invert(.91)}
+.audio_atp_list .ape_check{filter:invert(.95)hue-rotate(180deg)var(--filt2)saturate(.8)brightness(.8)}
 [dir] .audio_row__more_actions .audio_row__action_playlist{padding:5px 12px 5px 24px;color:#aaa!important}
 [dir] .audio_row__more_actions .audio_row__action_playlist:hover{color:var(--color1)!important}
 [dir] .audio_row__more_actions .audio_row__more_action_pl_new::before{top:8px;filter:var(--filt2)brightness(.6)}
