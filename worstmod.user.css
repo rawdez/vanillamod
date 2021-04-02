@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210402.4.2
+@version        20210402.4.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -729,10 +729,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /*[[moveplayer]]*/
 /*[[fadetoblack]]*/
-
-/*[[blackaudioplay]]*/
 /*[[audioplayhollow]]*/
-
 /*[[burnmotherfucker]]*/
 /*[[flushshit]]*/
 /*[[fuckstories]]*/
@@ -741,10 +738,12 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /*[[nomoneysend]]*/
 
 /* действия профиля / паблоса */
-[dir] .page_photo.ProfileActions .page_actions_expanded {margin-top:6px}
+[dir] .page_photo.ProfileActions .page_actions_expanded{margin-top:6px}
 [dir] .ProfileActions .page_actions_expanded .page_actions_item{height:30px;line-height:30px;padding:0 10px 0 10px;transition:color .3s}
-[dir] .ProfileActions .page_actions_expanded .page_actions_item:hover{color:var(--color1)!important}
-.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:active > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:active > span {color:var(--color1)}
+[dir] .ProfileActions .page_actions_expanded .page_actions_item:hover span{color:var(--color1)!important}
+[dir] .PageActionItem--are-friends-blue::after{filter:var(--filt2)}
+.FancyElementTT__rightIcon{filter:brightness(.6)var(--filt2)}
+.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:active > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:active > span{color:var(--color1)}
 [dir] .ModalHeader--blue,[dir] .ModalFooter{background:#0000;border:none}
 [dir] .Modal .BaseModal__content{background:#00000080!important}
 [dir] .ProfileActions .page_actions_expanded .page_actions_separator{display:none}
