@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210402.4.20
+@version        20210402.7.40
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -595,14 +595,9 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .photos_album_thumb.crisp_image{background-color:rgba(0,0,0,.3)!important}
 .closed_page{background-color:rgba(0,0,0,.3)!important;border:1px solid var(--color5)}
 .closed_page .closed_details{color:var(--color2)}
-.ui_tabs, .ui_search_input_block{background-color:rgba(0,0,0,.5)!important}
+.ui_tabs,.ui_search_input_block{background-color:rgba(0,0,0,/*[[headopaque]]*/)!important}
 #wall_search.ui_search_field._field{background-color:rgba(0,0,0,.85)}
 .ui_tabs,#friends_search_input_wrap .ui_search_input_block{border-bottom:1px solid #111}
-.im-page.im-page_classic .im-page--header{border-top:15px solid rgba(0,0,0,.9)!important;border-left:1px solid #111;border-right:1px solid #111;border-radius:0px;border-bottom:1px solid #111}
-.im-page.im-page_classic .im-page--dialogs-search{border-radius:0px}
-.im-page.im-page_classic .im-page--dialogs,.im-page.im-page_classic .im-page--dcontent{border-radius:0px;border-top:none}
-.im-page.im-page_classic .im-page--dialogs-search,.im-page.im-page_classic .im-page--mess-search{box-shadow:none!important}
-[dir] .im-page .im-page--center-empty,[dir] .im-page .im-page--chat-search-empty{background:none!important}
 .ui_search{border:none}
 .im-page .im-page--dialogs-footer,.im-create.im-create_classic .im-create--footer{background-color:rgba(0,0,0,.9)!important;border-top:1px solid #111!important}
 .video_item .video_item_thumb_wrap,.videocat_featured_video{background-color:rgba(0,0,0,.5)!important}
@@ -1094,7 +1089,13 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .im-page--back-btn{filter:var(--filt2);font-size:0;margin-left:10px}
 [dir] .im-page--back-btn:hover{background:transparent url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%229%22%20height%3D%2216%22%20viewBox%3D%220%200%209%2016%22%3E%3Cpath%20fill%3D%22%23828A99%22%20d%3D%22M8%2015.9c-.2%200-.4-.1-.6-.3l-7-7c-.3-.3-.3-.9%200-1.2l7-7c.3-.3.9-.3%201.2%200%20.3.3.3.9%200%201.2l-6.4%206.4%206.4%206.4c.3.3.3.9%200%201.2-.2.2-.4.3-.6.3z%22%20opacity%3D%22.7%22%2F%3E%3C%2Fsvg%3E") no-repeat scroll 13px 16px!important;filter:var(--filt2)!important}
 [dir] .im-page--toolsw{border:none!important}
-[dir] .im-page--dialogs[style*="static"] .ui_search_field,[dir] .im-dialog-select.im-dialog-select_classic{background-color:rgba(0,0,0,.75)!important}
+[dir] .im-page--dialogs[style*="static"] .ui_search_field,[dir] .im-dialog-select.im-dialog-select_classic{background-color:#0000!important}
+.im-page.im-page_classic .im-page--header{border-top:15px solid rgba(0,0,0,/*[[headopaque]]*/)!important;border-left:1px solid #111;border-right:1px solid #111;border-radius:0px;border-bottom:1px solid #111}
+.im-page.im-page_classic .im-page--dialogs-search{border-radius:0px}
+.im-page.im-page_classic .im-page--dialogs,.im-page.im-page_classic .im-page--dcontent{border-radius:0px;border-top:none}
+.im-page.im-page_classic .im-page--dialogs-search,.im-page.im-page_classic .im-page--mess-search{box-shadow:none!important}
+[dir] .im-page .im-page--center-empty,[dir] .im-page .im-page--chat-search-empty,[dir] .im-page_classic.im-page .im-page--dialogs-search,[dir] .im-page_classic.im-page .im-page--header{background:#0000!important}
+[dir] .im-page_classic.im-page .im-page--dialogs-footer{background:rgba(0,0,0,/*[[headopaque]]*/)!important;border-top:none!important}
 [dir] .im-page .im-page--clear-recent{color:var(--color2)}
 [dir] .im-page--chat-header_muted .im-page--title-main-in:after{filter:var(--filt2)}
 [dir] .im-page--chat-header_muted .im-page--title:after{margin:0px 0 0 10px}
