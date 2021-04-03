@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210402.9.1
+@version        20210403.3.3
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -250,15 +250,15 @@ lolsquareof "не, кружочки няшные ( ´ ▽ ` ).｡ｏ♡" <<<EOT 
 }
 @advanced dropdown darkasshit "Цвета темнее:" {
 darkasshiton "чутка*" <<<EOT /* цвета темы потемнее *\/
-:root{--color3:#191919;--color4:#0A0A0A;--color5:#070707;--color9:rgba(20,20,20,0.85)}
+:root{--color3:#191919!important;--color4:#0A0A0A!important;--color5:#070707!important;--color9:rgba(20,20,20,0.85)!important}
 .top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(0.7)opacity(1)}
 .top_nav_btn:hover .top_nav_btn_icon{filter:saturate(0)brightness(4)opacity(1)}
 #pv_box{background:var(--color4)}
-#pv_box .pv_reply_form_wrap{margin-top:0px!important;border-top:1px solid var(--color3)}
+#pv_box .pv_reply_form_wrap{margin-top:0px!important;border-top:1px solid var(--color3)!important}
 .audio_layer_rows_cont{background-color:rgba(0,0,0,0.6)!important}
  EOT;
 darkasfuck "для совсем сумрачных личностей" <<<EOT /* совсем тёмные цвета темы *\/
-:root{--color3:#111111;--color4:#090909;--color5:#050505;--color9:rgba(5,5,5,0.95)}
+:root{--color3:#111111!important;--color4:#090909!important;--color5:#050505!important;--color9:rgba(5,5,5,0.95)!important}
 .top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(0.7)opacity(1)}
 .top_nav_btn:hover .top_nav_btn_icon{filter:saturate(0)brightness(4)opacity(1)}
 #pv_box{background:var(--color4)}
