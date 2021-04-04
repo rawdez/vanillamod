@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210403.3.3
+@version        20210404.8.8
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -340,12 +340,16 @@ fastchatblack "прозрачно-чёрные*" <<<EOT /* окна быстро
 .chats_sp.rb_resize{filter:brightness(0.2)!important}
 .fc_clist_filter_wrap{background:rgba(0,0,0,0.9)!important;border-color:#222!important}
 .fc_contacts{background:rgba(0,0,0,0.9)!important}
-.fc_contact.clear_fix.fc_contact_over{background:#111!important}
+.fc_contact.clear_fix.fc_contact_over{background:#6464641F!important}
 .fc_tab_notify{background:#090909!important;border:none}
 .fc_tab_pointer::before{border-left-color:#282828!important}
 .fc_tab_pointer::after{border-left-color:#000!important}
 .fc_msgs_unread{background-color:rgba(47,47,47,0.3)!important}
 [dir] .fc_contact:hover{background-color:#6464641F!important}
+
+#chat_tab_wrap{border:1px solid #111}
+#chat_tab_wrap:hover{border-radius:3px;background-color:#6464641F!important;}
+.chat_onl_wrap{outline:none!important}
 EOT;
 
 fastchatsimple "обычные (неплохо для сумрачных личностей)" <<<EOT /* окна быстрого чата (непрозрачные) *\/
@@ -354,6 +358,9 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 .fc_contacts,.fc_tab{background:var(--color4)!important}
 .fc_tab_pointer::before{border-left-color:var(--color3)}
 .fc_tab_pointer::after{border-left-color:var(--color4)}
+#chat_tab_wrap{border:1px solid #111}
+#chat_tab_wrap:hover{border-radius:3px;background-color:var(--color3)!important;}
+.chat_onl_wrap{outline:none!important}
 EOT;
 
 }
@@ -1490,10 +1497,6 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 .emoji_tt_wrap.emoji_no_tabs.emoji_expanded.tt_up::after{border-color:transparent transparent var(--color4) transparent}
 .emoji_expand_shadow, .emoji_expand_shadow_top, .emoji_tabs_l_sc, .emoji_tabs_r_sc, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,.emoji_cats_title_helper:after{display:initial!important}
 .im_rc_emojibtn:active{background:var(--color5);border-radius:2px}
-
-#chat_tab_wrap{border:1px solid #111}
-#chat_tab_wrap:hover{border-radius:3px;background-color:#222!important;}
-.chat_onl_wrap{outline:none!important}
     
 /* календарь событий обесцвечивание стрелок */  
 .bd_arrow{filter:saturate(0)}
