@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210404.13.13
+@version        20210405.10.50
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -209,6 +209,7 @@ lolsquareon "банзай*" <<<EOT /* .............. <ОКВАДРАЧИВАНИ
 [dir] .TopNavBtn .TopNavBtn__notifyCount{padding:2px 3px!important;border-radius:2px!important;height:11px!important;line-height:10px!important;left:22px;top:3px}
 [dir] .ui_rmenu_count{font-weight:900;padding:1px 6px 2px;border-radius:2px;font-size:11px;color:var(--color5);}
 [dir] #side_bar ol li .left_row .left_count_wrap{border-radius:2px!important}
+[dir] .top_notify_header .top_notify_header_label .top_notify_header_label_groups_counter{border-radius:2px}
 
 /* квадратный счётчик миничата *\/ 
 [dir] .chat_tab_counter{padding:0px 2px 0px 0px;border-radius:2px;font-weight:700;font-size:10px}
@@ -818,7 +819,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /* посты */
 [dir] .like_cont{padding:7px 0;border-top:none;box-shadow:none}
 [dir] .wall_module .wall_text,[dir] .wall_module.wl_postreach_wall_module .post_poster .wall_text{padding:7px 20px 4px!important}
-[dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .media_link:last-child {margin-bottom:0px!important}
+[dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .media_link:last-child{margin-bottom:0px!important}
 [dir] .post:not(.post_fr_likes):not(.postponed):not(.post_copy) .post_info .audio_pl_snippet2:last-child{margin-bottom:-5px!important}
 [dir] .post:not(.post_fr_likes):not(.postponed):not(.post_copy) .post_info .reply .audio_pl_snippet2:last-child{margin-bottom:4px!important}
 
@@ -1626,6 +1627,9 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 [dir] .TopNavBtn:not(.TopNavBtn--active):hover{background:#00000080!important;}
 [dir] .TopNavBtn.TopNavBtn--active{background:var(--color2)!important}
 [dir] .TopNavBtn.TopNavBtn--active .TopNavBtn__icon{filter:var(--filt2)brightness(.1)}
+[dir] .top_notify_header .top_notify_header_label .top_notify_header_label_groups_counter.unmuted{background:var(--color2);color:#111;transition:background .3s}
+[dir] .top_notify_header .top_notify_header_label:hover .top_notify_header_label_groups_counter.unmuted{background:var(--color1)}
+[dir] .notify_sources_tt_content .line_cell .info .ui_rmenu_count{color:#111!important}
 
 /* стрелка профиля в шапке */
 [dir] .TopNavBtn__profileArrow > svg > path{fill:var(--color2);transition:fill .3s}
