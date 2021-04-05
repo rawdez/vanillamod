@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210405.10.50
+@version        20210405.11.02
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1290,11 +1290,14 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .ModalHeader--blue .ModalHeader__back::before{margin:0 0 0 4px}
 [dir] .ModalHeader--blue .ModalHeader__back:hover::before{margin:0 1px 0 3px}
 [dir] .ModalHeader--blue .ModalHeader__back:hover{background:#0000;color:var(--color1)}
-[dir] .ListItem__aside{filter:invert(.95)hue-rotate(180deg)var(--filt2)saturate(.5)brightness(.8)}
 [dir] .ListItem__icon{filter:invert(1)hue-rotate(180deg)var(--filt2)}
 [dir] .ModalHeader--blue .ModalHeader__cross::before{filter:var(--filt2)brightness(.8)}
 [dir] .UserBadge--creator{filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.5)brightness(1.1)}
-[dir] .ModalFooter__inner .Button--size-m{color:#111}
+[dir] .CallManagementModal .Button--size-m{color:#111}
+[dir] .CallManagementModal .Button--secondary{color:var(--color2)}
+[dir] .CallManagementModal .Button--secondary:hover{color:var(--color1)}
+[dir] .CallsSearchResult__icon{color:var(--color2)}
+[dir] .CallsSearchResult:hover .CallsSearchResult__icon{color:var(--color1)}
 
 /* добавить в беседу */
 [dir] .ListAddControl__icon{color:var(--color2);border: 1px solid var(--color2)}
