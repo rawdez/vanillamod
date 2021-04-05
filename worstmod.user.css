@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210405.11.5
+@version        20210405.13.0
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -603,7 +603,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .photos_album_thumb.crisp_image{background-color:rgba(0,0,0,.3)!important}
 .closed_page{background-color:rgba(0,0,0,.3)!important;border:1px solid var(--color5)}
 .closed_page .closed_details{color:var(--color2)}
-.ui_tabs,.ui_search_input_block{background-color:rgba(0,0,0,/*[[headopaque]]*/)!important}
+[dir] .ui_tabs,[dir] .ui_search_input_block{background-color:rgba(0,0,0,/*[[headopaque]]*/)!important}
 #wall_search.ui_search_field._field{background-color:rgba(0,0,0,.85)}
 .ui_tabs,#friends_search_input_wrap .ui_search_input_block{border-bottom:1px solid #111}
 .ui_search{border:none}
@@ -886,6 +886,9 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .ui_search_input_inner{background:transparent!important}
 [dir] .audio_friend a.audio_friend_name{color:var(--color2)}
 [dir] .audio_friend:hover a.audio_friend_name{color:var(--color1)}
+[dir] .audio_page__actions .ui_search_input_block{background:rgba(0,0,0,.3)!important}
+[dir] .ui_search_new.ui_search_dark .ui_search_button_search,[dir] .CatalogBlock__audio_friends .ui_search_new .ui_search_input_inner{background-color:#0000!important}
+[dir] .ui_search_new.ui_search_dark .ui_search_button_search{filter:var(--filt2)brightness(.5)}
 
 /* треклист / плееры */
 [dir] .TopNavBtn.TopNavBtn__audio .TopNavBtn__icon{filter:var(--filt2)saturate(.8)}
