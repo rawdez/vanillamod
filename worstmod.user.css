@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210407.8.33
+@version        20210407.21.33
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2097,7 +2097,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--filt2)brightnes
 .thumbed_link__title{color:var(--color2);transition:color .7s}
 .thumbed_link:hover .thumbed_link__title{color:var(--color1)}
 .media_link.media_link--sized.media_link--photo,[dir] .thumbed_link:last-child,[dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes):not(.post--withActionStatusBar) .wall_text .thumbed_link:last-child{background:#0000!important}
-.media_link__label{background:#0000004d!important}
+[dir] .media_link__label{background:#0000004d!important;border:none}
 [dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes):not(.post--withActionStatusBar) .wall_text .media_link:last-child{background:#0000!important}
 .mail_link__title{color:var(--color2);transition:color .7s}
 .mail_link:hover .mail_link__title{color:var(--color1)}
