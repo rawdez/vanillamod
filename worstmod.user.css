@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210408.10.4
+@version        20210408.11.11
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -891,14 +891,17 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .CatalogBlock__title.CatalogMyAudiosHeader{margin-left:50px;color:#647b8e;filter:var(--filt2)}
 [dir] .CatalogBlock__title.CatalogMyPlaylistsHeader{color:#647b8e;filter:var(--filt2)}
 [dir] #page_body .audio_page__actions{margin-top:-54px;margin-left:0;width:48px}
+[dir] #audio_layer_tt .audio_layer_container .CatalogSection{padding-top:10px}
+[dir] #audio_layer_tt .audio_page__shuffle_all{margin:0 -4px 10px}
 [dir] #audio_layer_tt .audio_page__actions{height:24px}
-[dir] #audio_layer_tt .audio_page__shuffle_all .audio_page__shuffle_all_button{height:24px;width:auto;font-size:12.5px;line-height:12px; padding:0 8px 0 44px;color:var(--color2);transition:color .3s}
+[dir] #audio_layer_tt .audio_page__shuffle_all .audio_page__shuffle_all_button{left:4px;height:24px;width:auto;font-size:12.5px;line-height:13px; padding:0 10px 0 38px;color:var(--color2);transition:color .3s}
 [dir] #audio_layer_tt .audio_page__shuffle_all .audio_page__shuffle_all_button:hover{color:var(--color1)}
-[dir] #audio_layer_tt .audio_page__shuffle_all .audio_page__shuffle_all_button::before{height:24px;padding:0;top:0px}
+[dir] #audio_layer_tt .audio_page__shuffle_all .audio_page__shuffle_all_button::before{height:24px;padding:0;top:0;left:0}
 [dir] .audio_page__shuffle_all .audio_page__shuffle_all_button{width:auto;font-size:0;padding:4px 4px 4px 44px;border-radius:4px!important}
 [dir] .audio_page__shuffle_all .audio_page__shuffle_all_button:hover{background:#6464641f!important}
-[dir] .audio_page__shuffle_all .audio_page__shuffle_all_button:hover::before{filter:var(--filt2)saturate(.5)brightness(1.5)drop-shadow(0 0 3px #FFF)!important}
-[dir] .audio_page__shuffle_all .audio_page__shuffle_all_button::before{filter:var(--filt2)saturate(.2)brightness(1.2)!important}
+[dir] .audio_page__shuffle_all .audio_page__shuffle_all_button:hover::before{filter:var(--filt2)saturate(.5)brightness(1.5)!important}
+[dir] .audio_page__shuffle_all .audio_page__shuffle_all_button:active::before{filter:var(--filt2)saturate(.5)brightness(1.5)drop-shadow(0 0 3px #FFF)!important;transform:none}
+[dir] .audio_page__shuffle_all .audio_page__shuffle_all_button::before{filter:var(--filt2)saturate(.2)brightness(1.2)!important;left:5px}
 [dir] .idd_wrap .idd_arrow{background-image:url(https://vk.com/images/svg_icons/contour_arrow.svg)!important;filter:var(--filt2)!important;color:#647b8e}
 
 /* треклист / плееры */
