@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210408.9.52
+@version        20210408.10.4
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -200,7 +200,7 @@ lolsquareon "банзай*" <<<EOT /* .............. <ОКВАДРАЧИВАНИ
 [dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread {display:block;border-radius:0px!important;min-width:3px;width:0px;bottom:0px;left:-85px;height:100%;opacity:0.7!important}
 [dir] .nim-dialog--unread._im_dialog_unread_ct{border-radius:2px!important;opacity:0.7!important;font-weight:700}
 [dir] .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread{display:block;border-radius:0px!important;min-width:3px;width:0px!important;bottom:0px;left:-72px;height:100%!important;opacity:0.7!important}
-,[dir] .im-navigation--label-in{border-radius:2px}
+[dir] .im-navigation--label-in{border-radius:2px}
 
 /* прямоугольные списки друзей *\/
 [dir] .friends_lists .friends_lists_group{border-radius:2px}
