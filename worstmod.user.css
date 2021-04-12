@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210412.17.7
+@version        20210412.17.14
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -809,6 +809,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .page_actions_item:hover .ui_rmenu_count{background:var(--color1);color:#111!important;transition:opacity .3s}
 [dir] .page_actions_item:not(:hover) .ui_rmenu_count{color:#111!important;opacity:.6;transition:opacity .3s}
 [dir] .feed_filter_icon,[dir] .feed_lists_icon .ui_actions_menu_icons{filter:var(--filt2)!important}
+[dir] .ui_rmenu_subitem:hover{background:#6464641F!important}
 
 /* иконки фыбора прикреплений */
 .media_selector .ms_item::before{filter:var(--filt2)!important}
