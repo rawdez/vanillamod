@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210412.15.1
+@version        20210412.17.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -518,14 +518,14 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] body.new_header_design #side_bar ol li .left_row .left_icon{filter:var(--filt2)brightness(1.1)saturate(.5)!important}
 [dir] body.new_header_design #side_bar ol li .left_row:hover .left_icon{filter:var(--filt2)brightness(1.6)saturate(.4)!important}
 .left_label{transition:filter .3s}
-.left_label:hover{filter:brightness(1.5)saturate(.7)}
+.left_label:hover{filter:brightness(1.2)saturate(.7)}
+[dir] .LeftMenu__icon{color:var(--color1)}
+[dir] a.left_row:hover .LeftMenu__icon{filter:brightness(1.4)}
 [dir] #side_bar{position:fixed!important;top:0px!important}
 [dir] #side_bar ol li{margin-left:0px!important}
 [dir] #side_bar ol li .left_row .left_count_wrap,[dir] #side_bar ol li .left_row:hover .left_count_wrap{padding:3px 5px!important;height:27px!important}
 [dir] #side_bar ol li .left_row .left_count_wrap{background:var(--color2)!important}
 [dir] #side_bar ol li .left_row:hover .left_count_wrap{background:var(--color1)!important}
-[dir] .LeftMenu__icon{color:var(--color1)}
-[dir] a.left_row:hover .LeftMenu__icon{filter:brightness(1.5)}
 [dir] #side_bar ol li .left_row:not(:hover) .left_count_wrap,[dir] .ui_rmenu .ui_rmenu_item:not(:hover) .ui_rmenu_count{opacity:.8;transition:opacity .3s}
 [dir] #side_bar_inner svg{filter:none!important}
 /*[[sidebarnotext]]*/
