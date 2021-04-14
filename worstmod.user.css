@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210414.16.46
+@version        20210414.16.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1255,7 +1255,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .cal_table .month .year{color:var(--color1)}
 [dir] .cal_table .today{box-shadow:inset 0px 0px 0px 1px var(--color2)!important;color:var(--color1)!important;border-radius:3px}
 [dir] .cal_clear{border-top:none;background:#0003!important}
-[dir] .im_cal_clear_lnk{color:#aaa}
 [dir] .cal_clear:hover{background:#111}
 [dir] .cal_clear:hover .im_cal_clear_lnk{color:var(--color1)}
 [dir] .cal_table .month,[dir] .cal_table .month_arr{background-color:#24242424}
@@ -1271,7 +1270,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .im-search--date-input .cal_table .day.sel.hover{background-color:#333;border:1px solid #5A5A5A}
 .im-search--date-input .cal_table .day{color:#AAA}
 .im_cal_clear{background:#000000a8}
-.im_cal_clear_lnk{color:#4D4D4D}
+[dir] .im_cal_clear_lnk{color:#4D4D4D}
 .medadd_c_timer .cal_table .past_day.day.hover{background-color:#0000;color:#222}
 .medadd_c_timer .cal_table .day.hover{background-color:#424242;color:var(--color1)}
 .medadd_c_timer .cal_table .day.sel.hover{background-color:#333;border:1px solid #5A5A5A;color:#CCC}
