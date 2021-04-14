@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210414.17.7
+@version        20210414.18.8
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -282,10 +282,14 @@ body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
 [dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:34px!important}
 [dir] .im-page_classic .im-page--chat-header{margin-top:-14px}
 [dir] .im-page_classic .im-page--header{margin-top:-62px!important}
+[dir] .im-page.im-page_classic{margin-top:63px}
+[dir] .im-page.im-page_classic.im-page_history-show{margin-top:56px}
 EOT;
 pageheadernormal "нет, я люблю жирные шапки" <<<EOT 
 [dir] #top_audio_layer_place > #audio_layer_tt{top:48px!important}
 [dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:48px!important}
+[dir] .im-page.im-page_classic{margin-top:62px}
+[dir] .im-page.im-page_classic.im-page_history-show{margin-top:55px}
 EOT;
 
 }
@@ -1095,6 +1099,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .im-create.im-create_classic .olist_item_wrap{border-bottom:1px solid var(--color4)!important}
 
 /* диалоги */
+[dir] .im-page.im-page_classic .im-page--dialogs{padding-top:0}
+[dir] .im-page.im-page_classic .im-page--dcontent{margin-top:0!important}
 [dir] .im-page_classic .im-page--title-meta{color:var(--color2)}
 [dir] .im-page--dialogs .ui_search_input_block{background-color:rgba(0,0,0,/*[[headopaque]]*/)!important}
 [dir] .nim-dialog .nim-dialog--content{border-color:#111!important}
@@ -1286,7 +1292,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .im-page .im-page--top-date-bar::before{background:none}
 [dir] .im-page .im-page--top-date-bar{border-radius:4px 4px 0px 0px;height:13px;padding:0px 8px 6px;background-color:var(--color4)!important;border:none!important;color:var(--color2)}
 [dir] .im-page--history.page_block._im_page_history.im-page--top-date-bar_visible .im-page--top-date-bar{border:none!important}
-[dir] .im-page.im-page_classic .im-page--dcontent{box-shadow:none}
+[dir] .im-page.im-page_classic .im-page--dcontent{box-shadow:none!important}
 [dir] .im-page .im-page--history-new-bar::after,[dir] .im-page .im-page--history-new-bar::before{display:none}
 [dir] .im-page_classic .im-page--title{padding:0px 0px 0px 10px!important;position:relative;top:-5px}
 [dir] .im-page_classic .im-page--title-meta ._im_chat_members.im-page--members{color:var(--color8)}
