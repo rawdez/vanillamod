@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210414.14.41
+@version        20210414.15.45
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2646,19 +2646,19 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .AppsCatalogHeader__search{filter:var(--filt2)}
 
 /* фикс календаря */ 
-.cal_table>thead{border:0 solid var(--color3);background:#0000!important;border-width:1px 1px 0}
-.cal_table>tbody{border:0 solid var(--color1);border-width:0 1px 1px;background-color:var(--color1)}
-.cal_table .day{background-color:#2b2b2b}
-.cal_table .day:hover{background:var(--color3)!important;color:#ccc!important}
-.cal_table .next_month_day, .cal_table .prev_month_day{background-color:#1f1f1f}
-.medadd_c_timer .cal_table .day.sel{background-color:var(--color1)!important}
-.medadd_c_timer .cal_table .day.sel:hover{color:#fff!important}
-.cal_table .month .year{color:var(--color2)}
-.cal_table .today{box-shadow:inset 0px 0px 0px 1px var(--color6);color:var(--color1)!important}
-.cal_clear{border-top:none;background:#1f1f1f}
-.im_cal_clear_lnk{color:#aaa}
-.cal_clear:hover{background:#111}
-.cal_clear:hover .im_cal_clear_lnk{color:var(--color1)}
+[dir] .cal_table>thead{border:0 solid var(--color3);background:#0000!important;border-width:1px 1px 0}
+[dir] .cal_table>tbody{border:0 solid var(--color1);border-width:0 1px 1px;background-color:var(--color1)}
+[dir] .cal_table .day{background-color:#2b2b2b}
+[dir] .cal_table .day:hover{background:var(--color3)!important;color:#ccc!important}
+[dir] .cal_table .next_month_day,[dir] .cal_table .prev_month_day{background-color:#1f1f1f}
+[dir] .medadd_c_timer .cal_table .day.sel{background-color:var(--color1)!important}
+[dir] .medadd_c_timer .cal_table .day.sel:hover{color:#fff!important}
+[dir] .cal_table .month .year{color:var(--color1)}
+[dir] .cal_table .today{box-shadow:inset 0px 0px 0px 1px var(--color2)!important;color:var(--color1)!important}
+[dir] .cal_clear{border-top:none;background:#1f1f1f}
+[dir] .im_cal_clear_lnk{color:#aaa}
+[dir] .cal_clear:hover{background:#111}
+[dir] .cal_clear:hover .im_cal_clear_lnk{color:var(--color1)}
 
 /* клипы */
 [dir] .ShortVideoPage .page_block_h2,[dir] .ShortVideoPost,[dir] .ShortVideoPage__container--empty{box-shadow:0 1px 0 0 var(--color3),0 0 0 1px var(--color3)}
