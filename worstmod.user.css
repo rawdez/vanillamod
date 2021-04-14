@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210414.12.55
+@version        20210414.14.33
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -281,6 +281,7 @@ body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
 [dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)}
 [dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:34px!important}
 [dir] .im-page_classic .im-page--chat-header{margin-top:-14px}
+[dir] .im-page_classic .im-page--header{margin-top:-62px!important}
 EOT;
 pageheadernormal "нет, я люблю жирные шапки" <<<EOT 
 [dir] #top_audio_layer_place > #audio_layer_tt{top:48px!important}
@@ -595,7 +596,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /* делаем блоки чёрными и прозрачными */
 .page_block{background:rgba(0,0,0,/*[[opaque]]*/)!important;border-radius:4px;box-shadow:0 1px 0 0 #151515,0 0 0 1px #151515!important}
-.wall_module .reply_form,.wr_header:hover,#stl_bg,.audios_module .audio_row.inlined:hover, .wall_audio_rows .audio_row.inlined:hover, .wall_text .audio_row.inlined:hover,#wide_column .audio_row._audio_row:hover,.replies_open:hover,.profile_more_info_link:hover,.video_item .video_restore,.ok_msg,.chat_onl_inner,.im-create .im-create--table > div,.im-page .im-page--header-chat,.nim-dialog:hover,.nim-dialog.nim-dialog_simple:hover,.nim-dialog.nim-dialog_hovered, .nim-dialog:hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted):hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic,.im-page.im-page_classic .im-page--mess-search,.nim-dialog.nim-dialog_classic:hover,.reply_box_inner_wrap.fixed,.flat_button.secondary_dark.more_link.flat_btn_lock,.im-to-end._im_to_end,.notifier_baloon,#profile_groups_link:hover,.feed_reposts_more_link,.im-page.im-page_classic.im-page_history-show .im-page--history,.sticker_hints_tt,.mention_tt_actions{background-color:rgba(0,0,0,/*[[opaque]]*/)!important}
+.wall_module .reply_form,.wr_header:hover,#stl_bg,.audios_module .audio_row.inlined:hover, .wall_audio_rows .audio_row.inlined:hover, .wall_text .audio_row.inlined:hover,#wide_column .audio_row._audio_row:hover,.replies_open:hover,.profile_more_info_link:hover,.video_item .video_restore,.ok_msg,.chat_onl_inner,.im-page .im-page--header-chat,.nim-dialog:hover,.nim-dialog.nim-dialog_simple:hover,.nim-dialog.nim-dialog_hovered, .nim-dialog:hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted):hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic,.im-page.im-page_classic .im-page--mess-search,.nim-dialog.nim-dialog_classic:hover,.reply_box_inner_wrap.fixed,.flat_button.secondary_dark.more_link.flat_btn_lock,.im-to-end._im_to_end,.notifier_baloon,#profile_groups_link:hover,.feed_reposts_more_link,.im-page.im-page_classic.im-page_history-show .im-page--history,.sticker_hints_tt,.mention_tt_actions{background-color:rgba(0,0,0,/*[[opaque]]*/)!important}
 .tt_w.tt_default.rich.wall_tt,.tt_w.tt_default.mention_tt{background-color:#000000f2!important}
 .nim-dialog.nim-dialog_selected:not(.nim-dialog_deleted){background-color:#000c!important}
 .page_block_header.clear_fix,.page_block_header,.settings_block_footer,.flat_button.ui_load_more_btn:not(:hover){background-color:#0000004d!important;border-color:#0000}
@@ -835,6 +836,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /* фикс аудио раздела */
 [dir] ._audio_page_content_block_wrap.audio_page_content_block_wrap,[dir] .page_block._audio_page_content_block{background-color:#0000!important}
+[dir] .page_block._audio_page_content_block .ui_tabs,[dir] .ShortVideoPage .page_block_h2{background:rgba(0,0,0,/*[[opaque]]*/)!important}
 [dir] .audio_page_layout .audio_search_wrapper{background-color:#000000bf!important}
 [dir] .CatalogSection,[dir] .CatalogBlock--divided,[dir] .BannerItem{background-color:#00000080!important}
 [dir] .BannerItem:hover{background-color:#1e1e1e40!important}
@@ -1085,11 +1087,16 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /* создание беседы */  
 .im-create--table{box-shadow:0px 0px 0px 1px #2A2A2C;background-color:#000000bf!important}
-.im-create.im-create_classic .im-create--table{box-shadow:0px 0px 0px 1px #2A2A2C;background-color:#00000080!important}
-.im-create.im-create_material{background-color:#000 !important}
-.ui_multiselect_cnt .token:hover .token_del,.im-member-item .im-member-item--kick-link{filter:saturate(0)}
+[dir] .im-create .im-create--table{box-shadow:none!important;background-color:#0000!important}
+[dir] .im-create .im-create--table > .im-create--tabs{background-color:#00000080!important}
+[dir] .im-create .im-create--wrap,[dir] .im-create .im-create--dcontent{background-color:#0000!important}
+[dir] .im-create.im-create_classic .im-creation--item{background-color:rgba(0,0,0,.9)!important;margin:0;padding:0 20px!important}
+[dir] .im-create.im-create_classic .im-creation--item:hover{background-color:#141414cc!important}
+[dir] .im-create.im-create_classic .olist_item_wrap{border-bottom:1px solid var(--color4)!important}
 
 /* диалоги */
+[dir] .im-page_classic .im-page--title-meta{color:var(--color2)}
+[dir] .im-page--dialogs .ui_search_input_block{background-color:rgba(0,0,0,/*[[headopaque]]*/)!important}
 [dir] .nim-dialog .nim-dialog--content{border-color:#111!important}
 [dir] .im-page_classic.im-page .im-page--dialogs{background-color:#000000a6!important}
 [dir] .im-page_classic.im-page .im-page--dcontent{margin-top:14px}
@@ -1540,6 +1547,7 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .pv_comments{border-top:none;margin-top:4px}
 [dir] .pv_comments #wpe_text.dark{background:none!important;border:none!important;padding:0 22px 0 0!important}
 [dir] .pv_cont .pv_comments .pv_closed_commments_placeholder{background-image:url(https://vk.com/images/icons/privacy.png)!important;filter:invert(.8)saturate(3)hue-rotate(180deg)var(--filt2)!important;color:#000}
+[dir] #ui_albums_load_more.flat_button.ui_load_more_btn:hover{background:var(--color1)!important}
 
 /* рисовалка */
 [dir] .pv_cont .pv_narrow_column_wrap{background:var(--color3)!important}
@@ -1721,7 +1729,7 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 #mv_publish{background:var(--color4);border-bottom:1px solid #000}
 #video_dropbox.dropbox.choose{background:#000000e6}
 #video_dropbox.dropbox.choose:after{content:' ';position:absolute;top:0px;left:0px;width:200px;height:200px;background:#0000 url(https://vk.com/images/dropbox_arrow.png) no-repeat 31px 31px;filter:brightness(.5)saturate(2)var(--filt2)}
-[dir] .VideoLayerInfo__description .can_edit:hover{background:rgba(0,0,0,.25)}
+[dir] .VideoLayerInfo__description .can_edit:hover{background:#00000040}
 #mv_container #mv_reply_form_wrap div.submit_post_field{padding:6px 36px 0 16px!important}
 #mv_container #mv_reply_form_wrap div.submit_post_field ~ .placeholder .ph_content{padding-left:16px!important}
 #mv_container .VerticalVideoLayerInfo #mv_reply_form_wrap div.submit_post_field ~ .placeholder .ph_content{padding-left:5px!important}
@@ -2059,11 +2067,11 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--filt2)brightnes
 /* логин и забыл пароль */
 .index_users_info{color:#bfbfbf}
 .index_user_del_wrap,.index_user_del_wrap:hover{filter:invert(1)hue-rotate(180deg)saturate(.7)var(--filt2)}
-.index_new_user_row .index_user_ph{background-color:rgba(255,255,255,.35);filter:invert(1)hue-rotate(180deg)brightness(.7)saturate(.5)var(--filt2)}
+.index_new_user_row .index_user_ph{background-color:#ffffff59;filter:invert(1)hue-rotate(180deg)brightness(.7)saturate(.5)var(--filt2)}
 .index_new_user_row:hover .index_user_ph{filter:invert(1)hue-rotate(180deg)brightness(1)saturate(.4)var(--filt2)} 
 .index_new_user_row .index_user_name{color:var(--color2)}
 .index_new_user_row:hover .index_user_name{color:var(--color1)}
-.index_page .login_mobile_promo_wrap{background-color:rgba(0,0,0,.75);border:1px solid #222}
+.index_page .login_mobile_promo_wrap{background-color:#000000bf;border:1px solid #222}
 #forgot_panel .bottom_row{border-top:1px solid #2A2A2A;background-color:#1B1B1B;color:#ADADAD}
 #quick_login{background-color:#000000bf;border:1px solid #222;padding:7px;margin-left:-16px}
 .login_app_download_wrap .flat_button.secondary.button_light:hover{background:#00000080;border:1px solid #222}
@@ -2357,7 +2365,7 @@ img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:non
 .story_feed_new_item .stories_feed_item_name{color:var(--color1)}
 .stories_feed_item_name{color:var(--color2)}
 .stories_feed_item_name:hover{color:var(--color1)}
-.story_view_answer_form_cont{background:rgba(0,0,0,.85)}
+.story_view_answer_form_cont{background:#000000d9}
 .story_view_answer_form_text{background:#0000!important}
 .story_view_feedback_button_arrow{background:#0000!important;width:0px!important;height:0px!important;border-style:solid;border-color:#000000d9 #0000 #0000 #0000;border-width:10px 10px 10px 10px}
 .story_view_answer_form_send_btn{filter:var(--filt2)}
