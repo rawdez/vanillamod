@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210414.14.33
+@version        20210414.14.41
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1326,6 +1326,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .CallManagementModal .Button--secondary:hover{color:var(--color1)}
 [dir] .CallsSearchResult__icon{color:var(--color2)}
 [dir] .CallsSearchResult:hover .CallsSearchResult__icon{color:var(--color1)}
+[dir] .Switch--last .Switch__indicator{filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.7)brightness(.8)}
 
 /* добавить в беседу */
 [dir] .ListAddControl__icon{color:var(--color2);border: 1px solid var(--color2)}
