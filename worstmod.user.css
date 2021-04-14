@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210414.16.47
+@version        20210414.17.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -654,7 +654,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .page_extra_actions_btn,[dir] .page_actions_btn,[dir] #profile_edit_act,[dir] .profile_btn_cut_left,[dir] .Profile__addFriendButton,[dir] .profile_msg_split .profile_btn_cut_right,.profile_msg_side_only .profile_btn_cut_right{background-color:#0e0e0eb3!important}
 [dir] .page_extra_actions_btn:hover,[dir] .page_actions_btn:hover,[dir] #profile_edit_act:hover,[dir] .profile_btn_cut_left:hover,[dir] .Profile__addFriendButton:hover,[dir] .profile_msg_split .profile_btn_cut_right:hover,.profile_msg_side_only .profile_btn_cut_right:hover{background-color:#1e1e1eb3!important}
 [dir] .profile_btn_cut_left:hover,[dir] .Profile__addFriendButton:hover,.profile_msg_side_only .profile_btn_cut_right:hover{color:var(--color1)}
-.page_actions_item:hover:not(.grey_hoverable){background:var(--color3)}
+[dir] .page_actions_item:hover:not(.grey_hoverable){background:#6464641f!important}
 [dir] .profile_side_icon{filter:brightness(.35)sepia(1)hue-rotate(180deg)var(--filt2)}
 [dir] .profile_btn_cut_right:hover .profile_side_icon{filter:brightness(.5)sepia(1)hue-rotate(180deg)var(--filt2)saturate(.8)}
 [dir] .profile_msg_split .flat_button.profile_btn_cut_left{border-right:1px solid var(--color3)!important}
