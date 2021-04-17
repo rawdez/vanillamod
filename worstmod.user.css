@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210417.12.48
+@version        20210417.13.4
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1359,11 +1359,10 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .CheckBox__input:checked + .CheckBox__indicator{filter:invert(1)hue-rotate(180deg)var(--filt2)saturate(.7)brightness(.6)}
 
 /* фикс плашки новых постов */ 
-[dir] .feed_new_posts{border-radius:4px 4px 0px 0px;border-bottom:none}
+[dir] .feed_new_posts{border-radius:4px 4px 0px 0px;border-bottom:none;box-shadow:-1px -1px 0 0 #151515,1px -1px 0 0 #151515!important}
 [dir] .feed_new_posts:hover{background-color:var(--color1)!important;color:var(--color5)!important}
 [dir] .feed_new_posts > b{background-color:#0000!important;color:#888!important;padding:0px;border-radius:0px}
 [dir] .feed_new_posts:hover > b{color:var(--color5)!important}
-[dir] .feed_has_new .feed_row .page_block{box-shadow:-1px 1px 0 0 #151515,1px 1px 0 0 #151515,0 1px 0 0 #151515!important}
 
 /* фикс счётчика сообщений */    
 #side_bar li span.left_count_wrap{background-color:var(--color1)!important}
