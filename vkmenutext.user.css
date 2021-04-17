@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           VK menu text
-@version        210326.3.0
+@version        210418.2.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -27,9 +27,7 @@
 @advanced text starred "Закладки" "Збс"
 @advanced text files "Файлы" "Файлики"
 @advanced text makeshit "Реклама" "Начинаем бизнес"
-
-
-
+@advanced text fuckingshit "Управление" "Хуита"
 ==/UserStyle== */
 @-moz-document regexp('https?://vk.com/(?!dev/|dev$|apps.act=manage|about$|about.z=|jobs$|jobs.w=|products$|messenger$|ads$|ads/|adscreate$|adsmarket.act=|ads.act=).*'){
 
@@ -72,5 +70,7 @@
 #l_doc .left_label.inl_bl:before{content:"/*[[files]]*/";font-size:/*[[textsize]]*/px}
 #l_ads .left_label.inl_bl{font-size:0!important}
 #l_ads .left_label.inl_bl:before{content:"/*[[makeshit]]*/";font-size:/*[[textsize]]*/px}
+#l_apm .left_label.inl_bl{font-size:0!important}
+#l_apm .left_label.inl_bl:before{content:"/*[[fuckingshit]]*/";font-size:/*[[textsize]]*/px}
 
 }
