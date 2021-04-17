@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210417.13.4
+@version        20210418.2.22
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -513,7 +513,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] #side_bar ol li:hover{background:#6464641f!important}
 [dir] #side_bar ol li .left_row:hover{background:#0000!important}
 #side_bar li span.left_label.inl_bl{opacity:1!important}
-#side_bar .more_div{margin:5px 9px 0px 7px!important;padding-top:2px!important;border-top:1px solid #111!important}
+#side_bar .more_div{margin:5px 9px 0px 7px!important;padding-top:2px!important;border-top:none!important}
 [dir] body.new_header_design #side_bar ol li .left_row{padding:0}
 [dir] body.new_header_design #side_bar ol li{padding-left:8px}
 [dir] body.new_header_design #side_bar ol {margin:0 10px 10px -6px}
