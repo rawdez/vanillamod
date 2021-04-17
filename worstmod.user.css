@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210417.3.7
+@version        20210417.4.17
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1006,6 +1006,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_add,.audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_listen,.audio_pl_snippet2 .audio_pl_snippet__action_btn{padding:0 22px 0 22px!important}
 .audio_pl_snippet2 .audio_pl_snippet__actions,.ap_layer_wrap .audio_pl_snippet2 .audio_pl_snippet__actions{min-width:25%;position:absolute;bottom:18px;right:0px}
 
+[dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info{padding:12px 5px}
 [dir] .ap_layer_wrap .audio_pl__has_shuffle .audio_pl_snippet__shuffle_all:hover{background-color:#0000!important}
 .ap_layer_wrap .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;position:absolute;top:100px;right:150px;height:36px;width:36px}
 .ap_layer_wrap .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__actions{min-width:10%}
