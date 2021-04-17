@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210415.11.52
+@version        20210417.3.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -840,7 +840,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /* фикс аудио раздела */
 [dir] ._audio_page_content_block_wrap.audio_page_content_block_wrap,[dir] .page_block._audio_page_content_block{background-color:#0000!important}
-[dir] .page_block._audio_page_content_block .ui_tabs,[dir] .ShortVideoPage .page_block_h2{background:rgba(0,0,0,/*[[opaque]]*/)!important}
+[dir] #content>.audio_page_layout2 .ui_tabs,[dir] .ShortVideoPage .page_block_h2{background:rgba(0,0,0,/*[[opaque]]*/)!important}
 [dir] .audio_page_layout .audio_search_wrapper{background-color:#000000bf!important}
 [dir] .CatalogSection,[dir] .CatalogBlock--divided,[dir] .BannerItem{background-color:#00000080!important}
 [dir] .BannerItem:hover{background-color:#1e1e1e40!important}
@@ -2595,7 +2595,8 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 #wk_content .reply_box{background:#000000bf!important}
 #wk_layer_wrap #wk_content .reply_box{background:#00000024!important}
 #wk_layer_wrap  .deep_active:not(.closed_comments) .wl_replies_block_wrap .replies_wrap_deep{border-top:none!important}
-[dir] .deep_active .replies .replies_wrap_deep .reply_media_preview, [dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .reply_media_preview, [dir] .deep_active.wall_module .replies .replies_wrap_deep .reply_media_preview, [dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .reply_media_preview{border-bottom:none}
+[dir] .deep_active .replies .replies_wrap_deep .reply_media_preview,[dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .reply_media_preview,[dir] .deep_active.wall_module .replies .replies_wrap_deep .reply_media_preview,[dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .reply_media_preview{border-bottom:none}
+[dir] .reply_media_preview.multi_media_preview.media_preview_has_medias{margin:0}
 .deep_active.wl_post .replies .wl_replies_empty,.deep_active.wl_post.wall_module .replies .wl_replies_empty, .deep_active.wl_post.wall_module .wl_replies_block_wrap .wl_replies_empty,.deep_active.wl_post .wl_replies_block_wrap .wl_replies_empty{border-top:1px solid var(--color4)}
 .deep_active:not(.closed_comments) .replies .reply_form_user_image .checkbox_official,.deep_active.wall_module .wl_replies_block_wrap .reply_form_user_image .checkbox_official{display:block;right:24px;opacity:.7}
 .deep_active:not(.closed_comments) .replies_list .reply_form_user_image .checkbox_official,.deep_active.wall_module .wl_replies_wrap .reply_form_user_image .checkbox_official{right:28px}
