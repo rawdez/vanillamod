@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210418.2.22
+@version        20210418.15.40
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -313,7 +313,7 @@ nofadetoblack "отключить на случай г-нобраузера" <<<
 }
 @advanced dropdown countsfold "★ Сворачивать счётчики инфы страницы:" {
 countsfoldon "вкл*" <<<EOT /* сворачивать счётчики *\/
-.counts_module {height:0px!important;transition:height 0.7s;border: none;box-shadow:inset 0px 1px 0px 0px #111;background-color:rgba(0,0,0,0.4)}
+.counts_module{height:0px!important;transition:height 0.7s;border: none;box-shadow:inset 0px 1px 0px 0px #111;background-color:rgba(0,0,0,0.4);border-top:none!important}
 .profile_more_info_link:not(.info_shown){height:0px!important;opacity:0;transition:height .7s, opacity .7s;pointer-events:none}
 #wide_column div:nth-child(1):hover .counts_module{height:70px!important;transition:height 0.7s}
 #wide_column div:nth-child(1):hover .profile_more_info_link{height:34px!important;opacity:1;transition:height 0.7s, opacity .7s;pointer-events:all}
@@ -600,6 +600,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /* делаем блоки чёрными и прозрачными */
 .page_block{background:rgba(0,0,0,/*[[opaque]]*/)!important;border-radius:4px;box-shadow:0 1px 0 0 #151515,0 0 0 1px #151515!important}
+[dir] .wall_module > .page_block:first-child{box-shadow:-1px -1px 0 0 #151515,1px -1px 0 0 #151515!important}
 .wall_module .reply_form,.wr_header:hover,#stl_bg,.audios_module .audio_row.inlined:hover, .wall_audio_rows .audio_row.inlined:hover, .wall_text .audio_row.inlined:hover,#wide_column .audio_row._audio_row:hover,.replies_open:hover,.profile_more_info_link:hover,.video_item .video_restore,.ok_msg,.chat_onl_inner,.im-page .im-page--header-chat,.nim-dialog:hover,.nim-dialog.nim-dialog_simple:hover,.nim-dialog.nim-dialog_hovered, .nim-dialog:hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted):hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic,.im-page.im-page_classic .im-page--mess-search,.nim-dialog.nim-dialog_classic:hover,.reply_box_inner_wrap.fixed,.flat_button.secondary_dark.more_link.flat_btn_lock,.im-to-end._im_to_end,.notifier_baloon,#profile_groups_link:hover,.feed_reposts_more_link,.im-page.im-page_classic.im-page_history-show .im-page--history,.sticker_hints_tt,.mention_tt_actions{background-color:rgba(0,0,0,/*[[opaque]]*/)!important}
 .tt_w.tt_default.rich.wall_tt,.tt_w.tt_default.mention_tt{background-color:#000000f2!important}
 .nim-dialog.nim-dialog_selected:not(.nim-dialog_deleted){background-color:#000c!important}
@@ -609,10 +610,10 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .closed_page{background-color:#0000004d!important;border:1px solid var(--color5)}
 .closed_page .closed_details{color:var(--color2)}
 [dir] #wall_tabs.ui_tabs_search_opened ._wall_tab_all,[dir] #wall_tabs.ui_tabs_search_opened ._wall_tab_own,[dir] #wall_tabs.ui_tabs_search_opened .ui_tab_search{opacity:0!important}
-[dir] .ui_tabs{background-color:#0000!important}
+[dir] .ui_tabs{background-color:#0000!important;border-bottom:none!important}
 [dir] #wall_search.ui_search_field._field{background-color:#0000!important}
 [dir] .ui_search_input_block{background-color:#00000054!important}
-.ui_tabs,#friends_search_input_wrap .ui_search_input_block{border-bottom:1px solid #111}
+#friends_search_input_wrap .ui_search_input_block{border-bottom:1px solid #111}
 .ui_search{border:none}
 .im-page .im-page--dialogs-footer,.im-create.im-create_classic .im-create--footer{background-color:#000000e6!important;border-top:1px solid #111!important}
 .video_item .video_item_thumb_wrap,.videocat_featured_video{background-color:#00000080!important}
@@ -914,7 +915,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .audio_page__shuffle_all .audio_page__shuffle_all_button::before{filter:var(--filt2)saturate(.2)brightness(1.2)!important;left:5px}
 [dir] .idd_wrap .idd_arrow{background-image:url(https://vk.com/images/svg_icons/contour_arrow.svg)!important;filter:var(--filt2)!important;color:#647b8e}
 
-/* треклист / плееры */
+/* треклист / плееры */    
 [dir] .TopNavBtn.TopNavBtn__audio .TopNavBtn__icon{filter:var(--filt2)saturate(.8)}
 #audio_layer_tt{background:#000000d9!important}
 [dir] .CatalogSection,[dir] .CatalogSection::before,[dir] .page_block._audio_page_content_block,[dir] .page_block._audio_page_content_block::before{box-shadow:none!important}
@@ -1556,10 +1557,11 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 /* календарь событий обесцвечивание стрелок */  
 .bd_arrow{filter:saturate(0)}
 
-/* инфа профиля */ 
-#page_info_wrap .page_top{padding-bottom:8px!important;border-bottom:1px solid #111!important}
-.profile_info_block{border-top:0px}
-.page_counter:not([href]):not([onclick]) .count{color:var(--color2)}
+/* инфа профиля */
+#page_info_wrap .page_top{padding-bottom:8px!important;border-bottom:1px solid #0000!important}
+[dir] .profile_info_block{border-top:1px solid #0000!important}
+[dir] .profile_info_header{color:var(--color2)}
+[dir] .profile_info_edit:hover{color:var(--color1)}
 [dir] .profile_closed_wall_dummy::before{filter:brightness(.4)var(--filt2)}
 
 /* фотки */
