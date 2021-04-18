@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210418.15.40
+@version        20210419.2.36
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1561,6 +1561,7 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 #page_info_wrap .page_top{padding-bottom:8px!important;border-bottom:1px solid #0000!important}
 [dir] .profile_info_block{border-top:1px solid #0000!important}
 [dir] .profile_info_header{color:var(--color2)}
+[dir] .profile_info_edit{background:#0000!important}
 [dir] .profile_info_edit:hover{color:var(--color1)}
 [dir] .profile_closed_wall_dummy::before{filter:brightness(.4)var(--filt2)}
 
