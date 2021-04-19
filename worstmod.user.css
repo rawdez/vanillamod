@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210419.2.59
+@version        20210419.3.3
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -975,7 +975,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .AudioPlaylistSnippet__author a:hover{color:#ddd}
 
 [dir] .audio_playlist_page .AudioPlaylistSnippet .ActionButton--shuffle{right:184px!important}
-[dir] ._playlist_page_content_block{box-shadow:0 1px 0 0 #171717,0 0 0 1px #212121!important}
+[dir] ._playlist_page_content_block{box-shadow:0 1px 0 0 #151515,0 0 0 1px #151515!important}
 [dir] ._playlist_page_content_block .page_block_header{background-color:rgba(0,0,0,/*[[opaque]]*/)!important}
 [dir] a.ui_crumb{color:var(--color2)}
 [dir] a.ui_crumb:hover{color:var(--color1)}
