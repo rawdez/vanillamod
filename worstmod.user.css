@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210421.18.37
+@version        20210421.19.10
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -735,12 +735,14 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /*[[audiosendremove]]*/
 /*[[nomoneysend]]*/
 
-/*  меню редактирования фоток */
+/* меню редактирования фоток */
 [dir] #pv_more_acts_tt{background:#000000c1!important;border:1px solid var(--color4)!important}
 [dir] .pv_more_act_item{filter:brightness(.6)}
 [dir] .pv_more_act_item:hover{background:#6464641f!important;filter:none!important}
 .eltt.eltt_top.eltt_arrow_size_normal .eltt_arrow_back{border-top-color:#0000!important}
 .eltt.eltt_top.eltt_arrow_size_normal > .eltt_arrow_back .eltt_arrow{border-top-color:#000000c1!important}
+[dir] a.ui_actions_menu_item:hover{background:#6464641f!important}
+[dir] .ui_actions_menu._ui_menu:hover{box-shadow:none!important}
 /*[[editmenumod]]*/
 
 /* действия профиля / паблоса */
@@ -1933,7 +1935,8 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] #stat_group_weekly_reports_table tr.paginated_table_row{border-bottom:1px solid #0b0b0b}
 
 /* менюшки шапки */
-#ts_cont_wrap.ts_cont_wrap,#top_notify_wrap,#top_profile_menu,.tt_w.top_notify_tt{background-color:#000000e6!important;border:1px solid var(--color5)!important}
+#ts_cont_wrap.ts_cont_wrap,#top_notify_wrap,#top_profile_menu,.tt_w.top_notify_tt{background-color:#000000d9!important;border:1px solid var(--color5)!important}
+[dir] .top_profile_mrow:hover,[dir] .top_profile_vkconnect_row:hover{background-color:#6464641f!important}
 [dir] .top_notify_cont .feedback_row{border-color:#000!important}
 [dir] .top_notify_header{background-color:#0003!important;border:none!important}
 [dir] .top_notify_show_all{background-color:#0003!important;border:none!important}
