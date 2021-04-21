@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210421.2.29
+@version        20210421.18.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -321,6 +321,53 @@ EOT;
 countsfoldoff "выкл" <<<EOT  EOT;
 
 }
+@advanced dropdown editmenumod "★ Мод меню картинок:" {
+editmenumodон "вкл*" <<<EOT /* мод меню редактирования фоток *\/
+#pv_more_act_download.pv_more_act_item:not([href="#"]):before{transform:rotate(180deg)translateY(2px)}
+.pv_more_acts{display:flex;flex-direction:row;justify-content:center}
+
+[dir] #pv_more_acts_tt .pv_more_act_item_sep{display:none}
+[dir] #pv_more_acts_tt .pv_more_acts_hidden{border-bottom:1px solid var(--color4);margin-bottom:5px}
+[dir] #pv_more_acts_tt .pv_more_act_item{width:0px;overflow:hidden;padding:2px 24px 2px 4px}
+[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{width:144px!important}
+[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item:before{width:0px!important}
+[dir] #pv_more_acts_tt{min-width:60px}
+[dir] #pv_more_acts_tt .pv_more_act_item:before{width:18px}
+    
+[dir] #pv_more_acts_tt #pv_more_act_pe:before{background-position:0 -99px}
+[dir] #pv_more_acts_tt #pv_more_act_spe::before{background-position:1px -1px!important}
+#pv_more_act_rotate_ccw{order:1}
+#pv_more_act_rotate_cw{order:2}
+#pv_more_act_spe{order:3}
+#pv_more_act_pe{order:4}
+#pv_more_act_move_to{order:5}
+#pv_more_act_download{order:6}
+#pv_more_act_to_profile{order:7}
+#pv_more_act_place{order:8}
+#pv_more_act_market{order:9}
+#pv_more_act_as_title{order:10}
+#pv_more_act_spam{order:11}
+  
+/* мод меню редактирования фоток - подсказки *\/
+#pv_more_act_rotate_ccw:after,#pv_more_act_rotate_cw:after,#pv_more_act_move_to:after,#pv_more_act_pe:after,#pv_more_act_spe:after,#pv_more_act_place:after,#pv_more_act_to_profile:after,#pv_more_act_as_title:after,#pv_more_act_download:after,#pv_more_act_spam:after,#pv_more_act_to_dialog:after,#pv_more_act_market:after{color:#888;display:none;background:var(--color4);border:1px solid #222;padding:3px;margin:-46px -5px}
+#pv_more_act_rotate_ccw:hover:after,#pv_more_act_rotate_cw:hover:after,#pv_more_act_move_to:hover:after,#pv_more_act_pe:hover:after,#pv_more_act_spe:hover:after,#pv_more_act_place:hover:after,#pv_more_act_to_profile:hover:after,#pv_more_act_as_title:hover:after,#pv_more_act_download:hover:after,#pv_more_act_spam:hover:after,#pv_more_act_to_dialog:hover:after,#pv_more_act_market:hover:after{display:block;position:absolute}
+    
+#pv_more_act_rotate_ccw:after{content:"поворот влево"}/*ROTATE LEFT*\/
+#pv_more_act_rotate_cw:after{content:"поворот вправо"}/*ROTATE RIGHT*\/
+#pv_more_act_move_to:after{content:"в альбом"}/*MOVE TO ALBUM*\/
+#pv_more_act_pe:after{content:"редактор"}/*PICTURE EDITOR*\/
+#pv_more_act_spe:after{content:"эффекты"}/*EFFECTS*\/
+#pv_more_act_place:after{content:"указать место"}/*MARK PLACE*\/
+#pv_more_act_to_profile:after{content:"на аватар"}/*SET AS AVATAR*\/
+#pv_more_act_as_title:after{content:"обложка альбома"}/*SET AS ALBUM COVER*\/
+#pv_more_act_download:after{content:"открыть оригинал"}/*OPEN ORIGINAL*\/
+#pv_more_act_spam:after{content:"пожаловаться"}/*SPAM*\/
+#pv_more_act_to_dialog:after{content:"на обложку беседы"}/*DIALOG PIC*\/
+#pv_more_act_market:after{content:"прикрепление товара"}/*MARKET*\/
+EOT;
+editmenumodoff "выкл" <<<EOT  EOT;
+
+}
 @advanced dropdown burnmotherfucker "🔥💔 Сжечь сердца:" {
 burnmotherfuckerburn "жги огнём!*" <<<EOT /* сжечь сердца *\/
 .like_btns .like_btn.like .like_button_icon{background:#0000 url(https://vk.com/images/icons/apps_catalog_icons.png)no-repeat -7px -313px!important;width:16px;height:18px;margin-left:4px}
@@ -458,6 +505,7 @@ nomoneysendfuckall "нафиг денежные переводы и воспом
 [dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--memories,[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--money-transfer{display:none} EOT;
 
 }
+
 @advanced dropdown sidebarnotext "Фикс для панельки слева без текста:" {
 sidebarnotextnope "выкл*" <<<EOT  EOT;
 sidebarnotextyep "вкл" <<<EOT /* фикс для панельки слева без текста *\/
@@ -541,54 +589,6 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 
 /* фикс страница не найдена */
 body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 url(https://vk.com/images/error404.png) no-repeat 50% 50%;width:100%;height:100%;filter:saturate(0)brightness(.5)contrast(1.3)}
-   
-/* мод меню редактирования фоток */
-#pv_more_act_download.pv_more_act_item:not([href="#"]):before{transform:rotate(180deg)translateY(2px)}
-.pv_more_acts{display:flex;flex-direction:row;justify-content:center}
-#pv_more_acts_tt{background:#000000d9;border:1px solid var(--color3)}
-.pv_more_act_item{filter:brightness(.6)}
-.pv_more_act_item:hover{background:#111!important;filter:none!important}
-.eltt.eltt_top.eltt_arrow_size_normal .eltt_arrow_back{border-bottom-color:#0000!important;border-top-color:var(--color3)!important}
-.eltt.eltt_top.eltt_arrow_size_normal .eltt_arrow{border-top-color:#000000d9!important}
-
-[dir] #pv_more_acts_tt .pv_more_act_item_sep{display:none}
-[dir] #pv_more_acts_tt .pv_more_acts_hidden{border-bottom:1px solid var(--color3);margin-bottom:5px}
-[dir] #pv_more_acts_tt .pv_more_act_item{width:0px;overflow:hidden;padding:2px 24px 2px 4px}
-[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{width:144px!important}
-[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item:before{width:0px!important}
-[dir] #pv_more_acts_tt{min-width:60px}
-[dir] #pv_more_acts_tt .pv_more_act_item:before{width:18px}
-    
-[dir] #pv_more_acts_tt #pv_more_act_pe:before{background-position:0 -99px}
-[dir] #pv_more_acts_tt #pv_more_act_spe::before{background-position:1px -1px!important}
-#pv_more_act_rotate_ccw{order:1}
-#pv_more_act_rotate_cw{order:2}
-#pv_more_act_spe{order:3}
-#pv_more_act_pe{order:4}
-#pv_more_act_move_to{order:5}
-#pv_more_act_download{order:6}
-#pv_more_act_to_profile{order:7}
-#pv_more_act_place{order:8}
-#pv_more_act_market{order:9}
-#pv_more_act_as_title{order:10}
-#pv_more_act_spam{order:11}
-  
-/*  мод меню редактирования фоток - подсказки */
-#pv_more_act_rotate_ccw:after,#pv_more_act_rotate_cw:after,#pv_more_act_move_to:after,#pv_more_act_pe:after,#pv_more_act_spe:after,#pv_more_act_place:after,#pv_more_act_to_profile:after,#pv_more_act_as_title:after,#pv_more_act_download:after,#pv_more_act_spam:after,#pv_more_act_to_dialog:after,#pv_more_act_market:after{color:#888;display:none;background:var(--color3);border:1px solid #222;padding:3px;margin:-46px -5px}
-#pv_more_act_rotate_ccw:hover:after,#pv_more_act_rotate_cw:hover:after,#pv_more_act_move_to:hover:after,#pv_more_act_pe:hover:after,#pv_more_act_spe:hover:after,#pv_more_act_place:hover:after,#pv_more_act_to_profile:hover:after,#pv_more_act_as_title:hover:after,#pv_more_act_download:hover:after,#pv_more_act_spam:hover:after,#pv_more_act_to_dialog:hover:after,#pv_more_act_market:hover:after{display:block;position:absolute}
-    
-#pv_more_act_rotate_ccw:after{content:"поворот влево"}/*ROTATE LEFT*/
-#pv_more_act_rotate_cw:after{content:"поворот вправо"}/*ROTATE RIGHT*/
-#pv_more_act_move_to:after{content:"в альбом"}/*MOVE TO ALBUM*/
-#pv_more_act_pe:after{content:"редактор"}/*PICTURE EDITOR*/
-#pv_more_act_spe:after{content:"эффекты"}/*EFFECTS*/
-#pv_more_act_place:after{content:"указать место"}/*MARK PLACE*/
-#pv_more_act_to_profile:after{content:"на аватар"}/*SET AS AVATAR*/
-#pv_more_act_as_title:after{content:"обложка альбома"}/*SET AS ALBUM COVER*/
-#pv_more_act_download:after{content:"открыть оригинал"}/*OPEN ORIGINAL*/
-#pv_more_act_spam:after{content:"пожаловаться"}/*SPAM*/
-#pv_more_act_to_dialog:after{content:"на обложку беседы"}/*DIALOG PIC*/
-#pv_more_act_market:after{content:"прикрепление товара"}/*MARKET*/
 
 /* мод закладок */
 [dir] .bookmarks_rows_group,[dir] .bookmarks_rows_user{padding:10px 5px 14px}
@@ -735,6 +735,14 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /*[[chaticonremove]]*/
 /*[[audiosendremove]]*/
 /*[[nomoneysend]]*/
+
+/*  меню редактирования фоток */
+[dir] #pv_more_acts_tt{background:#000000c1!important;border:1px solid var(--color4)!important}
+[dir] .pv_more_act_item{filter:brightness(.6)}
+[dir] .pv_more_act_item:hover{background:#6464641f!important;filter:none!important}
+.eltt.eltt_top.eltt_arrow_size_normal .eltt_arrow_back{border-top-color:#0000!important}
+.eltt.eltt_top.eltt_arrow_size_normal > .eltt_arrow_back .eltt_arrow{border-top-color:#000000c1!important}
+/*[[editmenumod]]*/
 
 /* действия профиля / паблоса */
 [dir] .page_photo.ProfileActions .page_actions_expanded{margin-top:6px}
