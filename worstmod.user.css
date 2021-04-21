@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210421.19.10
+@version        20210421.20.17
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -603,7 +603,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .wall_module .reply_form,.wr_header:hover,#stl_bg,.audios_module .audio_row.inlined:hover, .wall_audio_rows .audio_row.inlined:hover, .wall_text .audio_row.inlined:hover,#wide_column .audio_row._audio_row:hover,.profile_more_info_link:hover,.video_item .video_restore,.ok_msg,.chat_onl_inner,.im-page .im-page--header-chat,.nim-dialog:hover,.nim-dialog.nim-dialog_simple:hover,.nim-dialog.nim-dialog_hovered, .nim-dialog:hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted):hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic,.im-page.im-page_classic .im-page--mess-search,.nim-dialog.nim-dialog_classic:hover,.reply_box_inner_wrap.fixed,.flat_button.secondary_dark.more_link.flat_btn_lock,.im-to-end._im_to_end,.notifier_baloon,#profile_groups_link:hover,.feed_reposts_more_link,.im-page.im-page_classic.im-page_history-show .im-page--history,.sticker_hints_tt,.mention_tt_actions{background-color:rgba(0,0,0,/*[[opaque]]*/)!important}
 .tt_w.tt_default.rich.wall_tt,.tt_w.tt_default.mention_tt{background-color:#000000f2!important}
 .nim-dialog.nim-dialog_selected:not(.nim-dialog_deleted){background-color:#000c!important}
-[dir] .page_block_header,.settings_block_footer,.flat_button.ui_load_more_btn:not(:hover){background-color:#0000004d!important;border-color:#0000}
+[dir] .page_block_header,.settings_block_footer,.flat_button.ui_load_more_btn:not(:hover){background-color:#0000004d!important;border-color:#0000!important}
 .photos_container .photos_row,.photos_album_page .photos_row:first-child, .photos_album_page .photos_row:last-child{background-color:#0000001a!important;border:1px solid var(--color5)}
 .photos_album_thumb.crisp_image{background-color:#0000004d!important}
 .closed_page{background-color:#0000004d!important;border:1px solid var(--color5)}
