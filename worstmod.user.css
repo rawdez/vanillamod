@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210421.18.27
+@version        20210421.18.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -325,11 +325,10 @@ countsfoldoff "выкл" <<<EOT  EOT;
 editmenumodон "вкл*" <<<EOT /* мод меню редактирования фоток *\/
 #pv_more_act_download.pv_more_act_item:not([href="#"]):before{transform:rotate(180deg)translateY(2px)}
 .pv_more_acts{display:flex;flex-direction:row;justify-content:center}
-
 [dir] #pv_more_acts_tt .pv_more_act_item_sep{display:none}
-[dir] #pv_more_acts_tt .pv_more_acts_hidden{border-bottom:1px solid var(--color4);margin-bottom:5px}
+[dir] #pv_more_acts_tt .pv_more_acts_hidden{border-bottom:none;margin-bottom:5px}
 [dir] #pv_more_acts_tt .pv_more_act_item{width:0px;overflow:hidden;padding:2px 24px 2px 4px}
-[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{width:144px!important}
+[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{width:204px!important}
 [dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item:before{width:0px!important}
 [dir] #pv_more_acts_tt{min-width:60px}
 [dir] #pv_more_acts_tt .pv_more_act_item:before{width:18px}
