@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210422.17.54
+@version        20210423.0.44
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -580,6 +580,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] #side_bar ol li .left_row:hover .left_count_wrap{background:var(--color1)!important}
 [dir] #side_bar ol li .left_row:not(:hover) .left_count_wrap,[dir] .ui_rmenu .ui_rmenu_item:not(:hover) .ui_rmenu_count{opacity:.8;transition:opacity .3s}
 [dir] #side_bar_inner svg{filter:none!important}
+[dir] body.new_header_design .left_count_wrap{color:#111}
 /*[[sidebarnotext]]*/
   
 /* и фиксим левый скролл */
@@ -824,7 +825,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 /* правое меню */
 [dir] .ui_rmenu .ui_rmenu_item:hover,[dir] .ui_rmenu_item_sel,[dir] .ui_rmenu_item_sel:hover{background:#6464641f!important}
-[dir] .ui_rmenu .ui_rmenu_count{color:#111!important;background:var(--color2);transition:background .3s;border-radius:2px}
+[dir] .ui_rmenu .ui_rmenu_count,[dir] .ui_rmenu_count.ui_rmenu_count_grey{color:#111!important;background:var(--color2);transition:background .3s;border-radius:2px}
 [dir] .ui_rmenu .ui_rmenu_item:hover .ui_rmenu_count{color:#111!important;background:var(--color1)}
 [dir] .page_actions_item:hover .ui_rmenu_count{background:var(--color1);color:#111!important;transition:opacity .3s}
 [dir] .page_actions_item:not(:hover) .ui_rmenu_count{color:#111!important;opacity:.6;transition:opacity .3s}
