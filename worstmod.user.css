@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210423.13.59
+@version        20210423.15.21
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1244,7 +1244,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .im-chat-input .im-chat-input--selector{bottom:initial!important;top:3px}
 .im-chat-input .im-chat-input--send{bottom:initial!important;top:-3px}
 
-[dir] .im-chat-history-resize._im_chat_resize{background:#000000d9!important;top:1px;border-bottom:13px solid #000000d9}
+[dir] .im-chat-history-resize._im_chat_resize{background:rgba(0,0,0,/*[[headopaque]]*/)!important;top:1px;border-bottom:13px solid rgba(0,0,0,/*[[headopaque]]*/)}
 [dir] .im-chat-history-resize._im_chat_resize[style*="height: 0px"]{border-bottom:none}
 [dir] .im-page.im-page_classic .im-chat-history-resize--track{border-bottom:1px solid #000000d9!important;filter:brightness(.4);transition:filter 0.5s}
 [dir] .im-page.im-page_classic .im-chat-history-resize--track:hover{filter:brightness(1)}
@@ -1567,15 +1567,17 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 
 /* фильтр лампочки советов по постингу хуйни */ 
 [dir] .SitpostingEntrypoint__button{filter:var(--filt2)brightness(.6)}
-[dir] .SitpostingEntrypoint::before{background-color: var(--color2)}
+[dir] .SitpostingEntrypoint::before{background-color:var(--color2)}
 
 /* смайлики */
 .emoji_sprite{filter:invert(.95)saturate(0)brightness(.7)!important}
-.ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,.emoji_cats_title_helper::after{filter:invert(.95)}
-.emoji_cat_title,.emoji_tabs_r_s,.emoji_tabs_l_s,.emoji_shop,.emoji_tabs_wrap,.emoji_tab_sel{background:var(--color5)!important}
-.emoji_list_cont{padding-bottom:1px}
+.ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,.emoji_cats_title_helper::after{filter:invert(1)}
+.emoji_tabs_r_s,.emoji_tabs_l_s,.emoji_shop,.emoji_tabs_wrap,.emoji_tab_sel{background:var(--color4)!important}
+[dir] .emoji_list_cont{padding-bottom:1px}
 .emoji_cats_title_helper,.emoji_list_cont{padding:0px}
-.emoji_tt_wrap{width:282px;background-color:#000000f2}
+[dir] .emoji_tt_wrap{width:282px;background-color:#000c!important}
+[dir] .emoji_cat_title{background:#0000!important;color:var(--color2)}
+[dir] .emoji_cats_title_helper{background:#000000eb!important;z-index:50}
 .emoji_tt_wrap.tt_down::after{border-top-color:var(--color5)}
 .emoji_tt_wrap.tt_down::before{border-top-color:var(--color3)}
 .emoji_tt_wrap.tt_down.emoji_no_tabs.emoji_expanded::after{border-top-color:var(--color5)}
