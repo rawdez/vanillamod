@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210423.15.21
+@version        20210423.20.6
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1577,7 +1577,7 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 .emoji_cats_title_helper,.emoji_list_cont{padding:0px}
 [dir] .emoji_tt_wrap{width:282px;background-color:#000c!important}
 [dir] .emoji_cat_title{background:#0000!important;color:var(--color2)}
-[dir] .emoji_cats_title_helper{background:#000000eb!important;z-index:50}
+[dir] .emoji_cat_title_helper,[dir] .emoji_cats_title_helper{background:#000000eb!important;z-index:5000!important}
 .emoji_tt_wrap.tt_down::after{border-top-color:var(--color5)}
 .emoji_tt_wrap.tt_down::before{border-top-color:var(--color3)}
 .emoji_tt_wrap.tt_down.emoji_no_tabs.emoji_expanded::after{border-top-color:var(--color5)}
