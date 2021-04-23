@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210423.3.16
+@version        20210423.3.19
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -648,6 +648,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .post_replies_reorder_wrap{width:100%}
 [dir] .deep_active .post_replies_header .post_replies_reorder{padding:8px 70% 8px 0!important}
 [dir] .eltt.eltt_fancy_actions,[dir] .eltt{background:#000c!important;border:1px solid var(--color4)!important}
+[dir] .eltt.eltt_bottom.eltt_arrow_size_normal>.eltt_arrow_back .eltt_arrow{border-bottom:7px solid #000000d9!important}
 [dir] .eltt .eltt_fancy_action:hover{background:#1e1e1e4d!important}
 [dir] .FancyElementTT__icon{filter:var(--filt2)}
 [dir] .deep_active .replies .replies_wrap_deep .reply_media_preview{border-bottom:none}
@@ -900,7 +901,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .audio_layer_container .audio_page_layout .no_rows{margin-top:0;background-image:none;padding-top:10px}
 .audio_w_covers .audio_row .audio_row__cover:not([style*="userapi.com"]),.audio_page_player2 .audio_page_player__cover:not([style*="userapi.com"]){background:#00000080 url("https://vk.com/images/icons/menu_icon.png?6") no-repeat scroll 11px -155px!important;filter:saturate(0)brightness(.5)}
 .audio_row .audio_row_cover_wrap{background:#0000!important}
-[dir] .eltt.eltt_bottom.eltt_arrow_size_normal>.eltt_arrow_back .eltt_arrow{border-bottom:7px solid #000000d9!important}
 [dir] .audio_row__more_actions .audio_row__more_action{background-color:#0000!important}
 [dir] .audio_row__more_actions .audio_row__more_action:hover{background:#6464641f!important}
 .audio_atp_list .ape_check{filter:invert(.95)hue-rotate(180deg)var(--filt2)saturate(.8)brightness(.8)}
