@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210423.20.6
+@version        20210426.7.16
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -678,6 +678,12 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .ownerButton__title{color:#888}
 .ownerButton b{color:#969696}
 
+/* фикс меню выбора действий  */ 
+[dir] .ui_actions_menu_item_sublist,[dir] .ui_actions_menu_item_sublist.ui_actions_menu_item{color:#97C2F2!important;filter:brightness(.7)var(--filt2)!important}
+[dir] .ui_actions_menu .ui_actions_menu_item_sublist.ui_actions_menu_item:not(:hover){color:#7496bd!important}
+[dir] .ui_actions_menu_item{color:var(--color2)!important}
+[dir] .ui_actions_menu_item:hover{color:var(--color1)!important;background:#6464641f!important}
+
 /* фикс окна быстрого чата - глюк при просмотре картинок*/
 .rb_box_wrap.fixed.rb_active.fc_tobottom.hidden{z-index:1!important}
 
@@ -1022,8 +1028,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .audio_pl_snippet2 .audio_pl_snippet__more_btn:before{filter:var(--filt2)brightness(.7)saturate(.4)!important}
 .audio_pl_snippet2 .audio_pl_snippet__more_btn:hover:before{filter:var(--filt2)saturate(.4)!important}
 .ap_layer .audio_pl_snippet2 .audio_pl_snippet__action_btn_more{z-index:1}
-.ap_layer .audio_pl_snippet2 .ui_actions_menu_item{color:var(--color2)}
-.ap_layer .audio_pl_snippet2 .ui_actions_menu_item:hover{color:var(--color1)}
 .audio_pl_snippet_play{color:#090909}
 .audio_pl_snippet_play::before,.audio_pl_snippet_shuffle{filter:invert(.9)hue-rotate(180deg)}
 .audio_pl_snippet_shuffle:hover{filter:invert(.9)hue-rotate(180deg)brightness(2)saturate(.6)}
@@ -2457,10 +2461,6 @@ img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:non
 .post_action_tt_content:hover .post_action_tt_item.radiobtn:hover{background-color:#0f0f0ff2;color:var(--color1)}
 [dir] .wall_module .reply_fakebox_wrap,[dir] .wall_module .deep_active:not(.closed_comments) .replies .reply_fakebox{background-color:#0000!important}
 [dir] .deep_active .replies .reply_fakebox_wrap,[dir] .deep_active .replies .reply_text_wrapper,[dir] .deep_active .wl_replies_block_wrap .reply_fakebox_wrap,[dir] .deep_active .wl_replies_block_wrap .reply_text_wrapper,[dir] .deep_active.wall_module .replies .reply_fakebox_wrap,[dir] .deep_active.wall_module .replies .reply_text_wrapper,[dir] .deep_active.wall_module .wl_replies_block_wrap .reply_fakebox_wrap,[dir] .deep_active.wall_module .wl_replies_block_wrap .reply_text_wrapper{margin:4px 20px}
-
-/* фикс стрелки подсписка */ 
-.ui_actions_menu_item_sublist,.ui_actions_menu_item_sublist.ui_actions_menu_item{color:#97C2F2!important;filter:brightness(.7)var(--filt2)!important}
-.ui_actions_menu .ui_actions_menu_item_sublist.ui_actions_menu_item:not(:hover){color:#7496bd!important}
 
 /* просмотр архивных/отложенных постов */ 
 .ui_tab_group:after{filter:brightness(.7)saturate(1.2)var(--filt2)}
