@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210426.7.16
+@version        20210428.1.31
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2438,6 +2438,11 @@ img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:non
 .story_view_feedback_button{background-color:var(--color5);color:var(--color2);border-radius:5px}
 .story_view_feedback_button:hover{background-color:var(--color2);color:#111}
 [dir] .stories_feed_preview_add{filter:invert(.9)hue-rotate(180deg)var(--filt2)}
+[dir] .stories_link{background:#00000026;color:#999}
+[dir] .stories_link__inner::after{filter:invert(.9)}
+[dir] .stories_link:hover{background:#0009!important;color:var(--color1)}
+[dir] .stories_time_line_item_cont{background:#00000026}
+[dir] .stories_time_line_item_cont_active{background:#0000004a}
 
 /* сраные новости в ленте */
 .ui_actions_menu_item.ui_actions_menu_item_about:before{border-top:1px solid #0a0a0a}
