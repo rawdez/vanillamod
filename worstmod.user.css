@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.3.10
+@version        20210429.5.6
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -116,32 +116,6 @@ vklogo "не ламповый" <<<EOT /* новый логотип *\/
 EOT;
 
 }
-
-@advanced dropdown audioplayhollow "Прозрачные кнопки плеера:" {
-audioplayhollowon "Вкл*" <<<EOT /* прозрачные кнопки плеера *\/  
-[dir] .audio_row__play_btn,.audio_row.audio_row__playing .audio_row__play_btn{width:0px!important}
-[dir] .audio_page_player .audio_page_player_play,[dir] .audio_pl_snippet_play_small{filter:none!important}
-[dir] .audio_row__play_btn:after,[dir] .audio_w_covers .audio_row .audio_row__cover_icon,[dir] .audio_pl_snippet_play_small,[dir] .audio_pl_attach_preview .audio_pl_attach_preview__play,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:hover:before,[dir] .audio_page_player2 .audio_page_player_play .icon,[dir] .audio_artist_snippet__play:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%2224%22%20height%3D%2224%22%20opacity%3D%22.2%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M7%2C18.9991283%20C7%2C19.5518945%207.3722949%2C19.7518034%207.8248086%2C19.4501276%20L18.1751914%2C12.5498724%20C18.6307206%2C12.2461863%2018.6277051%2C11.7518034%2018.1751914%2C11.4501276%20L7.8248086%2C4.5498724%20C7.36927939%2C4.24618626%207%2C4.44463086%207%2C5.00087166%20L7%2C18.9991283%20Z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E")!important}
-[dir] .audio_row.audio_row__playing .audio_row__play_btn:after,[dir] .audio_w_covers .audio_row.audio_row__playing .audio_row__cover_icon,[dir] .audio_pl_attach_preview.audio_pl__playing .audio_pl_attach_preview__play,[dir] .audio_pl_snippet2.audio_pl__playing .audio_pl_snippet__action_btn_listen:before,[dir] .audio_pl_snippet2.audio_pl__playing .audio_pl_snippet__action_btn_listen:hover:before,[dir] .audio_page_player2 .audio_page_player_play.audio_playing .icon,[dir] .audio_pl__playing .audio_artist_snippet__play:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%2224%22%20height%3D%2224%22%20opacity%3D%22.2%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M7%2C4.7081449%20C7%2C4.31704727%207.31387329%2C4%207.69674683%2C4%20L10.3032532%2C4%20C10.6880558%2C4%2011%2C4.30533409%2011%2C4.7081449%20L11%2C19.2918551%20C11%2C19.6829527%2010.6861267%2C20%2010.3032532%2C20%20L7.69674683%2C20%20C7.31194418%2C20%207%2C19.6946659%207%2C19.2918551%20L7%2C4.7081449%20Z%20M13%2C4.7081449%20C13%2C4.31704727%2013.3138733%2C4%2013.6967468%2C4%20L16.3032532%2C4%20C16.6880558%2C4%2017%2C4.30533409%2017%2C4.7081449%20L17%2C19.2918551%20C17%2C19.6829527%2016.6861267%2C20%2016.3032532%2C20%20L13.6967468%2C20%20C13.3119442%2C20%2013%2C19.6946659%2013%2C19.2918551%20L13%2C4.7081449%20Z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E")!important}
-.audio_row__play_btn:after,.audio_row.audio_row__playing .audio_row__play_btn:after{width:24px;height:24px;display:block;content:' ';opacity:.7;transform:scale(.7)}
-.audio_row:hover .audio_row__play_btn:after,.audio_w_covers .audio_row .audio_row__cover_icon:hover{opacity:.9}
-.audio_pl_snippet_play_small,.audio_pl_attach_preview .audio_pl_attach_preview__play,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before{background-color:#0000!important;opacity:.6}
-.audio_w_covers .audio_row .audio_row__cover_icon,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before,.audio_artist_snippet__play:before{opacity:.7;transition:opacity .5s}
-.audio_pl_attach_preview .audio_pl_attach_preview__play:hover,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:hover:before,.audio_artist_snippet__play:hover:before{opacity:1}
-.audio_pl_attach_preview.audio_pl__playing .audio_pl_attach_preview__play{transform:scale(.8)}
-.audio_page_player2 .audio_page_player_play .icon,.audio_page_player2 .audio_page_player_play.audio_playing .icon{background-color:#0000!important;background-position:3px 2px;opacity:.7;transition:opacity .5s}
-.audio_page_player2 .audio_page_player_play .icon:hover,.audio_page_player2 .audio_page_player_play.audio_playing .icon:hover{opacity:1}
-[dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:#0000!important}
- EOT;
-audioplayhollowoff "Неа" <<<EOT /* фикс кнопок плеера *\/ 
-[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen::before{filter:invert(1)hue-rotate(180deg)saturate(.5)var(--filt2)!important}
-[dir] .audio_page_player2 .audio_page_player_play .icon{background-color:var(--blue_400)!important;opacity:.9;filter:saturate(.5)brightness(1.2)var(--filt2)!important}
-[dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:var(--blue_400)!important;opacity:1}
-[dir] .audio_w_covers .audio_row .audio_row__cover_icon:before{content:' ';display:block;position:relative;background-color:var(--color1);mix-blend-mode:darken;border-radius:50%;width:24px;height:24px;top:8px;left:8px}
-EOT;
-
-}
-
 @advanced dropdown lolsquare "Оквадрачивание:" {
 lolsquareon "банзай*" <<<EOT /* .............. <ОКВАДРАЧИВАНИЕ> .............. *\/
 
@@ -241,27 +215,38 @@ darkasshitoff "выкл" <<<EOT .audio_layer_rows_cont{background-color:rgba(0,0
  EOT;
 
 }
-@advanced dropdown pageheaderthin "➤ Сплющить шапку:" {
-pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем шапку *\/
-[dir] body.new_header_design #page_header_cont{height:34px}
-[dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
-[dir] body.new_header_design{--header-height:33px}
-[dir] body.new_header_design .side_bar_inner{margin-top:32px!important}
-[dir] body.new_header_design #side_bar.side_bar{top:1px!important}
-body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
-[dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)}
-[dir] body.new_header_design .top_audio_player{height:34px}
-[dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:34px!important}
-[dir] .im-page_classic .im-page--chat-header{margin-top:-14px}
-[dir] .im-page_classic .im-page--header{margin-top:-62px!important}
-[dir] .im-page.im-page_classic{margin-top:63px}
-[dir] .im-page.im-page_classic.im-page_history-show{margin-top:56px}
+@advanced dropdown fastchat "Окна быстрого чата:" {
+fastchatblack "прозрачно-чёрные*" <<<EOT /* окна быстрого чата (прозрачные) *\/
+[dir] .fc_msgs_wrap,[dir] div.fc_editable,[dir] div.fc_editable:focus{background:#0000!important}
+[dir] div.fc_tab_txt{background:#0005!important}
+[dir] div.fc_tab_txt div.fc_editable:focus ~ .placeholder .ph_content,[dir] div.fc_editable ~ .placeholder .ph_content{color:#666;padding:0 0 1px 8px}
+[dir] #fc_contacts,.fc_tab_head{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
+.fc_tab{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
+.fc_msgs_wrap:not(.fc_msgs_out) .fc_msgs{background:#111!important}
+.chats_sp.rb_resize{filter:brightness(0.2)!important}
+.fc_clist_filter_wrap{background:rgba(0,0,0,0.9)!important;border-color:#222!important}
+.fc_contacts{background:rgba(0,0,0,0.9)!important}
+.fc_contact.clear_fix.fc_contact_over{background:#6464641F!important}
+.fc_tab_notify{background:#090909!important;border:none}
+.fc_tab_pointer::before{border-left-color:#282828!important}
+.fc_tab_pointer::after{border-left-color:#000!important}
+.fc_msgs_unread{background-color:rgba(47,47,47,0.3)!important}
+[dir] .fc_contact:hover{background-color:#6464641F!important}
+
+#chat_tab_wrap{border:1px solid #111}
+#chat_tab_wrap:hover{border-radius:3px;background-color:#6464641F!important;}
+.chat_onl_wrap{outline:none!important}
 EOT;
-pageheadernormal "нет, я люблю жирные шапки" <<<EOT 
-[dir] #top_audio_layer_place > #audio_layer_tt{top:48px!important}
-[dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:48px!important}
-[dir] .im-page.im-page_classic{margin-top:62px}
-[dir] .im-page.im-page_classic.im-page_history-show{margin-top:55px}
+
+fastchatsimple "обычные (неплохо для сумрачных личностей)" <<<EOT /* окна быстрого чата (непрозрачные) *\/
+[dir] div.fc_tab_txt div.fc_editable:focus ~ .placeholder .ph_content,[dir] div.fc_editable ~ .placeholder .ph_content{color:#666;padding:0 0 1px 8px}
+.fc_clist_filter_wrap{background:var(--color4)!important}
+.fc_contacts,.fc_tab{background:var(--color4)!important}
+.fc_tab_pointer::before{border-left-color:var(--color3)}
+.fc_tab_pointer::after{border-left-color:var(--color4)}
+#chat_tab_wrap{border:1px solid #111}
+#chat_tab_wrap:hover{border-radius:3px;background-color:var(--color3)!important;}
+.chat_onl_wrap{outline:none!important}
 EOT;
 
 }
@@ -291,9 +276,9 @@ hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\
 .top_audio_player .top_audio_player_title{color:#909090!important}
 [dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
  EOT;
-hollowheadoffcolor "выкл (цветная шапка)" <<<EOT /* цветная шапка *\/
+hollowheadoffcolor "лучше цветная" <<<EOT /* цветная шапка *\/
 [dir] body.new_header_design #page_header,[dir] #page_header_wrap{background-color:var(--color2)!important}
-[dir] body.new_header_design .TopSearch__input{background-color:#00000014!important;color:#b3b3b3;height:24px;filter:brightness(5)}
+[dir] body.new_header_design .TopSearch__input{background-color:#00000014!important;color:#b3b3b3;filter:brightness(5)}
 [dir] .TopHomeLink::after{filter:brightness(50)!important;opacity:1!important}
 [dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon{filter:brightness(4)!important}
 [dir] .HeaderNav__item>.TopNavBtn:not(.TopNavBtn--active):hover,[dir] body.new_header_design .top_audio_player:hover{background:#00000021!important}
@@ -304,13 +289,38 @@ hollowheadoffcolor "выкл (цветная шапка)" <<<EOT /* цветна
 EOT;
 
 }
-@advanced dropdown fadetoblack "★ Затемнять не влезающие в плеер названия:" {
+@advanced dropdown pageheaderthin "➤ Сплющить шапку:" {
+pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем шапку *\/
+[dir] body.new_header_design #page_header_cont{height:34px}
+[dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
+[dir] body.new_header_design{--header-height:33px}
+[dir] body.new_header_design .side_bar_inner{margin-top:32px!important}
+[dir] body.new_header_design #side_bar.side_bar{top:1px!important}
+body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
+[dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)}
+[dir] body.new_header_design .top_audio_player{height:34px}
+[dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:34px!important}
+[dir] .im-page_classic .im-page--chat-header{margin-top:-14px}
+[dir] .im-page_classic .im-page--header{margin-top:-62px!important}
+[dir] .im-page.im-page_classic{margin-top:63px}
+[dir] .im-page.im-page_classic.im-page_history-show{margin-top:56px}
+[dir] body.new_header_design .TopSearch__input{height:24px}
+EOT;
+pageheadernormal "нет, я люблю жирные шапки" <<<EOT 
+[dir] #top_audio_layer_place > #audio_layer_tt{top:48px!important}
+[dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:48px!important}
+[dir] .im-page.im-page_classic{margin-top:62px}
+[dir] .im-page.im-page_classic.im-page_history-show{margin-top:55px}
+EOT;
+
+}
+@advanced dropdown fadetoblack "➤ Затемнять не влезающие в плеер названия:" {
 blackened "ясен красен*" <<<EOT /* fade to black *\/
 [dir] .top_audio_player .top_audio_player_title{width:100%;background:linear-gradient(90deg,#a4a4a4 90%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song{width:100%;background:linear-gradient(90deg,#ccc 75%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song_subtitle{width:100%;background:linear-gradient(90deg,#848484 80%,#0000 100%);background-clip:text;color:#0000!important} EOT;
 fadetocolor "цветная шапка" <<<EOT /* fade to color *\/
-[dir] #top_nav > .HeaderNav__item--player > .top_audio_player .top_audio_player_title.top_audio_player_title_next{width:100%;background:linear-gradient(90deg,#fff 85%,#0000 100%)!important;background-clip:border-box!important;background-clip:text!important;color:#0000!important}
+[dir] #top_nav > .HeaderNav__item--player > .top_audio_player .top_audio_player_title{width:100%;background:linear-gradient(90deg,#fff 85%,#0000 100%)!important;background-clip:border-box!important;background-clip:text!important;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song{width:100%;background:linear-gradient(90deg,#ccc 75%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song_subtitle{width:100%;background:linear-gradient(90deg,#848484 80%,#0000 100%);background-clip:text;color:#0000!important} EOT;
 nofadetoblack "отключить на случай г-нобраузера" <<<EOT  EOT;
@@ -322,6 +332,30 @@ moveplayeron "давай*" <<<EOT /* всплывающий плеер спра�
 #audio_layer_tt > .eltt_arrow_back{display:none} EOT;
 moveplayeroff "отбой" <<<EOT  
 [dir] #top_audio_layer_place > #audio_layer_tt{top:-1px!important}
+EOT;
+
+}
+@advanced dropdown audioplayhollow "★ Прозрачные кнопки плеера:" {
+audioplayhollowon "Вкл*" <<<EOT /* прозрачные кнопки плеера *\/  
+[dir] .audio_row__play_btn,.audio_row.audio_row__playing .audio_row__play_btn{width:0px!important}
+[dir] .audio_page_player .audio_page_player_play,[dir] .audio_pl_snippet_play_small{filter:none!important}
+[dir] .audio_row__play_btn:after,[dir] .audio_w_covers .audio_row .audio_row__cover_icon,[dir] .audio_pl_snippet_play_small,[dir] .audio_pl_attach_preview .audio_pl_attach_preview__play,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:hover:before,[dir] .audio_page_player2 .audio_page_player_play .icon,[dir] .audio_artist_snippet__play:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%2224%22%20height%3D%2224%22%20opacity%3D%22.2%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M7%2C18.9991283%20C7%2C19.5518945%207.3722949%2C19.7518034%207.8248086%2C19.4501276%20L18.1751914%2C12.5498724%20C18.6307206%2C12.2461863%2018.6277051%2C11.7518034%2018.1751914%2C11.4501276%20L7.8248086%2C4.5498724%20C7.36927939%2C4.24618626%207%2C4.44463086%207%2C5.00087166%20L7%2C18.9991283%20Z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E")!important}
+[dir] .audio_row.audio_row__playing .audio_row__play_btn:after,[dir] .audio_w_covers .audio_row.audio_row__playing .audio_row__cover_icon,[dir] .audio_pl_attach_preview.audio_pl__playing .audio_pl_attach_preview__play,[dir] .audio_pl_snippet2.audio_pl__playing .audio_pl_snippet__action_btn_listen:before,[dir] .audio_pl_snippet2.audio_pl__playing .audio_pl_snippet__action_btn_listen:hover:before,[dir] .audio_page_player2 .audio_page_player_play.audio_playing .icon,[dir] .audio_pl__playing .audio_artist_snippet__play:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%2224%22%20height%3D%2224%22%20opacity%3D%22.2%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M7%2C4.7081449%20C7%2C4.31704727%207.31387329%2C4%207.69674683%2C4%20L10.3032532%2C4%20C10.6880558%2C4%2011%2C4.30533409%2011%2C4.7081449%20L11%2C19.2918551%20C11%2C19.6829527%2010.6861267%2C20%2010.3032532%2C20%20L7.69674683%2C20%20C7.31194418%2C20%207%2C19.6946659%207%2C19.2918551%20L7%2C4.7081449%20Z%20M13%2C4.7081449%20C13%2C4.31704727%2013.3138733%2C4%2013.6967468%2C4%20L16.3032532%2C4%20C16.6880558%2C4%2017%2C4.30533409%2017%2C4.7081449%20L17%2C19.2918551%20C17%2C19.6829527%2016.6861267%2C20%2016.3032532%2C20%20L13.6967468%2C20%20C13.3119442%2C20%2013%2C19.6946659%2013%2C19.2918551%20L13%2C4.7081449%20Z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E")!important}
+.audio_row__play_btn:after,.audio_row.audio_row__playing .audio_row__play_btn:after{width:24px;height:24px;display:block;content:' ';opacity:.7;transform:scale(.7)}
+.audio_row:hover .audio_row__play_btn:after,.audio_w_covers .audio_row .audio_row__cover_icon:hover{opacity:.9}
+.audio_pl_snippet_play_small,.audio_pl_attach_preview .audio_pl_attach_preview__play,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before{background-color:#0000!important;opacity:.6}
+.audio_w_covers .audio_row .audio_row__cover_icon,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before,.audio_artist_snippet__play:before{opacity:.7;transition:opacity .5s}
+.audio_pl_attach_preview .audio_pl_attach_preview__play:hover,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:hover:before,.audio_artist_snippet__play:hover:before{opacity:1}
+.audio_pl_attach_preview.audio_pl__playing .audio_pl_attach_preview__play{transform:scale(.8)}
+.audio_page_player2 .audio_page_player_play .icon,.audio_page_player2 .audio_page_player_play.audio_playing .icon{background-color:#0000!important;background-position:3px 2px;opacity:.7;transition:opacity .5s}
+.audio_page_player2 .audio_page_player_play .icon:hover,.audio_page_player2 .audio_page_player_play.audio_playing .icon:hover{opacity:1}
+[dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:#0000!important}
+ EOT;
+audioplayhollowoff "Неа" <<<EOT /* фикс кнопок плеера *\/ 
+[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen::before{filter:invert(1)hue-rotate(180deg)saturate(.5)var(--filt2)!important}
+[dir] .audio_page_player2 .audio_page_player_play .icon{background-color:var(--blue_400)!important;opacity:.9;filter:saturate(.5)brightness(1.2)var(--filt2)!important}
+[dir] .audio_page_player2 .audio_page_player_play:hover .icon{background-color:var(--blue_400)!important;opacity:1}
+[dir] .audio_w_covers .audio_row .audio_row__cover_icon:before{content:' ';display:block;position:relative;background-color:var(--color1);mix-blend-mode:darken;border-radius:50%;width:24px;height:24px;top:8px;left:8px}
 EOT;
 
 }
@@ -393,41 +427,6 @@ burnmotherfuckerburn "жги огнём!*" <<<EOT /* сжечь сердца *\/
 .like_views._views:before{filter:var(--filt2)}
  EOT;
 burnmotherfuckernope "пощадить бабские сердечки" <<<EOT  EOT;
-
-}
-@advanced dropdown fastchat "Окна быстрого чата:" {
-fastchatblack "прозрачно-чёрные*" <<<EOT /* окна быстрого чата (прозрачные) *\/
-[dir] .fc_msgs_wrap,[dir] div.fc_editable,[dir] div.fc_editable:focus{background:#0000!important}
-[dir] div.fc_tab_txt{background:#0005!important}
-[dir] div.fc_tab_txt div.fc_editable:focus ~ .placeholder .ph_content,[dir] div.fc_editable ~ .placeholder .ph_content{color:#666;padding:0 0 1px 8px}
-[dir] #fc_contacts,.fc_tab_head{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
-.fc_tab{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
-.fc_msgs_wrap:not(.fc_msgs_out) .fc_msgs{background:#111!important}
-.chats_sp.rb_resize{filter:brightness(0.2)!important}
-.fc_clist_filter_wrap{background:rgba(0,0,0,0.9)!important;border-color:#222!important}
-.fc_contacts{background:rgba(0,0,0,0.9)!important}
-.fc_contact.clear_fix.fc_contact_over{background:#6464641F!important}
-.fc_tab_notify{background:#090909!important;border:none}
-.fc_tab_pointer::before{border-left-color:#282828!important}
-.fc_tab_pointer::after{border-left-color:#000!important}
-.fc_msgs_unread{background-color:rgba(47,47,47,0.3)!important}
-[dir] .fc_contact:hover{background-color:#6464641F!important}
-
-#chat_tab_wrap{border:1px solid #111}
-#chat_tab_wrap:hover{border-radius:3px;background-color:#6464641F!important;}
-.chat_onl_wrap{outline:none!important}
-EOT;
-
-fastchatsimple "обычные (неплохо для сумрачных личностей)" <<<EOT /* окна быстрого чата (непрозрачные) *\/
-[dir] div.fc_tab_txt div.fc_editable:focus ~ .placeholder .ph_content,[dir] div.fc_editable ~ .placeholder .ph_content{color:#666;padding:0 0 1px 8px}
-.fc_clist_filter_wrap{background:var(--color4)!important}
-.fc_contacts,.fc_tab{background:var(--color4)!important}
-.fc_tab_pointer::before{border-left-color:var(--color3)}
-.fc_tab_pointer::after{border-left-color:var(--color4)}
-#chat_tab_wrap{border:1px solid #111}
-#chat_tab_wrap:hover{border-radius:3px;background-color:var(--color3)!important;}
-.chat_onl_wrap{outline:none!important}
-EOT;
 
 }
 @advanced dropdown flushshit " ♻ Убрать шлак:" {
