@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.5.47
+@version        20210429.6.6
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -288,6 +288,8 @@ hollowheadoffcolor "лучше цветная" <<<EOT /* цветная шапк
 [dir] body.new_header_design .top_audio_player .top_audio_player_btn .top_audio_player_btn_icon{filter:brightness(5)!important}
 [dir] .TopNavBtn.active,[dir] .HeaderNav__item>.TopNavBtn.TopNavBtn--active{background-color:#00000014!important}
 [dir] body.new_header_design .TopNavBtn__profileName{color:#fff!important}
+[dir] .HeaderNav__item>#top_switch_lang{color:#fff!important;filter:none!important}
+[dir] .TopNavBtn.TopNavBtn__audio .TopNavBtn__icon{filter:brightness(5)!important}
 EOT;
 
 }
@@ -2173,6 +2175,8 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--filt2)brightnes
 .language_box_row:hover .language_box_row_label{color:#ddd}
 .language_box_row.language_box_row_selected .language_box_row_label{color:#ccc}
 .language_box_row .language_box_row_label{color:var(--color1)}
+[dir] .index_user_name{color:var(--color2);transition:color .3s}
+[dir] .index_user_row:hover .index_user_name{color:var(--color1)}
 
 /* security check */
 #header_wrap1{border-color:var(--color2)}
