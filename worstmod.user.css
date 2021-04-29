@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.5.6
+@version        20210429.5.18
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -286,6 +286,7 @@ hollowheadoffcolor "лучше цветная" <<<EOT /* цветная шапк
 [dir] .TopNavBtn .TopNavBtn__profileArrow > svg > path{fill:#fff!important}
 [dir] .HeaderNav__item--player .top_audio_player .top_audio_player_title{color:#fff!important;background:#0000!important;background-clip:padding-box!important}
 [dir] body.new_header_design .top_audio_player .top_audio_player_btn .top_audio_player_btn_icon{filter:brightness(5)!important}
+[dir] .TopNavBtn.active,[dir] .HeaderNav__item>.TopNavBtn.TopNavBtn--active{background-color:#00000014!important}
 EOT;
 
 }
@@ -469,7 +470,7 @@ nameremoveon "нафиг имя" <<<EOT /* убираем имя из шапки
  EOT;
 namearrowremoveon "нафиг имя и стрелку" <<<EOT /* убираем имя и стрелку из шапки *\/
 .TopNavBtn__profileName{display:none}
-[dir] .top_nav_link{padding:0}
+[dir] .TopNavBtn__profileLink{padding:0 5px}
 [dir] .TopNavBtn__profileArrow{display:none}
  EOT;
 namestayremoveava "нафиг авку" <<<EOT /* убираем авку из шапки *\/
