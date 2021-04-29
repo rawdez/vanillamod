@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.6.6
+@version        20210429.6.56
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -279,6 +279,7 @@ hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\
 hollowheadoffcolor "лучше цветная" <<<EOT /* цветная шапка *\/
 [dir] body.new_header_design #page_header,[dir] #page_header_wrap{background-color:var(--color2)!important}
 [dir] body.new_header_design .TopSearch__input{background-color:#00000014!important;color:#b3b3b3;filter:brightness(5)}
+[dir] body.new_header_design .TopSearch__input::selection{background-color:#0f0f0f!important}
 [dir] .TopHomeLink::after{filter:brightness(50)!important;opacity:1!important}
 [dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon{filter:brightness(4)!important}
 [dir] .HeaderNav__item>.TopNavBtn:not(.TopNavBtn--active):hover,[dir] body.new_header_design .top_audio_player:hover{background:#00000021!important}
@@ -537,7 +538,7 @@ EOT;
 
 ==/UserStyle== */
 @-moz-document regexp('https?://vk.com/(?!dev/|dev$|apps.act=manage|about$|about.z=|jobs$|jobs.w=|products$|messenger$|ads$|ads/|adscreate$|adsmarket.act=|ads.act=).*'){
-    
+
 div::-webkit-scrollbar{width:12px!important;height:12px!important}
 div::-webkit-scrollbar-thumb:hover{background:#444!important}
 :not(div)::-webkit-scrollbar{width:10px!important;height:10px!important}
