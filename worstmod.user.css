@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.5.40
+@version        20210429.5.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -836,6 +836,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .pv_cont.pv_deleted_state #pv_tag_info a:hover{color:#d00!important}
 [dir] .PhotoRecognizeBlockIgnoreStub__disable.flat_button.secondary:hover{background:var(--color1)!important;color:#111}
 [dir] .PhotoCarousel__arrow{filter:invert(.95)hue-rotate(180deg)var(--filt2)}
+[dir] .PhotoCarouselItem:last-child{margin-right:0}
+[dir] .PhotoCarouselItem:first-child{margin-left:0}
 
 /* ФСБ и Путя теперь ещё хотят знать кто твои близкие друзья */
 [dir] .BestFriendsSettingsEntrypoint__button{filter: var(--filt2)brightness(.6)}
