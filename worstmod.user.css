@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.5.22
+@version        20210429.5.40
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -295,7 +295,7 @@ EOT;
 pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем шапку *\/
 [dir] body.new_header_design #page_header_cont{height:34px}
 [dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
-[dir] body.new_header_design{--header-height:33px}
+[dir] body.new_header_design{--header-height:34px}
 [dir] body.new_header_design .side_bar_inner{margin-top:32px!important}
 [dir] body.new_header_design #side_bar.side_bar{top:1px!important}
 body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
@@ -307,12 +307,14 @@ body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
 [dir] .im-page.im-page_classic{margin-top:63px}
 [dir] .im-page.im-page_classic.im-page_history-show{margin-top:56px}
 [dir] body.new_header_design .TopSearch__input{height:24px}
+[dir] .top_notify_btn #top_notify_wrap{top:34px!important}
 EOT;
 pageheadernormal "нет, я люблю жирные шапки" <<<EOT 
 [dir] #top_audio_layer_place > #audio_layer_tt{top:48px!important}
 [dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:48px!important}
 [dir] .im-page.im-page_classic{margin-top:62px}
 [dir] .im-page.im-page_classic.im-page_history-show{margin-top:55px}
+[dir] .top_notify_btn #top_notify_wrap{top:48px!important}
 EOT;
 
 }
@@ -464,7 +466,9 @@ nameavaremoveon "нафиг имя и авку*" <<<EOT /* убираем имя
 [dir] .TopNavBtn__profileLink{padding-left:0px}
 #top_nav .top_nav_link{padding:0!important;width:28px;height:42px;display:block;content:' ';background:8px 18px/40% url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat !important;filter:var(--filt2)saturate(.0)brightness(.7)!important}
 [dir] .top_nav_link.active,[dir] .top_nav_link:hover{filter:var(--filt2)brightness(1)saturate(.2)!important;background-color:#0000!important}
-#top_nav a#top_switch_lang.top_nav_link{width:auto!important;background:none!important} EOT;
+#top_nav a#top_switch_lang.top_nav_link{width:auto!important;background:none!important} 
+[dir] .TopNavBtn__profileLink{padding:0 2px}
+EOT;
 nameremoveon "нафиг имя" <<<EOT /* убираем имя из шапки *\/
 .TopNavBtn__profileName{display:none}
 [dir] .top_nav_link{padding:0}
