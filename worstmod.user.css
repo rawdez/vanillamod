@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.5.18
+@version        20210429.5.22
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -287,6 +287,7 @@ hollowheadoffcolor "лучше цветная" <<<EOT /* цветная шапк
 [dir] .HeaderNav__item--player .top_audio_player .top_audio_player_title{color:#fff!important;background:#0000!important;background-clip:padding-box!important}
 [dir] body.new_header_design .top_audio_player .top_audio_player_btn .top_audio_player_btn_icon{filter:brightness(5)!important}
 [dir] .TopNavBtn.active,[dir] .HeaderNav__item>.TopNavBtn.TopNavBtn--active{background-color:#00000014!important}
+[dir] body.new_header_design .TopNavBtn__profileName{color:#fff!important}
 EOT;
 
 }
