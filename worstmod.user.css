@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210428.19.2
+@version        20210429.3.10
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -63,35 +63,6 @@ body{background-color:/*[[backcolor]]*\/!important}
  EOT;
 }
 @advanced color backcolor "➥ цвет сплошного фона:" #070707
-
-@advanced dropdown hollowhead "Прозрачная шапка:" {
-hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
-[dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
-[dir] body.new_header_design .TopSearch__input{background-color:#0000!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
-[dir] .TopSearch__input::selection{background:#4e5e71!important}
-#ts_wrap .input_back .input_back_content{color:#999!important}
-.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
-[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
-
-/* плеер в шапке фикс *\/
-.top_audio_player .top_audio_player_title{color:#909090!important}
-[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
- EOT;
-hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\/
-[dir] body.new_header_design #page_header_cont{background-color:var(--color3)!important;border:none!important}
-[dir] body.new_header_design .TopSearch__input{background-color:var(--color3)!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
-[dir] .TopSearch__input::selection{background:#4e5e71!important}
-#ts_wrap .input_back .input_back_content{color:#999!important}
-.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
-.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(2)!important}
-[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
-
-/* плеер в шапке фикс *\/
-.top_audio_player .top_audio_player_title{color:#909090!important}
-[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
- EOT;
-hollowheadoffcolor "выкл (цветная шапка)" <<<EOT  EOT;
-}
 
 @advanced dropdown headopaque "➥ непрозрачность шапки:" {
 headopaquesetup "⠀★" <<<EOT /*[[headopaque-custom]]*\/ EOT;
@@ -279,6 +250,7 @@ pageheaderthinaf "включай пресс!*" <<<EOT /* сплющиваем ш
 [dir] body.new_header_design #side_bar.side_bar{top:1px!important}
 body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
 [dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)}
+[dir] body.new_header_design .top_audio_player{height:34px}
 [dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:34px!important}
 [dir] .im-page_classic .im-page--chat-header{margin-top:-14px}
 [dir] .im-page_classic .im-page--header{margin-top:-62px!important}
@@ -293,12 +265,42 @@ pageheadernormal "нет, я люблю жирные шапки" <<<EOT
 EOT;
 
 }
-@advanced dropdown moveplayer "➤ Всплывающий плеер справа:" {
-moveplayeron "давай*" <<<EOT /* всплывающий плеер справа *\/
-#top_audio_layer_place > #audio_layer_tt{position:fixed!important;top:40px!important;right:0px!important;left:auto!important}
-#audio_layer_tt > .eltt_arrow_back{display:none} EOT;
-moveplayeroff "отбой" <<<EOT  
-[dir] #top_audio_layer_place > #audio_layer_tt{top:-1px!important}
+@advanced dropdown hollowhead "Прозрачная шапка:" {
+hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
+[dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
+[dir] body.new_header_design .TopSearch__input{background-color:#0000!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
+[dir] .TopSearch__input::selection{background:#4e5e71!important}
+#ts_wrap .input_back .input_back_content{color:#999!important}
+.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
+[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
+
+/* плеер в шапке фикс *\/
+.top_audio_player .top_audio_player_title{color:#909090!important}
+[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
+ EOT;
+hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\/
+[dir] body.new_header_design #page_header_cont{background-color:var(--color3)!important;border:none!important}
+[dir] body.new_header_design .TopSearch__input{background-color:var(--color3)!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
+[dir] .TopSearch__input::selection{background:#4e5e71!important}
+#ts_wrap .input_back .input_back_content{color:#999!important}
+.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
+.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(2)!important}
+[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
+
+/* плеер в шапке фикс *\/
+.top_audio_player .top_audio_player_title{color:#909090!important}
+[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
+ EOT;
+hollowheadoffcolor "выкл (цветная шапка)" <<<EOT /* цветная шапка *\/
+[dir] body.new_header_design #page_header,[dir] #page_header_wrap{background-color:var(--color2)!important}
+[dir] body.new_header_design .TopSearch__input{background-color:#00000014!important;color:#b3b3b3;height:24px;filter:brightness(5)}
+[dir] .TopHomeLink::after{filter:brightness(50)!important;opacity:1!important}
+[dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon{filter:brightness(4)!important}
+[dir] .HeaderNav__item>.TopNavBtn:not(.TopNavBtn--active):hover,[dir] body.new_header_design .top_audio_player:hover{background:#00000021!important}
+[dir] body.new_header_design #page_header_cont{border:none}
+[dir] .TopNavBtn .TopNavBtn__profileArrow > svg > path{fill:#fff!important}
+[dir] .HeaderNav__item--player .top_audio_player .top_audio_player_title{color:#fff!important;background:#0000!important;background-clip:padding-box!important}
+[dir] body.new_header_design .top_audio_player .top_audio_player_btn .top_audio_player_btn_icon{filter:brightness(5)!important}
 EOT;
 
 }
@@ -307,8 +309,20 @@ blackened "ясен красен*" <<<EOT /* fade to black *\/
 [dir] .top_audio_player .top_audio_player_title{width:100%;background:linear-gradient(90deg,#a4a4a4 90%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song{width:100%;background:linear-gradient(90deg,#ccc 75%,#0000 100%);background-clip:text;color:#0000!important}
 .audio_page_player2 .audio_page_player_title_song_subtitle{width:100%;background:linear-gradient(90deg,#848484 80%,#0000 100%);background-clip:text;color:#0000!important} EOT;
-
+fadetocolor "цветная шапка" <<<EOT /* fade to color *\/
+[dir] #top_nav > .HeaderNav__item--player > .top_audio_player .top_audio_player_title.top_audio_player_title_next{width:100%;background:linear-gradient(90deg,#fff 85%,#0000 100%)!important;background-clip:border-box!important;background-clip:text!important;color:#0000!important}
+.audio_page_player2 .audio_page_player_title_song{width:100%;background:linear-gradient(90deg,#ccc 75%,#0000 100%);background-clip:text;color:#0000!important}
+.audio_page_player2 .audio_page_player_title_song_subtitle{width:100%;background:linear-gradient(90deg,#848484 80%,#0000 100%);background-clip:text;color:#0000!important} EOT;
 nofadetoblack "отключить на случай г-нобраузера" <<<EOT  EOT;
+
+}
+@advanced dropdown moveplayer "★ Всплывающий плеер справа:" {
+moveplayeron "давай*" <<<EOT /* всплывающий плеер справа *\/
+#top_audio_layer_place > #audio_layer_tt{position:fixed!important;top:40px!important;right:0px!important;left:auto!important}
+#audio_layer_tt > .eltt_arrow_back{display:none} EOT;
+moveplayeroff "отбой" <<<EOT  
+[dir] #top_audio_layer_place > #audio_layer_tt{top:-1px!important}
+EOT;
 
 }
 @advanced dropdown countsfold "★ Сворачивать счётчики инфы страницы:" {
@@ -516,7 +530,7 @@ EOT;
 
 ==/UserStyle== */
 @-moz-document regexp('https?://vk.com/(?!dev/|dev$|apps.act=manage|about$|about.z=|jobs$|jobs.w=|products$|messenger$|ads$|ads/|adscreate$|adsmarket.act=|ads.act=).*'){
-
+    
 div::-webkit-scrollbar{width:12px!important;height:12px!important}
 div::-webkit-scrollbar-thumb:hover{background:#444!important}
 :not(div)::-webkit-scrollbar{width:10px!important;height:10px!important}
