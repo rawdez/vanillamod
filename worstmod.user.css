@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.7.7
+@version        20210429.7.29
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2211,6 +2211,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--filt2)brightnes
 [dir] .footer_wrap{border-top:1px solid var(--color4)}
 
 /* фикс ссылок в ленте новостей и комментах */
+[dir] .thumbed_link{background-color:#0000!important}
 .thumbed_link__thumb+.thumbed_link__label{background:#0000004d!important}
 .thumbed_link__title{color:var(--color2);transition:color .7s}
 .thumbed_link:hover .thumbed_link__title{color:var(--color1)}
