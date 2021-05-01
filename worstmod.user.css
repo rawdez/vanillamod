@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210429.7.42
+@version        20210501.5.42
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -305,10 +305,10 @@ body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
 [dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)}
 [dir] body.new_header_design .top_audio_player{height:34px}
 [dir] .MarketCatalogHeader--fixed.MarketCatalogHeader--visible{top:34px!important}
-[dir] .im-page_classic .im-page--chat-header{margin-top:-14px}
-[dir] .im-page_classic .im-page--header{margin-top:-62px!important}
-[dir] .im-page.im-page_classic{margin-top:63px}
-[dir] .im-page.im-page_classic.im-page_history-show{margin-top:56px}
+[dir] .im-page_classic .im-page--chat-header{margin-top:-15px}
+[dir] .im-page_classic .im-page--header{margin-top:-63px!important}
+[dir] .im-page.im-page_classic{margin-top:62px}
+[dir] .im-page.im-page_classic.im-page_history-show{margin-top:55px}
 [dir] body.new_header_design .TopSearch__input{height:24px}
 [dir] .top_notify_btn #top_notify_wrap{top:34px!important}
 EOT;
