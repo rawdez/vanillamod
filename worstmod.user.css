@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210501.5.42
+@version        20210502.22.5
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2361,6 +2361,9 @@ a.group_app_button_multi{border-bottom:1px solid var(--color3)}
 [dir] .Tooltip--light .Tooltip__in{background:#000000d9;border:solid 1px var(--color4);color:#c4c4c4}
 [dir] .Tooltip--b .Tooltip__in::before{border-bottom-color:#222!important}
 [dir] .Tooltip--b .Tooltip__in::after{border-bottom-color:#000000d9!important}
+[dir] .GiftsStickerPackPreviewTooltip__button{background:#0000;border-top:none;color:#999}
+[dir] .GiftsStickerPackPreviewTooltip__button:hover{background:#6464641f;border-top:none;color:var(--color1)}
+[dir] .gifts_section_scroll_wrap>.tt_w.tt_default.tt_down {background:#000000bf!important}
 
 /* сортирова стикеров */
 .ui_gridsorter_moveable,.ui_gridsorter_moveable_notrans{background-color:#141414d9!important;border:none!important}
