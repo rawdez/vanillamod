@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210502.22.5
+@version        20210506.2.46
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2210,7 +2210,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--filt2)brightnes
 .footer_wrap{border-top:1px solid #282828}
 [dir] .footer_wrap{border-top:1px solid var(--color4)}
 
-/* фикс ссылок в ленте новостей и комментах */
+/* фикс ссылок в постах и комментах */
 [dir] .thumbed_link{background-color:#0000!important}
 .thumbed_link__thumb+.thumbed_link__label{background:#0000004d!important}
 .thumbed_link__title{color:var(--color2);transition:color .7s}
@@ -2227,6 +2227,8 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--filt2)brightnes
 [dir] .DonutLinkSnippet,[dir] .thumbed_link.page_media_wrap:last-child{margin-bottom:0!important}
 [dir] .DonutLinkSnippet--post .DonutLinkSnippet__title{color:var(--color2)}
 [dir] .DonutLinkSnippet--post .DonutLinkSnippet__preview::after{border:2px solid #FFF;filter:invert(.95)var(--filt2)brightness(1.3)saturate(.4)}
+[dir] .MiniAppsSnippet--small .MiniAppsSnippetFields,[dir] .medadd_c_linkcon .MiniAppsSnippetFields{background:#0000004d}
+[dir] .MiniAppsSnippetBottomFields__title{color:var(--color2)}
 
 /* напоминалка в ленте о новостях в блоге (блок справа) */
 .feed_blog_reminder_title a{color:var(--color1)}
