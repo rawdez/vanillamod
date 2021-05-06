@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210506.2.46
+@version        20210506.3.33
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -250,8 +250,8 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 EOT;
 
 }
-@advanced dropdown hollowhead "Прозрачная шапка:" {
-hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
+@advanced dropdown hollowhead "Шапка:" {
+hollowheadon "прозрачная*" <<<EOT /* прозрачная шапка *\/
 [dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
 [dir] body.new_header_design .TopSearch__input{background-color:#0000!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
 [dir] .TopSearch__input::selection{background:#4e5e71!important}
@@ -263,7 +263,7 @@ hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
 .top_audio_player .top_audio_player_title{color:#909090!important}
 [dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
  EOT;
-hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\/
+hollowheadoff "серая" <<<EOT /* поиск в шапке фикс фона *\/
 [dir] body.new_header_design #page_header_cont{background-color:var(--color3)!important;border:none!important}
 [dir] body.new_header_design .TopSearch__input{background-color:var(--color3)!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
 [dir] .TopSearch__input::selection{background:#4e5e71!important}
@@ -276,7 +276,7 @@ hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\
 .top_audio_player .top_audio_player_title{color:#909090!important}
 [dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}
  EOT;
-hollowheadoffcolor "лучше цветная" <<<EOT /* цветная шапка *\/
+hollowheadoffcolor "цветная" <<<EOT /* цветная шапка *\/
 [dir] body.new_header_design #page_header,[dir] #page_header_wrap{background-color:var(--color2)!important}
 [dir] body.new_header_design .TopSearch__input{background-color:#00000014!important;color:#b3b3b3;filter:brightness(5)}
 [dir] body.new_header_design .TopSearch__input::selection{background-color:#0f0f0f99!important}
