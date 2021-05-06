@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210506.7.30
+@version        20210506.7.33
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -811,7 +811,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] #wk_box.landing_wk_box_group_week_stat,[dir] .landing_wk_wrap_group_week_stat .landing_author_guide_header__background{background-color:#0000!important}
 [dir] .landing_author_guide_content{background:#0000004d!important}
 [dir] .trending_stats_title_group__title,[dir] .trending_stats_subtitle_group{color:var(--color1)}
-[dir] .WeekStatGrid__ItemLabel,[dir] .WeekStatLegendTable__ItemTitle,[dir] .WeekStatLegendTable__ItemValue,[dir] .WeekStatAgeSexGraphItem__AgeLabel,[dir] .trending_stats_int_item__title{color:#aaa}
+[dir] .WeekStatGrid__ItemLabel,[dir] .WeekStatLegendTable__ItemTitle,[dir] .WeekStatLegendTable__ItemValue,[dir] .WeekStatAgeSexGraphItem__AgeLabel,[dir] .trending_stats_int_item__title,[dir] .trending_stats_title_group__subtitle{color:#aaa}
 [dir] .WeekStatGrid__ItemCount{color:var(--color2);transition:color .3s}
 [dir] .WeekStatGrid__Item:hover .WeekStatGrid__ItemCount,[dir] .WeekStatLegendTable__ItemValue:hover{color:var(--color1)}
 [dir] .WeekStatBlock.WeekStatBlock--withSeparator{border-bottom:1px solid var(--color3)}
@@ -831,7 +831,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .payments_money_transfer_amount{background:#0000;color:var(--color2)}
 #payments_box.payments_money_transfer_box .payments_money_transfer_link_copy_input{color: var(--color1);-webkit-text-fill-color:var(--color2)}
 [dir] #payments_box.payments_money_transfer_box .payments_money_transfer_labeled_link{border-bottom:1px solid var(--color3)}
-#payments_box.payments_money_transfer_box .payments_money_transfer_label,.trending_stats_title_group__subtitle{color:#aaa}
+#payments_box.payments_money_transfer_box .payments_money_transfer_label{color:#aaa}
 [dir] #payments_box.payments_money_transfer_box .payments_money_transfer_qr_box{filter:invert(1)hue-rotate(180deg)var(--filt2)}
 [dir] .page_info_tabs .vk_pay{filter:saturate(2)var(--filt2)}
 
