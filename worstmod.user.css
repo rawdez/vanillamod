@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210511.7.12
+@version        20210511.13.55
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -524,9 +524,9 @@ fuckstorieshard "я не могу их больше слушать." <<<EOT /* �
 @advanced dropdown nomoneysend " ♻ Деньги я лучше оставлю при себе:" {
 nomoneysendoff "да не, я щедрый.*" <<<EOT  EOT;
 nomoneysendon "нафиг денежные переводы" <<<EOT /* нафиг денежные переводы *\/
-.page_actions_item[onclick*="Page.moneyTransferBox"]{display:none!important} EOT;
+[dir] .page_actions_item[data-task-click="ProfileAction/money_transfer_box"]{display:none} EOT;
 nomoneysendfuckall "нафиг денежные переводы и воспоминания" <<<EOT /* нафиг денежные переводы и воспоминания *\/
-[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--memories,[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--money-transfer{display:none} EOT;
+[dir] .page_actions_item[href="/memories"],[dir] .page_actions_item[data-task-click="ProfileAction/money_transfer_box"]{display:none} EOT;
 
 }
 
