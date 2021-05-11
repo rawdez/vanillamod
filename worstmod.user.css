@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210508.8.7
+@version        20210511.5.0
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -250,6 +250,9 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 EOT;
 
 }
+
+@advanced color onlinecolorselect "Цвет индикатора онлайн:" #520e1b
+
 @advanced dropdown hollowhead "Шапка:" {
 hollowheadon "прозрачная*" <<<EOT /* прозрачная шапка *\/
 [dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,/*[[headopaque]]*\/)!important;border:none!important}
@@ -576,6 +579,9 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 /*[[pageheaderthin]]*/
 
 /*[[nameremove]]*/
+
+/* выбрать цвет индикатора онлайн */
+.feed_asc_user_thumb._online.online:not(.mobile)::after,.post_image._online.online:not(.mobile)::after, .wddi_thumb._online.online:not(.mobile)::after,.nim-peer.online:not(.mobile)::after, .chat_tab_imgcont.online:not(.mobile)::after,span.fc_contact_photo.online:not(.mobile)::after, .online:not(.mobile)::after,.ts_contact_photo.online:not(.mobile)::after, .ui_zoom_wrap .online:not(.mobile)::after,.im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,.group_u_photo._online.online:not(.mobile)::after{background-color:/*[[onlinecolorselect]]*/!important}
 
 /* поправляем левую менюшку */
 #side_bar ol{background:rgba(0,0,0,/*[[opaque]]*/);border:1px solid #111;border-radius:4px}
