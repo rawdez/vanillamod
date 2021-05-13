@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210512.17.3
+@version        20210513.16.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -252,6 +252,9 @@ EOT;
 }
 
 @advanced color onlinecolorselect "Цвет индикатора онлайн:" #520e1b
+
+@advanced color selectioncolor "Цвет фона выделения:" #3c1636
+@advanced color selectiontextcolor "Цвет текста выделения:" #fff
 
 @advanced dropdown hollowhead "Шапка:" {
 hollowheadon "прозрачная*" <<<EOT /* прозрачная шапка *\/
@@ -550,6 +553,9 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 :not(div)::-webkit-scrollbar-corner,::-webkit-scrollbar-track{background:#090909!important}
 :not(div)::-webkit-scrollbar-track-piece{background:#171717!important}
 
+/* цвет выделения */
+::selection{background-color:/*[[selectioncolor]]*/!important;color:/*[[selectiontextcolor]]*/!important}
+    
 /*[[backgroundorcolor]]*/
 
 /* fuck tweak.pro / imgur.com (fix https security issue) */
