@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name          VK jpg save fixer
 // @namespace     https://github.com/rawdez/vanillamod
-// @version       1.0
+// @updateURL     https://github.com/rawdez/vanillamod/raw/main/vkjpgsavefix.user.js
+// @version       20210513.10.40
 // @description   убирает ненужную фигню из путей картинок, например, чтобы использовать ссылку для своих обоев в Vanilla Dark 2 VK Fix/Mod.
 // @author        rawdez
 // @run-at        document-idle
