@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210517.19.17
+@version        20210517.19.23
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1623,7 +1623,7 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 .feedback_mention_row .feedback_photo_icon{background-color:#000000e6;filter:var(--filt2)}
 .mention_tt_subscr_icon,.post_header_subscribe_button ._subscribe_text:before,.post_header_subscribe_button ._subscribed_text:before{filter:var(--filt2)}
 [dir] .feedback_followers_row .feedback_photo_icon,[dir] .feedback_engagement_stats_row .feedback_photo_icon{filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.7)}
-[dir] .unread .feedback_engagement_stats_row .feedback_photo_icon{filter:invert(1)hue-rotate(180deg)brightness(1.3);background-color:var(--color2)!important;}
+[dir] .unread .feedback_engagement_stats_row .feedback_photo_icon,[dir] .feedback_engagement_stats_row:hover .feedback_photo_icon{background-color:#5181b8!important}
 
 /* фильтр иконок прикреплённых к посту документов */  
 .page_doc_row .page_doc_icon{filter:invert(.9)saturate(0)contrast(1.2)hue-rotate(180deg)!important}
