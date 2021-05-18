@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210518.20.15
+@version        20210518.20.26
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -791,10 +791,10 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .PageActionCell:hover,[dir] .PageActionCell:active{background-color:#6464641f}
 [dir] .PageActionCellSeparator{display:none}
 [dir] .PageActionCell:not(.PageActionItem--are-friends-blue) .PageActionCell__label,.PageActionCell__ddIcon svg{filter:var(--filt2)}
+[dir] .PageActionCell:not(.PageActionItem--are-friends-blue):hover .PageActionCell__label{filter:var(--filt2)brightness(1.2)saturate(1.8)}
 [dir] .PageActionItem--are-friends-blue .PageActionCell__label{filter:var(--filt2)saturate(.3)}
 [dir] .page_photo.ProfileActions .page_actions_expanded{margin-top:6px}
-[dir] .ProfileActions .page_actions_expanded .page_actions_item{height:30px;line-height:30px;padding:0 10px 0 10px;transition:color .3s}
-[dir] .ProfileActions .page_actions_expanded .page_actions_item:hover span{color:var(--color1)!important}
+[dir] .PageActionCell,[dir] .FancyElementTT__item{height:30px;line-height:30px;padding:0 10px 0 10px}
 [dir] .PageActionItem--are-friends-blue::after{filter:var(--filt2)}
 .FancyElementTT__rightIcon{filter:brightness(.6)var(--filt2)}
 .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:active > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:active > span{color:var(--color1)}
