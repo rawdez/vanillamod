@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210517.19.23
+@version        20210518.20.15
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -527,9 +527,9 @@ fuckstorieshard "я не могу их больше слушать." <<<EOT /* �
 @advanced dropdown nomoneysend " ♻ Деньги я лучше оставлю при себе:" {
 nomoneysendoff "да не, я щедрый.*" <<<EOT  EOT;
 nomoneysendon "нафиг денежные переводы" <<<EOT /* нафиг денежные переводы *\/
-[dir] .page_actions_item[data-task-click="ProfileAction/money_transfer_box"]{display:none} EOT;
+[dir] .PageActionCell[data-task-click="ProfileAction/money_transfer_box"]{display:none} EOT;
 nomoneysendfuckall "нафиг денежные переводы и воспоминания" <<<EOT /* нафиг денежные переводы и воспоминания *\/
-[dir] .page_actions_item[href="/memories"],[dir] .page_actions_item[data-task-click="ProfileAction/money_transfer_box"]{display:none} EOT;
+[dir] .PageActionCell[href="/memories"],[dir] .PageActionCell[data-task-click="ProfileAction/money_transfer_box"]{display:none} EOT;
 
 }
 
@@ -788,6 +788,10 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /*[[editmenumod]]*/
 
 /* действия профиля / паблоса */
+[dir] .PageActionCell:hover,[dir] .PageActionCell:active{background-color:#6464641f}
+[dir] .PageActionCellSeparator{display:none}
+[dir] .PageActionCell:not(.PageActionItem--are-friends-blue) .PageActionCell__label,.PageActionCell__ddIcon svg{filter:var(--filt2)}
+[dir] .PageActionItem--are-friends-blue .PageActionCell__label{filter:var(--filt2)saturate(.3)}
 [dir] .page_photo.ProfileActions .page_actions_expanded{margin-top:6px}
 [dir] .ProfileActions .page_actions_expanded .page_actions_item{height:30px;line-height:30px;padding:0 10px 0 10px;transition:color .3s}
 [dir] .ProfileActions .page_actions_expanded .page_actions_item:hover span{color:var(--color1)!important}
@@ -798,7 +802,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .Modal .BaseModal__content{background:#00000080!important}
 [dir] .ProfileActions .page_actions_expanded .page_actions_separator{display:none}
 [dir] .page_actions_dd_label{filter:saturate(0)}
-[dir] .page_actions_expanded .page_actions_item::before,[dir] .page_actions_expanded .page_actions_item:hover::before,[dir] .page_actions_item>.PageActionItem__icon{margin:0 6px 0 0!important;transform:scale(.9);filter:sepia(1)brightness(.85)hue-rotate(180deg)var(--filt2)saturate(.8)!important}
+[dir] .page_actions_expanded .page_actions_item::before,[dir] .page_actions_expanded .page_actions_item:hover::before,[dir] .PageActionCell .PageActionCell__icon{margin:0 6px 0 0!important;transform:scale(.9);filter:sepia(1)brightness(.85)hue-rotate(180deg)var(--filt2)saturate(.8)!important}
 [dir] .page_photo.page_action_menu_groups .page_actions_item::before{margin:6px 10px 0 0!important}
 [dir] .PageActionsClosedProfile__icon{color:var(--color2);filter:brightness(1.4)saturate(.6)}
 [dir] .PageActionsClosedProfile{color:#999;border-top:4px solid #0000;opacity:0;height:0;padding:0;margin:0;transition:height .7s,opacity .7s,border-top .7s}
