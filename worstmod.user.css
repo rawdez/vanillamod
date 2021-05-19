@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dark 2 VK Fix/Mod
-@version        20210518.20.43
+@version        20210519.10.24
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -790,7 +790,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /* действия профиля / паблоса */
 [dir] .PageActionCell:hover,[dir] .PageActionCell:active{background-color:#6464641f}
 [dir] .PageActionCellSeparator{display:none}
-[dir] .PageActionCell:not(.PageActionItem--are-friends-blue):not(.PageActionItem--call-blue) .PageActionCell__label,.PageActionCell__ddIcon svg{filter:var(--filt2)}
+[dir] .PageActionCell__ddIcon svg{filter:var(--filt2)}
+[dir] .PageActionCell:not(.PageActionItem--are-friends-blue):not(.PageActionItem--call-blue) .PageActionCell__label{filter:var(--filt2)saturate(.3)}
 [dir] .PageActionCell:not(.PageActionItem--are-friends-blue):not(.PageActionItem--call-blue):hover .PageActionCell__label{filter:var(--filt2)brightness(1.2)saturate(1.8)}
 [dir] .PageActionItem--are-friends-blue .PageActionCell__label,[dir] .PageActionItem--call-blue .PageActionCell__label{filter:var(--filt2)saturate(.3)}
 [dir] .PageActionItem--are-friends-blue:hover .PageActionCell__label,[dir] .PageActionItem--call-blue:hover .PageActionCell__label{filter:var(--filt2)saturate(.6)}
