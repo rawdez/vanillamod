@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.17.37
+@version        20210604.17.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -943,7 +943,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .search_results_sep{border-bottom:1px solid var(--c3)}
 [dir] a.ts_contact.active,[dir] a.ts_search_link.active{background:#6464641f}
 [dir] .ts_search_sep{border-top:1px solid var(--c3)}
-[dir] em.ts_clist_hl{background:var(--c1);color:#222;font-weight:500}
+[dir] em.ts_clist_hl,[dir] em.fc_clist_hl,[dir] .result_list ul li em{background:var(--c1);color:#222;font-weight:500}
 [dir] #wall_search.ui_search_field._field{background-color:#0000!important}
 [dir] .ui_search_input_block{background-color:#0000004d!important}
 [dir] input.ui_search_field{background-color:#0000!important;color:#fff;filter:var(--magic)brightness(.7)}
@@ -956,6 +956,29 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .search_auto_results .search_auto_sep{border-top:1px solid var(--c3)}
 [dir] .search_auto_results .search_auto_sep .search_auto_sep_inner{border-top:none}
 [dir] .search_results.wall_module.page_block .like_cont,[dir] .fans_rows.wall_module .like_cont{box-shadow:inset 0 -1px var(--c3)}
+[dir] .page_block_sub_header{color:#ccc}
+[dir] .search_status_map{background-color:#00000080} 
+[dir] .search_status_map_icon{opacity:.4;filter:saturate(0)}
+[dir] .friends_search_import{background-color:#0000!important;filter:invert(.95)contrast(.75)brightness(.9)!important}
+[dir] .ui_header_ext_search{filter:brightness(.7)saturate(.8)var(--magic)}
+[dir] .ui_header_ext_search:hover{filter:var(--magic)}
+[dir] .ui_search_fltr_progress,[dir] .friends_wide_loading{filter:invert(.95)hue-rotate(180deg)var(--magic)}
+[dir] .ui_tab_search::after{filter:brightness(.7)saturate(.8)var(--magic)}
+[dir] .result_list li.disabled{background:#0a0a0a;color:var(--c2)}
+[dir] .result_list ul li.sectioned.section{border-top:1px solid #262626}
+[dir] .friends_find_user_result.unshown{top:0;left:0;transform:none;padding:60px 0px;background-color:#000000f2;width:100%;height:100%;color:#aaa}
+[dir] .friends_find_user_result.unshown a{color:var(--c2)}
+[dir] .friends_find_user_result.unshown a:hover{color:var(--c1)}
+[dir] .friends_find_user_add:hover,[dir] .friends_find_user_add{filter:var(--magic)}
+[dir] .ui_header_ext_search{color:#9abbe2}
+[dir] .friends_import_header{color:#ccc}
+[dir] .friends_import_row:hover{background-color:#6464641f}
+[dir] .search_sep{border-top:1px solid var(--c3)}
+[dir] .disabled.selector_container table.selector_table{border-color:var(--c4)}
+[dir] .disabled.selector_container{background:#0002}
+[dir] .disabled.big.selector_container td.selector input{color:#555!important}
+[dir] .search_filters_minimized_text{filter:invert(.85)hue-rotate(180deg)var(--magic)saturate(.8)brightness(.8)}
+[dir] .ui_gallery_wall_cards .wall_card__title_link{color: var(--c1)}
     
 /* вложенные комментики + нафиг собственную авку возле поля комментирования */
 .post_field_user_image{display:none}
@@ -2675,6 +2698,7 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .top_profile_vkconnect_descr{color:#9d9d9d}
 [dir] .top_profile_sep{border-top:1px solid var(--c4)}
 [dir] .ts_contact_name{color:var(--c2)}
+[dir] a.ts_contact.active .ts_contact_name{color:var(--c1)}
 [dir] a.ts_contact.active,[dir] .feedback_row_wrap.unread:not(.feedback_row_touched){background-color:#6464641f!important}
 [dir] .ts_contact_status{filter:var(--magic)saturate(.8)brightness(.7)}
 [dir] .top_notify_cont .feedback_img{background-color:#0000}
@@ -2801,15 +2825,6 @@ hr{border-color:#222}
 .page_actions_subitem.checked:before{content:'';height:18px;width:25px;margin-left:-25px;display:inline-block;background:#0000 url("https://vk.com/images/icons/dropdown_check.png") no-repeat scroll 6px 8px;filter:saturate(0)}  
 .page_actions_subitem.checked:hover{background-color:#171717}
 
-/* фикс поиска */ 
-.search_status_map{background-color:#00000080} 
-.search_status_map_icon{opacity:.4;filter:saturate(0)}
-.friends_search_import{background-color:#0000!important;filter:invert(.95)contrast(.75)brightness(.9)!important}
-.ui_header_ext_search{filter:brightness(.7)saturate(.8)var(--magic)}
-.ui_header_ext_search:hover{filter:var(--magic)}
-.ui_search_fltr_progress,.friends_wide_loading{filter:invert(.95)hue-rotate(180deg)var(--magic)}
-[dir] .ui_tab_search::after{filter:brightness(.7)saturate(.8)var(--magic)}
-
 /* разделитель в редактировании руководителя сообщества */
 .gedit_admbox_sep{border-top:1px solid #2A2A2A}
 
@@ -2829,11 +2844,6 @@ hr{border-color:#222}
 
 /* фикс - настройки поиска видео не влазят когда ничего не найдено */
 .video_empty_placeholder.no_rows{padding:131px 170px 124px}
-
-/* поиск подсветка */
-em.fc_clist_hl,.result_list ul li em{background-color:var(--c1);color:var(--c5)}
-.result_list li.disabled{background:#0a0a0a;color:var(--c2)}
-.result_list ul li.sectioned.section{border-top:1px solid #262626}
 
 /* фикс действия удалённого диалога */ 
 .nim-dialog .nim-dialog--daction{color:var(--c1)}
@@ -3001,21 +3011,6 @@ img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:non
 
 /* поиск друзей в аудиозаписях */ 
 .audio_friends_list_wrap .ui_search_new.ui_search_dark .ui_search_input_inner{background-color:#0000001a}
-
-/* поиск друзей */
-.friends_find_user_result.unshown{top:0;left:0;transform:none;padding:60px 0px;background-color:#000000f2;width:100%;height:100%;color:#aaa}
-.friends_find_user_result.unshown a{color:var(--c2)}
-.friends_find_user_result.unshown a:hover{color:var(--c1)}
-.friends_find_user_add:hover,[dir] .friends_find_user_add{filter:var(--magic)}
-[dir] .ui_header_ext_search{color:#9abbe2}
-[dir] .friends_import_header{color:#ccc}
-[dir] .friends_import_row:hover{background-color:#6464641f}
-[dir] .search_sep{border-top:1px solid var(--c3)}
-[dir] .disabled.selector_container table.selector_table{border-color:var(--c4)}
-[dir] .disabled.selector_container{background:#0002}
-[dir] .disabled.big.selector_container td.selector input{color:#555!important}
-[dir] .search_filters_minimized_text{filter:invert(.85)hue-rotate(180deg)var(--magic)saturate(.8)brightness(.8)}
-[dir] .ui_gallery_wall_cards .wall_card__title_link{color: var(--c1)}
 
 /* заголовки всплывающих ссылок */
 .mott_header, .promoted_post_tt .header, .verified_tt_header, .wall_tt .header{color:var(--c1)}
