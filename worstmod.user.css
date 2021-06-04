@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.4.27
+@version        20210604.4.44
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2360,6 +2360,7 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 /* фикс белых авок */
 [src*="images/deactivated"],[style*="images/deactivated"]{filter:brightness(.454)contrast(3.2)saturate(0)!important} 
 [src*="images/camera"],[style*="images/camera"],[src*="images/community"],[style*="images/community"],[src*="icons/im_multichat"],[src*="icons//multichat"],[style*="images/lnkouter"],.photos_album_no_cover,.artist_no_image .audio_block_small_item__img,.friends_photo_img::after{filter:saturate(0)invert(1)!important}
+[dir] .friends_photo_img{background-color:#0000}
 
 /* сервер с фотографией недоступен */
 img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_null_moving.gif"],[style*="/images/x_null_moving.gif"]{filter:invert(.98)hue-rotate(180deg);opacity:.9;border:none!important}
@@ -3056,7 +3057,16 @@ img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:non
 [dir] .olist_item_wrap:hover{background-color:#6464641f;border-top:1px solid var(--c3)}
 [dir] .ui_tabs_box .ui_tab_count{color:var(--c1)}
 [dir] .olist_checkbox{filter:invert(.9)hue-rotate(180deg)var(--magic)brightness(.8)saturate(.9)}
-[dir] .ui_search_custom_empty.ui_search_field_empty .ui_search_custom_ctrl{z-index:1}
+[dir] .ui_search_custom_ctrl{z-index:1}
+[dir] .ui_search_fltr{background:#000c;border:1px solid var(--c3)}
+[dir] .ui_search_fltr::after{border-bottom-color:var(--c3)}
+[dir] .ui_search_fltr::before{border-bottom-color:var(--c2)}
+[dir] .ui_search_fltr_label{color:var(--c1)}
+[dir] .ui_search_fltr_sel .radiobtn{color:var(--c2)}
+[dir] .friends_cur_filters .token{background-color:var(--c1)}
+[dir] .friends_cur_filters .token{color:#222}
+[dir] .friends_cur_filters .token .del_icon{filter:brightness(.4)saturate(0)}
+[dir] .friends_cur_filters{border-bottom:1px solid var(--c3)}
 
 /* фикс комментов и действий постов */ 
 [dir] .wall_module.wl_post .reply .reply_wrap{border-top:none!important} 
