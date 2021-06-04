@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.21.42
+@version        20210604.22.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2720,19 +2720,26 @@ a .app_widget_tiles_title{color:#bbb}
 .page_verified,.nim-dialog--verfifed,.im-page--header-verified{filter:saturate(0)invert(1)contrast(2)}
 
 /* настройки приватности списки доступа */
-[dir] .privacy_dropdown .l_header .l_header_label,[dir] .privacy_dropdown .l_header,[dir] .privacy_dropdown .l_item{background-color:#171717;color:#BBB}
-[dir] .privacy_dropdown .l_item:hover{background-color:#111;color:#CCC}
-[dir] .privacy_dropdown .l_item_sel{background:#151515 url("https://vk.com/images/icons/dropdown_check.png?2") no-repeat scroll left 9px;color:#CCC;filter:saturate(0)}
-[dir] .privacy_dropdown .l_item_sel:hover{background:#111 url("https://vk.com/images/icons/dropdown_check.png?2") no-repeat scroll left 9px;color:#AAA}
-[dir] .group1,[dir] .group2,[dir] .group3,[dir] .group4,[dir] .group5,[dir] .group6,[dir] .group7,[dir] .group8,[dir] .group9,[dir] .group10{background-color:#171717}
-[dir] .privacy_custom_box .cp_plus_friends_type{color:#CCC}
+[dir] .privacy_dropdown{border:1px solid var(--c3)}
+[dir] .privacy_dropdown .body{background:#000000d9}
+[dir] .privacy_dropdown .header{border:none;background-color:#0003}
+[dir] .privacy_dropdown .item_sel,[dir] .privacy_dropdown .item_sel_plus{background-color:#6464641f;color:var(--c1)}
+[dir] .privacy_dropdown .l_header .l_header_label,[dir] .privacy_dropdown .l_header,[dir] .privacy_dropdown .l_item{background-color:#0000;color:#bbb}
+[dir] .privacy_dropdown .l_item:hover{background-color:#6464641f;color:#ccc}
+[dir] .privacy_dropdown .l_item_sel,[dir] .privacy_dropdown .l_item_sel:hover{background:#6464641f url("https://vk.com/images/icons/dropdown_check.png") no-repeat scroll left 9px;filter:var(--magic)}
+[dir] .group1,[dir] .group2,[dir] .group3,[dir] .group4,[dir] .group5,[dir] .group6,[dir] .group7,[dir] .group8,[dir] .group9,[dir] .group10{background-color:#6464641f}
+[dir] .privacy_custom_box .cp_plus_friends_type{color:#ccc}
 [dir] .privacy_custom_box .plus_friends{border-bottom:1px solid #333}
 [dir] .subheader{border-bottom:none}
 [dir] .flist_full .flist_item_wrap:hover{background:none}
 [dir] .l_item .privacy_item_icon{filter:var(--magic)brightness(.5)}
 [dir] .privacy_locked{background:none}
 [dir] .privacy_locked:before{position:absolute;content:" ";display:block;height:16px;width:10px;margin-left:-16px;background:url(https://vk.com/images/icons/lock_icons.png) no-repeat 0 2px;filter:var(--magic)brightness(.4)}
-.privacy_dropdown .header .header_label,[dir] .privacy_dropdown .l_header::after{filter:var(--magic)}
+[dir] .privacy_dropdown .header .header_label,[dir] .privacy_dropdown .l_header::after{filter:var(--magic)}
+[dir] .flist_sel{background-color:#0000;border-bottom: 1px solid var(--c3);color:var(--c1)!important}
+[dir] .flist_summary{color:var(--c1)}
+[dir] .flist_item_wrap{border-bottom:1px solid var(--c3)}
+[dir] .flist_item_action{filter:invert(.95)hue-rotate(180deg)var(--magic)saturate(.8)brightness(.8)}
 
 /* загрузчик страниц */
 .flat_button.secondary .pr_bt, .flat_button.secondary_dark .pr_bt{background-color:#6E6E6E}
