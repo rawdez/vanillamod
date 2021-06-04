@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.17.49
+@version        20210604.18.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -704,6 +704,98 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 
 /*[[nameremove]]*/
 
+/* менюшки шапки */
+[dir] .top_notify_header,[dir] .feedback_header,[dir] .feedback_content .feedback_text .wall_reply_text{color:#999;transition:color .3s}
+[dir] .feedback_content:hover .feedback_text .wall_reply_text{color:#ccc}
+.feedback_header .author,.feedback_header .mem_link,.feedback_header .group_link{color:var(--c1)}
+#ts_cont_wrap.ts_cont_wrap,#top_notify_wrap,#top_profile_menu,.tt_w.top_notify_tt{background-color:#000000d9!important;border:1px solid var(--c5)!important}
+[dir] .top_profile_mrow:hover,[dir] .top_profile_vkconnect_row:hover{background-color:#6464641f!important}
+[dir] .top_notify_cont .feedback_row{border-color:#000!important}
+[dir] .top_notify_header{background-color:#0003!important;border:none!important}
+[dir] .top_notify_show_all{background-color:#0003!important;border:none!important}
+[dir] .top_notify_show_all:hover{background-color:var(--c1)!important;border:none!important;color:var(--c5)!important;box-shadow:1px 0px 0px 1px var(--c1)}
+[dir] #groups_list_search{background-color:#000000b3}
+[dir] .feedback_row.feedback_reply_row.clear_fix._post_content.hover{background:var(--c4)}
+[dir] .top_notify_cont ._notify_unread .feed_row:first-child .feedback_row_wrap{box-shadow:0px -1px 0 0 #353535}
+[dir] .top_notify_cont .ui_scroll_content > .pr{filter:none!important}
+[dir] .top_notify_cont{color:#ccc}
+[dir] .top_profile_vkconnect_descr{color:#9d9d9d}
+[dir] .top_profile_sep{border-top:1px solid var(--c4)}
+[dir] .ts_contact_name{color:var(--c2)}
+[dir] a.ts_contact.active .ts_contact_name{color:var(--c1)}
+[dir] a.ts_contact.active,[dir] .feedback_row_wrap.unread:not(.feedback_row_touched){background-color:#6464641f!important}
+[dir] .ts_contact_status{filter:var(--magic)saturate(.8)brightness(.7)}
+[dir] .top_notify_cont .feedback_img{background-color:#0000}
+[dir] .mob_onl{filter:brightness(.6)sepia(5)saturate(1.2)hue-rotate(170deg)var(--magic)}
+
+/* фикс колокольчика с уведомлениями */
+[dir] .TopNavBtn .TopNavBtn__notifyCount{color:#e6e6e6;background-color:#841515!important;border:none}
+[dir] .TopNavBtn__notifyCount::after{display:none}
+[dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon{filter:var(--magic)brightness(.9)}
+[dir] .TopNavBtn:not(.TopNavBtn--active):hover{background:#00000080!important;}
+[dir] .TopNavBtn.TopNavBtn--active{background:var(--c2)!important}
+[dir] .TopNavBtn.TopNavBtn--active .TopNavBtn__icon{filter:var(--magic)brightness(.1)}
+[dir] .top_notify_header .top_notify_header_label .top_notify_header_label_groups_counter.unmuted{background:var(--c2);color:#111;transition:background .3s}
+[dir] .top_notify_header .top_notify_header_label:hover .top_notify_header_label_groups_counter.unmuted{background:var(--c1)}
+[dir] .notify_sources_tt_content .line_cell .info .ui_rmenu_count{color:#111!important}
+
+/* уведомления */
+.feedback_row_answer{background-color:#0009!important;border:1px solid #000 !important}
+.feedback_row_answer::after, .feedback_row_answer::before{border-style:solid;border-width:0px 6px 6px 6px;border-color:#0000 #0000 #000 #0000}
+.notifications_new_events{background:#0000;border-top:none;color:var(--c2)}
+.notifications_new_events:hover{background:#00000080;color:var(--c1)}
+[dir] .top_notify_cont .feedback_row:not(.dld).hover,[dir] .top_notify_cont .feedback_row:not(.dld):hover{background-color:#0000!important}
+[dir] .feedback_row, [dir] .feedback_sticky_row{border-top:1px solid var(--c3)}
+[dir] .feedback_row_clickable:not(.feedback_row_touched):hover{border-bottom:1px solid var(--c3)}
+[dir] .feed_row ~ .feed_row .feedback_row_clickable:not(.feedback_row_touched):hover{border-top:1px solid var(--c3)}
+[dir] .feedback_row_menu_icon{filter:var(--magic)}
+[dir] .notifications_new_events{background:#6464641f;border-top:none}
+[dir] .notifications_new_events:hover{background:var(--c3);color:var(--c1)}
+.feedback_header b{color:#888}
+.feedback_row_wrap.feedback_row_clickable._post_wrap.clear_fix:hover{background:rgba(25,25,25,.5)}
+.fw_reply_tt,.own_reply_tt,.share_tt{background-color:#000000f2!important}
+:not(.tt_black):not(.like_tt).tt_down::before{border-color:var(--c3) #0000 #0000 #0000}
+:not(.tt_black):not(.like_tt).tt_up::before{border-color:#0000 #0000 var(--c3) #0000}
+:not(.emoji_tt_wrap):not(.tt_black_side).tt_down::after{border-color:#000000f2 #0000 #0000 #0000!important}
+:not(.emoji_tt_wrap):not(.tt_black_side).tt_up::after{border-color:#0000 #0000 #000000f2 #0000!important}
+.own_reply_tt.tt_down::after{display:none}
+[dir] .notify_sources_tt_content .content:not(:hover) .line_cell.selected,[dir] .notify_sources_tt_content .line_cell:hover{background-color:#6464641f}
+[dir] .notify_sources_tt_content .line_cell .info{color:var(--c2)}
+[dir] .notify_sources_tt_content .line_cell:hover .info{color:var(--c1)}
+[dir] .notify_sources_tt_content .line_cell .cell_add_source_icon{filter:invert(.9)hue-rotate(180deg)var(--magic)saturate(.6)}
+[dir] .flist_item_name{color:var(--c2)}
+[dir] .flist_item_wrap:hover{border-top:1px solid var(--c3);background-color: #6464641f}
+[dir] .flist_list_radio .flist_item_wrap.flist_item_checked .flist_item_action, [dir] .flist_list_radio .flist_item_wrap:hover.flist_item_checked .flist_item_action {background:var(--c3);box-shadow:0 0 0 1px var(--c4) inset}
+[dir] .flist_list_radio .flist_item_wrap.flist_item_checked .flist_item_action::before, [dir] .flist_list_radio .flist_item_wrap:hover.flist_item_checked .flist_item_action::before{background:var(--c2)}
+[dir] .box_x_button{filter:var(--magic)brightness(.7)}
+[dir] .wall_module .reply.reply_highlighted{background:#6464641f;border-top:1px solid var(--c3);border-bottom:1px solid var(--c3)}
+
+.page_video_autoplay_tt.eltt_top.eltt_vis{background-color:#000000d9;border:1px solid var(--c3);border-radius:2px}
+.page_video_autoplay_tt.eltt_top.eltt_vis::after{border-color:#000000d9 #0000 #0000 #0000}
+.page_video_autoplay_tt.eltt_top.eltt_vis::before{border-color:var(--c3) #0000 #0000 #0000}
+.page_video_autoplay_tt_hide{transform:scale(.75)}
+
+/* иконки в уведомлениях */
+.feedback_copy_row .feedback_photo_icon{background-color:#368034}
+.feedback_mention_row .feedback_photo_icon{background-color:#000000e6;filter:var(--magic)}
+.mention_tt_subscr_icon,.post_header_subscribe_button ._subscribe_text:before,.post_header_subscribe_button ._subscribed_text:before{filter:var(--magic)}
+[dir] .feedback_followers_row .feedback_photo_icon,[dir] .feedback_engagement_stats_row .feedback_photo_icon{filter:invert(.9)hue-rotate(180deg)var(--magic)saturate(.7)}
+[dir] .unread .feedback_engagement_stats_row .feedback_photo_icon,[dir] .feedback_engagement_stats_row:hover .feedback_photo_icon{background-color:#5181b8!important}
+
+/* уведомление о лайв-трансляции */
+.right_list_field.right_list_field__common_text{color:#888}
+.live_announce .ui_actions_menu_hide{filter:saturate(0)!important}
+
+/*[[moveplayer]]*/
+/*[[fadetoblack]]*/
+/*[[audioplayhollow]]*/
+/*[[burnmotherfucker]]*/
+/*[[flushshit]]*/
+/*[[fuckstories]]*/
+/*[[chaticonremove]]*/
+/*[[audiosendremove]]*/
+/*[[nomoneysend]]*/
+
 /* текст */
 [dir] .page_name,[dir] h1.page_name,.module_header .header_label,[dir] h1,.page_block_header{color:#ddd}
 .current_text{color:#bbb}
@@ -764,7 +856,7 @@ html{scrollbar-color:#6464641f var(--c9)!important}
 [dir] .settings_menu_rows .olist_item_menu .olist_item_photo{color:var(--c1);background:#0000}
 /*[[sidebarnotext]]*/
 
-/* фикс счётчика сообщений */    
+/* фикс счётчика сообщений */
 [dir] #side_bar li span.left_count_wrap{background-color:var(--c1)!important}
 [dir] #side_bar a.left_count_wrap{background-color:var(--c2)!important;color:#222!important}
 [dir] #side_bar li:hover a.left_count_wrap{background-color:var(--c1)!important;color:#111!important}
@@ -1058,6 +1150,11 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .ui_actions_menu_item:hover{color:var(--c1)!important;background:#6464641f!important}
 .ui_actions_menu_item.ui_actions_menu_item_lock .ui_actions_menu_item_lock_text{display:none}
 
+/* фотография не будет показываться в этом блоке */
+#profile_photos_about{background:#6464641f;border:1px solid var(--c3);color:#999;filter:none}
+#profile_photos_about::before{content:'';width:32px;height:32px;display:block;position:absolute;background:#0000 url("https://vk.com/images/icons/msg_info.png") no-repeat scroll 0px 0px;margin-left:-44px;margin-top:6px;filter:invert(.9)hue-rotate(180deg)brightness(1.5)var(--magic)}
+[dir] .profile_photo_progress{filter:invert(.9)hue-rotate(180deg)var(--magic)}
+
 /* чиним фон при загрузке фоток в альбом */
 [dir] .photos_container_edit_grid .photo_mask_progress{background-color:#1e1e1ed6}
 [dir] .photos_photo_edit_row_thumb{background-color:#2A2A2A!important}
@@ -1099,20 +1196,42 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .market_edit_item_box .result_list li.disabled{border-top:1px solid var(--c3)}
 [src="/images/market_camera.png"]{filter:invert(.98)hue-rotate(180deg)saturate(.3)}
 
-/* треклист / плееры */
-[dir] .ap_layer_wrap .ap_layer__content{background:rgba(0,0,0,/*[[opaque]]*/)}
-.audio_page_player2{background:#0000}
-.audio_page_player2.audio_page_player_fixed{background:rgba(0,0,0,/*[[opaque]]*/)!important}
+/* помогаем Путе с ФСБ-шниками шпионить: подтвердить отметку на фото */ 
+[dir] .PhotoRecognizeBlockItem__footer{background:#00000080!important}
+.PhotoRecognizeBlockItem__caption{max-height:50px}
+[dir] .PhotoRecognizeBlockItem__ava{width:50px;height:50px}
+[dir] .PhotoRecognizeBlock__title {color:var(--c2);transition:color .3s}
+[dir] .PhotoRecognizeBlock__title:hover{color:#ccc}
+[dir] .PhotoRecognizeBlockItemButton{background:#00000026!important}
+[dir] .PhotoRecognizeBlockItemButton:hover{background:var(--c2)!important}
+[dir] .PhotoTag::after{border:2px solid #0000005c}
+[dir] .photo_tooltip .photo_tooltip__content::after{transform:none;background:#0000}
+.suggested_tag_user .suggested_tag_user__actions button.yes,[dir] .PhotoRecognizeBlockLinkBtn{color:var(--c2)}
+.suggested_tag_user:hover .suggested_tag_user__actions button.yes,[dir] .PhotoRecognizeBlockLinkBtn:hover{color:var(--c1)}
+.pv_cont:not(.pv_deleted_state) .PhotoViewTopPanel{display:none}
+[dir] .pv_cont.pv_deleted_state .pv_narrow_column_wrap{background:#000!important}
+[dir] .PhotoViewTopPanel{background-color:var(--c5)}
+[dir] .pv_cont.pv_deleted_state #pv_tag_info a{color:#979797!important}
+[dir] .pv_cont.pv_deleted_state #pv_tag_info a:hover{color:#d00!important}
+[dir] .PhotoRecognizeBlockIgnoreStub__disable.flat_button.secondary:hover{background:var(--c1)!important;color:#111}
+[dir] .PhotoCarousel__arrow{filter:invert(.95)hue-rotate(180deg)var(--magic)}
+[dir] .PhotoCarouselItem:last-child{margin-right:0}
+[dir] .PhotoCarouselItem:first-child{margin-left:0}
 
-/*[[moveplayer]]*/
-/*[[fadetoblack]]*/
-/*[[audioplayhollow]]*/
-/*[[burnmotherfucker]]*/
-/*[[flushshit]]*/
-/*[[fuckstories]]*/
-/*[[chaticonremove]]*/
-/*[[audiosendremove]]*/
-/*[[nomoneysend]]*/
+/* ФСБ и Путя теперь ещё хотят знать кто твои близкие друзья */
+[dir] .BestFriendsSettingsEntrypoint__button{filter: var(--magic)brightness(.6)}
+[dir] .PrivacyModal__close,[dir] .BestFriendsSettingsBox .ModalHeader__cross{filter:var(--magic)}
+[dir] .PrivacyModal__button,[dir] .ButtonWithProgress__content{color:#111}
+[dir] .PrivacyModal__box,[dir] .Modal.Modal--white.BestFriendsSettingsBox{background:#0000;color:#ccc}
+[dir] .BoxModal{background:#0000;color:#ccc}
+[dir] .PrivacyModal__title,[dir] .BestFriendsSettingsBox__title,[dir] .BestFriendsSettingsBox__sectionTitle{color:var(--c2)}
+.BestFriendsSettingsBox__subtitle,[dir] .PostVisibilityBestFriendsOnlyOption__editLink{color:#ccc}
+[dir] .PostVisibilityBestFriendsOnlyOption__editLink:hover{color:var(--c1)}
+[dir] .ModalHeader--white{background:#0000;border-bottom:1px solid #111}
+[dir] .BestFriendsSettingsBox__listMore,[dir] .ModalFooter__hint{color:var(--c2)}
+[dir] .BestFriendsSettingsBox__listMore:hover{background:var(--c1);color:#111;border-top:1px solid #0000}
+[dir] .ListMultiSelectControl{filter:invert(.9)hue-rotate(180deg)var(--magic)saturate(.9)brightness(.8)}
+[dir] .post_action_btn.best_friends_only{color:var(--c1)}
 
 /* меню редактирования фоток */
 [dir] #pv_more_acts_tt{background:#000000c1!important;border:1px solid var(--c4)!important}
@@ -1388,43 +1507,6 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 /* нах тайные симпатии */
 [dir] .ownerButton_lovina_valentine{display:none}
 
-/* помогаем Путе с ФСБ-шниками шпионить: подтвердить отметку на фото */ 
-[dir] .PhotoRecognizeBlockItem__footer{background:#00000080!important}
-.PhotoRecognizeBlockItem__caption{max-height:50px}
-[dir] .PhotoRecognizeBlockItem__ava{width:50px;height:50px}
-[dir] .PhotoRecognizeBlock__title {color:var(--c2);transition:color .3s}
-[dir] .PhotoRecognizeBlock__title:hover{color:#ccc}
-[dir] .PhotoRecognizeBlockItemButton{background:#00000026!important}
-[dir] .PhotoRecognizeBlockItemButton:hover{background:var(--c2)!important}
-[dir] .PhotoTag::after{border:2px solid #0000005c}
-[dir] .photo_tooltip .photo_tooltip__content::after{transform:none;background:#0000}
-.suggested_tag_user .suggested_tag_user__actions button.yes,[dir] .PhotoRecognizeBlockLinkBtn{color:var(--c2)}
-.suggested_tag_user:hover .suggested_tag_user__actions button.yes,[dir] .PhotoRecognizeBlockLinkBtn:hover{color:var(--c1)}
-.pv_cont:not(.pv_deleted_state) .PhotoViewTopPanel{display:none}
-[dir] .pv_cont.pv_deleted_state .pv_narrow_column_wrap{background:#000!important}
-[dir] .PhotoViewTopPanel{background-color:var(--c5)}
-[dir] .pv_cont.pv_deleted_state #pv_tag_info a{color:#979797!important}
-[dir] .pv_cont.pv_deleted_state #pv_tag_info a:hover{color:#d00!important}
-[dir] .PhotoRecognizeBlockIgnoreStub__disable.flat_button.secondary:hover{background:var(--c1)!important;color:#111}
-[dir] .PhotoCarousel__arrow{filter:invert(.95)hue-rotate(180deg)var(--magic)}
-[dir] .PhotoCarouselItem:last-child{margin-right:0}
-[dir] .PhotoCarouselItem:first-child{margin-left:0}
-
-/* ФСБ и Путя теперь ещё хотят знать кто твои близкие друзья */
-[dir] .BestFriendsSettingsEntrypoint__button{filter: var(--magic)brightness(.6)}
-[dir] .PrivacyModal__close,[dir] .BestFriendsSettingsBox .ModalHeader__cross{filter:var(--magic)}
-[dir] .PrivacyModal__button,[dir] .ButtonWithProgress__content{color:#111}
-[dir] .PrivacyModal__box,[dir] .Modal.Modal--white.BestFriendsSettingsBox{background:#0000;color:#ccc}
-[dir] .BoxModal{background:#0000;color:#ccc}
-[dir] .PrivacyModal__title,[dir] .BestFriendsSettingsBox__title,[dir] .BestFriendsSettingsBox__sectionTitle{color:var(--c2)}
-.BestFriendsSettingsBox__subtitle,[dir] .PostVisibilityBestFriendsOnlyOption__editLink{color:#ccc}
-[dir] .PostVisibilityBestFriendsOnlyOption__editLink:hover{color:var(--c1)}
-[dir] .ModalHeader--white{background:#0000;border-bottom:1px solid #111}
-[dir] .BestFriendsSettingsBox__listMore,[dir] .ModalFooter__hint{color:var(--c2)}
-[dir] .BestFriendsSettingsBox__listMore:hover{background:var(--c1);color:#111;border-top:1px solid #0000}
-[dir] .ListMultiSelectControl{filter:invert(.9)hue-rotate(180deg)var(--magic)saturate(.9)brightness(.8)}
-[dir] .post_action_btn.best_friends_only{color:var(--c1)}
-
 /* ошибка */
 [dir] .error{background-color:#ce00001f}
 
@@ -1433,10 +1515,6 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
     
 /* иконки фыбора прикреплений */
 .media_selector .ms_item::before,.reply_box_more_attaches::before{filter:var(--magic)}
-
-/* фотография не будет показываться в этом блоке */
-#profile_photos_about{background:#00000059!important;border:1px solid #111!important;color:#777!important;filter:none!important}
-#profile_photos_about:before{content:'';width:32px;height:32px;display:block;position:absolute;background:#0000 url("https://vk.com/images/icons/msg_info.png") no-repeat scroll 0px 0px!important;margin-left:-42px;margin-top:6px;filter:invert(.9)brightness(1.2)!important}
 
 /* посты */
 [dir] .like_cont{padding:7px 0;border-top:none;box-shadow:none}
@@ -1617,6 +1695,9 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 #wk_content .audio_row:hover{background-color:#0006!important}
 .audio_page__audio_rows .audio_row.audio_has_lyrics .audio_row__title_inner,.ap_layer__content .audio_row.audio_has_lyrics .audio_row__title_inner,._playlist_page_content_block .audio_row.audio_has_lyrics .audio_row__title_inner,._audio_section__search .audio_row.audio_has_lyrics .audio_row__title_inner,.audio_section_global_search__audios_block .audio_row.audio_has_lyrics .audio_row__title_inner{color:var(--c2)}
 [dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_add,[dir] .ap_layer .audio_pl_snippet2 .audio_pl_snippet__action_btn_share,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_more .audio_pl_actions_icons{filter:var(--magic)}
+[dir] .ap_layer_wrap .ap_layer__content{background:rgba(0,0,0,/*[[opaque]]*/)}
+[dir] .audio_page_player2{background:#0000}
+[dir] .audio_page_player2.audio_page_player_fixed{background:rgba(0,0,0,/*[[opaque]]*/)!important}
 
 /* плейлисты в ленте, диалогах и комментах */
 [dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_share{filter:var(--magic)}
@@ -2680,88 +2761,6 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] #stat_group_weekly_reports_table .paginated_table_header .paginated_table_cell,[dir] #stat_group_weekly_reports_table .paginated_table_header .paginated_table_cell *{color:#9c9c9c!important}
 [dir] #stat_group_weekly_reports_table tr.paginated_table_row:hover{background:#7f7f7f1a}
 [dir] #stat_group_weekly_reports_table tr.paginated_table_row{border-bottom:1px solid #0b0b0b}
-
-/* менюшки шапки */
-[dir] .top_notify_header,[dir] .feedback_header,[dir] .feedback_content .feedback_text .wall_reply_text{color:#999;transition:color .3s}
-[dir] .feedback_content:hover .feedback_text .wall_reply_text{color:#ccc}
-.feedback_header .author,.feedback_header .mem_link,.feedback_header .group_link{color:var(--c1)}
-#ts_cont_wrap.ts_cont_wrap,#top_notify_wrap,#top_profile_menu,.tt_w.top_notify_tt{background-color:#000000d9!important;border:1px solid var(--c5)!important}
-[dir] .top_profile_mrow:hover,[dir] .top_profile_vkconnect_row:hover{background-color:#6464641f!important}
-[dir] .top_notify_cont .feedback_row{border-color:#000!important}
-[dir] .top_notify_header{background-color:#0003!important;border:none!important}
-[dir] .top_notify_show_all{background-color:#0003!important;border:none!important}
-[dir] .top_notify_show_all:hover{background-color:var(--c1)!important;border:none!important;color:var(--c5)!important;box-shadow:1px 0px 0px 1px var(--c1)}
-[dir] #groups_list_search{background-color:#000000b3}
-[dir] .feedback_row.feedback_reply_row.clear_fix._post_content.hover{background:var(--c4)}
-[dir] .top_notify_cont ._notify_unread .feed_row:first-child .feedback_row_wrap{box-shadow:0px -1px 0 0 #353535}
-[dir] .top_notify_cont .ui_scroll_content > .pr{filter:none!important}
-[dir] .top_notify_cont{color:#ccc}
-[dir] .top_profile_vkconnect_descr{color:#9d9d9d}
-[dir] .top_profile_sep{border-top:1px solid var(--c4)}
-[dir] .ts_contact_name{color:var(--c2)}
-[dir] a.ts_contact.active .ts_contact_name{color:var(--c1)}
-[dir] a.ts_contact.active,[dir] .feedback_row_wrap.unread:not(.feedback_row_touched){background-color:#6464641f!important}
-[dir] .ts_contact_status{filter:var(--magic)saturate(.8)brightness(.7)}
-[dir] .top_notify_cont .feedback_img{background-color:#0000}
-[dir] .mob_onl{filter:brightness(.6)sepia(5)saturate(1.2)hue-rotate(170deg)var(--magic)}
-
-/* фикс колокольчика с уведомлениями */
-[dir] .TopNavBtn .TopNavBtn__notifyCount{color:#e6e6e6;background-color:#841515!important;border:none}
-[dir] .TopNavBtn__notifyCount::after{display:none}
-[dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon{filter:var(--magic)brightness(.9)}
-[dir] .TopNavBtn:not(.TopNavBtn--active):hover{background:#00000080!important;}
-[dir] .TopNavBtn.TopNavBtn--active{background:var(--c2)!important}
-[dir] .TopNavBtn.TopNavBtn--active .TopNavBtn__icon{filter:var(--magic)brightness(.1)}
-[dir] .top_notify_header .top_notify_header_label .top_notify_header_label_groups_counter.unmuted{background:var(--c2);color:#111;transition:background .3s}
-[dir] .top_notify_header .top_notify_header_label:hover .top_notify_header_label_groups_counter.unmuted{background:var(--c1)}
-[dir] .notify_sources_tt_content .line_cell .info .ui_rmenu_count{color:#111!important}
-
-/* уведомления */
-.feedback_row_answer{background-color:#0009!important;border:1px solid #000 !important}
-.feedback_row_answer::after, .feedback_row_answer::before{border-style:solid;border-width:0px 6px 6px 6px;border-color:#0000 #0000 #000 #0000}
-.notifications_new_events{background:#0000;border-top:none;color:var(--c2)}
-.notifications_new_events:hover{background:#00000080;color:var(--c1)}
-[dir] .top_notify_cont .feedback_row:not(.dld).hover,[dir] .top_notify_cont .feedback_row:not(.dld):hover{background-color:#0000!important}
-[dir] .feedback_row, [dir] .feedback_sticky_row{border-top:1px solid var(--c3)}
-[dir] .feedback_row_clickable:not(.feedback_row_touched):hover{border-bottom:1px solid var(--c3)}
-[dir] .feed_row ~ .feed_row .feedback_row_clickable:not(.feedback_row_touched):hover{border-top:1px solid var(--c3)}
-[dir] .feedback_row_menu_icon{filter:var(--magic)}
-[dir] .notifications_new_events{background:#6464641f;border-top:none}
-[dir] .notifications_new_events:hover{background:var(--c3);color:var(--c1)}
-.feedback_header b{color:#888}
-.feedback_row_wrap.feedback_row_clickable._post_wrap.clear_fix:hover{background:rgba(25,25,25,.5)}
-.fw_reply_tt,.own_reply_tt,.share_tt{background-color:#000000f2!important}
-:not(.tt_black):not(.like_tt).tt_down::before{border-color:var(--c3) #0000 #0000 #0000}
-:not(.tt_black):not(.like_tt).tt_up::before{border-color:#0000 #0000 var(--c3) #0000}
-:not(.emoji_tt_wrap):not(.tt_black_side).tt_down::after{border-color:#000000f2 #0000 #0000 #0000!important}
-:not(.emoji_tt_wrap):not(.tt_black_side).tt_up::after{border-color:#0000 #0000 #000000f2 #0000!important}
-.own_reply_tt.tt_down::after{display:none}
-[dir] .notify_sources_tt_content .content:not(:hover) .line_cell.selected,[dir] .notify_sources_tt_content .line_cell:hover{background-color:#6464641f}
-[dir] .notify_sources_tt_content .line_cell .info{color:var(--c2)}
-[dir] .notify_sources_tt_content .line_cell:hover .info{color:var(--c1)}
-[dir] .notify_sources_tt_content .line_cell .cell_add_source_icon{filter:invert(.9)hue-rotate(180deg)var(--magic)saturate(.6)}
-[dir] .flist_item_name{color:var(--c2)}
-[dir] .flist_item_wrap:hover{border-top:1px solid var(--c3);background-color: #6464641f}
-[dir] .flist_list_radio .flist_item_wrap.flist_item_checked .flist_item_action, [dir] .flist_list_radio .flist_item_wrap:hover.flist_item_checked .flist_item_action {background:var(--c3);box-shadow:0 0 0 1px var(--c4) inset}
-[dir] .flist_list_radio .flist_item_wrap.flist_item_checked .flist_item_action::before, [dir] .flist_list_radio .flist_item_wrap:hover.flist_item_checked .flist_item_action::before{background:var(--c2)}
-[dir] .box_x_button{filter:var(--magic)brightness(.7)}
-[dir] .wall_module .reply.reply_highlighted{background:#6464641f;border-top:1px solid var(--c3);border-bottom:1px solid var(--c3)}
-
-.page_video_autoplay_tt.eltt_top.eltt_vis{background-color:#000000d9;border:1px solid var(--c3);border-radius:2px}
-.page_video_autoplay_tt.eltt_top.eltt_vis::after{border-color:#000000d9 #0000 #0000 #0000}
-.page_video_autoplay_tt.eltt_top.eltt_vis::before{border-color:var(--c3) #0000 #0000 #0000}
-.page_video_autoplay_tt_hide{transform:scale(.75)}
-
-/* иконки в уведомлениях */
-.feedback_copy_row .feedback_photo_icon{background-color:#368034}
-.feedback_mention_row .feedback_photo_icon{background-color:#000000e6;filter:var(--magic)}
-.mention_tt_subscr_icon,.post_header_subscribe_button ._subscribe_text:before,.post_header_subscribe_button ._subscribed_text:before{filter:var(--magic)}
-[dir] .feedback_followers_row .feedback_photo_icon,[dir] .feedback_engagement_stats_row .feedback_photo_icon{filter:invert(.9)hue-rotate(180deg)var(--magic)saturate(.7)}
-[dir] .unread .feedback_engagement_stats_row .feedback_photo_icon,[dir] .feedback_engagement_stats_row:hover .feedback_photo_icon{background-color:#5181b8!important}
-
-/* уведомление о лайв-трансляции */
-.right_list_field.right_list_field__common_text{color:#888}
-.live_announce .ui_actions_menu_hide{filter:saturate(0)!important}
 
 /* серые иконки доступа приложений */ 
 .apps_access_icon{filter:saturate(0)brightness(.3)contrast(1.25)!important}
