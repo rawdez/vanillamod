@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.16.27
+@version        20210604.16.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1259,6 +1259,13 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .blst_last:hover{background-color:#6464641f}
 [dir] .bp_action{filter:var(--magic)}
 [dir] .info_msg{filter:var(--magic)brightness(.9)}
+[dir] .wide_column .topics_module .topic_title{color:var(--c2)}
+[dir] .wide_column .topics_module .topic_row:hover .topic_title{color:var(--c1)}
+[dir] .wide_column .topics_module .topic_row{border-top:1px solid var(--c3);padding:12px 20px 13px}
+[dir] .wide_column .topics_module .topic_row:hover{background:#6464641f}
+[dir] .wide_column .topics_module .module_body{padding:1px 0 0;border-bottom:1px solid var(--c3)}
+[dir] #profile_photos_module{border-top:none}
+[dir] .topics_module .topic_inner_link{color:#aaa}
 
 /* друзья в паблосе */
 .group_friends_image{border:1px solid #222;width:25px;height:25px;margin-left:3px}
