@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.15.37
+@version        20210604.16.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -3169,9 +3169,10 @@ a[href*="telegram.me"] .cell_img{filter:invert(.93)hue-rotate(180deg)saturate(.7
 .wall_module ._count,.wall_module .post_share_count{color:var(--c2);font-weight:700!important}
 
 /* фикс всплывающая инфа о посте */
-.eltt.eltt_bottom.eltt_arrow_size_mini > .eltt_arrow_back{border-bottom:6px solid var(--c3)!important}
-.eltt.eltt_bottom.eltt_arrow_size_mini > .eltt_arrow_back .eltt_arrow{border-bottom:5px solid rgba(0,0,0,.85)!important}
-.post_author_data .post_author_data_title{color:#555}
+[dir] .eltt.eltt_bottom.eltt_arrow_size_mini > .eltt_arrow_back{border-bottom:6px solid var(--c2)}
+[dir] .eltt.eltt_bottom.eltt_arrow_size_mini > .eltt_arrow_back .eltt_arrow{border-bottom:5px solid var(--c4)!important}
+[dir] .post_author_data .post_author_data_title{color:#ccc}
+[dir] .post_author_data .post_author_data_content{color:#aaa}
 
 /* настройки поста/опроса */
 .checkbox_pic.post_settings .post_settings_tooltip .checkbox{filter:var(--magic)brightness(.6)saturate(1.5)hue-rotate(330deg)!important}
