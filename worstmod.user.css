@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.4.44
+@version        20210604.15.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -221,7 +221,7 @@ EOT;
 lolsquareon "банзай" <<<EOT /* .............. <ОКВАДРАЧИВАНИЕ> .............. *\/
 
 /* квадратные авки *\/
-.ow_ava.ow_ava_comm,.wddi_img,.feedback_img,.feedback_row_answer .feedback_img,.top_notify_cont .feedback_img,.im-mess.im-mess_fwd .copy_post_img,.like_tt_image, .poll_tt_image,.feed_friend_photo_wrap .ui_zoom_inner, .feed_friend_image,.submit_post_box .thumb_off, .submit_post_box .thumb_on,.ui_zoom_inner,.feedback_group_photo_img,.mention_tt_img,.feed_asc_user_thumb_img,a.fc_msgs_img,.mention_tt_person_img,.group_al_thumb,.tickets_image__i,.like_share_ava.wdd_imgs,img.settings_bl_photo,.apps_feed_user_photo img,.videocat_channel_header .videocat_channel_icon,.apps_frtt_photo,.fave_link_thumb,.olist_item_photo,.flist_sel_list .flist_item_thumb,.flist_sel_list .flist_item_action,.flist_sel_show_all,.flist_item_thumb,.profile_career_img,.ui_ownblock_img,.search_row .ui_zoom_inner,.friends_photo_wrap .ui_zoom_inner,.feedback_sticky_img,.videoplayer_end_info_author_photo,.market_item_owner_img,.im-member-item .im-member-item--photo,.im-member-item .im-member-item--photo img,.im-create .im-creation--avatar,.apps_i_group .apps_i_group_photo img,.apps_access_icon,.notifier_image,.mail_box_single_ava .mail_box_single_ava_img,.blog_entry_author_ava,.group_l_photo,.group_l_photo_img,.group_u_photo_img,.group_blb_user_thumb,.group_u_bigph_wrap .ui_zoom_inner,.group_u_photo,.gedit_admbox_thumb,.gedit_hostbox_thumb,.page_group_image,.im-prebody img,.bd_cell_img,.tu_thumb,.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img,.nim-peer.nim-peer_smaller .nim-peer--photo > img,.notify_tt_img,.notify_tt_thumb,.settings_blb_photo_img,.mv_chat_message_author_thumb_img,.mv_chat_reply_author_photo,.login_sure_thumb,.group_help_image,.post_friend_liked,.post_friend_liked:first-child,.submit_post_box .post_field_choose_image,.post_from_tt_image,.module_body .people_cell_img, .chat_tab_img, .post_img, .page_list_module .cell_img, .page_list_module .thumb, .ow_ava.ow_ava_small, .nim-peer .nim-peer--photo-w, .group_row_photo, .group_row_img, .right_list_img, .search_item_img, .group_box_image_wrap, .group_box_image_link, .fans_fan_img, .friends_phonebook .friends_photo_img, .friends_common_img, img.fc_contact_photo, .ow_ava.ow_ava_mid, .wall_module .reply_img, .wk_poll_usr, .wall_module .copy_post_img, .ts_contact_img, .fans_idolph_wrap, .bp_img, .blst_img, .friends_photo_img, .post_field_user_image, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img,.top_notify_cont .feedback_img,.feedback_img,.ui_zoom_inner,[dir] .TopNavBtn__profileImg, .im-prebody img, to .im_gr, .online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img, .nim-peer.nim-peer_smaller .nim-peer--photo > img, .fave_al_thumb, .fave_link_thumb, .ow_ava.ow_ava_comm,.audio_page_layout .audio_owner_item .audio_owner_item__img,.mv_live_gift_popup_author_thumb,.audio_page_layout .audio_owner_avatar,.app_widget_avatar,.ui_photo_grid_1,.ui_photo_grid_2,.ui_photo_grid_3,.ui_photo_grid_4,a.group_app_button_multi .group_app_button_icon,.feedback_sticky_icon,.feed_to_recomm .feed_to_recomm_icon,.bd_img,.friends_dropdown__list_item .friends_dropdown__list_image,.article_layer .article_layer__header .article_layer__header_owner_img,.article_ed_layer .article_ed_layer__author_img,.audio_page_layout .audio_community_item .audio_community_item__img,.im-page_classic .im-popular--avatar,.feedback_attachments .notification__media.circle,.wk_voting_avatar,.media_voting_footer_voted_friend,.like_tt_image,.voting_tt_image,.friends_photo_img::after,.payments_transfer_to_photo,.im-invitation--chat-photo-src,.audio_block_small_item__img,.poster__slider-item,.poster__slider-item._active:after,.bookmark_page_row .bookmark_page_row__image,.bookmarks_row_header_image,.bookmark_tag,.Avatar__wrapper,.notify_sources_tt_content .line_cell .thumb .cell_img,.bookmark_page_item .bookmark_page_item__image,.index_user_img,.index_new_user_row .index_user_ph,.login_user_img,.mv_author_photo_wrap,.mv_author_photo,.VerticalVideoLayerInfo__authorPhoto,.VideoLayerInfo__authorPhoto,.VerticalVideoLayerInfo__authorPhotoWrap,.VideoLayerInfo__authorPhotoWrap,.top_profile_vkconnect_img,[dir] .ShortVideoPost__avatarImage,[dir] .PhotoRecognizeBlockItem__ava,[dir] .ListAddControl__icon,[dir] .DonutLinkSnippet__photo,[dir] .MembersGrid,[dir] .Entity__photo,[dir] .CallPhoto__photo,[dir] .wpost_head_thumb img,[dir] .landing_author_guide_header__avatar,[dir] .landing_author_guide_header__avatar img,.groups_edit_event_log_item_photo>img,[dir] .ui_tooltipMenu_photo,[dir] .notify_sources_tt_content .line_cell .cell_add_source_icon,[dir] .like_share_ava.wdd_imgs .wdd_img_full,[dir] .like_share_ava.wdd_imgs .wdd_img_half,[dir] .like_share_ava.wdd_imgs .wdd_img_tiny,[dir] .GamesCatalogGameInfoTooltip__friendIconImg,[dir] .ProfileUserInfo__img,[dir] .ProfileUserInfo__imgWrap{border-radius:2px!important}
+.ow_ava.ow_ava_comm,.wddi_img,.feedback_img,.feedback_row_answer .feedback_img,.top_notify_cont .feedback_img,.im-mess.im-mess_fwd .copy_post_img,.like_tt_image, .poll_tt_image,.feed_friend_photo_wrap .ui_zoom_inner, .feed_friend_image,.submit_post_box .thumb_off, .submit_post_box .thumb_on,.ui_zoom_inner,.feedback_group_photo_img,.mention_tt_img,.feed_asc_user_thumb_img,a.fc_msgs_img,.mention_tt_person_img,.group_al_thumb,.tickets_image__i,.like_share_ava.wdd_imgs,img.settings_bl_photo,.apps_feed_user_photo img,.videocat_channel_header .videocat_channel_icon,.apps_frtt_photo,.fave_link_thumb,.olist_item_photo,.flist_sel_list .flist_item_thumb,.flist_sel_list .flist_item_action,.flist_sel_show_all,.flist_item_thumb,.profile_career_img,.ui_ownblock_img,.search_row .ui_zoom_inner,.friends_photo_wrap .ui_zoom_inner,.feedback_sticky_img,.videoplayer_end_info_author_photo,.market_item_owner_img,.im-member-item .im-member-item--photo,.im-member-item .im-member-item--photo img,.im-create .im-creation--avatar,.apps_i_group .apps_i_group_photo img,.apps_access_icon,.notifier_image,.mail_box_single_ava .mail_box_single_ava_img,.blog_entry_author_ava,.group_l_photo,.group_l_photo_img,.group_u_photo_img,.group_blb_user_thumb,.group_u_bigph_wrap .ui_zoom_inner,.group_u_photo,.gedit_admbox_thumb,.gedit_hostbox_thumb,.page_group_image,.im-prebody img,.bd_cell_img,.tu_thumb,.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img,.nim-peer.nim-peer_smaller .nim-peer--photo > img,.notify_tt_img,.notify_tt_thumb,.settings_blb_photo_img,.mv_chat_message_author_thumb_img,.mv_chat_reply_author_photo,.login_sure_thumb,.group_help_image,.post_friend_liked,.post_friend_liked:first-child,.submit_post_box .post_field_choose_image,.post_from_tt_image,.module_body .people_cell_img, .chat_tab_img, .post_img, .page_list_module .cell_img, .page_list_module .thumb, .ow_ava.ow_ava_small, .nim-peer .nim-peer--photo-w, .group_row_photo, .group_row_img, .right_list_img, .search_item_img, .group_box_image_wrap, .group_box_image_link, .fans_fan_img, .friends_phonebook .friends_photo_img, .friends_common_img, img.fc_contact_photo, .ow_ava.ow_ava_mid, .wall_module .reply_img, .wk_poll_usr, .wall_module .copy_post_img, .ts_contact_img, .fans_idolph_wrap, .bp_img, .blst_img, .friends_photo_img, .post_field_user_image, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img,.top_notify_cont .feedback_img,.feedback_img,.ui_zoom_inner,[dir] .TopNavBtn__profileImg, .im-prebody img, to .im_gr, .online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img, .nim-peer.nim-peer_smaller .nim-peer--photo > img, .fave_al_thumb, .fave_link_thumb, .ow_ava.ow_ava_comm,.audio_page_layout .audio_owner_item .audio_owner_item__img,.mv_live_gift_popup_author_thumb,.audio_page_layout .audio_owner_avatar,.app_widget_avatar,.ui_photo_grid_1,.ui_photo_grid_2,.ui_photo_grid_3,.ui_photo_grid_4,a.group_app_button_multi .group_app_button_icon,.feedback_sticky_icon,.feed_to_recomm .feed_to_recomm_icon,.bd_img,.friends_dropdown__list_item .friends_dropdown__list_image,.article_layer .article_layer__header .article_layer__header_owner_img,.article_ed_layer .article_ed_layer__author_img,.audio_page_layout .audio_community_item .audio_community_item__img,.im-page_classic .im-popular--avatar,.feedback_attachments .notification__media.circle,.wk_voting_avatar,.media_voting_footer_voted_friend,.like_tt_image,.voting_tt_image,.friends_photo_img::after,.payments_transfer_to_photo,.im-invitation--chat-photo-src,.audio_block_small_item__img,.poster__slider-item,.poster__slider-item._active:after,.bookmark_page_row .bookmark_page_row__image,.bookmarks_row_header_image,.bookmark_tag,.Avatar__wrapper,.notify_sources_tt_content .line_cell .thumb .cell_img,.bookmark_page_item .bookmark_page_item__image,.index_user_img,.index_new_user_row .index_user_ph,.login_user_img,.mv_author_photo_wrap,.mv_author_photo,.VerticalVideoLayerInfo__authorPhoto,.VideoLayerInfo__authorPhoto,.VerticalVideoLayerInfo__authorPhotoWrap,.VideoLayerInfo__authorPhotoWrap,.top_profile_vkconnect_img,[dir] .ShortVideoPost__avatarImage,[dir] .PhotoRecognizeBlockItem__ava,[dir] .ListAddControl__icon,[dir] .DonutLinkSnippet__photo,[dir] .MembersGrid,[dir] .Entity__photo,[dir] .CallPhoto__photo,[dir] .wpost_head_thumb img,[dir] .landing_author_guide_header__avatar,[dir] .landing_author_guide_header__avatar img,.groups_edit_event_log_item_photo>img,[dir] .ui_tooltipMenu_photo,[dir] .notify_sources_tt_content .line_cell .cell_add_source_icon,[dir] .like_share_ava.wdd_imgs .wdd_img_full,[dir] .like_share_ava.wdd_imgs .wdd_img_half,[dir] .like_share_ava.wdd_imgs .wdd_img_tiny,[dir] .GamesCatalogGameInfoTooltip__friendIconImg,[dir] .ProfileUserInfo__img,[dir] .ProfileUserInfo__imgWrap,[dir] .medadd_c_wall .medadd_c_wall_thumb,[dir] .search_item_img::after{border-radius:2px!important}
 
 [dir] .like_share_ava.wdd_imgs .wdd_img_full{border-radius:0px!important;border:solid 2px #0000;box-shadow:none}
 [dir] .like_share_ava.wdd_imgs .wdd_img_full .wdd_img{border-radius:2px!important} 
@@ -854,13 +854,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .ui_tabs_slider{background:var(--c1)!important}
 [dir] .ui_tab_sel,[dir] .ui_tab_sel:hover,[dir] .ui_tabs .ui_tab_sel,[dir] .ui_tabs .ui_tab_sel:hover{border-bottom:2px solid var(--c1)}
 [dir] .ui_tabs .ui_tab_group_item:hover{background-color:#6464641f}
-[dir] #wall_search.ui_search_field._field{background-color:#0000!important}
-[dir] .ui_search_input_block{background-color:#0000004d!important}
-[dir] input.ui_search_field{background-color:#0000!important;color:#fff;filter:var(--magic)brightness(.7)}
-[dir] .ui_search_reset{filter:var(--magic)}
-#friends_search_input_wrap .ui_search_input_block{border-bottom:1px solid #111}
-.ui_search{border:none}
-[dir] .ui_search_new .ui_search_progress{filter:invert(.9)hue-rotate(180deg)var(--magic)}
 .im-page .im-page--dialogs-footer,.im-create.im-create_classic .im-create--footer{background-color:#000000e6!important;border-top:1px solid #111!important}
 .video_item .video_item_thumb_wrap,.videocat_featured_video{background-color:#00000080!important}
 .wall_comments_header{background-color:#0009!important;border-color:#111!important}
@@ -928,6 +921,25 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .post_replies_reorder_wrap{width:100%}
 [dir] .post_replies_reorder::after{content:'';display:inline-block;background:url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat top!important;margin:0 0 0 4px;width:9px;height:5px;filter:brightness(.5)saturate(2)}
 
+/* поиск */
+[dir] .fans_rows.wall_module .like_cont,[dir] .search_results.wall_module.page_block .like_cont{border-color:var(--c3)}
+[dir] .search_results_sep{border-bottom:1px solid var(--c3)}
+[dir] a.ts_contact.active,[dir] a.ts_search_link.active{background:#6464641f}
+[dir] .ts_search_sep{border-top:1px solid var(--c3)}
+[dir] em.ts_clist_hl{background:var(--c1);color:#222;font-weight:500}
+[dir] #wall_search.ui_search_field._field{background-color:#0000!important}
+[dir] .ui_search_input_block{background-color:#0000004d!important}
+[dir] input.ui_search_field{background-color:#0000!important;color:#fff;filter:var(--magic)brightness(.7)}
+[dir] .ui_search_reset{filter:var(--magic)}
+#friends_search_input_wrap .ui_search_input_block{border-bottom:1px solid #111}
+.ui_search{border:none}
+[dir] .ui_search_new .ui_search_progress,[dir] .ui_search_loading .ui_search_reset{filter:invert(.9)hue-rotate(180deg)var(--magic)}
+[dir] .search_item_img{background-color:#6464641f}
+[dir] .search_item_img::before,[dir] .search_item_img::after{background-color:#0000}
+[dir] .search_auto_results .search_auto_sep{border-top:1px solid var(--c3)}
+[dir] .search_auto_results .search_auto_sep .search_auto_sep_inner{border-top:none}
+[dir] .search_results.wall_module.page_block .like_cont,[dir] .fans_rows.wall_module .like_cont{box-shadow:inset 0 -1px var(--c3)}
+    
 /* вложенные комментики + нафиг собственную авку возле поля комментирования */
 .post_field_user_image{display:none}
 .tt_noappend .post_field_user_link._post_field_author{display:none}
@@ -1699,14 +1711,20 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 /* фикс аудиозаписи друзей в плеере */
 .audio_page_layout .audio_friends_fixed{top:110px}
 
-/* создание беседы */  
-.im-create--table{box-shadow:0px 0px 0px 1px #2A2A2C;background-color:#000000bf!important}
+/* создание беседы */
+[dir] .im-create .ui_search{background-color:#0009!important}
+[dir] .im-create--table{box-shadow:0px 0px 0px 1px #2A2A2C;background-color:#000000bf!important}
 [dir] .im-create .im-create--table{box-shadow:none!important;background-color:#0000!important}
 [dir] .im-create .im-create--table > .im-create--tabs{background-color:#00000080!important}
 [dir] .im-create .im-create--wrap,[dir] .im-create .im-create--dcontent{background-color:#0000!important}
 [dir] .im-create.im-create_classic .im-creation--item{background-color:rgba(0,0,0,.9)!important;margin:0;padding:0 20px!important}
 [dir] .im-create.im-create_classic .im-creation--item:hover{background-color:#141414cc!important}
 [dir] .im-create.im-create_classic .olist_item_wrap{border-bottom:1px solid var(--c4)!important}
+[dir] .im-create.im-create_chat .im-creation--settings-icon{filter:brightness(.7)var(--magic)}
+[dir] .BaseModal.im-creation--modal-settings .BaseModal__content,[dir] .ChatSettingsOptions,[dir] .ChatSettingsPresetPanel{background-color:#0000!important}
+[dir] .im-create .im-creation--item.im-creation--item_hovered,[dir] .im-create .im-creation--item:hover{border-top:1px solid var(--c3)}
+[dir] .im-page .im-mess.im-mess_srv:not(.im-mess_fwd) .im-mess--text{color:var(--c1)}
+[dir] .im-mess .im-mess--text .im_srv_lnk,[dir] .im-mess .im-mess--text .im_srv_mess_link{font-weight:500;color:#ccc}
 
 /* диалоги */
 [dir] .PeerProfile{background:#0000;box-shadow:none}
@@ -1779,8 +1797,6 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .nim-dialog.nim-dialog_pinned + .nim-dialog:not(.nim-dialog_pinned)::before{background:var(--c2);opacity:.3}
 [dir] .nim-dialog--pinned-conversation{filter:brightness(.5)var(--magic)}
 #im_dialogs_creation_name,#im_dialogs_creation{background:#0000!important;padding:0 10px 0 5px!important}
-[dir] .im-create.im-create_chat .im-creation--settings-icon{filter:brightness(.7)var(--magic)}
-[dir] .BaseModal.im-creation--modal-settings .BaseModal__content,[dir] .ChatSettingsOptions,[dir] .ChatSettingsPresetPanel{background-color:#0000!important}
 [dir] .ChatSettingsPresetPanel__preset--selected{background-color:#66666624}
 [dir] .ChatSettingsPresetPanel__presetIcon{filter:saturate(.15)var(--magic)}
 [dir] .ChatSettingsPresetPanel__presetTitle{color:var(--c2)}
@@ -1812,6 +1828,11 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .Entity__title{color:var(--c1)}
 [dir] .ListItem--border::before{background:var(--c3)}
 [dir] .ListItem--active{border-color:var(--c3)}
+[dir] .im-chat-input--editing-head{color:#999;font-weight:400}
+[dir] .im-mess--cancel-edit,[dir] .im-page-pinned::before,[dir] .im-page-pinned--hide{filter:var(--magic)}
+[dir] .im-page-pinned{background:#0000;border:none}
+[dir] .im-page-pinned--content,[dir] .im-page .im-mess:not(.im-mess_fwd) .im-mess--text{color:#999;transition:color .3s}
+[dir] .im-page-pinned:hover .im-page-pinned--content,[dir] .im-page-pinned--date,[dir] .im-page .im-mess:hover .im-mess--text{color:#ccc}
 
 /* фон всплывающих наверх окон */
 [dir] .scroll_fix_wrap.fixed.layer_wrap.wk_dark{background:#0000004d}
@@ -1824,6 +1845,29 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 .reply_submit_hint_opts .radiobtn{color:#999}
 .tt_w.tt_default_right{background-color:#000000e6!important}
 [dir] .pv_reply_form .media_selector .ms_item_more{filter:var(--magic)}
+
+/* дата сообщений в диалогах */
+[dir] .im-page .im-page--history-new-bar{background-color:var(--c3)!important;height:3px}
+[dir] .im-page .im-page--history-new-bar_days > span,[dir] .im-page .im-page--history-new-bar > span{line-height:1;border-radius:0px 0px 15px 15px!important;padding:3px 15px 4px;background-color:var(--c3)!important;top:0px;margin-top:0px;color:var(--c2)}
+[dir] .im-page .im-page--history-new-bar_days.im-page--date-bar-transition > span{background-color:var(--c4)!important;border-color:var(--c5)!important}
+[dir] .im-page .im-page--history-new-bar_days > span::before{border-radius:0px 0px 16px 16px;border-color:#0000 #333 #333}
+[dir] .im-page .im-page--top-date-bar-wrap{margin-top:-24px;z-index:200!important}
+[dir] .im-search--date-input .cal_box{z-index:201!important}
+[dir] .im-page .im-page--top-date-bar::before{background:none}
+[dir] .im-page .im-page--top-date-bar{border-radius:4px 4px 0px 0px;height:13px;padding:0px 8px 6px;background-color:var(--c4)!important;border:none!important;color:var(--c2)}
+[dir] .im-page--history.page_block._im_page_history.im-page--top-date-bar_visible .im-page--top-date-bar{border:none!important}
+[dir] .im-page.im-page_classic .im-page--dcontent{box-shadow:none!important}
+[dir] .im-page .im-page--history-new-bar::after,[dir] .im-page .im-page--history-new-bar::before{display:none}
+[dir] .im-page_classic .im-page--title{padding:0px 0px 0px 10px!important;position:relative;top:-5px}
+[dir] .im-page_classic .im-page--title-meta ._im_chat_members.im-page--members{color:var(--c1)}
+[dir] .im-page--title{overflow:visible}
+[dir] .im-page--chat-header_verified .im-page--title-main-verified{filter:invert(.95)hue-rotate(180deg)saturate(.7)var(--magic)}
+  
+/* непрочитанные отправленные сообщения */
+[dir] .im-mess.im-mess_unread:not(.im-mess_selected){background:#000000bf!important;border-radius:0px;box-shadow:-4px 0px 0px 0px var(--c2)!important;opacity:.4;transition:opacity 5s;transition-delay:5s}
+[dir] .im-mess.im-mess_unread:not(.im-mess_selected):hover{background:#000000d9!important;opacity:1;transition:opacity 0.7s;transition-delay:0s}
+[dir] .im-mess.im-mess_unread:last-child::before{display:none!important}
+[dir] .im-page_classic.im-page .im-mess-stack--mess .im-mess.im-mess_unread{margin-bottom:0px!important}
 
 /* чат */
 body{--page-block-shadow:none}
@@ -1897,16 +1941,17 @@ body{--page-block-shadow:none}
 /* ошибка отправки сообщения */
 .im-page.im-page_classic .im-mess.im-mess_unread.im-mess_failed:not(.im-mess_fwd) .im-mess--marker{filter:invert(.85)hue-rotate(185deg)saturate(2.5)brightness(.6)!important}
 
-/* подарок в сообщениях */
+/* подарок */
 [dir] .im-mess._im_mess.im-mess_unread._im_mess_unread.im-mess_gift{background-color:#000000bf!important}
 [dir] .im-mess._im_mess.im-mess_gift{background-color:#00000080!important;border:1px #222 solid}
+[dir] .profile_gift_send_btn .send_thumb{filter:var(--magic)brightness(.7)}
 
 /* перетягивание картинки в чат */
-.im-dropbox{background:#000000e6!important}
-.im-dropbox--rect{border:1px dashed var(--c1)!important}
-.im-dropbox--rect.dropbox_over{background-color:#1e1e1e80}
-.im-dropbox--msg{color:var(--c2)}
-.im-dropbox--icon-photo,.im-dropbox--icon-doc{filter:var(--magic)}
+[dir] .im-dropbox{background:#000000e6!important}
+[dir] .im-dropbox--rect{border:1px dashed var(--c1)!important}
+[dir] .im-dropbox--rect.dropbox_over{background-color:#1e1e1e80}
+[dir] .im-dropbox--msg{color:var(--c2)}
+[dir] .im-dropbox--icon-photo,[dir] .im-dropbox--icon-doc{filter:var(--magic)}
 
 /* фикс календаря */
 [dir] .cal_table{background:#000c!important}
@@ -1958,29 +2003,6 @@ body{--page-block-shadow:none}
 [dir] .bd_day_cell.today .bd_day_events,[dir] .bd_day_cell.holiday.today .bd_day_events{border:1px solid var(--c2)}
 [dir] .bd_day_cell.today,[dir] .bd_day_cell.holiday.today{background:#64646422}
 [dir] .bd_day_cell.today .bd_day_num{color:var(--c1)}
-
-/* дата сообщений в диалогах */
-[dir] .im-page .im-page--history-new-bar{background-color:var(--c3)!important;height:3px}
-[dir] .im-page .im-page--history-new-bar_days > span,[dir] .im-page .im-page--history-new-bar > span{line-height:1;border-radius:0px 0px 15px 15px!important;padding:3px 15px 4px;background-color:var(--c3)!important;top:0px;margin-top:0px;color:var(--c2)}
-[dir] .im-page .im-page--history-new-bar_days.im-page--date-bar-transition > span{background-color:var(--c4)!important;border-color:var(--c5)!important}
-[dir] .im-page .im-page--history-new-bar_days > span::before{border-radius:0px 0px 16px 16px;border-color:#0000 #333 #333}
-[dir] .im-page .im-page--top-date-bar-wrap{margin-top:-24px;z-index:200!important}
-[dir] .im-search--date-input .cal_box{z-index:201!important}
-[dir] .im-page .im-page--top-date-bar::before{background:none}
-[dir] .im-page .im-page--top-date-bar{border-radius:4px 4px 0px 0px;height:13px;padding:0px 8px 6px;background-color:var(--c4)!important;border:none!important;color:var(--c2)}
-[dir] .im-page--history.page_block._im_page_history.im-page--top-date-bar_visible .im-page--top-date-bar{border:none!important}
-[dir] .im-page.im-page_classic .im-page--dcontent{box-shadow:none!important}
-[dir] .im-page .im-page--history-new-bar::after,[dir] .im-page .im-page--history-new-bar::before{display:none}
-[dir] .im-page_classic .im-page--title{padding:0px 0px 0px 10px!important;position:relative;top:-5px}
-[dir] .im-page_classic .im-page--title-meta ._im_chat_members.im-page--members{color:var(--c8)}
-[dir] .im-page--title{overflow:visible}
-[dir] .im-page--chat-header_verified .im-page--title-main-verified{filter:invert(.95)hue-rotate(180deg)saturate(.7)var(--magic)}
-  
-/* непрочитанные отправленные сообщения */
-[dir] .im-mess.im-mess_unread:not(.im-mess_selected){background:#000000bf!important;border-radius:0px;box-shadow:-4px 0px 0px 0px var(--c2)!important;opacity:.4;transition:opacity 5s;transition-delay:5s}
-[dir] .im-mess.im-mess_unread:not(.im-mess_selected):hover{background:#000000d9!important;opacity:1;transition:opacity 0.7s;transition-delay:0s}
-[dir] .im-mess.im-mess_unread:last-child::before{display:none!important}
-[dir] .im-page_classic.im-page .im-mess-stack--mess .im-mess.im-mess_unread{margin-bottom:0px!important}
 
 /* звонки */
 [dir] .CallSnippet{background:#1e1e1e47;border:1px solid #242424;transition:border .3s,background .3s}
@@ -2990,11 +3012,8 @@ img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:non
 .ui_actions_menu_icons .friends_restore_link{filter:invert(1)!important}
 .friends_added_text{padding-bottom:10px}
 
-/* поиск разделение результатов */
-.fans_rows.wall_module .like_cont,.search_results.wall_module.page_block .like_cont{border-color:var(--c3)}
-
 /* отключенная кнопка (когда надо поставить галочку) */
-.flat_button.button_disabled{color:#333!important;background:var(--c9)!important}
+[dir] .flat_button.button_disabled{color:#333!important;background:var(--c9)!important}
 
 /* опубликовать отложенный пост */
 .post_publish{border-color:var(--c4)!important}
