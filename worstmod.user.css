@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.18.27
+@version        20210604.18.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -36,7 +36,7 @@ neon "Неон" <<<EOT /* Неон *\/
   --c9: #222222e6;
   --magic:hue-rotate(50deg)brightness(1.3)saturate(.8)!important;
 } 
-.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(180deg)saturate(3)var(--magic)}
+.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(180deg)saturate(3)var(--magic)}
 EOT;
 
 
@@ -53,7 +53,7 @@ blood "Кровь" <<<EOT /* Кровушка *\/
   --c9: #251e1ee6;
   --magic:brightness(1)hue-rotate(140deg)saturate(4)!important;
 }
-.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(170deg)saturate(2)brightness(.7)var(--magic)}
+.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(170deg)saturate(2)brightness(.7)var(--magic)}
 EOT;
 
 
@@ -70,7 +70,7 @@ aqua "Вода" <<<EOT /* Вода *\/
   --c9: #23232de6;
   --magic:hue-rotate(318deg)brightness(1.2)saturate(1.4)!important; 
 }
-.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(157deg)saturate(1.8)var(--magic)}
+.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(157deg)saturate(1.8)var(--magic)}
 EOT;
 
 red "Роза" <<<EOT /* Роза *\/
@@ -86,7 +86,7 @@ red "Роза" <<<EOT /* Роза *\/
   --c9: #251e21e6;
   --magic:hue-rotate(146deg)brightness(1.5)saturate(1.5)contrast(1)!important;
 }
-.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(170deg)saturate(2)var(--magic)}
+.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(170deg)saturate(2)var(--magic)}
 EOT;
 
 mint "Мята" <<<EOT /* Мята *\/
@@ -102,7 +102,7 @@ mint "Мята" <<<EOT /* Мята *\/
   --c9: #212222e6;
   --magic:hue-rotate(270deg)brightness(1.3)saturate(1.5)!important;
 }
-.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(160deg)saturate(2)var(--magic)}
+.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(160deg)saturate(2)var(--magic)}
 EOT;
 
 monochrome "Монохром" <<<EOT /* Монохром *\/
@@ -118,7 +118,7 @@ monochrome "Монохром" <<<EOT /* Монохром *\/
   --c9: #222222e6;
   --magic:saturate(0)!important;
 }
-.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:var(--magic)}
+.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:var(--magic)}
 EOT;
 }
 
