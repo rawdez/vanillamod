@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.17.27
+@version        20210604.16.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -605,7 +605,9 @@ flushshiton "ну канешн" <<<EOT /* чистим шлак: нафиг сс
 .page_block.feed_groups_recomm{display:none}
 
  EOT;
-flushshitoff "пускай остаётся" <<<EOT  EOT;
+flushshitoff "пускай остаётся" <<<EOT
+[dir] #ads_left.ads_left_empty + .left_menu_nav_wrap{border-top:none;padding-top:14px}
+EOT;
 
 }
 @advanced dropdown nameremove " ♻ Убрать имя / аву / стрелку из шапки:" {
