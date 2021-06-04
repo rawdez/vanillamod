@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.2.55
+@version        20210604.3.39
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -981,7 +981,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .post_replies_header{border-top:1px solid var(--c3)!important}
 .deep_active .replies .replies_wrap_deep .replies_deep_collapse::before,.deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_deep_collapse::before,.deep_active.wall_module .replies .replies_wrap_deep .replies_deep_collapse::before,.deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_deep_collapse::before{background-color:#6464642b!important}
 .replies_deep_collapse_icon{filter:var(--magic)brightness(3)saturate(.5)}
-.box_no_buttons[style*="0);"],.box_no_buttons[style*="1);"],.box_no_buttons[style*="2);"],.box_no_buttons[style*="3);"],.box_no_buttons[style*="4);"],.box_no_buttons[style*="5);"],.box_no_buttons[style*="6);"],.box_no_buttons[style*="7);"],.box_no_buttons[style*="8);"],.box_no_buttons[style*="9);"],.box_no_buttons[style$="1);"],.box_no_buttons[style$="2);"],.box_no_buttons[style$="3);"],.box_no_buttons[style$="4);"],.box_no_buttons[style$="5);"],.box_no_buttons[style$="6);"],.box_no_buttons[style$="7);"],.box_no_buttons[style$="8);"],.box_no_buttons[style$="9);"],._post[style$="1);"],._post[style$="2);"],._post[style$="3);"],._post[style$="4);"],._post[style$="5);"],._post[style$="6);"],._post[style$="7);"],._post[style$="8);"],._post[style$="9);"],._post[style$="0);"],.feed_row[style$="1);"],.feed_row[style$="2);"],.feed_row[style$="3);"],.feed_row[style$="4);"],.feed_row[style$="5);"],.feed_row[style$="6);"],.feed_row[style$="7);"],.feed_row[style$="8);"],.feed_row[style$="9);"],.feed_row[style$="0);"]{background-color:#6464641f!important}
+.box_no_buttons[style*="0);"],.box_no_buttons[style*="1);"],.box_no_buttons[style*="2);"],.box_no_buttons[style*="3);"],.box_no_buttons[style*="4);"],.box_no_buttons[style*="5);"],.box_no_buttons[style*="6);"],.box_no_buttons[style*="7);"],.box_no_buttons[style*="8);"],.box_no_buttons[style*="9);"],.box_no_buttons[style$="1);"],.box_no_buttons[style$="2);"],.box_no_buttons[style$="3);"],.box_no_buttons[style$="4);"],.box_no_buttons[style$="5);"],.box_no_buttons[style$="6);"],.box_no_buttons[style$="7);"],.box_no_buttons[style$="8);"],.box_no_buttons[style$="9);"],._post[style$="1);"],._post[style$="2);"],._post[style$="3);"],._post[style$="4);"],._post[style$="5);"],._post[style$="6);"],._post[style$="7);"],._post[style$="8);"],._post[style$="9);"],._post[style$="0);"],.feed_row[style$="1);"],.feed_row[style$="2);"],.feed_row[style$="3);"],.feed_row[style$="4);"],.feed_row[style$="5);"],.feed_row[style$="6);"],.feed_row[style$="7);"],.feed_row[style$="8);"],.feed_row[style$="9);"],.feed_row[style$="0);"],.wall_post_cont[style$="1);"],.wall_post_cont[style$="2);"],.wall_post_cont[style$="3);"],.wall_post_cont[style$="4);"],.wall_post_cont[style$="5);"],.wall_post_cont[style$="6);"],.wall_post_cont[style$="7);"],.wall_post_cont[style$="8);"],.wall_post_cont[style$="9);"],.wall_post_cont[style$="0);"]{background-color:#6464641f!important}
 
 /* настройки */
 .settings_separated_row_iconed.icon_type_clock:before,.settings_separated_row_iconed.icon_type_email:before,.settings_separated_row_iconed.icon_type_ienable:before,.settings_separated_row_iconed.icon_type_isounds:before,.settings_separated_row_iconed.icon_type_itexts:before{background-color:#333333}
@@ -1006,17 +1006,20 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .ui_actions_menu_item:hover{color:var(--c1)!important;background:#6464641f!important}
 .ui_actions_menu_item.ui_actions_menu_item_lock .ui_actions_menu_item_lock_text{display:none}
 
-/* иконка выбора фоток/видео */ 
-.media_check_btn,.photos_photo_edit_row_selector_icon{filter:invert(.93)hue-rotate(170deg)var(--magic)brightness(.95)!important}
-.photos_photo_edit_row.photos_edit_selected .photos_photo_edit_row_selector_icon{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2022%2022%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%2222%22%20height%3D%2222%22%20fill%3D%22%235181B8%22%20rx%3D%2211%22%2F%3E%3Cpath%20stroke%3D%22%23FFF%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20d%3D%22M6%2012l3%203%207-7%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")}
-.photos_photo_edit_row.photos_edit_selected .photos_photo_edit_row_selector,.media_check_btn{opacity:.85}
-.photos_photo_edit_row.photos_edit_selected .photos_photo_edit_row_selector:hover,.media_check_btn:hover{opacity:1}
-
 /* чиним фон при загрузке фоток в альбом */
 [dir] .photos_container_edit_grid .photo_mask_progress{background-color:#1e1e1ed6}
 [dir] .photos_photo_edit_row_thumb{background-color:#2A2A2A!important}
 [dir] .ui_progress .ui_progress_back{background-color:#211F1F;border:1px solid #323232}
 [dir] .ui_progress .ui_progress_bar{filter:hue-rotate(260deg)contrast(1.4)saturate(.7)}
+[dir] .photos_choose_upload_area{background:rgba(0,0,0,/*[[headopaque]]*/)}
+[dir] .photos_choose_upload_area:hover{background:#151515cc}
+[dir] .photos_choose_upload_area_label{color:#7fa5ce;filter:var(--magic)brightness(.7)}
+[dir] .photos_choose_upload_area:hover .photos_choose_upload_area_label{filter:var(--magic)}
+[dir] .photos_choose_bottom,[dir] .photos_choose_bottom.fixed{box-shadow:none;background:rgba(0,0,0,/*[[headopaque]]*/);border-top:none}
+[dir] .photos_choose_button:hover b{color:var(--c1)!important}
+[dir] .media_check_btn_wrap .media_check_btn{filter:invert(.95)hue-rotate(180deg)var(--magic)}
+[dir] .photos_choose_row,[dir] .photos_choose_more{background:#0006}
+[dir] .photos_choose_more:hover{background:#6464641f}
 
 /* фикс редактирования фотоальбома */
 [dir] .photos_container_edit_grid .photos_photo_edit_row_desc_placeholder.photos_edit_has_desc{color:var(--c2)}
@@ -2975,9 +2978,6 @@ img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:non
 /* фикс поиска прикрепляемого аудио */
 .choose_search_wrap .ui_search.ui_search_custom._wrap{width:100%!important}
 .audio_pl_edit_box .ape_audio_item_wrap .audio_row em{background-color:var(--c2);color:#000}
-
-/* фикс прикрепления фоток - цвет текста */
-.photos_choose_upload_area_label,.web_cam_photo_icon{color:#5A708A}
 
 /* выбор друзей в правах доступа к альбомам */
 .flist_sel_show_all{color:var(--c1);border-color:var(--c1)}
