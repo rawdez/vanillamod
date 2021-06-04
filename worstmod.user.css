@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.18.37
+@version        20210604.21.42
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -286,9 +286,29 @@ lolsquareon "банзай" <<<EOT /* .............. <ОКВАДРАЧИВАНИ�
 [dir] .story_view_feedback_button{border-radius:5px!important}
 
 /* ^^^^^^^^^^^^^^^ <ОКВАДРАЧИВАНИЕ> ^^^^^^^^^^^^^^^ *\/
- EOT;
-lolsquareof "не, кружочки няшные ( ´ ▽ ` ).｡ｏ♡" <<<EOT  EOT;
+EOT;
+lolsquareof "не, кружочки няшные ( ´ ▽ ` ).｡ｏ♡" <<<EOT EOT;
+onlinecirclecrap "не, +кружочки онлайн" <<<EOT /* дурацкие значки онлайн *\/
+a.bp_thumb._online.online img,.chat_tab_imgcont._chat_tab_image._online.online .chat_tab_img, .nim-peer._online.online._im_peer_online>img, a.friends_photo._online.online.mobile>img, .nim-peer._online.online._im_peer_online img, a.post_image._online.online img, ._online.online .friends_photo_img, ._online.online .group_u_photo_img{border:2px solid var(--c1);padding:1px}
+.online.mobile .chat_tab_img,.online.mobile .friends_photo_img,.online.mobile .bp_img,.nim-peer._online.online.mobile._im_peer_online img, ._online.online.mobile .group_u_photo_img{border:2px dotted var(--c1)!important}
+.nim-peer.nim-peer_online .nim-peer--online, .chat_tab_online_icon, .chat_tab_wrap:hover .chat_tab_online_icon, .ts_contact_photo:after, span.fc_contact_photo:after, .online:after, .wddi_over .wddi_thumb .wdd_mark, .wdd_mark, .layers_shown .chat_tab_online_icon, .friends_user_row .online:after, .group_u_photo.online:after, .chat_tab_imgcont.online:after ,.nim-peer._online._im_peer_online  .nim-peer .nim-peer--photo .im_grid>img{display:none}
+.nim-dialog_selected .nim-peer._online.online._im_peer_online img{border:2px solid var(--c8)}
+.nim-dialog_selected .nim-peer._online.online.mobile._im_peer_online img{border:2px dotted var(--c8)!important}
+.nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .chat_tab_img{width:36px;height:36px}
+.friends_phonebook .friends_photo_img,.friends_phonebook ._online.online .friends_photo_img,.nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img{width:42px;height:42px}
+.group_u_photo_img{width:77px;height:77px}
+._online.online .friends_photo_img,._online.online .group_u_photo_img{width:70px;height:70px}
+.bp_thumb, .bp_img {width:48px;height:48px}
+.nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img{margin:2px 0 2px 2px}
+.chat_tab_img{margin:2px 0 2px -2px}
+.bp_post ._online:not(.online) img{margin-left:4px}
+.bp_post ._online,.nim-dialog--photo .nim-peer.online{margin-left:-4px}
+.online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img{border:2px solid var(--c1)!important;width:26px;height:26px}
+.mobile.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img{border:2px dotted var(--c1)!important;width:26px;height:26px}
+.nim-peer.nim-peer_search .nim-peer--photo, .nim-peer .nim-peer--photo-w{overflow:visible}
+EOT;
 }
+
 
 @advanced dropdown darkasshit "Цвета темнее:" {
 darkasshiton "чутка" <<<EOT /* цвета темы потемнее *\/
@@ -727,6 +747,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] .ts_contact_status{filter:var(--magic)saturate(.8)brightness(.7)}
 [dir] .top_notify_cont .feedback_img{background-color:#0000}
 [dir] .mob_onl{filter:brightness(.6)sepia(5)saturate(1.2)hue-rotate(170deg)var(--magic)}
+[dir] .ts_contact.active em.ts_clist_hl{background:var(--c1);color:#000}
 
 /* фикс колокольчика с уведомлениями */
 [dir] .TopNavBtn .TopNavBtn__notifyCount{color:#e6e6e6;background-color:#841515!important;border:none}
@@ -982,14 +1003,15 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] #wk_box{background:var(--c3)}
 [dir] .pv_white_bg{background:#0000}
 
-#post_field,#post_field.submit_post_field.dark.submit_post_inited,.wall_module .reply_form .reply_field.submit_post_field,.wr_header,.feed_filters_wrap,.right_list_header,#feed_wall .wall_module .reply_fakebox,[dir] #feed_wall .wall_module .reply_box_inner_wrap,#profile_wall .reply_fakebox,#profile_wall .reply_box_inner_wrap,.reply_fakebox_wrap,.audio_friends_list_wrap,._audio_additional_block._audio_additional_block_friends,.audio_friends_list_wrap,.audio_friends_list._audio_friends_list,.replies_open,#side_bar ol li,.wall_module .reply_fakebox,.profile_info_header,.profile_info_edit,#side_bar li span,.im-page.im-page_classic .im-page--dcontent,.im-mess::before,#friends_search_input_wrap,.ui_search_custom input,.ui_search,.im-create.im-create_classic.im-create_material,.im-page.im-page_classic.im-page_creating,.im-create .im-create--chat-name .ui_search_input_block,.pv_cont .pv_reply_form_wrap,.search_filters_minimized_text,.wk_history_tabs,.wall_module .reply_box,.submit_post,.wall_module div.page_media_link_desc_wrap,.im-page.im-page_classic .im-page--chat-body-wrap-inner,.video_desktop_live_intro_wrap,.box_body.box_no_buttons,.mail_box_cont,.box_title_wrap.box_grey,.box_title_wrap.box_grey .box_title,.box_title_wrap,.box_title,.box_controls,.deep_active:not(.closed_comments) .replies .reply_field_wrap .reply_field{background-color:#0000!important}
-.like_share_wrap{background-color:#00000080!important}
+[dir] #post_field,[dir] #post_field.submit_post_field.dark.submit_post_inited,[dir] .wall_module .reply_form .reply_field.submit_post_field,[dir] .wr_header,.feed_filters_wrap,.right_list_header,[dir] #feed_wall .wall_module .reply_fakebox,[dir] #feed_wall .wall_module .reply_box_inner_wrap,[dir] #profile_wall .reply_fakebox,[dir] #profile_wall .reply_box_inner_wrap,[dir] .reply_fakebox_wrap,[dir] .audio_friends_list_wrap,[dir] ._audio_additional_block._audio_additional_block_friends,[dir] .audio_friends_list_wrap,[dir] .audio_friends_list._audio_friends_list,[dir] .replies_open,#side_bar ol li,[dir] .wall_module .reply_fakebox,[dir] .profile_info_header,[dir] .profile_info_edit,[dir] #side_bar li span,.im-page.im-page_classic .im-page--dcontent,[dir] .im-mess::before,#friends_search_input_wrap,[dir] .ui_search_custom input,[dir] .ui_search,[dir] .im-create.im-create_classic.im-create_material,[dir] .im-page.im-page_classic.im-page_creating,[dir] .im-create .im-create--chat-name .ui_search_input_block,[dir] .pv_cont .pv_reply_form_wrap,[dir] .search_filters_minimized_text,[dir] .wk_history_tabs,[dir] .wall_module .reply_box,[dir] .submit_post,.wall_module div.page_media_link_desc_wrap,[dir] .im-page.im-page_classic .im-page--chat-body-wrap-inner,[dir] .video_desktop_live_intro_wrap,[dir] .box_body.box_no_buttons,[dir] .mail_box_cont,[dir] .box_title_wrap.box_grey,[dir] .box_title_wrap.box_grey .box_title,[dir] .box_title_wrap,[dir] .box_title,.box_controls,[dir] .deep_active:not(.closed_comments) .replies .reply_field_wrap .reply_field{background-color:#0000!important}
+[dir] .like_share_wrap{background-color:#00000080!important}
 
-#all_shown{color:var(--c1)!important;background:rgba(0,0,0,/*[[opaque]]*/);border:1px solid var(--c3)}
-#all_shown:hover{color:#111!important;background:var(--c2);border:1px solid var(--c5)}
-#wl_reply_form_inner.reply_box_open,#wl_reply_form.wl_reply_form_wrap.wall_module.wl_reply_form_fixed{background-color:#0009!important}
-.submit_post{border-color:#111}
-.post_upload_dropbox{background:#000000e6}
+[dir] #all_shown{color:var(--c1)!important;background:rgba(0,0,0,/*[[opaque]]*/);border:1px solid var(--c3)}
+[dir] #all_shown:hover{color:#111!important;background:var(--c2);border:1px solid var(--c5)}
+[dir] #wl_reply_form_inner.reply_box_open,[dir] #wl_reply_form.wl_reply_form_wrap.wall_module.wl_reply_form_fixed{background-color:#0009!important}
+[dir] .submit_post{border-color:#111}
+[dir] .post_upload_dropbox{background:#000c!important;color:var(--c1)}
+[dir] .post_upload_dropbox_inner{background:#0000!important;border:1px dashed var(--c1)}
 [dir] .wall_module a.wall_reply_greeting{color:var(--c1)}
 [dir] .wall_module .replies_open,[dir] .wall_module .wr_header{color:var(--c2);transition:color .5s}
 [dir] .wall_module .replies_open:hover,[dir] .wall_module .wr_header:hover{color:var(--c1)}
@@ -1508,7 +1530,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .ownerButton_lovina_valentine{display:none}
 
 /* ошибка */
-[dir] .error{background-color:#ce00001f}
+[dir] .error,[dir] .error.msg_appear,[dir] .error:empty{background-color:#ce00001f}
 
 /* обзываться плохо, пнятненько? */
 .tt.WallCheckComment__tt .tt_text{color:#b9b9b9}
