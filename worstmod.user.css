@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.3.47
+@version        20210604.3.55
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1511,6 +1511,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .audio_pl_item2.audio_pl__explicit .audio_pl__title::after{filter:var(--magic)brightness(.7)}
 [dir] .audio_row .audio_row__lyrics .audio_row__lyrics_inner{color:#999;transition:color .3s}
 [dir] .audio_row:hover .audio_row__lyrics .audio_row__lyrics_inner{color:#ccc}
+[dir] .audio_w_covers .audio_row .audio_row__cover{background:#0000}
 
 /* треклист / плееры */
 [dir] .audio_layer_container .audio_friend:hover{background-color:#6464641f}
