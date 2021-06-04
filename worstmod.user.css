@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.22.47
+@version        20210604.23.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1051,6 +1051,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .ms_items_more_wrap.to_up .ms_items_more::after{border-top-color:var(--c4)}
 [dir] .post_replies_reorder_wrap{width:100%}
 [dir] .post_replies_reorder::after{content:'';display:inline-block;background:url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat top!important;margin:0 0 0 4px;width:9px;height:5px;filter:brightness(.5)saturate(2)}
+[dir] #profile_editor input.dark[disabled]{background:#0000;border-color:var(--c3)}
+[dir] .pedit_separator{border-top:1px solid var(--c3)}
 
 /* поиск */
 [dir] .fans_rows.wall_module .like_cont,[dir] .search_results.wall_module.page_block .like_cont{border-color:var(--c3)}
@@ -1431,7 +1433,8 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .wide_column .topics_module .module_body{padding:1px 0 0;border-bottom:1px solid var(--c3)}
 [dir] #profile_photos_module{border-top:none}
 [dir] .topics_module .topic_inner_link{color:#aaa}
-[dir] .bp_post,[dir] .bv_wrap .bt_pages_wrap,[dir] .blst_row{border-bottom:1px solid var(--c3)}
+[dir] .bv_wrap .bt_pages_wrap,[dir] .blst_row{border-bottom:1px solid var(--c3)}
+[dir] .bp_post{border:solid var(--c3);border-width:1px 0}
 [dir] .pg_lnk_sel .pg_in{border-bottom:2px solid var(--c2);color:var(--c1)}
 [dir] .no_posts_cover{filter:invert(.93)hue-rotate(180deg)var(--magic)}
 
@@ -1986,6 +1989,8 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .im-page-pinned{background:#0000;border:none}
 [dir] .im-page-pinned--content,[dir] .im-page .im-mess:not(.im-mess_fwd) .im-mess--text{color:#999;transition:color .3s}
 [dir] .im-page-pinned:hover .im-page-pinned--content,[dir] .im-page-pinned--date,[dir] .im-page .im-mess:hover .im-mess--text{color:#ccc}
+[dir] .im-mess._im_mess.im-mess_unread._im_mess_unread.im-mess_gift{background-color:#000000bf!important}
+[dir] .im-mess._im_mess.im-mess_gift{background-color:#00000080!important;border:1px #222 solid}
 
 /* фон всплывающих наверх окон */
 [dir] .scroll_fix_wrap.fixed.layer_wrap.wk_dark{background:#0000004d}
@@ -2093,11 +2098,6 @@ body{--page-block-shadow:none}
 
 /* ошибка отправки сообщения */
 .im-page.im-page_classic .im-mess.im-mess_unread.im-mess_failed:not(.im-mess_fwd) .im-mess--marker{filter:invert(.85)hue-rotate(185deg)saturate(2.5)brightness(.6)!important}
-
-/* подарок */
-[dir] .im-mess._im_mess.im-mess_unread._im_mess_unread.im-mess_gift{background-color:#000000bf!important}
-[dir] .im-mess._im_mess.im-mess_gift{background-color:#00000080!important;border:1px #222 solid}
-[dir] .profile_gift_send_btn .send_thumb{filter:var(--magic)brightness(.7)}
 
 /* перетягивание картинки в чат */
 [dir] .im-dropbox{background:#000000e6!important}
@@ -2740,45 +2740,52 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .flist_summary{color:var(--c1)}
 [dir] .flist_item_wrap{border-bottom:1px solid var(--c3)}
 [dir] .flist_item_action{filter:invert(.95)hue-rotate(180deg)var(--magic)saturate(.8)brightness(.8)}
+[dir] .flist_sel_show_all{color:var(--c1);border-color:var(--c1)}
+[dir] .flist_sel_showed_all{background-color:var(--c2);border-color:var(--c2);color:var(--c3)}
+[dir] .flist_sel_showed_all:hover{background-color:var(--c1);border-color:var(--c1)}
+[dir] .privacy_dropdown .item,[dir] .privacy_dropdown .item_sel,[dir] .privacy_dropdown .item_sel_plus{color:var(--c2)}
+[dir] .pedit_privacy_locked .privacy_edit_wrap a,[dir] .pedit_privacy_locked .privacy_dropdown .header::after{filter:var(--magic)brightness(.5)}
+[dir] .pedit_add_row{color:#7293b6;filter:var(--magic)brightness(.8)}
+[dir] .pedit_add_row:hover{color:#7293b6;filter:var(--magic)}
 
 /* загрузчик страниц */
-.flat_button.secondary .pr_bt, .flat_button.secondary_dark .pr_bt{background-color:#6E6E6E}
+[dir] .flat_button.secondary .pr_bt,[dir] .flat_button.secondary_dark .pr_bt{background-color:#6E6E6E}
 
 /* плашка заполнения инфы под авой профиля */
-.profile_warning_img{filter:saturate(0)invert(1)brightness(.7)contrast(1.5)}
-.profile_warning_hide{filter:saturate(0)}
+[dir] .profile_warning_img{filter:saturate(0)invert(1)brightness(.7)contrast(1.5)}
+[dir] .profile_warning_hide{filter:saturate(0)}
 
 /* удалённая пикча */
-.pv_cont.pv_deleted_state .pv_narrow_column_wrap{background:#000}
+[dir] .pv_cont.pv_deleted_state .pv_narrow_column_wrap{background:#000}
 
 /* пост лайк фикс */
-.post_like:hover, .post_share:hover{color:var(--c2)}
+[dir] .post_like:hover, .post_share:hover{color:var(--c2)}
 
 /* прогресс */  
-.post_actions.post_actions_progress::before{filter:saturate(0)}
+[dir] .post_actions.post_actions_progress::before{filter:saturate(0)}
 
 /* статистика */
-#stats_cont.stats_cont_browse{background-color:#00000080}
-.stats_browse_filter{border-bottom:1px solid var(--c3)}
-.stats_cont_browse_tile{background-color:#0006}
-.stats_cont_browse_tile .stats_cont_browse_tile_caption .stats_cont_browse_tile_caption_title{color:var(--c2)}
-.stats_cont_browse_tile:hover .stats_cont_browse_tile_caption .stats_cont_browse_tile_caption_title{color:var(--c1)}
-.stats_cont_browse_tile{color:var(--c1)}
-.stats_cont_browse_tile svg>g>path[fill="#F5F7FA"]{fill:#1a1a1a66!important}
-.stats_cont_browse_tile .stats_cont_browse_tile_desc{background:#1a1a1a66}
-.stats_cont_browse_tile .stats_cont_browse_tile_desc .desc{color:var(--c2)}
-.stats_cont_browse_tile:hover .stats_cont_browse_tile_desc .desc{color:var(--c1)}
-#stat_cont_browse_filter_tlt_content .stat_cont_browse_filter_item:hover{background:var(--c4)}
-#visitors_graph > div > div > canvas,#members_graph > div > div > canvas,#sections_graph > div > div > canvas,#reach_graph > div > div > canvas,#feedback_graph > div > div > canvas,#activity_graph > div > div > canvas,#country_graph,#city_graph,#sex_age_graph > div > div > canvas,#sex_age_graph > div > div > div[style^="color:rgb"],#sex_graph > div > div > canvas,#cm_unique_users_graph > div > div > canvas,#wcm_messages_stat_graph > div > div > canvas{filter:invert(1)hue-rotate(180deg)}
-.stats_head,.stats_time_info{border-color:#111}
-.graph_menu_item, .graph_menu_item:hover{background:#111;color:#666}
-.graph_menu_item.graph_menu_item_sel, .graph_menu_item.graph_menu_item_sel:hover{background:#323232}  
-#sex_age_chart_graph > div > div > div > div{background:#222!important}
-#sex_age_chart_graph > div > div > canvas,#sex_age_chart_graph > div > div > div > canvas{filter:invert(1)hue-rotate(180deg)contrast(2)saturate(.5)}
-#sex_age_chart_graph > div > div > div > div[style*="position: absolute"]{color:var(--c1)}
-.piechart_col_header th{background-color:#181818}
-.piechart_table tr td{border-bottom:1px solid #333}
-.stats_community_messages_info_title{color:var(--c1)}
+[dir] #stats_cont.stats_cont_browse{background-color:#00000080}
+[dir] .stats_browse_filter{border-bottom:1px solid var(--c3)}
+[dir] .stats_cont_browse_tile{background-color:#0006}
+[dir] .stats_cont_browse_tile .stats_cont_browse_tile_caption .stats_cont_browse_tile_caption_title{color:var(--c2)}
+[dir] .stats_cont_browse_tile:hover .stats_cont_browse_tile_caption .stats_cont_browse_tile_caption_title{color:var(--c1)}
+[dir] .stats_cont_browse_tile{color:var(--c1)}
+[dir] .stats_cont_browse_tile svg>g>path[fill="#F5F7FA"]{fill:#1a1a1a66!important}
+[dir] .stats_cont_browse_tile .stats_cont_browse_tile_desc{background:#1a1a1a66}
+[dir] .stats_cont_browse_tile .stats_cont_browse_tile_desc .desc{color:var(--c2)}
+[dir] .stats_cont_browse_tile:hover .stats_cont_browse_tile_desc .desc{color:var(--c1)}
+[dir] #stat_cont_browse_filter_tlt_content .stat_cont_browse_filter_item:hover{background:var(--c4)}
+[dir] #visitors_graph > div > div > canvas,[dir] #members_graph > div > div > canvas,[dir] #sections_graph > div > div > canvas,[dir] #reach_graph > div > div > canvas,#feedback_graph > div > div > canvas,#activity_graph > div > div > canvas,#country_graph,#city_graph,#sex_age_graph > div > div > canvas,[dir] #sex_age_graph > div > div > div[style^="color:rgb"],[dir] #sex_graph > div > div > canvas,[dir] #cm_unique_users_graph > div > div > canvas,[dir] #wcm_messages_stat_graph > div > div > canvas{filter:invert(1)hue-rotate(180deg)}
+[dir] .stats_head,.stats_time_info{border-color:#111}
+[dir] .graph_menu_item, .graph_menu_item:hover{background:#111;color:#666}
+[dir] .graph_menu_item.graph_menu_item_sel,[dir] .graph_menu_item.graph_menu_item_sel:hover{background:#323232}  
+[dir] #sex_age_chart_graph > div > div > div > div{background:#222!important}
+[dir] #sex_age_chart_graph > div > div > canvas,#sex_age_chart_graph > div > div > div > canvas{filter:invert(1)hue-rotate(180deg)contrast(2)saturate(.5)}
+[dir] #sex_age_chart_graph > div > div > div > div[style*="position: absolute"]{color:var(--c1)}
+[dir] .piechart_col_header th{background-color:#181818}
+[dir] .piechart_table tr td{border-bottom:1px solid #333}
+[dir] .stats_community_messages_info_title{color:var(--c1)}
 [dir] .stats_community_messages_info,[dir] .stats_browse_filter{border-bottom:1px solid var(--c3)}
 [dir] #stats_cont.stats_cont_browse {background-color: #0000}
 [dir] .stats_cont_browse_tile {background-color:#0006}
@@ -2792,123 +2799,122 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] #stat_group_weekly_reports_table tr.paginated_table_row{border-bottom:1px solid #0b0b0b}
 
 /* серые иконки доступа приложений */ 
-.apps_access_icon{filter:saturate(0)brightness(.3)contrast(1.25)!important}
+[dir] .apps_access_icon{filter:saturate(0)brightness(.3)contrast(1.25)!important}
 
 /* видео плеер */
-.mv_min_header{padding:4px 8px;background:#000000d9}
-.mv_minimized #mv_player_box{background:#000000d9}
-.mv_minimized #mv_main{padding:0 2px 2px 2px!important}
-#mv_layer_wrap.fixed.layer_wrap.mv_dark{background:#000000e6}
-#mv_info.mv_info{background:var(--c9)}
-.submit_post_box.reply_box.clear_fix._submit_post_box,.mv_actions_block,.mv_info_wide_column.fl_l{border-color:#151515}
-.wall_module .reply_box_open .submit_post{border-color:#111}
-.mv_finish_liked_icon.mv_finish_icon{filter:var(--magic)!important}
-.eltt.mv_add_eltt .eltt_arrow{border-top-color:#0000!important}
-.videoplayer_end_actions ._like._liked ._like_icon{filter:var(--magic)brightness(.75)saturate(1.5)!important}
-.mv_delete_button .mv_delete_icon{filter:var(--magic)}
-.mv_claimed{background-color:var(--c4)}
-#mv_pl_tt .mv_tt_private_only + .mv_tt_playlists{border-top:0}
+[dir] .mv_min_header{padding:4px 8px;background:#000000d9}
+[dir] .mv_minimized #mv_player_box{background:#000000d9}
+[dir] .mv_minimized #mv_main{padding:0 2px 2px 2px!important}
+[dir] #mv_layer_wrap.fixed.layer_wrap.mv_dark{background:#000000e6}
+[dir] #mv_info.mv_info{background:var(--c9)}
+[dir] .submit_post_box.reply_box.clear_fix._submit_post_box,.mv_actions_block,[dir] .mv_info_wide_column.fl_l{border-color:#151515}
+[dir] .wall_module .reply_box_open .submit_post{border-color:#111}
+[dir] .mv_finish_liked_icon.mv_finish_icon{filter:var(--magic)!important}
+[dir] .eltt.mv_add_eltt .eltt_arrow{border-top-color:#0000!important}
+[dir] .videoplayer_end_actions ._like._liked ._like_icon{filter:var(--magic)brightness(.75)saturate(1.5)!important}
+[dir] .mv_delete_button .mv_delete_icon{filter:var(--magic)}
+[dir] .mv_claimed{background-color:var(--c4)}
+[dir] #mv_pl_tt .mv_tt_private_only + .mv_tt_playlists{border-top:0}
 
 /* фикс редактирования видео ширина и высота описания */
-#box_layer #mv_desc_text.dark{width:100%!important;min-height:90px}
+[dir] #box_layer #mv_desc_text.dark{width:100%!important;min-height:90px}
 
 /* фикс стрелки пожаловаться на видео и плюсик настроек приватности */
-#idd_item__onReport.idd_item.idd_sublist{color:#5b7a98;filter:var(--magic);background-position:right 11px}
-#privacy_item5.item_sel_plus::after{filter:var(--magic)}
+[dir] #idd_item__onReport.idd_item.idd_sublist{color:#5b7a98;filter:var(--magic);background-position:right 11px}
+[dir] #privacy_item5.item_sel_plus::after{filter:var(--magic)}
 
 /* видео лайв */ 
-.videocat_live_app_link{color:var(--c1)}
-.videocat_live_app_link:before,.mv_live_gifts_supercomment:before{filter:var(--magic)brightness(.8)saturate(.7)}
-.mv_live_gifts_arrow_left:hover:before, .mv_live_gifts_arrow_right:hover:before,.mv_live_gifts_supercomment:hover{background-image:none;background-color:var(--c4)}
-.mv_live_gifts_arrow_left{border-right-color:var(--c3)}
-.mv_live_gifts_arrow_right{border-left-color:var(--c3)}
-.mv_live_gifts_supercomment.active{background:var(--c5)}
+[dir] .videocat_live_app_link{color:var(--c1)}
+[dir] .videocat_live_app_link:before,.mv_live_gifts_supercomment:before{filter:var(--magic)brightness(.8)saturate(.7)}
+[dir] .mv_live_gifts_arrow_left:hover:before, .mv_live_gifts_arrow_right:hover:before,.mv_live_gifts_supercomment:hover{background-image:none;background-color:var(--c4)}
+[dir] .mv_live_gifts_arrow_left{border-right-color:var(--c3)}
+[dir] .mv_live_gifts_arrow_right{border-left-color:var(--c3)}
+[dir] .mv_live_gifts_supercomment.active{background:var(--c5)}
 
 /* фикс скролла в комментах к пикче */
-.ui_scroll_default_theme > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:#333}
-.ui_scroll_default_theme > .ui_scroll_bar_container:hover > .ui_scroll_bar_outer > .ui_scroll_bar_inner,.ui_scroll_default_theme.ui_scroll_scrolled > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:#444}
+[dir] .ui_scroll_default_theme > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:#333}
+[dir] .ui_scroll_default_theme > .ui_scroll_bar_container:hover > .ui_scroll_bar_outer > .ui_scroll_bar_inner,[dir] .ui_scroll_default_theme.ui_scroll_scrolled > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:#444}
 
 /* К сожалению, раздел недоступен. */
-.disabled_module_text{color:#777}
-.disabled_module_img{filter:saturate(0)brightness(.7)contrast(1.4)}
+[dir] .disabled_module_text{color:#777}
+[dir] .disabled_module_img{filter:saturate(0)brightness(.7)contrast(1.4)}
 
 /* показать/скрыть подробную информацию во всю длину блока */
-.profile_more_info_link{width:384px;margin-left:-20px!important}
-.profile_label_more,.profile_label_less{margin-left:20px}
-#profile_groups_link{width:364px;margin-left:-20px;padding-left:185px}
+[dir] .profile_more_info_link{width:384px;margin-left:-20px!important}
+[dir] .profile_label_more,[dir] .profile_label_less{margin-left:20px}
+[dir] #profile_groups_link{width:364px;margin-left:-20px;padding-left:185px}
 
 /* фильтр переключателя "сначала интересные" */
-.ui_toggler_wrap.hot:before{content:'';width:13px;height:30px;top:0px;left:15px;position:absolute;background:#0000 url("https://vk.com/images/icons/interesting.png") no-repeat scroll left 13px;filter:saturate(1.2)brightness(.5)}
+[dir] .ui_toggler_wrap.hot:before{content:'';width:13px;height:30px;top:0px;left:15px;position:absolute;background:#0000 url("https://vk.com/images/icons/interesting.png") no-repeat scroll left 13px;filter:saturate(1.2)brightness(.5)}
 
 /* разделитель в просмотре фоток/гифок поста - Просмотреть все изображения */  
-hr{border-color:#222}
+[dir] hr{border-color:#222}
 
 /* кнопка показать больше друзей */
-#show_more.friends_more:hover{background:var(--c2);color:#111}
-#show_more.friends_more{border-top:1px solid #111}
-.friends_more_icon{filter:var(--magic)}
-#show_more.friends_more:hover .friends_more_icon{filter:brightness(0);opacity:.9}
+[dir] #show_more.friends_more:hover{background:var(--c2);color:#111}
+[dir] #show_more.friends_more{border-top:1px solid #111}
+[dir] .friends_more_icon{filter:var(--magic)}
+[dir] #show_more.friends_more:hover .friends_more_icon{filter:brightness(0);opacity:.9}
 
 /* фикс добавления друга в список */
-.page_actions_subitem.checked{background:#1B1B1B}
-.page_actions_subitem.checked:before{content:'';height:18px;width:25px;margin-left:-25px;display:inline-block;background:#0000 url("https://vk.com/images/icons/dropdown_check.png") no-repeat scroll 6px 8px;filter:saturate(0)}  
-.page_actions_subitem.checked:hover{background-color:#171717}
+[dir] .page_actions_subitem.checked{background:#1B1B1B}
+[dir] .page_actions_subitem.checked:before{content:'';height:18px;width:25px;margin-left:-25px;display:inline-block;background:#0000 url("https://vk.com/images/icons/dropdown_check.png") no-repeat scroll 6px 8px;filter:saturate(0)}  
+[dir] .page_actions_subitem.checked:hover{background-color:#171717}
 
 /* разделитель в редактировании руководителя сообщества */
-.gedit_admbox_sep{border-top:1px solid #2A2A2A}
+[dir] .gedit_admbox_sep{border-top:1px solid #2A2A2A}
 
 /* чёрные иконки на видеоплеере */   
-.videoplayer_share_actions ._liked path{fill:#CCC!important}
-.videoplayer_share_actions ._liked:hover path{fill:#EEE!important}
-.videoplayer_share_actions ._added path{stroke:#EEE!important;fill:none!important}
-.videoplayer_share_actions path{fill:#111!important}
-.videoplayer .videoplayer_share_actions ._share:not(:hover),.videoplayer .videoplayer_share_actions ._like:not(:hover),.videoplayer .videoplayer_share_actions ._add:not(:hover),.videoplayer .videoplayer_share_actions ._donate:not(:hover){background-color:#0000}
-.videoplayer .videoplayer_share_actions ._share:hover,.videoplayer .videoplayer_share_actions ._like:hover,.videoplayer .videoplayer_share_actions ._add:hover,.videoplayer .videoplayer_share_actions ._donate:hover{background-color:#00000080}
-.videoplayer .videoplayer_share_actions ._share:hover path,.videoplayer .videoplayer_share_actions ._like:not(._liked):hover path, .videoplayer_share_actions ._add:not(._added):hover path{fill:#555!important}
-.VideoRestriction__boxWrap{background:#0000}
-.VideoRestriction__box{filter:var(--magic)brightness(.7)}
+[dir] .videoplayer_share_actions ._liked path{fill:#CCC!important}
+[dir] .videoplayer_share_actions ._liked:hover path{fill:#EEE!important}
+[dir] .videoplayer_share_actions ._added path{stroke:#EEE!important;fill:none!important}
+[dir] .videoplayer_share_actions path{fill:#111!important}
+[dir] .videoplayer .videoplayer_share_actions ._share:not(:hover),[dir] .videoplayer .videoplayer_share_actions ._like:not(:hover),[dir] .videoplayer .videoplayer_share_actions ._add:not(:hover),[dir] .videoplayer .videoplayer_share_actions ._donate:not(:hover){background-color:#0000}
+[dir] .videoplayer .videoplayer_share_actions ._share:hover,[dir] .videoplayer .videoplayer_share_actions ._like:hover,[dir] .videoplayer .videoplayer_share_actions ._add:hover,[dir] .videoplayer .videoplayer_share_actions ._donate:hover{background-color:#00000080}
+[dir] .videoplayer .videoplayer_share_actions ._share:hover path,[dir] .videoplayer .videoplayer_share_actions ._like:not(._liked):hover path,[dir] .videoplayer_share_actions ._add:not(._added):hover path{fill:#555!important}
+[dir] .VideoRestriction__boxWrap{background:#0000}
+[dir] .VideoRestriction__box{filter:var(--magic)brightness(.7)}
 
 /* выбор плейлиста для видео */
-#mv_pl_tt .mv_tt_playlists{max-height:460px}
+[dir] #mv_pl_tt .mv_tt_playlists{max-height:460px}
 
 /* фикс - настройки поиска видео не влазят когда ничего не найдено */
-.video_empty_placeholder.no_rows{padding:131px 170px 124px}
+[dir] .video_empty_placeholder.no_rows{padding:131px 170px 124px}
 
 /* фикс действия удалённого диалога */ 
-.nim-dialog .nim-dialog--daction{color:var(--c1)}
+[dir] .nim-dialog .nim-dialog--daction{color:var(--c1)}
 
 /* прикрепление */    
-.choose_more_btn{background:#141414;color:#454545}
-.choose_more_btn:hover{background:var(--c1);color:#111}
+[dir] .choose_more_btn{background:#141414;color:#454545}
+[dir] .choose_more_btn:hover{background:var(--c1);color:#111}
 [dir] .docs_choose_upload_area{background-color:#0000} 
 [dir] .docs_choose_upload_area:hover{background-color:#6464641f}
-.page_doc_row .page_doc_title{color:var(--c1)}
-.page_doc_row .page_doc_icon{filter:invert(.9)saturate(0)contrast(1.2)hue-rotate(180deg)!important}
-.docs_item_icon{filter:invert(1)saturate(.5)hue-rotate(180deg)!important}
-.docs_choose_upload_area_label{filter:var(--magic)brightness(.7)saturate(.8);color:#8cc3ff}
+[dir] .page_doc_row .page_doc_title{color:var(--c1)}
+[dir] .page_doc_row .page_doc_icon{filter:invert(.9)saturate(0)contrast(1.2)hue-rotate(180deg)!important}
+[dir] .docs_item_icon{filter:invert(1)saturate(.5)hue-rotate(180deg)!important}
+[dir] .docs_choose_upload_area_label{filter:var(--magic)brightness(.7)saturate(.8);color:#8cc3ff}
 [dir] .docs_choose_rows .docs_item{border-bottom: 1px solid var(--c4)}
 [dir] .docs_choose_rows .docs_item:hover{background-color:#6464641f}
 
-
 /* фикс закладок - удаление людей */ 
-.fans_fan_bl_wrap{background:#000000d9}
-.fans_fan_row{overflow:visible}
+[dir] .fans_fan_bl_wrap{background:#000000d9}
+[dir] .fans_fan_row{overflow:visible}
 
 /* фикс ВК 10 лет */
-.vk10_years_head{filter:invert(.9)hue-rotate(180deg)}
-.vk_10_years_snippet_info{filter:invert(.95)hue-rotate(180deg)}
-.feed_vk10_years_sep{background:#222}
-.feed_vk10_years_btn:hover{background-color:var(--c1);color:#111}
-.feed_vk10_years_ava{background:#151515}
-.vk10_years_sep{background-image:linear-gradient(270deg, #0000, #3E3E3E 15%, #3E3E3E 85%, #0000)}
-.landing_vk10_years > div > div{color:var(--c1)!important}
-.vk10_years_caption,.landing_vk10_years > div > div > div > div{color:var(--c2)!important}
-.vk10_years_caption_ic_graph{color:#FFF!important}
+[dir] .vk10_years_head{filter:invert(.9)hue-rotate(180deg)}
+[dir] .vk_10_years_snippet_info{filter:invert(.95)hue-rotate(180deg)}
+[dir] .feed_vk10_years_sep{background:#222}
+[dir] .feed_vk10_years_btn:hover{background-color:var(--c1);color:#111}
+[dir] .feed_vk10_years_ava{background:#151515}
+[dir] .vk10_years_sep{background-image:linear-gradient(270deg, #0000, #3E3E3E 15%, #3E3E3E 85%, #0000)}
+[dir] .landing_vk10_years > div > div{color:var(--c1)!important}
+[dir] .vk10_years_caption,[dir] .landing_vk10_years > div > div > div > div{color:var(--c2)!important}
+[dir] .vk10_years_caption_ic_graph{color:#FFF!important}
 
 /* моментальная регистрация */ 
-.join_box_or_l,.join_box_or_s{background:none}
-.join_box_fb_logo{filter:invert(.7)}
-.login_app_download_icon{filter:saturate(0)brightness(1.2)}
+[dir] .join_box_or_l,[dir] .join_box_or_s{background:none}
+[dir] .join_box_fb_logo{filter:invert(.7)}
+[dir] .login_app_download_icon{filter:saturate(0)brightness(1.2)}
 
 /* логин и забыл пароль */
 [dir] .index_users_info,[dir] .login_compact_mobile_promo_title{color:#bfbfbf}
@@ -3026,91 +3032,89 @@ hr{border-color:#222}
 [dir] .gift_tt_show_all{background-color:#0000;border:none}
 [dir] .gift_tt_show_all:hover{background-color:#6464641f}
 [dir] .gift_tt_show_all::after,[dir] .gift_tt_hide{filter:var(--magic)brightness(.7)}
+[dir] .profile_gift_send_btn .send_thumb{filter:var(--magic)brightness(.7)}
+[dir] .gifts_box_rows .post{border-bottom: 1px solid var(--c3)}
+[dir] .gift_delete,[dir] .gift_send_btn{filter:var(--magic)brightness(.7)}
 
 /* сортирова стикеров */
-.ui_gridsorter_moveable,.ui_gridsorter_moveable_notrans{background-color:#141414d9!important;border:none!important}
+[dir] .ui_gridsorter_moveable,[dir] .ui_gridsorter_moveable_notrans{background-color:#141414d9!important;border:none!important}
 
 /* стикер всплывающее описание */
-.sticker_extra_tt .tt_text .stickers_extra_text > b{color:var(--c1)}
-img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:none!important}
-.emoji_sticker_image:hover,.sticker_img:hover{background:var(--c2);border-radius:4px}
+[dir] .sticker_extra_tt .tt_text .stickers_extra_text > b{color:var(--c1)}
+[dir] img.sticker_img.im_gift,[dir] img.im_gift,.emoji_sticker_image,[dir] .sticker_img{filter:none!important}
+[dir] .emoji_sticker_image:hover,[dir] .sticker_img:hover{background:var(--c2);border-radius:4px}
 
 /* ссылки паблоса */  
-.box_botsh .box_controls{border-top-color:var(--c5)}
+[dir] .box_botsh .box_controls{border-top-color:var(--c5)}
 
 /* поиск друзей в аудиозаписях */ 
-.audio_friends_list_wrap .ui_search_new.ui_search_dark .ui_search_input_inner{background-color:#0000001a}
+[dir] .audio_friends_list_wrap .ui_search_new.ui_search_dark .ui_search_input_inner{background-color:#0000001a}
 
 /* заголовки всплывающих ссылок */
-.mott_header, .promoted_post_tt .header, .verified_tt_header, .wall_tt .header{color:var(--c1)}
+[dir] .mott_header,[dir] .promoted_post_tt .header,[dir] .verified_tt_header,[dir] .wall_tt .header{color:var(--c1)}
 
 /* добавляем в ЧС */
-.settings_blb_row:last-child{border-bottom:none}
+[dir] .settings_blb_row:last-child{border-bottom:none}
 
 /* фикс поиска прикрепляемого аудио */
-.choose_search_wrap .ui_search.ui_search_custom._wrap{width:100%!important}
-.audio_pl_edit_box .ape_audio_item_wrap .audio_row em{background-color:var(--c2);color:#000}
-
-/* выбор друзей в правах доступа к альбомам */
-.flist_sel_show_all{color:var(--c1);border-color:var(--c1)}
-.flist_sel_showed_all{background-color:var(--c2);border-color:var(--c2);color:var(--c3)}
-.flist_sel_showed_all:hover{background-color:var(--c1);border-color:var(--c1)}
+[dir] .choose_search_wrap .ui_search.ui_search_custom._wrap{width:100%!important}
+[dir] .audio_pl_edit_box .ape_audio_item_wrap .audio_row em{background-color:var(--c2);color:#000}
 
 /* настройка доступа */
-.privacy_custom_box .idd_wrap .idd_selected_value{color:var(--c1)}
+[dir] .privacy_custom_box .idd_wrap .idd_selected_value{color:var(--c1)}
 
 /* фикс цвета ссылки отмены удаления из друзей */
-.ui_actions_menu_icons .friends_restore_link{filter:invert(1)!important}
-.friends_added_text{padding-bottom:10px}
+[dir] .ui_actions_menu_icons .friends_restore_link{filter:invert(1)!important}
+[dir] .friends_added_text{padding-bottom:10px}
 
 /* отключенная кнопка (когда надо поставить галочку) */
 [dir] .flat_button.button_disabled{color:#333!important;background:var(--c9)!important}
 
 /* опубликовать отложенный пост */
-.post_publish{border-color:var(--c4)!important}
-.post_action_btn .post_action_image_btn._close{filter:var(--magic)brightness(2)saturate(.5)}
+[dir] .post_publish{border-color:var(--c4)!important}
+[dir] .post_action_btn .post_action_image_btn._close{filter:var(--magic)brightness(2)saturate(.5)}
 
 /* запись аудио в сообщениях */
-.im-audio-message-input .im-audio-message--cancel-btn{opacity:.5;background-color:#0000!important;filter:var(--magic)}
-.im-audio-message-input .im-audio-message-send-wrapper{background-color:#0000!important;border-radius:0px}
-.im-audio-message-track--wrap,.im-send-btn._im_audio_send,.im-audio-message-input .im-audio-message-track{background-color:#0000!important}
-.im-audio-message-input{background:#000000d9}
-.im-audio-message-input{box-shadow:none!important}
-.im-audio-message-input .audio-msg-track.audio-msg-track_recording .audio-msg-track--btn{background-color:#EEE;filter:invert(.92)hue-rotate(180deg)}
-.im-audio-message-input .audio-msg-track:not(.audio-msg-track_recording) .audio-msg-track--btn{background-color:#EEE;filter:invert(.92)}
+[dir] .im-audio-message-input .im-audio-message--cancel-btn{opacity:.5;background-color:#0000!important;filter:var(--magic)}
+[dir] .im-audio-message-input .im-audio-message-send-wrapper{background-color:#0000!important;border-radius:0px}
+[dir] .im-audio-message-track--wrap,[dir] .im-send-btn._im_audio_send,[dir] .im-audio-message-input .im-audio-message-track{background-color:#0000!important}
+[dir] .im-audio-message-input{background:#000000d9}
+[dir] .im-audio-message-input{box-shadow:none!important}
+[dir] .im-audio-message-input .audio-msg-track.audio-msg-track_recording .audio-msg-track--btn{background-color:#EEE;filter:invert(.92)hue-rotate(180deg)}
+[dir] .im-audio-message-input .audio-msg-track:not(.audio-msg-track_recording) .audio-msg-track--btn{background-color:#EEE;filter:invert(.92)}
 .audio-msg-track--duration{background-color:#0000!important}
-.im_msg_media .audio-msg-track.audio-msg-player .audio-msg-track--duration{color:var(--c2)!important}
-.im_msg_media .audio-msg-track--btn{border-radius:2px!important;background-color:var(--c1)!important;filter:invert(1)hue-rotate(180deg)saturate(.6)brightness(2)!important}
+[dir] .im_msg_media .audio-msg-track.audio-msg-player .audio-msg-track--duration{color:var(--c2)!important}
+[dir] .im_msg_media .audio-msg-track--btn{border-radius:2px!important;background-color:var(--c1)!important;filter:invert(1)hue-rotate(180deg)saturate(.6)brightness(2)!important}
 
 /* товары */
-.marketplace-icon{filter:var(--magic);opacity:.5}
-.marketplace-icon:hover{opacity:1}
-.market_row.over{background:#000000f2!important}
-.market_row_name a,.market_row_name_line a{color:var(--c1)!important}
-.market_row_price{color:var(--c2)!important}
-.market_row_line{border-bottom:1px solid var(--c5)!important}
-#marketplace .market_content .market_row .market_edit_actions{background:#000000d9;filter:var(--magic)!important}
-#marketplace .market_content .market_row .market_place_common_friend_badge{background-color:#0000;filter:brightness(.5)}
-.marketplace_frtt_photo,.market_place_common_friend_badge{border-radius:2px!important}
-.eltt.feature_intro_tt.eltt_bottom.eltt_vis{background:#000000d9;border-radius:2px;border:1px solid var(--c3)}
-.eltt.feature_intro_tt.eltt_bottom.eltt_vis::before{background-color:#000000d9;border:#0000;border-left:1px solid var(--c3);border-top:1px solid var(--c3);box-shadow:none!important}
-.eltt.feature_intro_tt.eltt_bottom.eltt_vis::after{display:none}
-.feature_intro_tt_hide{filter:var(--magic);transform:scale(.75)}
+[dir] .marketplace-icon{filter:var(--magic);opacity:.5}
+[dir] .marketplace-icon:hover{opacity:1}
+[dir] .market_row.over{background:#000000f2!important}
+[dir] .market_row_name a,[dir] .market_row_name_line a{color:var(--c1)!important}
+[dir] .market_row_price{color:var(--c2)!important}
+[dir] .market_row_line{border-bottom:1px solid var(--c5)!important}
+[dir] #marketplace .market_content .market_row .market_edit_actions{background:#000000d9;filter:var(--magic)!important}
+[dir] #marketplace .market_content .market_row .market_place_common_friend_badge{background-color:#0000;filter:brightness(.5)}
+[dir] .marketplace_frtt_photo,[dir] .market_place_common_friend_badge{border-radius:2px!important}
+[dir] .eltt.feature_intro_tt.eltt_bottom.eltt_vis{background:#000000d9;border-radius:2px;border:1px solid var(--c3)}
+[dir] .eltt.feature_intro_tt.eltt_bottom.eltt_vis::before{background-color:#000000d9;border:#0000;border-left:1px solid var(--c3);border-top:1px solid var(--c3);box-shadow:none!important}
+[dir] .eltt.feature_intro_tt.eltt_bottom.eltt_vis::after{display:none}
+[dir] .feature_intro_tt_hide{filter:var(--magic);transform:scale(.75)}
 
 /* фича интро треугольничек */
-.eltt.feature_intro_tt::before{background:#0000!important;margin-right:-1px!important;width:0px!important;height:0px!important;border-style:solid;border-color:#0000 #000000e6 #0000 #0000;border-width:10px 10px 10px 0px;margin-top:0px!important;transform:rotate(0deg)!important}
-.eltt.feature_intro_tt::after{display:none!important}
+[dir] .eltt.feature_intro_tt::before{background:#0000!important;margin-right:-1px!important;width:0px!important;height:0px!important;border-style:solid;border-color:#0000 #000000e6 #0000 #0000;border-width:10px 10px 10px 0px;margin-top:0px!important;transform:rotate(0deg)!important}
+[dir] .eltt.feature_intro_tt::after{display:none!important}
 
 /* меня твои истории просто доебали уже */
-.story_feed_new_item .stories_feed_item_name{color:var(--c1)}
-.stories_feed_item_name{color:var(--c2)}
-.stories_feed_item_name:hover{color:var(--c1)}
-.story_view_answer_form_cont{background:#000000d9}
-.story_view_answer_form_text{background:#0000!important}
-.story_view_feedback_button_arrow{background:#0000!important;width:0px!important;height:0px!important;border-style:solid;border-color:#000000d9 #0000 #0000 #0000;border-width:10px 10px 10px 10px}
-.story_view_answer_form_send_btn{filter:var(--magic)}
-.story_view_feedback_button{background-color:var(--c5);color:var(--c2);border-radius:5px}
-.story_view_feedback_button:hover{background-color:var(--c2);color:#111}
+[dir] .story_feed_new_item .stories_feed_item_name{color:var(--c1)}
+[dir] .stories_feed_item_name{color:var(--c2)}
+[dir] .stories_feed_item_name:hover{color:var(--c1)}
+[dir] .story_view_answer_form_cont{background:#000000d9}
+[dir] .story_view_answer_form_text{background:#0000!important}
+[dir] .story_view_feedback_button_arrow{background:#0000!important;width:0px!important;height:0px!important;border-style:solid;border-color:#000000d9 #0000 #0000 #0000;border-width:10px 10px 10px 10px}
+[dir] .story_view_answer_form_send_btn{filter:var(--magic)}
+[dir] .story_view_feedback_button{background-color:var(--c5);color:var(--c2);border-radius:5px}
+[dir] .story_view_feedback_button:hover{background-color:var(--c2);color:#111}
 [dir] .stories_feed_preview_add{filter:invert(.9)hue-rotate(180deg)var(--magic)}
 [dir] .stories_link{background:#00000026;color:#999}
 [dir] .stories_link__inner::after{filter:invert(.9)}
