@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.4.10
+@version        20210604.4.14
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -888,13 +888,13 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 #wl_reply_form_inner.reply_box_open,#wl_reply_form.wl_reply_form_wrap.wall_module.wl_reply_form_fixed{background-color:#0009!important}
 .submit_post{border-color:#111}
 .post_upload_dropbox{background:#000000e6}
-.wall_module a.wall_reply_greeting{color:#b1b1b1}
-.wall_module .replies_open,.wall_module .wr_header{color:var(--c2);transition:color .5s}
-.wall_module .replies_open:hover,.wall_module .wr_header:hover{color:var(--c1)}
+[dir] .wall_module a.wall_reply_greeting{color:var(--c1)}
+[dir] .wall_module .replies_open,[dir] .wall_module .wr_header{color:var(--c2);transition:color .5s}
+[dir] .wall_module .replies_open:hover,[dir] .wall_module .wr_header:hover{color:var(--c1)}
 [dir] .wall_module .replies_open{background:#6464641f!important}
 [dir] .wall_module .replies_open:hover{background:#0009!important}
-.top_profile_vkconnect_name{color:var(--c1)}
-.top_profile_vkconnect_row:hover{background-color:var(--c3)}
+[dir] .top_profile_vkconnect_name{color:var(--c1)}
+[dir] .top_profile_vkconnect_row:hover{background-color:var(--c3)}
 [dir] .ProfileEditorVkconnect__notice{background:#0000}
 
 [dir] .reply_to_cancel{filter:var(--magic)brightness(.7)}
