@@ -2870,28 +2870,29 @@ em.fc_clist_hl,.result_list ul li em{background-color:var(--c1);color:var(--c5)}
 .login_app_download_icon{filter:saturate(0)brightness(1.2)}
 
 /* логин и забыл пароль */
-.index_users_info{color:#bfbfbf}
-.index_user_del_wrap,.index_user_del_wrap:hover{filter:invert(1)hue-rotate(180deg)saturate(.7)var(--magic)}
-.index_new_user_row .index_user_ph{background-color:#ffffff59;filter:invert(1)hue-rotate(180deg)brightness(.7)saturate(.5)var(--magic)}
-.index_new_user_row:hover .index_user_ph{filter:invert(1)hue-rotate(180deg)brightness(1)saturate(.4)var(--magic)} 
-.index_new_user_row .index_user_name{color:var(--c2)}
-.index_new_user_row:hover .index_user_name{color:var(--c1)}
-.index_page .login_mobile_promo_wrap{background-color:#000000bf;border:1px solid #222}
-#forgot_panel .bottom_row{border-top:1px solid #2A2A2A;background-color:#1B1B1B;color:#ADADAD}
-#quick_login{background-color:#000000bf;border:1px solid #222;padding:7px;margin-left:-16px}
-.login_app_download_wrap .flat_button.secondary.button_light:hover{background:#00000080;border:1px solid #222}
-.login_app_download_wrap .flat_button.secondary.button_light{border:1px solid #0000}
-@keyframes wiggle{0%{transform:rotate(.15deg);}50%{transform:rotate(-0.15deg);}100%{transform:rotate(.15deg);}}
-.login_app_device_screen_wrap:hover{animation:wiggle .1s 15;transform:rotate(0deg)}
-.login_page .msg{background:#00000080;color:var(--c2);filter:none!important}
-.login_blocked_centered,.login_blocked_bottom{color:#9c9c9c}
-.languages_list .language_selected > .language_title{color:#eee}
-.languages_list .language_suggested{background:#171717}
-.languages_list .language_column > div > a:hover .language_title{color:#eee}
-.language_box_row:hover{background-color:#0000004d}
-.language_box_row:hover .language_box_row_label{color:#ddd}
-.language_box_row.language_box_row_selected .language_box_row_label{color:#ccc}
-.language_box_row .language_box_row_label{color:var(--c1)}
+[dir] .index_users_info,[dir] .login_compact_mobile_promo_title{color:#bfbfbf}
+[dir] .index_user_del_wrap,[dir] .index_user_del_wrap:hover{filter:invert(1)hue-rotate(180deg)saturate(.7)var(--magic)}
+[dir] .index_new_user_row .index_user_ph{background-color:#ffffff59;filter:invert(1)hue-rotate(180deg)brightness(.7)saturate(.5)var(--magic)}
+[dir] .index_new_user_row:hover .index_user_ph{filter:invert(1)hue-rotate(180deg)brightness(1)saturate(.4)var(--magic)} 
+[dir] .index_new_user_row .index_user_name{color:var(--c2)}
+[dir] .index_new_user_row:hover .index_user_name{color:var(--c1)}
+[dir] .index_page .login_mobile_promo_wrap{background-color:#000000bf;border:1px solid #222}
+[dir] #forgot_panel .bottom_row{border-top:1px solid #2A2A2A;background-color:#1B1B1B;color:#ADADAD}
+[dir] #quick_login{background-color:#000000bf;border:1px solid #222;padding:7px;margin-left:-16px}
+[dir] .login_compact_mobile_promo_text{color:#777}
+[dir] .login_app_download_wrap .flat_button.secondary.button_light:hover{background:#00000080;border:1px solid #222}
+[dir] .login_app_download_wrap .flat_button.secondary.button_light{border:1px solid #0000}
+@keyframes wiggle{0%{transform:rotate(.15deg)}50%{transform:rotate(-0.15deg)}100%{transform:rotate(.15deg)}}
+[dir] .index_user_row:hover{animation:wiggle .4s 15;transform:rotate(0deg)}
+[dir] .login_page .msg{background:#00000080;color:var(--c2);filter:none!important}
+[dir] .login_blocked_centered,[dir] .login_blocked_bottom{color:#9c9c9c}
+[dir] .languages_list .language_selected > .language_title{color:#eee}
+[dir] .languages_list .language_suggested{background:#171717}
+[dir] .languages_list .language_column > div > a:hover .language_title{color:#eee}
+[dir] .language_box_row:hover{background-color:#6464641f}
+[dir] .language_box_row:hover .language_box_row_label{color:#ddd}
+[dir] .language_box_row.language_box_row_selected .language_box_row_label{color:#ccc}
+[dir] .language_box_row .language_box_row_label{color:var(--c1)}
 [dir] .index_user_name{color:var(--c2);transition:color .3s}
 [dir] .index_user_row:hover .index_user_name{color:var(--c1)}
 
