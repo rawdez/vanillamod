@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.3.39
+@version        20210604.3.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1017,7 +1017,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 [dir] .photos_choose_upload_area:hover .photos_choose_upload_area_label{filter:var(--magic)}
 [dir] .photos_choose_bottom,[dir] .photos_choose_bottom.fixed{box-shadow:none;background:rgba(0,0,0,/*[[headopaque]]*/);border-top:none}
 [dir] .photos_choose_button:hover b{color:var(--c1)!important}
-[dir] .media_check_btn_wrap .media_check_btn{filter:invert(.95)hue-rotate(180deg)var(--magic)}
+[dir] .media_check_btn_wrap .media_check_btn,[dir] .photos_photo_edit_row_selector{filter:invert(.95)hue-rotate(180deg)var(--magic)brightness(.7)}
 [dir] .photos_choose_row,[dir] .photos_choose_more{background:#0006}
 [dir] .photos_choose_more:hover{background:#6464641f}
 
