@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210605.18.57
+@version        20210605.19.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -3029,14 +3029,28 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .GiftsStickerPackPreviewTooltip__button{background:#0000;border-top:none;color:#999}
 [dir] .GiftsStickerPackPreviewTooltip__button:hover{background:#6464641f;border-top:none;color:var(--c1)}
 [dir] .gifts_section_scroll_wrap>.tt_w.tt_default.tt_down{background:#000000bf!important}
-.gift_tt_header{color:var(--c1)}
-.gift_tt_text{color:var(--c2)}
+[dir] .gift_tt_header{color:var(--c1)}
+[dir] .gift_tt_text{color:var(--c2)}
 [dir] .gift_tt_show_all{background-color:#0000;border:none}
 [dir] .gift_tt_show_all:hover{background-color:#6464641f}
 [dir] .gift_tt_show_all::after,[dir] .gift_tt_hide{filter:var(--magic)brightness(.7)}
 [dir] .profile_gift_send_btn .send_thumb{filter:var(--magic)brightness(.7)}
 [dir] .gifts_box_rows .post{border-bottom: 1px solid var(--c3)}
 [dir] .gift_delete,[dir] .gift_send_btn{filter:var(--magic)brightness(.7)}
+[dir] .gifts_section_row{border-bottom:1px solid var(--c3)}
+[dir] .gifts_section_header,[dir] h4.gifts_section_header{color:var(--c2);transition:color .3s}
+[dir] .gifts_section_row:hover .gifts_section_header,[dir] .StickerProductsGift__messageLabel{color:var(--c1)}
+[dir] .StickerProductsGift__content{background:#0000}
+[dir] .Textarea{background:#6464641f;border:1px solid var(--c3)!important}
+[dir] .StickerProductsGift__footer{background:#6464641f;border-top: 1px solid var(--c3)}
+[dir] .CheckBox__indicator{border:1px solid var(--c2);background:var(--c3)}
+[dir] .CheckBox.StickerProductsGift__isPrivate:hover .CheckBox__indicator{border:1px solid var(--c1);background-color:var(--c3)}
+[dir] .StickerProductsGiftDetails__summary{color:var(--c1)}
+[dir] .StickerProductsGiftDetails__recipientName,[dir] .StickerProductsGift__details{color:#ccc}
+[dir] .StickerProductsGiftDetails__recipients{border-top:1px solid var(--c3)}
+[dir] .Tooltip--t.Tooltip--light .Tooltip__in::before{border-top-color:var(--c2)}
+[dir] .Tooltip--t.Tooltip--light .Tooltip__in::after{border-top-color:var(--c4)}
+[dir] .HintIcon{filter:invert(1)hue-rotate(180deg)brightness(1.2)var(--magic)}
 
 /* сортирова стикеров */
 [dir] .ui_gridsorter_moveable,[dir] .ui_gridsorter_moveable_notrans{background-color:#141414d9!important;border:none!important}
