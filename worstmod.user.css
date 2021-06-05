@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210605.4.47
+@version        20210605.18.57
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -748,6 +748,8 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] .top_notify_cont .feedback_img{background-color:#0000}
 [dir] .mob_onl{filter:brightness(.6)sepia(5)saturate(1.2)hue-rotate(170deg)var(--magic)}
 [dir] .ts_contact.active em.ts_clist_hl{background:var(--c1);color:#000}
+[dir] .ui_rmenu_count{background-color:var(--c2);font-weight:400!important;transition:background .3s}
+[dir] .line_cell:hover .ui_rmenu_count{background-color:var(--c1)}
 
 /* фикс колокольчика с уведомлениями */
 [dir] .TopNavBtn .TopNavBtn__notifyCount{color:#e6e6e6;background-color:#841515!important;border:none}
@@ -756,7 +758,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] .TopNavBtn:not(.TopNavBtn--active):hover{background:#00000080!important;}
 [dir] .TopNavBtn.TopNavBtn--active{background:var(--c2)!important}
 [dir] .TopNavBtn.TopNavBtn--active .TopNavBtn__icon{filter:var(--magic)brightness(.1)}
-[dir] .top_notify_header .top_notify_header_label .top_notify_header_label_groups_counter.unmuted{background:var(--c2);color:#111;transition:background .3s}
+[dir] .top_notify_header .top_notify_header_label .top_notify_header_label_groups_counter.unmuted{background:var(--c2);color:#111;transition:background .3s;font-weight:500!important}
 [dir] .top_notify_header .top_notify_header_label:hover .top_notify_header_label_groups_counter.unmuted{background:var(--c1)}
 [dir] .notify_sources_tt_content .line_cell .info .ui_rmenu_count{color:#111!important}
 
@@ -904,7 +906,7 @@ html{scrollbar-color:#6464641f var(--c9)!important}
 [dir] .ui_actions_menu_sublist .ui_actions_menu_item.checked,[dir] .ui_actions_menu_item.feed_new_list{color:#8cc3ff!important;filter:var(--magic)brightness(.7)}
 [dir] .ui_actions_menu_item.feed_new_list:hover{filter:none}
 [dir] .ui_actions_menu_sep{border-top:1px solid var(--c3)}
-[dir] .ui_rmenu_count.grey{background-color:var(--c2)}
+[dir] .ui_rmenu_count.grey{background-color:var(--c2);color:#000}
 [dir] .ui_toggler.ui_toggler_disable{background:var(--c4)}
 [dir] .ui_toggler.ui_toggler_disable::after{border:1px solid var(--c4)}
 .ui_rmenu_item,.ui_rmenu_subitem{color:var(--c1)}
@@ -1414,7 +1416,7 @@ div[style$="1);"],div[style$="2);"],div[style$="3);"],div[style$="4);"],div[styl
 [dir] .groups_edit_event_log_page .groups_edit_event_log_items_wrap .groups_edit_event_log_item_wrap:hover>.groups_edit_event_log_item_main,[dir] .groups_edit_event_log_page .groups_edit_event_log_items_wrap .groups_edit_event_log_item_wrap_focused{background-color:#6464641f}
 [dir] .group_info_row::before{filter:var(--magic)}
 [dir] .groups_menu_item_placeholder{background-color:#6464641f!important;filter:var(--magic)brightness(.5)}
-[dir] #mail_box_editable{background:#6464641f;border: 1px solid var(--c3)}
+[dir] #mail_box_editable{background:#6464641f;border:1px solid var(--c3);color:#aaa}
 [dir] .datepicker_text {background-color:#0000;color:#ccc;filter:var(--magic)brightness(.7)}
 [dir] .datepicker_control{border:1px solid var(--c3)}
 [dir] .groups_create_box .groups_create_box_title{color:var(--c2)}
