@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210604.23.27
+@version        20210605.4.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1149,7 +1149,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .post_replies_header{border-top:1px solid var(--c3)!important}
 .deep_active .replies .replies_wrap_deep .replies_deep_collapse::before,.deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_deep_collapse::before,.deep_active.wall_module .replies .replies_wrap_deep .replies_deep_collapse::before,.deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_deep_collapse::before{background-color:#6464642b!important}
 .replies_deep_collapse_icon{filter:var(--magic)brightness(3)saturate(.5)}
-.box_no_buttons[style*="0);"],.box_no_buttons[style*="1);"],.box_no_buttons[style*="2);"],.box_no_buttons[style*="3);"],.box_no_buttons[style*="4);"],.box_no_buttons[style*="5);"],.box_no_buttons[style*="6);"],.box_no_buttons[style*="7);"],.box_no_buttons[style*="8);"],.box_no_buttons[style*="9);"],.box_no_buttons[style$="1);"],.box_no_buttons[style$="2);"],.box_no_buttons[style$="3);"],.box_no_buttons[style$="4);"],.box_no_buttons[style$="5);"],.box_no_buttons[style$="6);"],.box_no_buttons[style$="7);"],.box_no_buttons[style$="8);"],.box_no_buttons[style$="9);"],._post[style$="1);"],._post[style$="2);"],._post[style$="3);"],._post[style$="4);"],._post[style$="5);"],._post[style$="6);"],._post[style$="7);"],._post[style$="8);"],._post[style$="9);"],._post[style$="0);"],.feed_row[style$="1);"],.feed_row[style$="2);"],.feed_row[style$="3);"],.feed_row[style$="4);"],.feed_row[style$="5);"],.feed_row[style$="6);"],.feed_row[style$="7);"],.feed_row[style$="8);"],.feed_row[style$="9);"],.feed_row[style$="0);"],.wall_post_cont[style$="1);"],.wall_post_cont[style$="2);"],.wall_post_cont[style$="3);"],.wall_post_cont[style$="4);"],.wall_post_cont[style$="5);"],.wall_post_cont[style$="6);"],.wall_post_cont[style$="7);"],.wall_post_cont[style$="8);"],.wall_post_cont[style$="9);"],.wall_post_cont[style$="0);"]{background-color:#6464641f!important}
+div[style$="1);"],div[style$="2);"],div[style$="3);"],div[style$="4);"],div[style$="5);"],div[style$="6);"],div[style$="7);"],div[style$="8);"],div[style$="9);"],div[style$="0);"]{background-color:#6464641f!important}
 
 /* настройки */
 .settings_separated_row_iconed.icon_type_clock:before,.settings_separated_row_iconed.icon_type_email:before,.settings_separated_row_iconed.icon_type_ienable:before,.settings_separated_row_iconed.icon_type_isounds:before,.settings_separated_row_iconed.icon_type_itexts:before{background-color:#333333}
