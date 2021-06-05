@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210605.19.37
+@version        20210605.20.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2318,8 +2318,8 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .article_layer:not(.article_dark){background-color:#000000f2!important}
 [dir] .article_layer .article{background:none!important}
 
-[dir] .article_layer p,[dir] .article_layer ol,[dir] .article_layer ul,[dir] .article_layer blockquote{transition:color .3s}
-[dir] .article_layer p:hover,[dir] .article_layer ol:hover,[dir] .article_layer ul:hover,[dir] .article_layer blockquote:hover{color:#bbb!important}
+[dir] .article_layer p,[dir] .article_layer ol,[dir] .article_layer ul,[dir] .article_layer blockquote,[dir] .article > figure figcaption:not(.article_ed__figcaption){transition:color .3s;color:#999}
+[dir] .article_layer p:hover,[dir] .article_layer ol:hover,[dir] .article_layer ul:hover,[dir] .article_layer blockquote:hover,[dir] .article > figure:hover figcaption:not(.article_ed__figcaption){color:#bbb!important}
 
 [dir] .article_view>figure[data-type="101"] img{transition:opacity .7s}
 [dir] .article_view>figure[data-type="101"]:not(:hover) img{opacity:.5}
