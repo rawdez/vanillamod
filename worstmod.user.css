@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210605.20.7
+@version        20210606.6.6
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1757,68 +1757,69 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .ui_crumb_count{color:var(--c1)}
 
 [dir] #layer_bg{background:#0000004d!important}
-.ap_layer_wrap .ap_layer__content{background:#000000bf!important}
-.audio_pl_snippet2{background-color:#00000040!important}
-.audio_pl_snippet2 .audio_pl_snippet__header{border:none!important}
-.ap_layer_wrap .audio_pl_snippet2 .audio_pl_snippet__header{background:#0000004d}
-.audio_pl_snippet2 .audio_pl_snippet__info_title{color:#bbb;font-size:17px!important;font-weight:400}
-.audio_pl_snippet2 .audio_pl_snippet__info_title:hover{color:#eee}
-.audio_pl_snippet2 .audio_pl_snippet__artist_link,.audio_pl_attach_preview .audio_pl_attach_preview__title{color:var(--c2)}
+[dir] .ap_layer_wrap .ap_layer__content{background:#000000bf!important}
+[dir] .audio_pl_snippet2{background-color:#00000040!important}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__header{border:none!important}
+[dir] .ap_layer_wrap .audio_pl_snippet2 .audio_pl_snippet__header{background:#0000004d}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__info_title{color:#bbb;font-size:17px!important;font-weight:400}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__info_title:hover{color:#eee}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__artist_link,[dir] .audio_pl_attach_preview .audio_pl_attach_preview__title{color:var(--c2)}
 [dir] .audio_pl_attach_preview{border:1px solid var(--c3)}
-.audio_pl_snippet2 .audio_pl_snippet__artist_link:hover{color:#ccc}
-.audio_pl_snippet2 .audio_shuffle_all_button,.audio_pl_snippet2 .audio_pl_snippet__more_btn{color:var(--c2)}
-.audio_pl_snippet2 .audio_shuffle_all_button:hover,.audio_pl_snippet2 .audio_pl_snippet__more_btn:hover{background-color:#0000;color:var(--c1)}
-.audio_pl_snippet2 .audio_shuffle_all_button:before,[dir] .audio_playlist_page .AudioPlaylistSnippet .ActionButton--shuffle::before{filter:var(--magic)saturate(.2)!important}
-.audio_pl_snippet2 .audio_shuffle_all_button:hover:before,[dir] .audio_playlist_page .AudioPlaylistSnippet .ActionButton--shuffle:hover::before{filter:var(--magic)brightness(1.4)saturate(.2)!important}
-.audio_pl_snippet2 .audio_pl_snippet__more_btn:before{filter:var(--magic)brightness(.7)saturate(.4)!important}
-.audio_pl_snippet2 .audio_pl_snippet__more_btn:hover:before{filter:var(--magic)saturate(.4)!important}
-.ap_layer .audio_pl_snippet2 .audio_pl_snippet__action_btn_more{z-index:1}
-.audio_pl_snippet_play{color:#090909}
-.audio_pl_snippet_play::before,.audio_pl_snippet_shuffle{filter:invert(.9)hue-rotate(180deg)}
-.audio_pl_snippet_shuffle:hover{filter:invert(.9)hue-rotate(180deg)brightness(2)saturate(.6)}
-.audio_pl_snippet2 .audio_pl_snippet__description,.audio_pl_snippet2 .audio_pl_snippet__info_author .group_link{color:#ccc}
-.audio_pl_snippet2 .audio_pl_snippet__stats{color:#555;transition:color .5s}
-.audio_pl_snippet2 .audio_pl_snippet__stats:hover{color:#bbb}
-.audio_pl_snippet2 .audio_pl_snippet__cover{background:#00000080}
-.audio_pl_snippet__action_btn{font-size:0!important}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__artist_link:hover{color:#ccc}
+[dir] .audio_pl_snippet2 .audio_shuffle_all_button,[dir] .audio_pl_snippet2 .audio_pl_snippet__more_btn{color:var(--c2)}
+[dir] .audio_pl_snippet2 .audio_shuffle_all_button:hover,[dir] .audio_pl_snippet2 .audio_pl_snippet__more_btn:hover{background-color:#0000;color:var(--c1)}
+[dir] .audio_pl_snippet2 .audio_shuffle_all_button:before,[dir] .audio_playlist_page .AudioPlaylistSnippet .ActionButton--shuffle::before{filter:var(--magic)saturate(.2)!important}
+[dir] .audio_pl_snippet2 .audio_shuffle_all_button:hover:before,[dir] .audio_playlist_page .AudioPlaylistSnippet .ActionButton--shuffle:hover::before{filter:var(--magic)brightness(1.4)saturate(.2)!important}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__more_btn:before{filter:var(--magic)brightness(.7)saturate(.4)!important}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__more_btn:hover:before{filter:var(--magic)saturate(.4)!important}
+[dir] .ap_layer .audio_pl_snippet2 .audio_pl_snippet__action_btn_more{z-index:1}
+[dir] .audio_pl_snippet_play{color:#090909}
+[dir] .audio_pl_snippet_play::before,[dir] .audio_pl_snippet_shuffle{filter:invert(.9)hue-rotate(180deg)}
+[dir] .audio_pl_snippet_shuffle:hover{filter:invert(.9)hue-rotate(180deg)brightness(2)saturate(.6)}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__description,[dir] .audio_pl_snippet2 .audio_pl_snippet__info_author .group_link{color:#ccc}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__stats{color:#555;transition:color .5s}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__stats:hover{color:#bbb}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__cover{background:#00000080}
+[dir] .audio_pl_snippet__action_btn{font-size:0!important}
 
-.audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_add,.audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_listen,.audio_pl_snippet2 .audio_pl_snippet__action_btn{padding:0 22px 0 22px!important}
-.audio_pl_snippet2 .audio_pl_snippet__actions,.ap_layer_wrap .audio_pl_snippet2 .audio_pl_snippet__actions{min-width:25%;position:absolute;bottom:18px;right:0px}
+[dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_add,[dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_listen,.audio_pl_snippet2 .audio_pl_snippet__action_btn{padding:0 22px 0 22px!important}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__actions,.ap_layer_wrap .audio_pl_snippet2 .audio_pl_snippet__actions{min-width:25%;position:absolute;bottom:18px;right:0px}
 
 [dir] .audio_pl_snippet2.audio_pl_snippet_small:not(.audio_pl__owned) .audio_pl_snippet__info{padding:12px 5px}
 [dir] .ap_layer_wrap .audio_pl__has_shuffle .audio_pl_snippet__shuffle_all:hover{background-color:#0000!important}
-.ap_layer_wrap .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;position:absolute;top:100px;right:150px;height:36px;width:36px}
-.ap_layer_wrap .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__actions{min-width:10%}
-.ap_layer_wrap .audio_pl_snippet2.audio_pl__owned.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{right:112px}
-.post .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;height:0px;width:36px;top:-58px;left:314px;padding:0;margin:0}
-.post .audio_pl_snippet2.audio_pl__owned.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{left:361px}
-.post .copy_quote .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{left:301px}
-.im-mess .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;height:0px;width:36px;top:-58px;left:236px;padding:0;margin:0}
-.im-mess .audio_pl_snippet2.audio_pl__owned.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{left:281px}
-.post .audio_pl_snippet2 .audio_pl_snippet__info_line_small{max-width:250px}
-.post .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_title{max-width:250px}
-.im-mess .audio_pl_snippet2 .audio_pl_snippet__info_title,.im-mess .audio_pl_snippet2 .audio_pl_snippet__info_line_small{max-width:160px}
-.im-mess .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__info_title,.im-mess .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__info_line_small{max-width:200px}
-.im-mess .post .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_title,.im-mess .post .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_line_small{max-width:134px}
-.im-mess .post .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__info_line_small,.im-mess .post .audio_pl_snippet2.audio_pl__owned.audio_pl_snippet_small .audio_pl_snippet__info_title,.im-mess .post .audio_pl_snippet2.audio_pl__owned.audio_pl_snippet_small .audio_pl_snippet__info_line_small{max-width:174px}
-.replies_wrap_deep .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_title_row,.replies_wrap_deep .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_line_small{max-width:234px}
-.replies_wrap_deep .audio_pl_snippet2.audio_pl__owned.audio_pl_snippet_small .audio_pl_snippet__info_title_row,.replies_wrap_deep .audio_pl_snippet2.audio_pl__owned.audio_pl_snippet_small .audio_pl_snippet__info_line_small{max-width:282px}
-.search_results .post_info .audio_pl_snippet2:last-child{margin-bottom:0px}
-.audio_pl_snippet2.audio_pl__owned:not(.audio_pl_snippet_small) .audio_pl_snippet__action_btn.audio_pl_snippet__action_btn_listen{padding:0!important;left:38px}
+[dir] .ap_layer_wrap .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;position:absolute;top:100px;right:150px;height:36px;width:36px}
+[dir] .ap_layer_wrap .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__actions{min-width:10%}
+[dir] .ap_layer_wrap .audio_pl_snippet2.audio_pl__owned.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{right:112px}
+[dir] .post .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;height:0px;width:36px;top:-58px;left:314px;padding:0;margin:0}
+[dir] .post .audio_pl_snippet2.audio_pl__owned.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{left:361px}
+[dir] .post .copy_quote .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{left:301px}
+[dir] .im-mess .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;height:0px;width:36px;top:-58px;left:236px;padding:0;margin:0}
+[dir] .im-mess .audio_pl_snippet2.audio_pl__owned.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{left:281px}
+[dir] .post .audio_pl_snippet2 .audio_pl_snippet__info_line_small{max-width:250px}
+[dir] .post .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_title{max-width:250px}
+[dir] .im-mess .audio_pl_snippet2 .audio_pl_snippet__info_title,[dir] .im-mess .audio_pl_snippet2 .audio_pl_snippet__info_line_small{max-width:160px}
+[dir] .im-mess .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__info_title,[dir] .im-mess .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__info_line_small{max-width:200px}
+[dir] .im-mess .post .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_title,[dir] .im-mess .post .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_line_small{max-width:134px}
+[dir] .im-mess .post .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__info_line_small,[dir] .im-mess .post .audio_pl_snippet2.audio_pl__owned.audio_pl_snippet_small .audio_pl_snippet__info_title,[dir] .im-mess .post .audio_pl_snippet2.audio_pl__owned.audio_pl_snippet_small .audio_pl_snippet__info_line_small{max-width:174px}
+[dir] .replies_wrap_deep .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_title_row,[dir] .replies_wrap_deep .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_line_small{max-width:234px}
+[dir] .replies_wrap_deep .audio_pl_snippet2.audio_pl__owned.audio_pl_snippet_small .audio_pl_snippet__info_title_row,[dir] .replies_wrap_deep .audio_pl_snippet2.audio_pl__owned.audio_pl_snippet_small .audio_pl_snippet__info_line_small{max-width:282px}
+[dir] .search_results .post_info .audio_pl_snippet2:last-child{margin-bottom:0px}
+[dir] .audio_pl_snippet2.audio_pl__owned:not(.audio_pl_snippet_small) .audio_pl_snippet__action_btn.audio_pl_snippet__action_btn_listen{padding:0!important;left:38px}
 
-.audio_pl_attach_preview .audio_pl_attach_preview__cover{filter:none!important}
-.audio_pl_attach_preview{background:#0000001a!important}
-.audio_pl_attach_preview__title{color:var(--c2)!important}
-.medadd_h{color:#ccc}
+[dir] .audio_pl_attach_preview .audio_pl_attach_preview__cover{filter:none!important}
+[dir] .audio_pl_attach_preview{background:#0000001a!important}
+[dir] .audio_pl_attach_preview__title{color:var(--c2)!important}
+[dir] .medadd_h{color:#ccc}
+[dir] .medadd_c_linkhead{color:var(--c1)}
 
-.audio_artist_snippet{background:#00000080}
-.audio_artist_snippet__info{border-color:var(--c3)}
-.audio_artist_snippet__cover{filter:invert(1)saturate(0)contrast(1.5);opacity:.5;transition:opacity .5s}
-.audio_artist_snippet:hover .audio_artist_snippet__cover{opacity:1}
+[dir] .audio_artist_snippet{background:#00000080}
+[dir] .audio_artist_snippet__info{border-color:var(--c3)}
+[dir] .audio_artist_snippet__cover{filter:invert(1)saturate(0)contrast(1.5);opacity:.5;transition:opacity .5s}
+[dir] .audio_artist_snippet:hover .audio_artist_snippet__cover{opacity:1}
 
-.app_widget_list_cover_button .flat_button:hover{background:#2f922fb3;color:#fff}
+[dir] .app_widget_list_cover_button .flat_button:hover{background:#2f922fb3;color:#fff}
 
-.wl_post .audio_artist_snippet:last-child{margin-bottom:6px}
+[dir] .wl_post .audio_artist_snippet:last-child{margin-bottom:6px}
 [dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .thumbed_link:last-child{margin-bottom:-4px}
 
 /* подкасты */
@@ -1837,37 +1838,37 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .podcast_snippet .audio_podcast ._audio_player__place::before,[dir] .PodcastEpisodeLayer__header .audio_podcast ._audio_player__place::before{background-color:#6666661f!important}
 
 /* аудиозапись доступна только по подписке */
-.audio_subscription_popup .box_controls,.audio_subscription_popup .box_layout .box_title_wrap.box_grey{background-color:#000000ab!important}
-.audio_claim_popup .audio_claim_popup__close{filter:var(--magic)}
-.audio_subscription_popup__image{filter:invert(.9)hue-rotate(180deg)var(--magic)}
-.audio_subscription_popup__image-wrap{border:4px solid #353535;background:none}
-.audio_claim_popup .audio_claim_popup__title,.audio_subscription_popup__title{color:var(--c1)}
-.audio_subscription_popup__caption{color:#dadada}
-.audio_subscription_popup .box_layout,.audio_subscription_popup .box_layout .box_title{background:none!important}
-.audio_claim_popup{background-image:none!important}
-.audio_claim_popup:before{position:absolute;display:block;content:' ';top:54px;left:184px;height:90px;width:90px;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2284%22%20height%3D%2284%22%20viewBox%3D%220%200%2084%2084%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Epromo_library%3C%2Ftitle%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Ccircle%20fill%3D%22%23528BCC%22%20cx%3D%2242%22%20cy%3D%2242%22%20r%3D%2242%22%2F%3E%3Cpath%20d%3D%22M51.902%2063.985C51.607%2065.328%2050.64%2066%2049%2066H35c-1.64%200-2.607-.672-2.902-2.015.186.01.375.015.569.015h18.666c.194%200%20.383-.005.57-.015zm3.742-4.095C55.066%2061.297%2053.784%2062%2051.8%2062H32.2c-1.984%200-3.266-.703-3.844-2.11.52.073%201.068.11%201.644.11h24c.576%200%201.125-.037%201.644-.11zM24%2028c0-4%202-6%206-6h24c4%200%206%202%206%206v24c0%204-2%206-6%206H30c-4%200-6-2-6-6V28zm22%202c-4%200-4%200-4%204v8s-.84-1-3-1c-2.76%200-5%202.24-5%205s2.24%205%205%205%205-2.24%205-5V36c0-2%200-2%202-2%204%200%204%200%204-2s0-2-4-2z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:0px 0px;filter:invert(.85)hue-rotate(180deg)var(--magic)}
-.popup_box_container .box_layout{background-color:#000000ab}
-.box_title_wrap,.box_title,.box_controls{background:none;border:none!important}
-.audio_subscription_popup .box_body b,.popup_box_container .box_body b{color:var(--c1)}
-.audio_subscription_popup .box_body,.popup_box_container .box_body{color:#AAA}
+[dir] .audio_subscription_popup .box_controls,[dir] .audio_subscription_popup .box_layout .box_title_wrap.box_grey{background-color:#000000ab!important}
+[dir] .audio_claim_popup .audio_claim_popup__close{filter:var(--magic)}
+[dir] .audio_subscription_popup__image{filter:invert(.9)hue-rotate(180deg)var(--magic)}
+[dir] .audio_subscription_popup__image-wrap{border:4px solid #353535;background:none}
+[dir] .audio_claim_popup .audio_claim_popup__title,[dir] .audio_subscription_popup__title{color:var(--c1)}
+[dir] .audio_subscription_popup__caption{color:#dadada}
+[dir] .audio_subscription_popup .box_layout,[dir] .audio_subscription_popup .box_layout .box_title{background:none!important}
+[dir] .audio_claim_popup{background-image:none!important}
+[dir] .audio_claim_popup:before{position:absolute;display:block;content:' ';top:54px;left:184px;height:90px;width:90px;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2284%22%20height%3D%2284%22%20viewBox%3D%220%200%2084%2084%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Epromo_library%3C%2Ftitle%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Ccircle%20fill%3D%22%23528BCC%22%20cx%3D%2242%22%20cy%3D%2242%22%20r%3D%2242%22%2F%3E%3Cpath%20d%3D%22M51.902%2063.985C51.607%2065.328%2050.64%2066%2049%2066H35c-1.64%200-2.607-.672-2.902-2.015.186.01.375.015.569.015h18.666c.194%200%20.383-.005.57-.015zm3.742-4.095C55.066%2061.297%2053.784%2062%2051.8%2062H32.2c-1.984%200-3.266-.703-3.844-2.11.52.073%201.068.11%201.644.11h24c.576%200%201.125-.037%201.644-.11zM24%2028c0-4%202-6%206-6h24c4%200%206%202%206%206v24c0%204-2%206-6%206H30c-4%200-6-2-6-6V28zm22%202c-4%200-4%200-4%204v8s-.84-1-3-1c-2.76%200-5%202.24-5%205s2.24%205%205%205%205-2.24%205-5V36c0-2%200-2%202-2%204%200%204%200%204-2s0-2-4-2z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:0px 0px;filter:invert(.85)hue-rotate(180deg)var(--magic)}
+[dir] .popup_box_container .box_layout{background-color:#000000ab}
+[dir] .box_title_wrap,.box_title,[dir] .box_controls{background:none;border:none!important}
+[dir] .audio_subscription_popup .box_body b,[dir] .popup_box_container .box_body b{color:var(--c1)}
+[dir] .audio_subscription_popup .box_body,[dir] .popup_box_container .box_body{color:#AAA}
 
 /* фикс для удалённых и копирайченных треков */ 
-.audio_row.audio_deleted .audio_play_wrap, .audio_row.claimed .audio_play_wrap{opacity:.25}
-.audio_row.audio_claimed .audio_row__performer_title,.audio_row.audio_claimed .audio_row__play_btn, .audio_row.audio_moder_claimed .audio_row__performer_title, .audio_row.audio_moder_claimed .audio_row__play_btn,.audio_w_covers .audio_row.audio_claimed .audio_row__cover_icon{opacity:.25!important}
+[dir] .audio_row.audio_deleted .audio_play_wrap,[dir] .audio_row.claimed .audio_play_wrap{opacity:.25}
+[dir] .audio_row.audio_claimed .audio_row__performer_title,[dir] .audio_row.audio_claimed .audio_row__play_btn,[dir] .audio_row.audio_moder_claimed .audio_row__performer_title,[dir] .audio_row.audio_moder_claimed .audio_row__play_btn,[dir] .audio_w_covers .audio_row.audio_claimed .audio_row__cover_icon{opacity:.25!important}
 
 /* фикс периодического глюка с цветом фона текущего трека во всплывающем плеере */  
-.audio_row.audio_row_current:hover{background-color:#1D1D1D}
+[dir] .audio_row.audio_row_current:hover{background-color:#1D1D1D}
 
 /* фикс цвета названий в плеере */ 
-.audio_row .audio_row__performers a,.audio_page_player .audio_page_player_title_performer{color:var(--c1)}
-.audio_w_covers .audio_row .audio_row__performers a{color:#777}
-.audio_w_covers .audio_row .audio_row__performers a:hover{color:#aaa}
+[dir] .audio_row .audio_row__performers a,[dir] .audio_page_player .audio_page_player_title_performer{color:var(--c1)}
+[dir] .audio_w_covers .audio_row .audio_row__performers a{color:#777}
+[dir] .audio_w_covers .audio_row .audio_row__performers a:hover{color:#aaa}
 
 /* Удалить все мои аудиозаписи за последнюю неделю */
-.audio_row__deleted .audio_row__action.audio_row__action_delete._audio_row__action_delete{filter:brightness(.5)saturate(10)hue-rotate(140deg)!important}
+[dir] .audio_row__deleted .audio_row__action.audio_row__action_delete._audio_row__action_delete{filter:brightness(.5)saturate(10)hue-rotate(140deg)!important}
 
 /* фикс аудиозаписи друзей в плеере */
-.audio_page_layout .audio_friends_fixed{top:110px}
+[dir] .audio_page_layout .audio_friends_fixed{top:110px}
 
 /* создание беседы */
 [dir] .im-create .ui_search{background-color:#0009!important}
@@ -1998,12 +1999,12 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .scroll_fix_wrap.fixed.layer_wrap.wk_dark{background:#0000004d}
 
 /* настройки отправки коммента */
-.reply_submit_hint_title{color:var(--c2)}
-.reply_submit_hint_wrap b{color:var(--c1)}
+[dir] .reply_submit_hint_title{color:var(--c2)}
+[dir] .reply_submit_hint_wrap b{color:var(--c1)}
 [dir] .reply_submit_hint_opts .radiobtn.on::before{filter:var(--magic)brightness(.7)saturate(.6)}
 [dir] .reply_submit_hint_opts .radiobtn:not(.on)::before{filter:invert(1)hue-rotate(180deg)var(--magic)}
-.reply_submit_hint_opts .radiobtn{color:#999}
-.tt_w.tt_default_right{background-color:#000000e6!important}
+[dir] .reply_submit_hint_opts .radiobtn{color:#999}
+[dir] .tt_w.tt_default_right{background-color:#000000e6!important}
 [dir] .pv_reply_form .media_selector .ms_item_more{filter:var(--magic)}
 
 /* дата сообщений в диалогах */
@@ -2038,68 +2039,68 @@ body{--page-block-shadow:none}
 [dir] .im-page_classic .im-page--chat-header-in{box-shadow:none!important;border-bottom:none!important}
 [dir] .im-page_classic.im-page .im-page--chat-body-wrap-inner{border-color:#0000!important;padding-bottom:0!important;padding-top:0!important}
 [dir] .im-chat-input .im-chat-input--txt-wrap{background:#0000!important;border:none!important}
-.im-page .im-page--header-inner{border:none}
-.im-mess.im-mess_light{background-color:var(--c5)}
-.im-chat-input--txt-wrap._im_text_wrap{background-color:#0000;border:none;margin-bottom:0px;top:4px}
-.im-page--header-inner{background-color:#000000b3!important}
-.im-page.im-page_classic .im-page--header-chat{border-top:17px solid #000000b3!important;border-bottom:1px solid #111}
-.im-page a.im-page--back-button{padding-right:0px}
-.ui_actions_menu._ui_menu,.ui_actions_menu._ui_menu:hover,.ms_items_more._more_items{background-color:#000000b3!important}
-.ui_actions_menu._ui_menu::after{border-color:#0000 #0000 #000c #0000 !important}
-.ui_actions_menu_top .ui_actions_menu._ui_menu:before{border-color:var(--c3) #0000 #0000 #0000!important}
-.ui_actions_menu_top .ui_actions_menu._ui_menu:after{border-color:#000c #0000 #0000 #0000!important}
-.im-chat-input.clear_fix.im-chat-input_classic._im_chat_input_parent{background:rgba(0,0,0,/*[[headopaque]]*/)!important;box-shadow:none!important;padding:0px 0px 0px 24px!important}
-.im-page.im-page_classic .im-page--chat-input{border:1px solid #111!important}
-.im_editable.im-chat-input--text._im_text{background-color:#0000!important}
-.im-mess .im-mess--post{border-left:2px solid var(--c3)!important}
+[dir] .im-page .im-page--header-inner{border:none}
+[dir] .im-mess.im-mess_light{background-color:var(--c5)}
+[dir] .im-chat-input--txt-wrap._im_text_wrap{background-color:#0000;border:none;margin-bottom:0px;top:4px}
+[dir] .im-page--header-inner{background-color:#000000b3!important}
+[dir] .im-page.im-page_classic .im-page--header-chat{border-top:17px solid #000000b3!important;border-bottom:1px solid #111}
+[dir] .im-page a.im-page--back-button{padding-right:0px}
+[dir] .ui_actions_menu._ui_menu,[dir] .ui_actions_menu._ui_menu:hover,[dir] .ms_items_more._more_items{background-color:#000000b3!important}
+[dir] .ui_actions_menu._ui_menu::after{border-color:#0000 #0000 #000c #0000 !important}
+[dir] .ui_actions_menu_top .ui_actions_menu._ui_menu:before{border-color:var(--c3) #0000 #0000 #0000!important}
+[dir] .ui_actions_menu_top .ui_actions_menu._ui_menu:after{border-color:#000c #0000 #0000 #0000!important}
+[dir] .im-chat-input.clear_fix.im-chat-input_classic._im_chat_input_parent{background:rgba(0,0,0,/*[[headopaque]]*/)!important;box-shadow:none!important;padding:0px 0px 0px 24px!important}
+[dir] .im-page.im-page_classic .im-page--chat-input{border:1px solid #111!important}
+[dir] .im_editable.im-chat-input--text._im_text{background-color:#0000!important}
+[dir] .im-mess .im-mess--post{border-left:2px solid var(--c3)!important}
 [dir] .im-chat-input .im-chat-input--attach-label,[dir] .im-chat-input .im-chat-input--send,[dir] .im-page--header-call .ui_actions_menu_icons,[dir] .im-page--header-more .ui_actions_menu_icons,[dir] .ui_actions_menu_item.im-action::before,.im-mess--reply,.im-mess--fav{filter:var(--magic)}
 [dir] .im-page--redesigned-menu .ui_actions_menu_sep{border-color:var(--c3)}
 [dir] .ui_actions_menu_item.im-action{filter:brightness(1.2)saturate(.8)}
 [dir] .sticker_hints_tt{border:1px solid var(--c3)}
 [dir] .sticker_hints_arrow {border:none;background-color:#000c;filter:var(--magic)saturate(.8)brightness(.8)}
 
-#im_history_search{background-color:#0000!important}
-.im-chat-input.clear_fix:not(.im-chat-input_classic)._im_chat_input_parent{background-color:#000000b3!important;border-top:1px solid #111!important;padding:0px 0px 0px 10px!important;}
-.im-page--chat-input._im_chat_input_w{background:#0000001a!important}
-.im-page:not(.im-page_classic) .im-page--dialogs-footer{height:46px}
-.nim-dialog.nim-dialog_unread-out .nim-dialog--unread,.nim-dialog .nim-dialog--unread, .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread{background-color:var(--c1)!important}
-.im-chat-input .im-chat-input--attach{bottom:initial!important}
-.im-chat-input .im-chat-input--smile-wrap{bottom:initial!important}
-.im-chat-input .im-chat-input--smile-wrap .emoji_smile{padding:6px 6px 0px 3px}
-.im-chat-input ::-webkit-scrollbar{width:6px!important;height:6px!important}
-.im-chat-input .im-chat-input--textarea:not(.im-chat-input_open-keyboard):not(.im-chat-input_close-keyboard):not(.im-chat-input--textarea_show-templates) .im-chat-input--text{padding-right:66px}
-.im-chat-input .im-chat-input--selector{bottom:initial!important;top:3px}
-.im-chat-input .im-chat-input--send{bottom:initial!important;top:-3px}
+[dir] #im_history_search{background-color:#0000!important}
+[dir] .im-chat-input.clear_fix:not(.im-chat-input_classic)._im_chat_input_parent{background-color:#000000b3!important;border-top:1px solid #111!important;padding:0px 0px 0px 10px!important;}
+[dir] .im-page--chat-input._im_chat_input_w{background:#0000001a!important}
+[dir] .im-page:not(.im-page_classic) .im-page--dialogs-footer{height:46px}
+[dir] .nim-dialog.nim-dialog_unread-out .nim-dialog--unread,[dir] .nim-dialog .nim-dialog--unread, .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread{background-color:var(--c1)!important}
+[dir] .im-chat-input .im-chat-input--attach{bottom:initial!important}
+[dir] .im-chat-input .im-chat-input--smile-wrap{bottom:initial!important}
+[dir] .im-chat-input .im-chat-input--smile-wrap .emoji_smile{padding:6px 6px 0px 3px}
+[dir] .im-chat-input ::-webkit-scrollbar{width:6px!important;height:6px!important}
+[dir] .im-chat-input .im-chat-input--textarea:not(.im-chat-input_open-keyboard):not(.im-chat-input_close-keyboard):not(.im-chat-input--textarea_show-templates) .im-chat-input--text{padding-right:66px}
+[dir] .im-chat-input .im-chat-input--selector{bottom:initial!important;top:3px}
+[dir] .im-chat-input .im-chat-input--send{bottom:initial!important;top:-3px}
 
 [dir] .im-chat-history-resize._im_chat_resize{background:rgba(0,0,0,/*[[headopaque]]*/)!important;top:1px;border-bottom:13px solid rgba(0,0,0,/*[[headopaque]]*/)}
 [dir] .im-chat-history-resize._im_chat_resize[style*="height: 0px"]{border-bottom:none}
 [dir] .im-page.im-page_classic .im-chat-history-resize--track{border-bottom:1px solid #000000d9!important;filter:brightness(.4);transition:filter 0.5s}
 [dir] .im-page.im-page_classic .im-chat-history-resize--track:hover{filter:brightness(1)}
 
-.mv_chat_message_text a{color:var(--c1)}
-.mv_comments_summary{color:var(--c2);font-size:14px;transition:color .3s}
-.mv_comments_summary:hover{color:#aaa}
+[dir] .mv_chat_message_text a{color:var(--c1)}
+[dir] .mv_comments_summary{color:var(--c2);font-size:14px;transition:color .3s}
+[dir] .mv_comments_summary:hover{color:#aaa}
 
 /* чат фикс кнопки отправки и прикрепления */
-.ms_items_more_wrap.ms_items_more_wrap_vector .ms_item_more_label{margin-left:6px;margin-top:-16px}
-.ms_items_more_wrap.shown .ms_item_more{filter:var(--magic)}
+[dir] .ms_items_more_wrap.ms_items_more_wrap_vector .ms_item_more_label{margin-left:6px;margin-top:-16px}
+[dir] .ms_items_more_wrap.shown .ms_item_more{filter:var(--magic)}
 [dir] .ms_items_more{border:1px solid var(--c4)}
 [dir] .media_selector .ms_items_more .ms_item:hover{background-color:#6464641f}
 [dir] .im-chat-input .im-chat-input--send{margin-top:-9px!important}
-.im-chat-input--tt{background-color:#000000e6}
+[dir] .im-chat-input--tt{background-color:#000000e6}
 
 /* фикс значков страница проверена и отключен звук в диалогах */
-.im-page.im-page_classic .im-page--header-chat_verified .im-page--header-verified{right:0px;bottom:12px}
-.im-page:not(.im-page_classic) .im-page--header-chat_verified .im-page--header-verified{bottom:22px;margin-left:-20px}
-.verified_tt{background-color:#000000e6}
-.verified_tt_header{background:none}
-.verified_tt_header a{color:var(--c2)}
-.verified_tt_header a:hover{color:var(--c1)}
-.im-page.im-page_classic .im-page--peer-online_mute-only.im-page--peer-online_mute{position:absolute;right:-16px;top:17px}
-.verified_tt_text{color:#777}
+[dir] .im-page.im-page_classic .im-page--header-chat_verified .im-page--header-verified{right:0px;bottom:12px}
+[dir] .im-page:not(.im-page_classic) .im-page--header-chat_verified .im-page--header-verified{bottom:22px;margin-left:-20px}
+[dir] .verified_tt{background-color:#000000e6}
+[dir] .verified_tt_header{background:none}
+[dir] .verified_tt_header a{color:var(--c2)}
+[dir] .verified_tt_header a:hover{color:var(--c1)}
+[dir] .im-page.im-page_classic .im-page--peer-online_mute-only.im-page--peer-online_mute{position:absolute;right:-16px;top:17px}
+[dir] .verified_tt_text{color:#777}
 
 /* ошибка отправки сообщения */
-.im-page.im-page_classic .im-mess.im-mess_unread.im-mess_failed:not(.im-mess_fwd) .im-mess--marker{filter:invert(.85)hue-rotate(185deg)saturate(2.5)brightness(.6)!important}
+[dir] .im-page.im-page_classic .im-mess.im-mess_unread.im-mess_failed:not(.im-mess_fwd) .im-mess--marker{filter:invert(.85)hue-rotate(185deg)saturate(2.5)brightness(.6)!important}
 
 /* перетягивание картинки в чат */
 [dir] .im-dropbox{background:#000000e6!important}
@@ -2131,22 +2132,22 @@ body{--page-block-shadow:none}
 [dir] .cal_table .month_arr .arr{filter:brightness(.7)}
 
 /* календарь в поиске чата и таймере постов */
-.im-search--date-input .cal_table .past_day.day{color:#777}
-.im-search--date-input .cal_table .past_day.day.hover{background-color:#444;color:#DDD}
-.im-search--date-input .cal_table .today.day{color:#D5D5D5}
-.im-search--date-input .cal_table .today.day.hover,.medadd_c_timer .cal_table .today.day.hover{background-color:#333;color:#FFF}
-.im-search--date-input .cal_table .day.sel{background-color:#424242;border:1px solid #5A5A5A;color:#CCC}
-.im-search--date-input .cal_table .day.sel.hover{background-color:#333;border:1px solid #5A5A5A}
-.im-search--date-input .cal_table .day{color:#AAA}
-.im_cal_clear{background:#000000a8}
+[dir] .im-search--date-input .cal_table .past_day.day{color:#777}
+[dir] .im-search--date-input .cal_table .past_day.day.hover{background-color:#444;color:#DDD}
+[dir] .im-search--date-input .cal_table .today.day{color:#D5D5D5}
+[dir] .im-search--date-input .cal_table .today.day.hover,[dir] .medadd_c_timer .cal_table .today.day.hover{background-color:#333;color:#FFF}
+[dir] .im-search--date-input .cal_table .day.sel{background-color:#424242;border:1px solid #5A5A5A;color:#CCC}
+[dir] .im-search--date-input .cal_table .day.sel.hover{background-color:#333;border:1px solid #5A5A5A}
+[dir] .im-search--date-input .cal_table .day{color:#AAA}
+[dir] .im_cal_clear{background:#000000a8}
 [dir] .im_cal_clear_lnk{color:#4D4D4D}
-.medadd_c_timer .cal_table .past_day.day.hover{background-color:#0000;color:#222}
-.medadd_c_timer .cal_table .day.hover{background-color:#424242;color:var(--c1)}
-.medadd_c_timer .cal_table .day.sel.hover{background-color:#333;border:1px solid #5A5A5A;color:#CCC}
-.medadd_c_timer .cal_table .day.sel{background-color:var(--c1);color:#111}
+[dir] .medadd_c_timer .cal_table .past_day.day.hover{background-color:#0000;color:#222}
+[dir] .medadd_c_timer .cal_table .day.hover{background-color:#424242;color:var(--c1)}
+[dir] .medadd_c_timer .cal_table .day.sel.hover{background-color:#333;border:1px solid #5A5A5A;color:#CCC}
+[dir] .medadd_c_timer .cal_table .day.sel{background-color:var(--c1);color:#111}
 
 /* календарь событий */
-.bd_header_info,.bd_header_month{color:var(--c1)}
+[dir] .bd_header_info,[dir] .bd_header_month{color:var(--c1)}
 [dir] .bd_arrow{background-color:#0000;filter:invert(.95)hue-rotate(180deg)var(--magic)brightness(1.2)}
 [dir] .bd_arrow:hover{background-color:#6464641f;filter:invert(.95)hue-rotate(180deg)var(--magic)brightness(1.5)}
 [dir] .bd_day_head{background-color:var(--c2);border-bottom:1px solid var(--c2);color:#333}
