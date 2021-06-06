@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210606.23.27
+@version        20210606.23.57
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -312,6 +312,8 @@ EOT;
 
 
 @advanced dropdown darkasshit "Цвета темнее:" {
+darkasshitoff "выкл" <<<EOT .audio_layer_rows_cont{background-color:rgba(0,0,0,.5)!important}
+ EOT;
 darkasshiton "чутка" <<<EOT /* цвета темы потемнее *\/
 :root{--c3:#191919!important;--c4:#0A0A0A!important;--c5:#070707!important;--c9:rgba(20,20,20,.85)!important}
 .top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(0.7)opacity(1)}
@@ -327,8 +329,6 @@ darkasfuck "для совсем сумрачных личностей" <<<EOT /*
 #pv_box{background:var(--c4)}
 #pv_box .pv_reply_form_wrap{margin-top:0px!important;border-top:1px solid var(--c3)}
 .audio_layer_rows_cont{background-color:#0000!important}
- EOT;
-darkasshitoff "выкл" <<<EOT .audio_layer_rows_cont{background-color:rgba(0,0,0,.5)!important}
  EOT;
 }
 
@@ -841,7 +841,7 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 /* тёмные полосы прокрутки */
 *::-webkit-scrollbar {width:15px!important;height:10px!important;background:var(--c9)!important;border:1px solid var(--c3)!important}
 *::-webkit-scrollbar-thumb{min-height:28px!important;background:var(--c7)!important}
-html{scrollbar-color:#6464641f var(--c9)!important}
+html{scrollbar-color:#ffffff26 var(--c3)!important;scrollbar-width:thin}
 [dir] .ui_scroll_default_theme > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:var(--c2);border-radius:2px;opacity:.5;filter:saturate(.3)}
 [dir] .ui_scroll_default_theme.ui_scroll_scrolled > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:var(--c1)}
 
