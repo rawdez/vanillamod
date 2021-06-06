@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210606.23.57
+@version        20210607.0.17
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -698,6 +698,8 @@ nomoneysendfuckall "нафиг денежные переводы и воспом
 ==/UserStyle== */
 @-moz-document regexp('https?://vk.com/(?!dev/|dev$|apps.act=manage|about$|about.z=|jobs$|jobs.w=|products$|messenger$|ads$|ads/|adscreate$|adsmarket.act=|ads.act=).*'){
 
+/* тёмные полосы прокрутки */
+*{scrollbar-color:#ffffff26 var(--c3)!important;scrollbar-width:thin}
 div::-webkit-scrollbar{width:12px!important;height:12px!important}
 div::-webkit-scrollbar-thumb:hover{background:#444!important}
 :not(div)::-webkit-scrollbar{width:10px!important;height:10px!important}
@@ -705,7 +707,11 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 :not(div)::-webkit-scrollbar-thumb:hover{background:#444!important}
 :not(div)::-webkit-scrollbar-corner,::-webkit-scrollbar-track{background:#090909!important}
 :not(div)::-webkit-scrollbar-track-piece{background:#171717!important}
-
+*::-webkit-scrollbar{width:15px!important;height:10px!important;background:var(--c9)!important;border:1px solid var(--c3)!important}
+*::-webkit-scrollbar-thumb{min-height:28px!important;background:var(--c7)!important}
+[dir] .ui_scroll_default_theme > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:var(--c2);border-radius:2px;opacity:.5;filter:saturate(.3)}
+[dir] .ui_scroll_default_theme.ui_scroll_scrolled > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:var(--c1)}
+    
 /*[[main-color]]*/
 
 /* цвет выделения */
@@ -837,13 +843,6 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 .subheader,h4.subheader{color:#777}
 [dir] .msg,[dir] .box_msg,[dir] .box_msg_gray{background-color: #6464641f;color:#aaa;border:none}
 .wall_module .wd_lnk{color:#666}
-
-/* тёмные полосы прокрутки */
-*::-webkit-scrollbar {width:15px!important;height:10px!important;background:var(--c9)!important;border:1px solid var(--c3)!important}
-*::-webkit-scrollbar-thumb{min-height:28px!important;background:var(--c7)!important}
-html{scrollbar-color:#ffffff26 var(--c3)!important;scrollbar-width:thin}
-[dir] .ui_scroll_default_theme > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:var(--c2);border-radius:2px;opacity:.5;filter:saturate(.3)}
-[dir] .ui_scroll_default_theme.ui_scroll_scrolled > .ui_scroll_bar_container > .ui_scroll_bar_outer > .ui_scroll_bar_inner{background:var(--c1)}
 
 /* выбрать цвет индикатора онлайн */
 .feed_asc_user_thumb._online.online:not(.mobile)::after,.post_image._online.online:not(.mobile)::after, .wddi_thumb._online.online:not(.mobile)::after,.nim-peer.online:not(.mobile)::after, .chat_tab_imgcont.online:not(.mobile)::after,span.fc_contact_photo.online:not(.mobile)::after, .online:not(.mobile)::after,.ts_contact_photo.online:not(.mobile)::after, .ui_zoom_wrap .online:not(.mobile)::after,.im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,.group_u_photo._online.online:not(.mobile)::after{background-color:/*[[onlinecolorselect]]*/!important}
