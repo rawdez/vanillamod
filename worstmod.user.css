@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210607.15.7
+@version        20210607.16.17
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1158,6 +1158,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .deep_active .replies .replies_wrap_deep .replies_deep_collapse::before,.deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_deep_collapse::before,.deep_active.wall_module .replies .replies_wrap_deep .replies_deep_collapse::before,.deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_deep_collapse::before{background-color:#6464642b!important}
 .replies_deep_collapse_icon{filter:var(--magic)brightness(3)saturate(.5)}
 div[style$="1);"],div[style$="2);"],div[style$="3);"],div[style$="4);"],div[style$="5);"],div[style$="6);"],div[style$="7);"],div[style$="8);"],div[style$="9);"],div[style$="0);"]{background-color:#6464641f!important}
+input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],input[style$="5);"],input[style$="6);"],input[style$="7);"],input[style$="8);"],input[style$="9);"],input[style$="0);"],textarea[style$="1);"],textarea[style$="2);"],textarea[style$="3);"],textarea[style$="4);"],textarea[style$="5);"],textarea[style$="6);"],textarea[style$="7);"],textarea[style$="8);"],textarea[style$="9);"],textarea[style$="0);"]{background-color:var(--c2)!important;opacity:.3}
 
 /* настройки */
 .settings_separated_row_iconed.icon_type_clock:before,.settings_separated_row_iconed.icon_type_email:before,.settings_separated_row_iconed.icon_type_ienable:before,.settings_separated_row_iconed.icon_type_isounds:before,.settings_separated_row_iconed.icon_type_itexts:before{background-color:#333333}
@@ -1447,6 +1448,9 @@ div[style$="1);"],div[style$="2);"],div[style$="3);"],div[style$="4);"],div[styl
 [dir] .pg_lnk_sel .pg_in{border-bottom:2px solid var(--c2);color:var(--c1)}
 [dir] .no_posts_cover{filter:invert(.93)hue-rotate(180deg)var(--magic)}
 [dir] .mail_box_single_ava .mail_box_single_ava_img{background-color:#0000}
+[dir] #bt_reply_form_wrap .reply_box .submit_post_field,[dir] #bt_reply_form_wrap .reply_box .ph_input{padding-left:20px!important}
+[dir] #bt_reply_form_wrap .bp_post.bp_selected.bp_animated{background-color:var(--c2)!important}
+[dir] .bp_post.bp_selected{transition:background-color 2s ease-in-out,border-color 2s ease-in-out!important}
 
 /* друзья в паблосе */
 .group_friends_image{border:1px solid #222;width:25px;height:25px;margin-left:3px}
@@ -1565,18 +1569,18 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 
 /* фикс ссылок в постах и комментах */
 [dir] .thumbed_link{background-color:#0000!important}
-.thumbed_link__thumb+.thumbed_link__label,[dir] .DonutLinkSnippet{background:#0000004d!important}
-.thumbed_link__title{color:var(--c2);transition:color .7s}
-.thumbed_link:hover .thumbed_link__title{color:var(--c1)}
-.thumbed_link__subtitle{color:#aaa;transition:color .7s}
-.thumbed_link:hover .thumbed_link__subtitle{color:var(--c1)}
-.media_link.media_link--sized.media_link--photo,[dir] .thumbed_link:last-child,[dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes):not(.post--withActionStatusBar) .wall_text .thumbed_link:last-child{background:#0000!important}
+[dir] .thumbed_link__thumb+.thumbed_link__label,[dir] .DonutLinkSnippet{background:#0000004d!important}
+[dir] .thumbed_link__title{color:var(--c2);transition:color .7s}
+[dir] .thumbed_link:hover .thumbed_link__title{color:var(--c1)}
+[dir] .thumbed_link__subtitle{color:#aaa;transition:color .7s}
+[dir] thumbed_link:hover .thumbed_link__subtitle{color:var(--c1)}
+[dir] .media_link.media_link--sized.media_link--photo,[dir] .thumbed_link:last-child,[dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes):not(.post--withActionStatusBar) .wall_text .thumbed_link:last-child{background:#0000!important}
 [dir] .media_link__label{background:#0000004d!important;border:none}
 [dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes):not(.post--withActionStatusBar) .wall_text .media_link:last-child{background:#0000!important}
-.mail_link__title{color:var(--c2);transition:color .7s}
-.mail_link:hover .mail_link__title{color:var(--c1)}
-.mail_link{border-left:2px solid #292929;transition:border-left .7s}
-.mail_link:hover{border-left:2px solid var(--c1)}
+[dir] .mail_link__title{color:var(--c2);transition:color .7s}
+[dir] .mail_link:hover .mail_link__title{color:var(--c1)}
+[dir] .mail_link{border-left:2px solid var(--c2);transition:border-left .7s}
+[dir] .mail_link:hover{border-left:2px solid var(--c1)}
 [dir] .DonutLinkSnippet,[dir] .thumbed_link.page_media_wrap:last-child{margin-bottom:0!important}
 [dir] .DonutLinkSnippet--post .DonutLinkSnippet__title{color:var(--c2)}
 [dir] .DonutLinkSnippet--post .DonutLinkSnippet__preview::after{border:2px solid #FFF;filter:invert(.95)var(--magic)brightness(1.3)saturate(.4)}
