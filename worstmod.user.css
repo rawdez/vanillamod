@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210607.2.17
+@version        20210607.7.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1787,16 +1787,17 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .audio_pl_snippet2 .audio_pl_snippet__stats:hover{color:#bbb}
 [dir] .audio_pl_snippet2 .audio_pl_snippet__cover{background:#00000080}
 [dir] .audio_pl_snippet__action_btn{font-size:0!important}
-
+[dir] .audio_pl_snippet2 .audio_pl_snippet__actions{min-width:0%}
 [dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_add,[dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_listen,.audio_pl_snippet2 .audio_pl_snippet__action_btn{padding:0 22px 0 22px!important}
-[dir] .audio_pl_snippet2 .audio_pl_snippet__actions,.ap_layer_wrap .audio_pl_snippet2 .audio_pl_snippet__actions{min-width:25%;position:absolute;bottom:18px;right:0px}
+[dir] .audio_pl_snippet2 .audio_pl_snippet__actions,[dir] .ap_layer_wrap .audio_pl_snippet2 .audio_pl_snippet__actions{position:absolute;bottom:18px;right:0px}
+[dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__actions{padding-left:10px}
 
 [dir] .audio_pl_snippet2.audio_pl_snippet_small:not(.audio_pl__owned) .audio_pl_snippet__info{padding:12px 5px}
 [dir] .ap_layer_wrap .audio_pl__has_shuffle .audio_pl_snippet__shuffle_all:hover{background-color:#0000!important}
 [dir] .ap_layer_wrap .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;position:absolute;top:100px;right:150px;height:36px;width:36px}
 [dir] .ap_layer_wrap .audio_pl_snippet2.audio_pl__owned .audio_pl_snippet__actions{min-width:10%}
 [dir] .ap_layer_wrap .audio_pl_snippet2.audio_pl__owned.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{right:112px}
-[dir] .post .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;height:0px;width:36px;top:-58px;left:314px;padding:0;margin:0}
+[dir] .post .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;height:0px;width:36px;top:-57px;left:315px;padding:0;margin:0}
 [dir] .post .audio_pl_snippet2.audio_pl__owned.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{left:361px}
 [dir] .post .copy_quote .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{left:301px}
 [dir] .im-mess .audio_pl_snippet2.audio_pl__has_shuffle .audio_pl_snippet__shuffle_all{font-size:0;height:0px;width:36px;top:-58px;left:236px;padding:0;margin:0}
@@ -2000,6 +2001,9 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .im-page-pinned:hover .im-page-pinned--content,[dir] .im-page-pinned--date,[dir] .im-page .im-mess:hover .im-mess--text{color:#ccc}
 [dir] .im-mess._im_mess.im-mess_unread._im_mess_unread.im-mess_gift{background-color:#000000bf!important}
 [dir] .im-mess._im_mess.im-mess_gift{background-color:#00000080!important;border:1px #222 solid}
+[dir] .im-fwd .im-fwd--title-name{color:var(--c2)}
+[dir] .im-fwd{border-left:2px solid var(--c2)}
+[dir] .im-mess .im-mess--btn{color:var(--c1)}
 
 /* фон всплывающих наверх окон */
 [dir] .scroll_fix_wrap.fixed.layer_wrap.wk_dark{background:#0000004d}
