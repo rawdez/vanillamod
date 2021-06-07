@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210607.15.0
+@version        20210607.15.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2007,7 +2007,9 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .im-mess._im_mess.im-mess_unread._im_mess_unread.im-mess_gift{background-color:#000000bf!important}
 [dir] .im-mess._im_mess.im-mess_gift{background-color:#00000080!important;border:1px #222 solid}
 [dir] .im-fwd .im-fwd--title-name{color:var(--c2)}
+[dir] .im-fwd .im-fwd--date{color:var(--c1)}
 [dir] .im-fwd{border-left:2px solid var(--c2)}
+[dir] .im-fwd.im-fwd_msg .im-fwd--messages{color:#aaa}
 [dir] .im-mess .im-mess--btn{color:var(--c1)}
 [dir] .PopupHeader{background:#0000}
 [dir] .PopupHeader__title{color:var(--c1)}
