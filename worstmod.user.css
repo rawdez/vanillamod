@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210607.19.27
+@version        20210607.19.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2023,6 +2023,8 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .nim-dialog:not(.nim-dialog_deleted):hover .nim-dialog--preview > b,[dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered .nim-dialog--preview > b,[dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic .nim-dialog--preview > b{color:var(--c1)}
 [dir] .nim-dialog .nim-dialog--preview > b{color:var(--c2)}
 [dir] .im-create .im-creation--checkbox + .im-creation--label::before{filter:invert(.95)hue-rotate(180deg)var(--magic)brightness(.7)}
+[dir] .im-fwd .im-fwd--close{filter:var(--magic)}
+
 [dir] .ChatSettingsInfo{background:#0000;box-shadow:0 1px 0 var(--c3)}
 [dir] .EditableLabel:hover .EditableLabel__text{background:#6464641f}
 [dir] .EditableLabel .EditableLabel__text{color:var(--c1)}
