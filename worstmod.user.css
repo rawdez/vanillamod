@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210607.19.47
+@version        20210608.3.0
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2477,9 +2477,11 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 .emoji_tt_wrap.emoji_no_tabs.emoji_expanded.tt_up::after{border-color:#0000 #0000 var(--c4) #0000}
 .emoji_expand_shadow, .emoji_expand_shadow_top, .emoji_tabs_l_sc, .emoji_tabs_r_sc, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,.emoji_cats_title_helper:after{display:initial!important}
 .im_rc_emojibtn:active{background:var(--c5);border-radius:2px}
+[dir] .emoji_tabs{background:#0006}
 [dir] .emoji_tab:hover{background:#6464641f}
 [dir] .emoji_tt_wrap.tt_down::after{border-top-color:var(--c4)!important}
 [dir] .emoji_tt_wrap.tt_down::before{border-top-color:var(--c2)!important}
+[dir] .emoji_sticker_item.over,[dir] .emoji_sticker_item:hover{background:var(--c2)}
 
 /* инфа профиля */
 #page_info_wrap .page_top{padding-bottom:8px!important;border-bottom:1px solid #0000!important}
@@ -3070,6 +3072,7 @@ a .app_widget_tiles_title{color:#bbb}
 .token.token_selected .token_inner{background:var(--c3)!important}
 
 /* стикеры/подарки */
+[dir] .im_stickers_promo_banner,[dir] .im_stickers_bl_wrap{background:#0000}
 [dir] .im_stickers_store_wrap .ui_tabs_fixed .ui_tabs{background:rgba(0,0,0,/*[[headopaque]]*/)!important}
 [dir] .page_block .im_stickers_bl_wrap{background:#0000}
 [dir] .im_sticker_bl{background:#6464641f}
