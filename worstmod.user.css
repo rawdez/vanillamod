@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210608.21.33
+@version        20210608.21.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -833,7 +833,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] .page_name,[dir] h1.page_name,.module_header .header_label,[dir] h1,.page_block_header{color:#ddd}
 .current_text{color:#bbb}
 body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group_desc,.page_list_module .people_desc,.page_list_module .people_extra,.profile_info .label,[dir] .wall_post_text,[dir] .wall_reply_text,[dir] .flat_button.secondary,.page_counter .label,.ui_tabs .ui_tab,.ui_tab,.post_date .post_link:hover,ui_crumb{color:#999;transition:color .3s}
-[dir] .feed_row:hover .wall_post_text,[dir] .wall_module .reply:hover .wall_reply_text,.wall_module.wl_post:hover .wall_post_text{color:#ccc}
+[dir] .feed_row .post:hover .wall_post_text,[dir] .wall_module .reply:hover .wall_reply_text,.wall_module.wl_post:hover .wall_post_text{color:#ccc}
 .post_date .post_link{color:#888}
 .profile_info .labeled > a,[dir] a,.profile_label_more:hover,.profile_label_less:hover,.page_counter:hover .label,[dir] .box_title,b a,a b{color:var(--c1)}
 .profile_label_more,.profile_label_less,.module_body .people_cell_name{color:var(--c2)}
@@ -971,6 +971,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .flat_button.secondary.ui_load_more_btn._ui_load_more_btn{border:none}
 [dir] .flat_button.secondary.ui_load_more_btn._ui_load_more_btn:hover{background:var(--c1)!important;color:#111!important}
 [dir] .flat_button.button_disabled{color:#333!important;background:#6464641f!important}
+[dir] .button_action_light{color:#999}
+[dir] .button_action_light:hover{color:var(--c1)}
 
 /* делаем блоки чёрными и прозрачными */
 .page_block{background:rgba(0,0,0,/*[[opaque]]*/)!important;border-radius:4px;box-shadow:0 1px 0 0 #151515,0 0 0 1px #151515!important}
@@ -1108,7 +1110,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .ui_gallery.friends_recomm_gallery .wall_card__button::before{filter:brightness(.5)}
 [dir] .ui_gallery.friends_recomm_gallery .wall_card__button:hover::before{filter:brightness(.4)sepia(1)saturate(2)hue-rotate(180deg)var(--magic)}
 
-    
 /* вложенные комментики + нафиг собственную авку возле поля комментирования */
 .post_field_user_image{display:none}
 .tt_noappend .post_field_user_link._post_field_author{display:none}
