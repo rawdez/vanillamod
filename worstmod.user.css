@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210608.20.57
+@version        20210608.21.33
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -799,10 +799,10 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 .page_video_autoplay_tt.eltt_top.eltt_vis::after{border-color:#000000d9 #0000 #0000 #0000}
 .page_video_autoplay_tt.eltt_top.eltt_vis::before{border-color:var(--c3) #0000 #0000 #0000}
 .page_video_autoplay_tt_hide{transform:scale(.75)}
-[dir] .tt_default.tt_up::before{border-bottom-color:var(--c2)}
-[dir] .tt_default.tt_up::after{border-bottom-color:var(--c4)}
-[dir] .tt_default.tt_down::before{border-top-color:var(--c2)}
-[dir] .tt_default.tt_down::after{border-top-color:var(--c4)}
+[dir] .tt_default.tt_up::before{border-bottom-color:var(--c2)!important}
+[dir] .tt_default.tt_up::after{border-bottom-color:var(--c5)!important}
+[dir] .tt_default.tt_down::before{border-top-color:var(--c2)!important}
+[dir] .tt_default.tt_down::after{border-top-color:var(--c5)!important}
 [dir] .wall_tt .like_tt_bottom{background:#0006;border-top:none}
 [dir] .wall_tt .like_tt_bottom:hover{background:#6464641f;border-top:none}
 [dir] .wall_tt .like_tt_bottom a{color:var(--c2);transition:color .3s}
@@ -833,7 +833,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 [dir] .page_name,[dir] h1.page_name,.module_header .header_label,[dir] h1,.page_block_header{color:#ddd}
 .current_text{color:#bbb}
 body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group_desc,.page_list_module .people_desc,.page_list_module .people_extra,.profile_info .label,[dir] .wall_post_text,[dir] .wall_reply_text,[dir] .flat_button.secondary,.page_counter .label,.ui_tabs .ui_tab,.ui_tab,.post_date .post_link:hover,ui_crumb{color:#999;transition:color .3s}
-[dir] .feed_row .post:hover .wall_post_text,[dir] .wall_module .reply:hover .wall_reply_text,.wall_module.wl_post:hover .wall_post_text{color:#ccc}
+[dir] .feed_row:hover .wall_post_text,[dir] .wall_module .reply:hover .wall_reply_text,.wall_module.wl_post:hover .wall_post_text{color:#ccc}
 .post_date .post_link{color:#888}
 .profile_info .labeled > a,[dir] a,.profile_label_more:hover,.profile_label_less:hover,.page_counter:hover .label,[dir] .box_title,b a,a b{color:var(--c1)}
 .profile_label_more,.profile_label_less,.module_body .people_cell_name{color:var(--c2)}
@@ -971,8 +971,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .flat_button.secondary.ui_load_more_btn._ui_load_more_btn{border:none}
 [dir] .flat_button.secondary.ui_load_more_btn._ui_load_more_btn:hover{background:var(--c1)!important;color:#111!important}
 [dir] .flat_button.button_disabled{color:#333!important;background:#6464641f!important}
-[dir] .button_action_light{color:#999}
-[dir] .button_action_light:hover{color:var(--c1)}
 
 /* делаем блоки чёрными и прозрачными */
 .page_block{background:rgba(0,0,0,/*[[opaque]]*/)!important;border-radius:4px;box-shadow:0 1px 0 0 #151515,0 0 0 1px #151515!important}
@@ -1110,6 +1108,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .ui_gallery.friends_recomm_gallery .wall_card__button::before{filter:brightness(.5)}
 [dir] .ui_gallery.friends_recomm_gallery .wall_card__button:hover::before{filter:brightness(.4)sepia(1)saturate(2)hue-rotate(180deg)var(--magic)}
 
+    
 /* вложенные комментики + нафиг собственную авку возле поля комментирования */
 .post_field_user_image{display:none}
 .tt_noappend .post_field_user_link._post_field_author{display:none}
@@ -3157,6 +3156,8 @@ a .app_widget_tiles_title{color:#bbb}
 
 /* заголовки всплывающих ссылок */
 [dir] .mott_header,[dir] .promoted_post_tt .header,[dir] .verified_tt_header,[dir] .wall_tt .header{color:var(--c1)}
+[dir] .mott_text{color:#aaa}
+[dir] .mott_app{color:#7293b6;filter:var(--magic)}
 
 /* добавляем в ЧС */
 [dir] .settings_blb_row:last-child{border-bottom:none}
