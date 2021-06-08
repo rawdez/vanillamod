@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210608.21.37
+@version        20210609.2.57
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1348,6 +1348,11 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [dir] .page_upload_label{filter:var(--magic)saturate(.5)}
 [dir] .page_block .module:first-child{border:none}
 [dir] .page_actions_dd_label,[dir] .page_actions_header_inner{color:var(--c2)}
+[dir] .preq_tt::after{border-bottom-color:var(--c5)}
+[dir] .preq_tt::before{border-bottom-color:var(--c2)}
+[dir] .preq_tt{border:1px solid var(--c3)}
+[dir] .preq_wrap{background:#000000d9}
+[dir] .page_actions_info{color:#aaa}
 
 /* группы / паблосы */
 [dir] .page_photo.page_action_menu_groups .page_actions_separator{border-top:1px solid var(--c4)}
