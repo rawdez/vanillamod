@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210608.6.17
+@version        20210608.20.32
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1101,7 +1101,13 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .disabled.selector_container{background:#0002}
 [dir] .disabled.big.selector_container td.selector input{color:#555!important}
 [dir] .search_filters_minimized_text{filter:invert(.85)hue-rotate(180deg)var(--magic)saturate(.8)brightness(.8)}
-[dir] .ui_gallery_wall_cards .wall_card__title_link{color: var(--c1)}
+[dir] .ui_gallery_wall_cards .wall_card__title_link{color:var(--c1)}
+[dir] .ui_gallery_wall_cards .wall_card{background-color:#0006}
+[dir] .ui_gallery_wall_cards .wall_card_text_lines__line{color:#888;transition:color .3s}
+[dir] .ui_gallery_wall_cards .wall_card:hover .wall_card_text_lines__line{color:#ccc}
+[dir] .ui_gallery.friends_recomm_gallery .wall_card__button::before{filter:brightness(.5)}
+[dir] .ui_gallery.friends_recomm_gallery .wall_card__button:hover::before{filter:brightness(.4)sepia(1)saturate(2)hue-rotate(180deg)var(--magic)}
+
     
 /* вложенные комментики + нафиг собственную авку возле поля комментирования */
 .post_field_user_image{display:none}
