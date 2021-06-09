@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210609.21.57
+@version        20210609.22.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -807,17 +807,17 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 /* текст */
 [dir] .page_name,[dir] h1.page_name,.module_header .header_label,[dir] h1,.page_block_header{color:#ddd}
 .current_text{color:#bbb}
-body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group_desc,.page_list_module .people_desc,.page_list_module .people_extra,.profile_info .label,[dir] .wall_post_text,[dir] .wall_reply_text,[dir] .flat_button.secondary,.page_counter .label,.ui_tabs .ui_tab,.ui_tab,.post_date .post_link:hover,ui_crumb{color:#999;transition:color .3s}
+body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group_desc,.page_list_module .people_desc,.page_list_module .people_extra,.profile_info .label,[dir] .wall_post_text,[dir] .wall_reply_text,[dir] .flat_button.secondary,.page_counter .label,.ui_tabs .ui_tab,.ui_tab,ui_crumb{color:#999;transition:color .3s}
 [dir] .feed_row .post:hover .wall_post_text,[dir] .wall_module .reply:hover .wall_reply_text,.wall_module.wl_post:hover .wall_post_text{color:#ccc}
-.post_date .post_link{color:#888}
-.profile_info .labeled > a,[dir] a,.profile_label_more:hover,.profile_label_less:hover,.page_counter:hover .label,[dir] .box_title,b a,a b{color:var(--c1)}
+.post_date .post_link{color:#888;transition:color .3s}
+.profile_info .labeled > a,[dir] a,.profile_label_more:hover,.profile_label_less:hover,.page_counter:hover .label,[dir] .box_title,b a,a b{color:var(--c1);transition:color .3s}
 [dir] a:hover{color:#fff;text-decoration:underline;text-decoration-color:var(--c1)}
 .profile_label_more,.profile_label_less,.module_body .people_cell_name{color:var(--c2)}
 [dir] .mention_tt_row{color:#aaa}
 [dir] input.text,[dir] input.search,[dir] input.big_text,[dir] input.dark,[dir] .fakeinput,[dir] div[contenteditable="true"],[dir] textarea{background:#6464641f;border:none;color:#ccc}
-.subheader,h4.subheader{color:#777}
+.subheader,h4.subheader{color:#777;transition:color .3s}
 [dir] .msg,[dir] .box_msg,[dir] .box_msg_gray{background-color: #6464641f;color:#aaa;border:none}
-.wall_module .wd_lnk{color:#666}
+.wall_module .wd_lnk{color:#666;transition:color .3s}
 
 /* выбрать цвет индикатора онлайн */
 .feed_asc_user_thumb._online.online:not(.mobile)::after,.post_image._online.online:not(.mobile)::after, .wddi_thumb._online.online:not(.mobile)::after,.nim-peer.online:not(.mobile)::after, .chat_tab_imgcont.online:not(.mobile)::after,span.fc_contact_photo.online:not(.mobile)::after, .online:not(.mobile)::after,.ts_contact_photo.online:not(.mobile)::after, .ui_zoom_wrap .online:not(.mobile)::after,.im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,.group_u_photo._online.online:not(.mobile)::after,.MEAvatar__online{background-color:/*[[onlinecolorselect]]*/!important}
@@ -1103,7 +1103,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .wall_module .reply_box_photo,.deep_active .ms_item_more,.deep_active .reply_send_button::before{filter:var(--magic)}
 .progress_inline.replies_next_loader{filter:invert(.9)hue-rotate(.5turn)var(--magic)}
 .replies_next.replies_next_shown,.replies_next,.post_replies_reorder{color:#1c4873!important;filter:saturate(.4)brightness(1.7)var(--magic);transition:filter .5s}
-.replies_next.replies_next_shown:hover,.replies_next:hover,.post_replies_reorder:hover{filter:saturate(.3)brightness(2)var(--magic)}
+.replies_next.replies_next_shown:hover,.post_replies_reorder:hover{filter:saturate(.3)brightness(2)var(--magic)}
+.replies_next:hover{text-decoration-color:#1c4873!important}
 .deep_active.wall_module:not(.closed_comments) .post_replies_count,.deep_active:not(.closed_comments) .post_replies_count{color:var(--c1);border-top:1px solid var(--c9)}
 .deep_active .replies .reply_fakebox_wrap, .deep_active .replies .reply_text_wrapper, .deep_active.wall_module .replies .reply_fakebox_wrap, .deep_active.wall_module .replies .reply_text_wrapper, .deep_active.wall_module .wl_replies_block_wrap .reply_fakebox_wrap, .deep_active.wall_module .wl_replies_block_wrap .reply_text_wrapper, .deep_active .wl_replies_block_wrap .reply_fakebox_wrap, .deep_active .wl_replies_block_wrap .reply_text_wrapper{margin:4px 20px 2px}
 .reply_text_wrapper{border-top:2px solid #0000}
@@ -1269,7 +1270,8 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [dir] .PageActionCellSeparator{display:none}
 [dir] .PageActionCell__ddIcon svg{filter:var(--magic)}
 [dir] .PageActionCell__label,[dir] .profile_btn_cut_left,[dir] .Profile__callFriendButton-dd{color:#999}
-[dir] .PageActionCell:hover .PageActionCell__label{color:var(--c1)}
+[dir] .PageActionCell:hover .PageActionCell__label,[dir] .profile_more_info_link:hover span{color:var(--c1)}
+[dir] .PageActionCell:hover,[dir] .profile_more_info_link:hover{text-decoration:none}
 [dir] .profile_action_btn:hover .Profile__callFriendButton-dd,.PageActionCell--accent:hover .PageActionCell__label,.PageActionCell--accent:active .PageActionCell__label{color:var(--c1)}
 [dir] .PageActionCell--accent .PageActionCell__label{color:var(--c2)}
 [dir] .page_photo.ProfileActions .page_actions_expanded{margin-top:6px}
@@ -1342,7 +1344,7 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 .group_send_msg_status_block_status:hover{color:#ccc!important}
 [dir] .page_photo.page_action_menu_groups .page_actions_item::before{margin:6px 10px 0 0!important}
 [dir] .page_photo.page_action_menu_groups .page_actions_item{color:#999}
-[dir] .page_photo.page_action_menu_groups .page_actions_item:hover{color:var(--c1)}
+[dir] .page_photo.page_action_menu_groups .page_actions_item:hover{color:var(--c1);text-decoration:none}
 [dir] .page_photo.page_action_menu_groups .page_actions_item.group_send_msg_status_block:before,[dir] .page_photo.page_action_menu_groups .page_actions_item:before,[dir] .page_photo.page_action_menu_groups:hover .page_actions_item:before{filter:var(--magic)saturate(.5)}
 [dir] .ui_tab_default .ui_tab_plain{color:var(--c1);filter:none!important}
 .page_photo.page_action_menu_groups .group_notification_settings .group_notification_setting.on{background-color:var(--c4)}
@@ -1577,7 +1579,6 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .MiniAppsSnippet--small .MiniAppsSnippetFields,[dir] .medadd_c_linkcon .MiniAppsSnippetFields{background:#0000004d}
 [dir] .MiniAppsSnippetBottomFields__title{color:var(--c2)}
 [dir] .media_link__subtitle{color:var(--c2);transition:color .3s}
-[dir] .media_link__subtitle:hover{color:var(--c1)}
 [dir] .thumbed_link__thumb{background-color:#0000004d}
 
 /* фикс аудио раздела */
