@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210609.21.27
+@version        20210609.21.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2336,7 +2336,7 @@ body{--page-block-shadow:none}
 [dir] .ConvoMessage--unread{opacity:.3;transition:opacity 5s ease-in 7s;border-radius:0 4px 4px 0}
 [dir] .ConvoMessage--unread .AttachPhotos__img{border-radius:0 4px 4px 0}
 [dir] .ConvoMessage--unread:hover{opacity:1!important;transition:opacity .3s}
-[dir] .ConvoMessage--unread::after{top:4px;left:1px;bottom:5px;right:unset;width:3px;height:unset;border-radius:2px;background:var(--c2)}
+[dir] .ConvoMessage--unread::after{top:4px;left:1px;bottom:5px;right:unset;width:3px;height:unset;border-radius:0;box-shadow:none;background:var(--c2)}
 [dir] .FCWindow .AttachAudio__play{background:#0000}
 [dir] .FCWindow .AttachAudio__artist{color:var(--c2)}
 [dir] .FCWindow .AttachAudio__durationIn{color:#aaa}
