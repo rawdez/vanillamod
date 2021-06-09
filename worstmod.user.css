@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210610.1.7
+@version        20210610.2.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2084,7 +2084,6 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .reply_submit_hint_opts .radiobtn:not(.on)::before{filter:invert(1)hue-rotate(180deg)var(--magic)}
 [dir] .reply_submit_hint_opts .radiobtn{color:#999}
 [dir] .tt_w.tt_default_right{background-color:#000000e6!important}
-[dir] .pv_reply_form .media_selector .ms_item_more{filter:var(--magic)}
 
 /* дата сообщений в диалогах */
 [dir] .im-page .im-page--history-new-bar{background-color:var(--c3)!important;height:3px}
@@ -2532,7 +2531,7 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .box_body input.ui_search_field{filter:var(--magic)brightness(.7);color:#fff}
 [dir] .box_title_wrap.box_grey .box_title{color:var(--c1)}
 [dir] .photos_album_intro .photos_album_intro_desc{color:#999}
-[dir] .pv_comments_list .ms_item_more{filter:var(--magic)}
+[dir] .pv_comments_list .ms_item_more,[dir] .pv_reply_form .media_selector .ms_item_more{filter:var(--magic);padding:0 6px}
 
 /* рисовалка */
 [dir] .Spinner__svg{filter:var(--magic)brightness(.7)saturate(.7)}
