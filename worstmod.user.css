@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210609.2.57
+@version        20210609.21.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -253,11 +253,10 @@ lolsquareon "банзай" <<<EOT /* .............. <ОКВАДРАЧИВАНИ�
 [dir] #side_bar ol li .left_row .left_count_wrap{border-radius:2px!important}
 [dir] .top_notify_header .top_notify_header_label .top_notify_header_label_groups_counter{border-radius:2px}
 
-/* квадратный счётчик миничата *\/ 
-[dir] .chat_tab_counter{padding:0px 2px 0px 0px;border-radius:2px;font-weight:700;font-size:10px}
-
-/* квадратная иконка закрытия миничата *\/ 
-[dir] .chat_tab_close{width:12px;height:12px;border-radius:2px}
+/* миничат *\/ 
+[dir] .FCWindow{border-radius:2px}
+[dir] .MEAvatar__imgWrapper{clip-path:none!important}
+[dir] .MEAvatar,[dir] .FCThumb__unread,[dir] .UnreadCounter,[dir] .NoPhoto,[dir] .FCWindow__header{border-radius:2px}
 
 /* иконка видео и гифок *\/
 [dir] .video_module .video .page_video_play_icon,[dir] .video_thumb_play,[dir] .page_post_video_play_inline,[dir] .page_gif_play_icon,[dir] .page_gif_progress_icon{background:rgba(0,0,0,0.3) url("https://vk.com/images/icons/video_play_small.png?1") no-repeat scroll 11px 6px;width:36px;height:36px;border-radius:4px}
@@ -270,6 +269,7 @@ lolsquareon "банзай" <<<EOT /* .............. <ОКВАДРАЧИВАНИ�
 
 /* онлайн индикатор полоска под авкой вместо кружка *\/  
 [dir] .feed_asc_user_thumb._online.online:not(.mobile)::after,[dir] .post_image._online.online:not(.mobile)::after,[dir] .wddi_thumb._online.online:not(.mobile)::after,[dir] .nim-peer.online:not(.mobile)::after,[dir] .chat_tab_imgcont.online:not(.mobile)::after,[dir] span.fc_contact_photo.online:not(.mobile)::after,[dir] .online:not(.mobile)::after,[dir] .ts_contact_photo.online:not(.mobile)::after,[dir] .ui_zoom_wrap .online:not(.mobile)::after,[dir] .im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,[dir] .search_item_img_link._online:not(.mobile)::after,[dir] .group_u_photo._online.online:not(.mobile)::after,[dir] .Avatar--online:after{bottom:-3px;left:0%;height:2px;width:100%;border:0px;border-radius:0%;content:' ';display: block;filter:saturate(1.7)}
+.MEAvatar__online{bottom:-3px!important;left:0;;right:0;height:2px;width:100%;border-radius:0%;border:none}
 
 [dir] .friends_user_row .online:not(.mobile)::after,[dir] .fans_fan_ph.online:not(.mobile)::after{bottom:-4px;right:0%;border:0px;height:3px;width:100%;border-radius:0%}  
   
@@ -332,41 +332,16 @@ darkasfuck "для совсем сумрачных личностей" <<<EOT /*
  EOT;
 }
 
-@advanced dropdown fastchat "Миничат:" {
-fastchatblack "прозрачный*" <<<EOT /* миничат (прозрачный) *\/
-[dir] .fc_msgs_wrap,[dir] div.fc_editable,[dir] div.fc_editable:focus{background:#0000!important}
-[dir] div.fc_tab_txt{background:#0005!important}
-[dir] div.fc_tab_txt div.fc_editable:focus ~ .placeholder .ph_content,[dir] div.fc_editable ~ .placeholder .ph_content{color:#666;padding:0 0 1px 8px}
-[dir] #fc_contacts,.fc_tab_head{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border:none!important}
-[dir] .fc_tab{background:rgba(0,0,0,/*[[opaque]]*\/)!important;border-color:#222!important}
-.chats_sp.rb_resize{filter:brightness(0.2)!important}
-.fc_contacts{background:rgba(0,0,0,.9)!important}
-.fc_contact.clear_fix.fc_contact_over{background:#6464641F!important}
-[dir] .fc_tab_notify{background:#6464641f!important}
-.fc_msgs_unread{background-color:rgba(47,47,47,.3)!important}
-[dir] .fc_clist_filter_wrap{background:rgba(0,0,0,.9)!important}
-[dir] .fc_contact:hover{background-color:#6464641F!important}
-#chat_tab_wrap{border:1px solid #111}
-#chat_tab_wrap:hover{border-radius:3px;background-color:#6464641F!important;}
-.chat_onl_wrap{outline:none!important}
-[dir] .fc_tab_pointer::after{border-left-color:rgba(0,0,0,.9)!important}
+@advanced dropdown minichat "Миничат:" {
+minichatcool "прозрачный*" <<<EOT /* миничат (прозрачный) *\/
+[dir] .FCPanel{background:#0009}
+[dir] .FCComposer{background:#0006}
+[dir] .FCWindow{background:#000c}
 EOT;
 
-fastchatsimple "вариант для сумрачных личностей" <<<EOT /* миничат (непрозрачный) *\/
-[dir] .fc_tab_head{background-color:var(--c3)}
-[dir] a.fc_contact_over{background-color: var(--c3)}
-[dir] .fc_tab{border:none}
-[dir] div.fc_tab_txt{background-color:var(--c3)}
-[dir] .fc_tab_notify{background-color:var(--c3)}
-[dir] div.fc_tab_txt div.fc_editable:focus ~ .placeholder .ph_content,[dir] div.fc_editable ~ .placeholder .ph_content{color:#666;padding:0 0 1px 8px}
-.fc_clist_filter_wrap{background:var(--c4)!important}
-.fc_contacts,.fc_tab{background:var(--c4)!important}
-.fc_tab_pointer::before{border-left-color:var(--c3)}
-.fc_tab_pointer::after{border-left-color:var(--c4)}
-#chat_tab_wrap{border:1px solid #111;background-color:var(--c4)}
-#chat_tab_wrap:hover{border-radius:3px;background-color:var(--c3)!important;}
-.chat_onl_wrap{outline:none!important}
-[dir] .fc_tab_pointer::after{border-left-color:var(--c4)!important}
+minichatsimple "вариант для сумрачных личностей" <<<EOT /* миничат (непрозрачный) *\/
+[dir] .FCPanel,[dir] .FCComposer{background:var(--c4)}
+[dir] .FCWindow{background:var(--c3)}
 EOT;
 }
 
@@ -844,7 +819,7 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 .wall_module .wd_lnk{color:#666}
 
 /* выбрать цвет индикатора онлайн */
-.feed_asc_user_thumb._online.online:not(.mobile)::after,.post_image._online.online:not(.mobile)::after, .wddi_thumb._online.online:not(.mobile)::after,.nim-peer.online:not(.mobile)::after, .chat_tab_imgcont.online:not(.mobile)::after,span.fc_contact_photo.online:not(.mobile)::after, .online:not(.mobile)::after,.ts_contact_photo.online:not(.mobile)::after, .ui_zoom_wrap .online:not(.mobile)::after,.im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,.group_u_photo._online.online:not(.mobile)::after{background-color:/*[[onlinecolorselect]]*/!important}
+.feed_asc_user_thumb._online.online:not(.mobile)::after,.post_image._online.online:not(.mobile)::after, .wddi_thumb._online.online:not(.mobile)::after,.nim-peer.online:not(.mobile)::after, .chat_tab_imgcont.online:not(.mobile)::after,span.fc_contact_photo.online:not(.mobile)::after, .online:not(.mobile)::after,.ts_contact_photo.online:not(.mobile)::after, .ui_zoom_wrap .online:not(.mobile)::after,.im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,.group_u_photo._online.online:not(.mobile)::after,.MEAvatar__online{background-color:/*[[onlinecolorselect]]*/!important}
     
 /* левое меню */
 #side_bar ol{background:rgba(0,0,0,/*[[opaque]]*/);border:1px solid #111;border-radius:4px}
@@ -921,6 +896,8 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 
 /* фикс страница не найдена */
 body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 url(https://vk.com/images/error404.png) no-repeat 50% 50%;width:100%;height:100%;filter:saturate(0)brightness(.5)contrast(1.3)}
+[dir] .message_page_title{border-bottom:1px solid var(--c3)}
+[dir] .message_page_body{color:#ccc}
 
 /* мод закладок */
 [dir] .bookmarks_rows_group,[dir] .bookmarks_rows_user{padding:10px 5px 14px}
@@ -2170,7 +2147,7 @@ body{--page-block-shadow:none}
 [dir] .mv_comments_summary:hover{color:#aaa}
 
 /* чат фикс кнопки отправки и прикрепления */
-[dir] .ms_items_more_wrap.ms_items_more_wrap_vector .ms_item_more_label{margin-left:6px;margin-top:-16px}
+[dir] .im-page .ms_items_more_wrap.ms_items_more_wrap_vector .ms_item_more_label{margin-left:6px;margin-top:-16px}
 [dir] .ms_items_more_wrap.shown .ms_item_more{filter:var(--magic)}
 [dir] .ms_items_more{border:1px solid var(--c4)}
 [dir] .media_selector .ms_items_more .ms_item:hover{background-color:#6464641f}
@@ -2317,36 +2294,53 @@ body{--page-block-shadow:none}
 /* отступ показать все комментарии / сортировка комментов */
 [dir] .wr_header{margin:4px 0px 7px 0px}
 
-/* миничат */
-[dir] #fc_ctabs_cont{border:none}
-[dir] .chat_tab_counter{background-color:/*[[onlinecolorselect]]*/!important}
-[dir] .chat_onl{filter:var(--magic)brightness(.7)}
-[dir] .fc_contact_name{color:var(--c2)}
-[dir] .fc_tab_title {color:var(--c1)}
-[dir] .fc_contact:hover .fc_contact_name{color:var(--c1)}
-[dir] .fc_scrollbar_cont.scrollbar_cont{width:8px}
-[dir] .scrollbar_inner{background:var(--c1);opacity:.3}
-[dir] .scrollbar_inner:hover,[dir] .scrollbar_hovered{background:var(--c1);opacity:.4}
-[dir] .fc_contact_status{filter:var(--magic)brightness(.7)saturate(.7)}
-[dir] .fc_tab_notify{border:none}
-[dir] div.fc_tab_txt{border-top:none}
-[dir] .fc_tab_head{border:none}
-[dir] .fc_tab_attach .media_selector .ms_item_more{filter:var(--magic)}
-[dir] .chat_tab_wrap{padding:3px}
-[dir] .chat_tab_wrap:hover,[dir] .fc_clist_online::before{background-color:/*[[onlinecolorselect]]*/}
-[dir] .chats_sp{filter:var(--magic)brightness(.7)}
-[dir] div.fc_clist_filter_wrap{border-radius:0px!important;border:none}
-[dir] .fc_editable.dark{background:#0000!important}
-[dir] input#fc_clist_filter.dark{background:#0000!important;color:var(--c3)!important}
-[dir] div.fc_editable.dark[contenteditable="true"]{color:#999}
-[dir] .fc_msgs{border:1px solid var(--c3)}
-[dir] .fc_msgs_wrap:not(.fc_msgs_out) .fc_msgs{background:#6464641f!important}
-[dir] .fc_msgs_out .fc_msgs{background-color:#7771;border:1px solid var(--c3);color:var(--c1);opacity:.8}
-[dir] .fc_tab_pointer::before{border-left-color:var(--c2)!important}
-
-/* миничат - глюк при просмотре картинок*/
-[dir] .rb_box_wrap.fixed.rb_active.fc_tobottom.hidden{z-index:1!important}
-/*[[fastchat]]*/
+/* миничат 2 */
+[dir] .FCPanel__expanderIcon{fill:var(--c1)}
+[dir] .FCPanel{box-shadow:0 0 0 1px var(--c3)}
+[dir] .FCThumb{background:#0000}
+[dir] .FCThumb__link:hover{background:#6464641f}
+[dir] .FCThumb__link:hover .MEAvatar{box-shadow:0 0 0 2px var(--c1)}
+[dir] .FCThumb--expanded .FCThumb__close{background:#0000;color:var(--c1);box-shadow:none}
+[dir] .ConvoTitle{color:var(--c1)}
+[dir] .FCPanel__add,[dir] .FCPanel__addText{color:var(--c2)}
+[dir] .FCPanel__add:hover,[dir] .FCPanel__add:focus,[dir] .FCPanel__addText:hover,[dir] .FCPanel__addText:focus{background:#6464641f;color:var(--c1)}
+[dir] .FCThumb__unread{background:var(--c2);color:#111;top:1px;left:1px;min-width:12px;min-height:12px}
+[dir] .FCThumb__link:hover .FCThumb__unread{background:var(--c1)}
+[dir] .FCWindow{box-shadow:0 0 0 1px var(--c3);height:424px!important}
+[dir] .FCConvoList__virtual{height:354px!important}
+[dir] .FCWindow__title{color:var(--c1);padding:0 10px}
+[dir] .FCIconButton{color:var(--c1)}
+[dir] .FCWindow__header{border-bottom:none;height:24px;flex:0 0 28px}
+[dir] .FCWindow__footer{border-top:none}
+[dir] .UnreadCounter{background:var(--c2);color:#111}
+[dir] .FCConvoListItem__unreadOut{height:44px;width:2px;border-radius:2px;background:var(--c2);opacity:.3;transition:opacity .3s}
+[dir] .FCConvoListItem:hover .FCConvoListItem__unreadOut{opacity:1}
+[dir] .FCConvoListItem:hover .UnreadCounter,.FCConvoListItem[aria-selected="true"] .UnreadCounter{background:var(--c1);color:#111}
+[dir] .FCConvoListItem:hover,.FCConvoListItem[aria-selected="true"]{background:#6464641f}
+[dir] .FCConvo .MEAvatar{display:none}
+[dir] .FCConvo .FCWindow__title{padding:0 2px}
+[dir] .ConvoTitle__mutedIcon{color:var(--c2)}
+[dir] .ConvoHistory__separator{color:var(--c1)}
+[dir] .ConvoHistory__flow{padding:0 2px}
+[dir] .FCSearch__input{color:#ccc}
+[dir] .FCSearch__input::placeholder,[dir] .FCSearch{color:var(--c1)}
+[dir] .NoPhoto{color:#333;filter:invert(.95)hue-rotate(180deg)saturate(.2)}
+[dir] .MEAvatar__shadow{display:none}
+[dir] .FCWindow .ms_item_more_label{margin:0!important}
+[dir] .FCComposer__input.FCComposer__input.FCComposer__input{background:#0000}
+[dir] .FCComposer__button{color:var(--c1);filter:saturate(.5)}
+[dir] .ConvoMessage{background:#6464641f;color:#aaa}
+[dir] .ConvoMessage--out{background:#7771;color:var(--c1);opacity:.8}
+[dir] .ConvoMessage__date{color:var(--c2);background:#0000;transition:background .3s,color .3s}
+[dir] .ConvoMessage:hover .ConvoMessage__date{color:var(--c1)}
+[dir] .ConvoMessage--unread{opacity:.3;transition:opacity 5s ease-in 7s;border-radius:0 4px 4px 0}
+[dir] .ConvoMessage--unread .AttachPhotos__img{border-radius:0 4px 4px 0}
+[dir] .ConvoMessage--unread:hover{opacity:1!important;transition:opacity .3s}
+[dir] .ConvoMessage--unread::after{top:4px;left:1px;bottom:5px;right:unset;width:3px;height:unset;border-radius:2px;background:var(--c2)}
+[dir] .FCWindow .AttachAudio__play{background:#0000}
+[dir] .FCWindow .AttachAudio__artist{color:var(--c2)}
+[dir] .FCWindow .AttachAudio__durationIn{color:#aaa}
+/*[[minichat]]*/
 
 /* всплывающая плашка результата действий влево вверх */
 [dir] .top_result_baloon:not([style*="width:470px;"]){position:fixed;top:54px;left:10px;box-shadow:0px 2px 15px var(--c2);color:#CCC;opacity:.8}
