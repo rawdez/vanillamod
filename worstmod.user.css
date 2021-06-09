@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210609.22.47
+@version        20210609.22.51
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1162,13 +1162,6 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [dir] .selector_container table.selector_table{border:1px solid var(--c3)}
 [dir] .big.selector_container td.selector input{color:var(--c2)!important}
 
-/* фикс меню выбора действий  */ 
-[dir] .ui_actions_menu_item_sublist,[dir] .ui_actions_menu_item_sublist.ui_actions_menu_item,[dir] .ui_actions_menu_item_sublist:hover,[dir] .ui_actions_menu_item_sublist.ui_actions_menu_item:hover{color:#97C2F2!important;filter:brightness(.7)var(--magic)!important}
-[dir] .ui_actions_menu .ui_actions_menu_item_sublist.ui_actions_menu_item:not(:hover){color:#7496bd!important}
-[dir] .ui_actions_menu_item{color:var(--c2)!important}
-[dir] .ui_actions_menu_item:hover{color:var(--c1)!important;background:#6464641f!important}
-.ui_actions_menu_item.ui_actions_menu_item_lock .ui_actions_menu_item_lock_text{display:none}
-
 /* фотография не будет показываться в этом блоке */
 #profile_photos_about{background:#6464641f;border:1px solid var(--c3);color:#999;filter:none}
 #profile_photos_about::before{content:'';width:32px;height:32px;display:block;position:absolute;background:#0000 url("https://vk.com/images/icons/msg_info.png") no-repeat scroll 0px 0px;margin-left:-44px;margin-top:6px;filter:invert(.9)hue-rotate(180deg)brightness(1.5)var(--magic)}
@@ -1252,13 +1245,19 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [dir] .ListMultiSelectControl{filter:invert(.9)hue-rotate(180deg)var(--magic)saturate(.9)brightness(.8)}
 [dir] .post_action_btn.best_friends_only{color:var(--c1)}
 
+/* фикс меню выбора действий  */ 
+[dir] .ui_actions_menu_item_sublist,[dir] .ui_actions_menu_item_sublist.ui_actions_menu_item,[dir] .ui_actions_menu_item_sublist:hover,[dir] .ui_actions_menu_item_sublist.ui_actions_menu_item:hover{color:#97C2F2!important;filter:brightness(.7)var(--magic)!important}
+[dir] .ui_actions_menu .ui_actions_menu_item_sublist.ui_actions_menu_item:not(:hover){color:#7496bd!important}
+[dir] .ui_actions_menu_item{color:var(--c2)!important}
+[dir] .ui_actions_menu_item.ui_actions_menu_item_lock .ui_actions_menu_item_lock_text{display:none}
+[dir] a.ui_actions_menu_item:hover{color:var(--c1)!important;background:#6464641f!important;text-decoration:none}
+    
 /* меню редактирования фоток */
 [dir] #pv_more_acts_tt{background:#000000c1!important;border:1px solid var(--c4)!important}
 [dir] .pv_more_act_item{filter:brightness(.6)}
 [dir] .pv_more_act_item:hover{background:#6464641f!important;filter:none!important}
 .eltt.eltt_top.eltt_arrow_size_normal .eltt_arrow_back{border-top-color:#0000!important}
 .eltt.eltt_top.eltt_arrow_size_normal > .eltt_arrow_back .eltt_arrow{border-top-color:#000000c1!important}
-[dir] a.ui_actions_menu_item:hover{background:#6464641f!important}
 [dir] .ui_actions_menu._ui_menu{border-color:var(--c3)}
 [dir] .ui_actions_menu._ui_menu::before{border-bottom-color:var(--c3)}
 [dir] .ui_actions_menu._ui_menu:hover{box-shadow:none!important}
