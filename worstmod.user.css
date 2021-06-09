@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210609.21.47
+@version        20210609.21.57
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -811,6 +811,7 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 [dir] .feed_row .post:hover .wall_post_text,[dir] .wall_module .reply:hover .wall_reply_text,.wall_module.wl_post:hover .wall_post_text{color:#ccc}
 .post_date .post_link{color:#888}
 .profile_info .labeled > a,[dir] a,.profile_label_more:hover,.profile_label_less:hover,.page_counter:hover .label,[dir] .box_title,b a,a b{color:var(--c1)}
+[dir] a:hover{color:#fff;text-decoration:underline;text-decoration-color:var(--c1)}
 .profile_label_more,.profile_label_less,.module_body .people_cell_name{color:var(--c2)}
 [dir] .mention_tt_row{color:#aaa}
 [dir] input.text,[dir] input.search,[dir] input.big_text,[dir] input.dark,[dir] .fakeinput,[dir] div[contenteditable="true"],[dir] textarea{background:#6464641f;border:none;color:#ccc}
@@ -986,6 +987,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .wall_module .post_header .ui_actions_menu_icons,.wall_module .reply .reply_action{filter:var(--magic)brightness(.5)}
 [dir] .wall_module .copy_quote{border-left:2px solid var(--c3)}
 [dir] .wall_signed_by{color:#9abbe2;filter:brightness(.7)saturate(1.3)var(--magic)}
+[dir] .wall_signed_by:hover{text-decoration-color:#9abbe2}
 [dir] #wk_box{background:var(--c3)}
 [dir] .pv_white_bg{background:#0000}
 
