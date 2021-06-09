@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210609.22.57
+@version        20210610.0.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -869,6 +869,7 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 [dir] #stl_text{filter:var(--magic)saturate(.5)}
 
 /* правое меню */
+[dir] .ui_rmenu_item:hover,[dir] .ui_rmenu_subitem:hover{text-decoration:none}
 [dir] .ui_rmenu .ui_rmenu_item:hover,[dir] .ui_rmenu_item_sel,[dir] .ui_rmenu_item_sel:hover{background:#6464641f!important}
 [dir] .ui_rmenu .ui_rmenu_count,[dir] .ui_rmenu_count.ui_rmenu_count_grey{color:#111!important;background:var(--c2);transition:background .3s;border-radius:2px}
 [dir] .ui_rmenu .ui_rmenu_item:hover .ui_rmenu_count{color:#111!important;background:var(--c1)}
