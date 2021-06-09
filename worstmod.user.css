@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210610.0.27
+@version        20210610.1.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1443,6 +1443,20 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [dir] #bt_reply_form_wrap .reply_box .submit_post_field,[dir] #bt_reply_form_wrap .reply_box .ph_input{padding-left:20px!important}
 [dir] #bt_reply_form_wrap .bp_post.bp_selected.bp_animated{background-color:var(--c2)!important}
 [dir] .bp_post.bp_selected{transition:background-color 2s ease-in-out,border-color 2s ease-in-out!important}
+[dir] .checkbox{color:#999}
+[dir] .checkbox:hover{color:#ccc}
+[dir] .group_info_block.wiki .wk_edit_btn:hover{color:var(--c1);background:#6464641f!important}
+[dir] .wke_page_title_cont{background:#0000}
+[dir] .wke_bottom_fixed .box_controls,[dir] .wke_top_fixed .wke_controls{background:rgba(0,0,0,/*[[headopaque]]*/)!important}
+[dir] .wke_pcont{background:#0000}
+[dir] .wke_controls{background:#0000;border-bottom:none}
+[dir] .wke_b{filter:var(--magic)}
+[dir] #wke_controls a:hover{background-color:#2f445b}
+[dir] .pages_history_header_wrap{background:#0000;border-bottom:1px solid var(--c3)}
+[dir] .pages_history_row{border-bottom:1px solid var(--c3)}
+[dir] .pages_bottom_preview{border-top:1px solid var(--c3)}
+[dir] .tt_default.tt_right::before{border-left-color:var(--c2)}
+[dir] .tt_default.tt_right::after{border-left-color:var(--c5)}
 
 /* друзья в паблосе */
 .group_friends_image{border:1px solid #222;width:25px;height:25px;margin-left:3px}
@@ -1455,9 +1469,6 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 a.group_app_button,a.group_app_button_multi{filter:none!important;color:var(--c2)!important}
 a.group_app_button_multi{border-bottom:1px solid var(--c3)}
 .group_online_answer_status_title,.group_online_status_title{color:var(--c2)!important}
-
-/* кнопки редактора инфы паблоса */ 
-#wke_controls a:hover{background-color:#111}
   
 /* кнопка редактирования инфы паблоса */  
 .group_info_block.wiki .wk_edit_btn:hover{background:var(--c2);color:#111}
