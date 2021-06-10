@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210610.2.7
+@version        20210610.3.57
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2523,7 +2523,7 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .pv_comments{border-top:none;margin-top:4px}
 [dir] .pv_comments #wpe_text.dark{background:none!important;border:none!important;padding:0 22px 0 0!important}
 [dir] .pv_cont .pv_closed_commments_placeholder,[dir] .pv_cont .pv_no_commments_placeholder{filter:invert(.85)hue-rotate(180deg)var(--magic);color:#adbbce}
-[dir] #ui_albums_load_more.flat_button.ui_load_more_btn:hover{background:var(--c1)!important;border-top:1px solid #0000}
+[dir] #ui_albums_load_more.flat_button.ui_load_more_btn:hover{background:var(--c1)!important;border-top:none}
 [dir] .photos_container .photos_row{border:1px solid #0000}
 [dir] .photos_period_delimiter_fixed,[dir] .pva_period_fixed{background-color:rgba(0,0,0,/*[[headopaque]]*/)!important}
 [dir] .photos_album_reverse_btn .photos_album_reverse_icon{filter:invert(.9)hue-rotate(180deg)brightness(1.4)var(--magic)}
