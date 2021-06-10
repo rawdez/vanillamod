@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210610.3.57
+@version        20210610.16.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2634,6 +2634,16 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 .friends_dropdown__list_item .friends_dropdown__list_name,.friends_dropdown__list_item.system_message .add_term_tag{color:var(--c1)}
 .friends_dropdown__list_item .friends_dropdown__list_label{color:#B7B7B7}
 
+/* сжимаем поле под фоткой и закрытое поле комментирования */   
+[dir] .pv_bottom_info{padding:7px 10px 4px!important}
+[dir] #pv_box ._submit_post_box{border-top:none!important;margin:0px!important}
+[dir] #pv_box ._post_wrap:not(.reply_box_open) #pv_reply_form_wrap,[dir] #pv_box ._post_wrap:not(.reply_box_open) .reply_field_wrap{height:18px!important;min-height:28px!important}
+[dir] #pv_box ._post_wrap:not(.reply_box_open) .reply_text_wrapper{height:18px!important;border-top:none!important;margin:0px!important}
+[dir] #pv_box ._post_wrap:not(.reply_box_open) .reply_form{height:28px!important}
+[dir] #pv_box ._post_wrap:not(.reply_box_open) .reply_field.submit_post_field{padding:0px!important;height:18px!important;min-height:28px!important}
+[dir] #pv_box ._post_wrap:not(.reply_box_open) .placeholder,[dir] #pv_box ._post_wrap:not(.reply_box_open) .submit_post_field~.placeholder .ph_input{height:18px!important;padding:3px 0 0 6px!important;}
+[dir] #pv_box ._post_wrap:not(.reply_box_open) .ph_content{color:#474747!important}
+
 /* фикс белых авок */
 [src*="images/deactivated"],[style*="images/deactivated"]{filter:brightness(.454)contrast(3.2)saturate(0)!important} 
 [src*="images/camera"],[style*="images/camera"],[src*="images/community"],[style*="images/community"],[src*="icons/im_multichat"],[src*="icons//multichat"],[style*="images/lnkouter"],.photos_album_no_cover,.artist_no_image .audio_block_small_item__img,.friends_photo_img::after{filter:saturate(0)invert(1)!important}
@@ -3286,13 +3296,13 @@ a .app_widget_tiles_title{color:#bbb}
 /* просмотр архивных/отложенных постов */
 [dir] .ui_tabs_progress{filter:invert(.9)hue-rotate(180deg)var(--magic)}
 [dir] .ui_tab_group.ui_tab_group_sel::before{background:var(--c1)}
-.ui_tab_group:after{filter:brightness(.7)saturate(1.2)var(--magic)}
-.ui_tab_group_items{background:#000000d9;border:none}
-.wall_module .ui_tabs .ui_tab_group_sel{color:var(--c2)}
-.wall_module .ui_tabs .ui_tab_group_sel:hover{color:var(--c1)}
-.ui_tabs .ui_tab_group_item:hover{color:var(--c1)}
-.ui_tab_count{font-size:12px;color:var(--c1)}
-.wall_module .dld_text{color:var(--c8)}
+[dir] .ui_tab_group:after{filter:brightness(.7)saturate(1.2)var(--magic)}
+[dir] .ui_tab_group_items{background:#000000d9;border:none}
+[dir] .wall_module .ui_tabs .ui_tab_group_sel{color:var(--c2)}
+[dir] .wall_module .ui_tabs .ui_tab_group_sel:hover{color:var(--c1)}
+[dir] .ui_tabs .ui_tab_group_item:hover{color:var(--c1)}
+[dir] .ui_tab_count{font-size:12px;color:var(--c1)}
+[dir] .wall_module .dld_text{color:var(--c8)}
 
 /* управление архивом */
 [dir] .wk_wall_archive__tabs .ui_tabs{border-bottom:1px solid var(--c3)}
@@ -3303,25 +3313,25 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .wk_wall_archive__post--archived{background:var(--c5)!important}
 
 /* напоминалка блога в ленте */
-.feed_blog_reminder_large .feed_blog_reminder_title{color:var(--c1)}
-.feed_blog_reminder_large .feed_blog_reminder_link{color:var(--c2)}
-.feed_blog_reminder_large .feed_blog_reminder_text{color:#777}
+[dir] .feed_blog_reminder_large .feed_blog_reminder_title{color:var(--c1)}
+[dir] .feed_blog_reminder_large .feed_blog_reminder_link{color:var(--c2)}
+[dir] .feed_blog_reminder_large .feed_blog_reminder_text{color:#777}
 
 /* пост в ленте репостнутый кентом/подругой */
-.post_top_info_wall_like{box-shadow:0px 0px 0px 1px var(--c3),0px 1px 0px 0px var(--c3)}
-.post_top_info_wall_poll_vote{box-shadow:none}
+[dir] .post_top_info_wall_like{box-shadow:0px 0px 0px 1px var(--c3),0px 1px 0px 0px var(--c3)}
+[dir] .post_top_info_wall_poll_vote{box-shadow:none}
 
 /* иконка ссылки на telegram */
 a[href*="telegram.me"] .cell_img{filter:invert(.93)hue-rotate(180deg)saturate(.75)}
 
 /* Лента рекомендаций*/
-.feed_to_recomm .feed_to_recomm_title{color:var(--c1)}
-.feed_to_recomm .feed_to_recomm_desc{color:#888}
+[dir] .feed_to_recomm .feed_to_recomm_title{color:var(--c1)}
+[dir] .feed_to_recomm .feed_to_recomm_desc{color:#888}
 
 /* фикс счётчиков поста */ 
-.wall_module .post_share_icon,.wall_module .post_reply .post_reply_icon{filter:none!important;filter:var(--magic)brightness(2)saturate(.7)!important;opacity:.3}
-.wall_module .post_views_icon{filter:saturate(5)brightness(1.5)var(--magic)!important;opacity:.4}
-.wall_module ._count,.wall_module .post_share_count{color:var(--c2);font-weight:700!important}
+[dir] .wall_module .post_share_icon,.wall_module .post_reply .post_reply_icon{filter:none!important;filter:var(--magic)brightness(2)saturate(.7)!important;opacity:.3}
+[dir] .wall_module .post_views_icon{filter:saturate(5)brightness(1.5)var(--magic)!important;opacity:.4}
+[dir] .wall_module ._count,.wall_module .post_share_count{color:var(--c2);font-weight:700!important}
 
 /* фикс всплывающая инфа о посте */
 [dir] .eltt.eltt_bottom.eltt_arrow_size_mini > .eltt_arrow_back{border-bottom:6px solid var(--c2)}
@@ -3330,19 +3340,19 @@ a[href*="telegram.me"] .cell_img{filter:invert(.93)hue-rotate(180deg)saturate(.7
 [dir] .post_author_data .post_author_data_content{color:#aaa}
 
 /* настройки поста/опроса */
-.checkbox_pic.post_settings .post_settings_tooltip .checkbox{filter:var(--magic)brightness(.6)saturate(1.5)hue-rotate(330deg)!important}
-.post_edit_settings_wrap{border-left:1px solid #2D2D2D}
-.post_edit_settings_wrap::before{background:#2D2D2D}
-.post_settings.checkbox_pic{filter:brightness(.75)var(--magic)!important}
-.post_settings.checkbox_pic:hover{filter:brightness(.9)var(--magic)!important}
-.Post__copyrightButton{color:var(--c2)}
-.Post__copyrightButton:hover{color:var(--c1);background:var(--c4)}
-.Post__copyrightButton:before{filter:var(--magic)}
-.checkbox+.Post__copyrightButton:after{background:var(--c3)}
-.pv_cont .post_edit_settings_wrap{border-left:none}
-.pv_cont .post_edit_settings_wrap::before{display:none}
-.pv_cont .post_settings{margin:4px 0 0 0;width:16px}
-.pv_cont .media_selector{padding:0 12px 0 0}
+[dir] .checkbox_pic.post_settings .post_settings_tooltip .checkbox{filter:var(--magic)brightness(.6)saturate(1.5)hue-rotate(330deg)!important}
+[dir] .post_edit_settings_wrap{border-left:1px solid #2D2D2D}
+[dir] .post_edit_settings_wrap::before{background:#2D2D2D}
+[dir] .post_settings.checkbox_pic{filter:brightness(.75)var(--magic)!important}
+[dir] .post_settings.checkbox_pic:hover{filter:brightness(.9)var(--magic)!important}
+[dir] .Post__copyrightButton{color:var(--c2)}
+[dir] .Post__copyrightButton:hover{color:var(--c1);background:var(--c4)}
+[dir] .Post__copyrightButton:before{filter:var(--magic)}
+[dir] .checkbox+.Post__copyrightButton:after{background:var(--c3)}
+[dir] .pv_cont .post_edit_settings_wrap{border-left:none}
+[dir] .pv_cont .post_edit_settings_wrap::before{display:none}
+[dir] .pv_cont .post_settings{margin:4px 0 0 0;width:16px}
+[dir] .pv_cont .media_selector{padding:0 12px 0 0}
 [dir] .post_settings .checkbox_pic{filter:var(--magic)}
 
 /* голосовалка */
@@ -3381,14 +3391,13 @@ a[href*="telegram.me"] .cell_img{filter:invert(.93)hue-rotate(180deg)saturate(.7
 [dir] .group_voting_narrow_img{filter:invert(.95)hue-rotate(180deg)var(--magic)}
 
 /* денежный перевод */
-.payments_money_transfer_amount_wrap{border:1px solid #212121;background-color:#1e1e1e4d}
-.payments_money_transfer_amount{border:1px solid #222;background-color:#3232324d;color:#eee}
-.payments_money_transfer_comment{border:1px solid #212121;background-color:#0000004d;color:#ccc}
-.payments_money_transfer_notice{color:var(--c2)}
-.payments_money_transfer_amount_wrap.money_error{background-color:#0c0807;border-color:#522626}
-.payments_money_transfer_amount_wrap.money_error .payments_money_transfer_amount{background-color:#0a0a0a;border-color:#522626}
-.payments_money_transfer_amount_wrap.money_error .payments_money_transfer_notice{color:#f1513d}
-[dir] .payments_money_transfer_comment{border:1px solid var(--c3)!important;border-top:none!important;background-color:#6464641f}
+[dir] .payments_money_transfer_amount_wrap{border:1px solid #212121;background-color:#1e1e1e4d}
+[dir] .payments_money_transfer_amount{border:1px solid #222;background-color:#3232324d;color:#eee}
+[dir] .payments_money_transfer_comment{border:1px solid var(--c3)!important;border-top:none!important;background-color:#6464641f;color:#ccc}
+[dir] .payments_money_transfer_notice{color:var(--c2)}
+[dir] .payments_money_transfer_amount_wrap.money_error{background-color:#0c0807;border-color:#522626}
+[dir] .payments_money_transfer_amount_wrap.money_error .payments_money_transfer_amount{background-color:#0a0a0a;border-color:#522626}
+[dir] .payments_money_transfer_amount_wrap.money_error .payments_money_transfer_notice{color:#f1513d}
 [dir] .dividing_line ul li{border-bottom:1px solid var(--c4)}
 
 /* постеры */
@@ -3426,20 +3435,10 @@ a[href*="telegram.me"] .cell_img{filter:invert(.93)hue-rotate(180deg)saturate(.7
 [dir] .poster__cta-btn:hover{background:#262626de;color:var(--c1)}
 
 /* реклама аудио */
-.audio_page_player_remove_ads{color:var(--c1)}
+[dir] .audio_page_player_remove_ads{color:var(--c1)}
 
 /* выпиливаем рекламу приложух/игр */
-.apps_feedRightAppsBlock_single_app{display:none}
-
-/* сжимаем поле под фоткой и закрытое поле комментирования */   
-.pv_bottom_info{padding:7px 10px 4px!important}
-#pv_box ._submit_post_box{border-top:none!important;margin:0px!important}
-#pv_box ._post_wrap:not(.reply_box_open) #pv_reply_form_wrap,#pv_box ._post_wrap:not(.reply_box_open) .reply_field_wrap{height:18px!important;min-height:28px!important}
-#pv_box ._post_wrap:not(.reply_box_open) .reply_text_wrapper{height:18px!important;border-top:none!important;margin:0px!important}
-#pv_box ._post_wrap:not(.reply_box_open) .reply_form{height:28px!important}
-#pv_box ._post_wrap:not(.reply_box_open) .reply_field.submit_post_field{padding:0px!important;height:18px!important;min-height:28px!important}
-#pv_box ._post_wrap:not(.reply_box_open) .placeholder,#pv_box ._post_wrap:not(.reply_box_open) .submit_post_field~.placeholder .ph_input{height:18px!important;padding:3px 0 0 6px!important;}
-#pv_box ._post_wrap:not(.reply_box_open) .ph_content{color:#474747!important}
+[dir] .apps_feedRightAppsBlock_single_app{display:none}
 
 /* загрузчик гифка */
 [src="/images/upload.gif"]{filter:saturate(0)}
