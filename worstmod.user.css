@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210610.16.37
+@version        20210610.17.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2338,6 +2338,7 @@ body{--page-block-shadow:none}
 [dir] .FCSearch__input{color:#ccc}
 [dir] .FCSearch__input::placeholder,[dir] .FCSearch{color:var(--c1)}
 [dir] .NoPhoto{color:#333;filter:invert(.95)hue-rotate(180deg)saturate(.2)}
+[dir] .MEAvatar__mobile{color:/*[[onlinecolorselect]]*/;filter:drop-shadow(0 0 2px #000)}
 [dir] .MEAvatar__shadow{display:none}
 [dir] .FCWindow .ms_item_more_label{margin:0!important}
 [dir] .FCComposer__input.FCComposer__input.FCComposer__input{background:#0000}
