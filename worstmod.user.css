@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210610.17.27
+@version        20210612.23.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -334,9 +334,9 @@ darkasfuck "для совсем сумрачных личностей" <<<EOT /*
 
 @advanced dropdown minichat "Миничат:" {
 minichatcool "прозрачный*" <<<EOT /* миничат (прозрачный) *\/
-[dir] .FCPanel{background:#0009}
+[dir] .FCPanel{background:rgba(0,0,0,/*[[headopaque]]*\/)}
 [dir] .FCComposer{background:#0006}
-[dir] .FCWindow{background:#000c}
+[dir] .FCWindow{background:rgba(0,0,0,/*[[headopaque]]*\/)}
 EOT;
 
 minichatsimple "вариант для сумрачных личностей" <<<EOT /* миничат (непрозрачный) *\/
