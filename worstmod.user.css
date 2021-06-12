@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210613.1.47
+@version        20210613.2.17
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -822,7 +822,7 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 /*[[nomoneysend]]*/
 
 /* текст */
-[dir] .page_name,[dir] h1.page_name,.module_header .header_label,[dir] h1,.page_block_header{color:#ddd}
+[dir] .page_name,[dir] h1.page_name,.module_header .header_label,[dir] h1,[dir] h2,[dir] h3,.page_block_header{color:#ddd}
 .current_text{color:#bbb}
 body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group_desc,.page_list_module .people_desc,.page_list_module .people_extra,.profile_info .label,[dir] .wall_post_text,[dir] .wall_reply_text,[dir] .flat_button.secondary,.page_counter .label,.ui_tabs .ui_tab,.ui_tab,ui_crumb{color:#999;transition:color .3s}
 [dir] .feed_row .post:hover .wall_post_text,[dir] .wall_module .reply:hover .wall_reply_text,.wall_module.wl_post:hover .wall_post_text{color:#ccc}
@@ -1613,7 +1613,8 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 /* фикс аудио раздела */
 [dir] .eltt.eltt_bottom.eltt_arrow_size_normal>.eltt_arrow_back{border-bottom:8px solid var(--c3)}
 [dir] .audio_row .audio_row__action{filter:var(--magic)saturate(1.4)}
-[dir] .pr_bt,[dir] .ui_search_new .ui_search_reset_button{filter:var(--magic)saturate(.5)brightness(.8)}
+[dir] .ui_search_new .ui_search_reset_button{filter:var(--magic)}
+[dir] .pr_bt{filter:var(--magic)saturate(.5)brightness(.8)}
 .audio_page_layout .audio_item__title, .audio_page_layout .audio_item__title>a,.audio_block_small_item--curator .title_link,.audio_block_small_item--artist .title_link,.audio_block_small_item--curator .title_link{color:var(--c2)}
 [dir] .audio_row .audio_row__title,.audio_pl_item2 .audio_pl__subtitle>a{color:#aaa;transition:color .3s}
 [dir] .audio_row:hover .audio_row__title{color:#ccc}
@@ -2748,6 +2749,8 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 #mv_subscribed_btn::before{filter:var(--magic)}
 
 /* видосы и клипы */
+[dir] input#video_search_input.ui_search_field{filter:none;color:#ccc}
+[dir] .ui_search_new .ui_search_params_button{filter:var(--magic)}
 [dir] .VideoPlaylistItem__thumbWrap,[dir] .VideoRestriction__boxWrap{background-color:#1c1c1c}
 [dir] .video_item .video_delete_progress{background-color:#000000ab}
 [dir] #mv_pl_tt .mv_tt_private_only + .mv_tt_playlists{border:none}
