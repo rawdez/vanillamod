@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210613.2.17
+@version        20210613.2.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1611,6 +1611,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .thumbed_link__thumb{background-color:#0000004d}
 
 /* фикс аудио раздела */
+[dir] input#audio_search.ui_search_field{filter:none;color:#ccc}
 [dir] .eltt.eltt_bottom.eltt_arrow_size_normal>.eltt_arrow_back{border-bottom:8px solid var(--c3)}
 [dir] .audio_row .audio_row__action{filter:var(--magic)saturate(1.4)}
 [dir] .ui_search_new .ui_search_reset_button{filter:var(--magic)}
@@ -1703,6 +1704,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .audio_page__shuffle_all .audio_page__shuffle_all_button:active::before{filter:var(--magic)saturate(.5)brightness(1.5)drop-shadow(0 0 3px #FFF)!important;transform:none}
 [dir] .audio_page__shuffle_all .audio_page__shuffle_all_button::before{filter:var(--magic)saturate(.2)brightness(1.2)!important;left:5px}
 [dir] .idd_wrap .idd_arrow{background-image:url(https://vk.com/images/svg_icons/contour_arrow.svg)!important;filter:var(--magic)!important;color:#647b8e}
+[dir] .idd_wrap .idd_arrow:hover{color:#8cc3ff!important}
 [dir] .CatalogBlock__artist_audios.CatalogBlock__layout--horizontal_buttons{margin-top:50px}
 [dir] .audio_inline_player .slider{padding:4px 0 7px}
 [dir] .ui_search_filters_pane .token .token_title,.ui_multiselect_cnt .token .token_title{color:var(--c1);background:#222}
