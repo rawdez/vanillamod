@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210612.23.7
+@version        20210613.0.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -39,7 +39,6 @@ neon "Неон" <<<EOT /* Неон *\/
 .page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.mail_box_single_ava[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(180deg)saturate(3)var(--magic)}
 EOT;
 
-
 blood "Кровь" <<<EOT /* Кровушка *\/
 :root {
   --c1: #cc2a2a;
@@ -56,7 +55,6 @@ blood "Кровь" <<<EOT /* Кровушка *\/
 .page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.mail_box_single_ava[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(170deg)saturate(2)brightness(.7)var(--magic)}
 [dir] .TopHomeLink::after{filter:var(--magic)saturate(.3)brightness(2)!important}
 EOT;
-
 
 aqua "Вода" <<<EOT /* Вода *\/
 :root {
@@ -104,6 +102,23 @@ mint "Мята" <<<EOT /* Мята *\/
   --magic:hue-rotate(270deg)brightness(1.3)saturate(1.5)!important;
 }
 .page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.mail_box_single_ava[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(160deg)saturate(2)var(--magic)}
+EOT;
+
+orangesoda "Оранжад" <<<EOT /* Оранжад *\/
+:root {
+  --c1: #ec6c1f;
+  --c2: #bf4f0b;
+  --c3: #2e2b25;
+  --c4: #292622;
+  --c5: #1f1d1b;
+  --c6: #928c85;
+  --c7: #464039;
+  --c8: #65615c;
+  --c9: #25221ee6;
+  --magic:brightness(1)hue-rotate(160deg)saturate(4)!important;
+}
+.page_cover_image[href="/photo-104982938_457239122"],.post_image[href="/worstmod"],.reply_image[href="/worstmod"],[dir] .bp_thumb[href="/worstmod"],.mail_box_single_ava[href="/worstmod"],.pv_author_img[href="/worstmod"],[dir] a[href*="/worstmod"] .feedback_img,a[onclick*="group-104982938"] .cell_img,.ui_ownblock[href="/worstmod"] .ui_ownblock_img,.page_cover[style*="6Xv9TdBEZiI.jpg"]{filter:hue-rotate(170deg)var(--magic)saturate(1.7)}
+[dir] .TopHomeLink::after{filter:var(--magic)saturate(.4)brightness(2.1)!important}
 EOT;
 
 monochrome "Монохром" <<<EOT /* Монохром *\/
@@ -363,9 +378,10 @@ hollowheadon "прозрачная*" <<<EOT /* прозрачная шапка *
 .top_audio_player .top_audio_player_title{color:#909090!important}
 [dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--magic)saturate(.9)brightness(1.2)!important}
  EOT;
+
 hollowheadoff "серая" <<<EOT /* поиск в шапке фикс фона *\/
 [dir] body.new_header_design #page_header_cont{background-color:var(--c3)!important;border:none!important}
-[dir] body.new_header_design .TopSearch__input{background-color:var(--c3)!important;color:#fff!important;filter:var(--magic)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
+[dir] body.new_header_design .TopSearch__input{background-color:#3c3d40!important;color:#fff!important;filter:var(--magic);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
 [dir] .TopSearch__input::selection{background:#4e5e71!important}
 #ts_wrap .input_back .input_back_content{color:#999!important}
 .top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--magic)saturate(.7)brightness(1.75)!important}
@@ -376,6 +392,7 @@ hollowheadoff "серая" <<<EOT /* поиск в шапке фикс фона 
 .top_audio_player .top_audio_player_title{color:#909090!important}
 [dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--magic)saturate(.9)brightness(1.2)!important}
  EOT;
+
 hollowheadoffcolor "цветная" <<<EOT /* цветная шапка *\/
 [dir] body.new_header_design #page_header_cont,[dir] body.new_header_design #page_header,[dir] #page_header_wrap{background-color:var(--c2)!important}
 [dir] body.new_header_design .TopSearch__input{background-color:#00000014!important;color:#b3b3b3;filter:brightness(5)}
@@ -671,7 +688,7 @@ nomoneysendfuckall "нафиг денежные переводы и воспом
 
 ==/UserStyle== */
 @-moz-document regexp('https?://vk.com/(?!dev/|dev$|apps.act=manage|about$|about.z=|jobs$|jobs.w=|products$|messenger$|ads$|ads/|adscreate$|adsmarket.act=|ads.act=).*'){
-    
+
 /* тёмные полосы прокрутки */
 *{scrollbar-color:#ffffff26 var(--c3)!important;scrollbar-width:thin}
 div::-webkit-scrollbar{width:12px!important;height:12px!important}
@@ -1742,6 +1759,8 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .ap_layer_wrap .ap_layer__content{background:rgba(0,0,0,/*[[opaque]]*/)}
 [dir] .audio_page_player2{background:#0000}
 [dir] .audio_page_player2.audio_page_player_fixed{background:rgba(0,0,0,/*[[opaque]]*/)!important}
+[dir] #audio_status_tt .audio_status_sep{background-color:var(--c3)}
+[dir] #audio_status_tt.eltt.eltt_bottom.eltt_arrow_size_normal > .eltt_arrow_back{display:block}
 
 /* плейлисты в ленте, диалогах и комментах */
 [dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_share{filter:var(--magic)}
@@ -2332,6 +2351,7 @@ body{--page-block-shadow:none}
 [dir] .FCConvoListItem:hover,.FCConvoListItem[aria-selected="true"]{background:#6464641f}
 [dir] .FCConvo .MEAvatar{display:none}
 [dir] .FCConvo .FCWindow__title{padding:0 2px}
+[dir] .FCConvo .ms_item_more{filter:var(--magic)}
 [dir] .ConvoTitle__mutedIcon{color:var(--c2)}
 [dir] .ConvoHistory__separator{color:var(--c1)}
 [dir] .ConvoHistory__flow{padding:0 2px}
