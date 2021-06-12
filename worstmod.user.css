@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210613.0.7
+@version        20210613.0.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1586,6 +1586,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .tt_w.like_tt{color:var(--c2);transition:color .3s}
 [dir] .tt_w.like_tt:hover{color:var(--c1)}
 [dir] .like_tt_share::before{filter:brightness(.3)sepia(5)hue-rotate(175deg)var(--magic)}
+[dir] .ms_items_more_wrap.shown .ms_item_more .ms_item_more_label{color:#ccc}
 
 /* фикс ссылок в постах и комментах */
 [dir] .thumbed_link{background-color:#0000!important}
@@ -1761,6 +1762,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .audio_page_player2.audio_page_player_fixed{background:rgba(0,0,0,/*[[opaque]]*/)!important}
 [dir] #audio_status_tt .audio_status_sep{background-color:var(--c3)}
 [dir] #audio_status_tt.eltt.eltt_bottom.eltt_arrow_size_normal > .eltt_arrow_back{display:block}
+[dir] input#audio_search_layer.ui_search_field{filter:none;color:#ccc}
 
 /* плейлисты в ленте, диалогах и комментах */
 [dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__action_btn_share{filter:var(--magic)}
