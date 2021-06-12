@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210613.0.57
+@version        20210613.1.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -3219,10 +3219,6 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .ui_actions_menu_icons .friends_restore_link{filter:invert(1)!important}
 [dir] .friends_added_text{padding-bottom:10px}
 
-/* опубликовать отложенный пост */
-[dir] .post_publish{border-color:var(--c4)!important}
-[dir] .post_action_btn .post_action_image_btn._close{filter:var(--magic)brightness(2)saturate(.5)}
-
 /* запись аудио в сообщениях */
 [dir] .im-audio-message-input .im-audio-message--cancel-btn{opacity:.5;background-color:#0000!important;filter:var(--magic)}
 [dir] .im-audio-message-input .im-audio-message-send-wrapper{background-color:#0000!important;border-radius:0px}
@@ -3315,6 +3311,8 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .article_post_convert.round_button{border:1px solid var(--c3);color:#999;border-radius:4px;margin:0 0 4px -30px}
 [dir] .article_post_convert.round_button:hover{background-color:var(--c2);color:#fff}
 [dir] .page_docs_preview .page_media_x_wrap .page_media_x{filter:var(--magic)}
+[dir] .post_publish{border:none}
+[dir] .post_action_btn .post_action_image_btn._close{filter:var(--magic)brightness(2)saturate(.5)}
 
 /* просмотр архивных/отложенных постов */
 [dir] .ui_tabs_progress{filter:invert(.9)hue-rotate(180deg)var(--magic)}
