@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210614.1.17
+@version        20210614.1.33
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -908,6 +908,8 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 [dir] .friends_possible_link:hover{color:#9abbe2;filter:var(--magic)brightness(.7)}
 [dir] a.right_list_link{color:#999}
 [dir] a.right_list_link:hover{color:#ccc}
+[dir] .right_list_header{color:var(--c2);transition:color 3s 7s}
+[dir] #feed_filters:hover .right_list_header{color:var(--c1);transition:color .3s}
 
 /* фикс страница не найдена */
 body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 url(https://vk.com/images/error404.png) no-repeat 50% 50%;width:100%;height:100%;filter:saturate(0)brightness(.5)contrast(1.3)}
