@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210613.2.27
+@version        20210613.3.31
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -305,8 +305,8 @@ lolsquareon "банзай" <<<EOT /* .............. <ОКВАДРАЧИВАНИ�
 EOT;
 lolsquareof "не, кружочки няшные ( ´ ▽ ` ).｡ｏ♡" <<<EOT EOT;
 onlinecirclecrap "не, +кружочки онлайн" <<<EOT /* дурацкие значки онлайн *\/
-a.bp_thumb._online.online img,.chat_tab_imgcont._chat_tab_image._online.online .chat_tab_img, .nim-peer._online.online._im_peer_online>img, a.friends_photo._online.online.mobile>img, .nim-peer._online.online._im_peer_online img, a.post_image._online.online img, ._online.online .friends_photo_img, ._online.online .group_u_photo_img{border:2px solid var(--c1);padding:1px}
-.online.mobile .chat_tab_img,.online.mobile .friends_photo_img,.online.mobile .bp_img,.nim-peer._online.online.mobile._im_peer_online img, ._online.online.mobile .group_u_photo_img{border:2px dotted var(--c1)!important}
+a.bp_thumb._online.online img,.chat_tab_imgcont._chat_tab_image._online.online .chat_tab_img, .nim-peer._online.online._im_peer_online>img, a.friends_photo._online.online.mobile>img, .nim-peer._online.online._im_peer_online img, a.post_image._online.online img, ._online.online .friends_photo_img, ._online.online .group_u_photo_img{border:2px solid /*[[onlinecolorselect]]*\/;padding:1px}
+.online.mobile .chat_tab_img,.online.mobile .friends_photo_img,.online.mobile .bp_img,.nim-peer._online.online.mobile._im_peer_online img, ._online.online.mobile .group_u_photo_img{border:2px dotted /*[[onlinecolorselect]]*\/!important}
 .nim-peer.nim-peer_online .nim-peer--online, .chat_tab_online_icon, .chat_tab_wrap:hover .chat_tab_online_icon, .ts_contact_photo:after, span.fc_contact_photo:after, .online:after, .wddi_over .wddi_thumb .wdd_mark, .wdd_mark, .layers_shown .chat_tab_online_icon, .friends_user_row .online:after, .group_u_photo.online:after, .chat_tab_imgcont.online:after ,.nim-peer._online._im_peer_online  .nim-peer .nim-peer--photo .im_grid>img{display:none}
 .nim-dialog_selected .nim-peer._online.online._im_peer_online img{border:2px solid var(--c8)}
 .nim-dialog_selected .nim-peer._online.online.mobile._im_peer_online img{border:2px dotted var(--c8)!important}
@@ -319,8 +319,8 @@ a.bp_thumb._online.online img,.chat_tab_imgcont._chat_tab_image._online.online .
 .chat_tab_img{margin:2px 0 2px -2px}
 .bp_post ._online:not(.online) img{margin-left:4px}
 .bp_post ._online,.nim-dialog--photo .nim-peer.online{margin-left:-4px}
-.online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img{border:2px solid var(--c1)!important;width:26px;height:26px}
-.mobile.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img{border:2px dotted var(--c1)!important;width:26px;height:26px}
+.online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img{border:2px solid /*[[onlinecolorselect]]*\/!important;width:26px;height:26px}
+.mobile.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img{border:2px dotted /*[[onlinecolorselect]]*\/!important;width:26px;height:26px}
 .nim-peer.nim-peer_search .nim-peer--photo, .nim-peer .nim-peer--photo-w{overflow:visible}
 EOT;
 }
@@ -2333,7 +2333,7 @@ body{--page-block-shadow:none}
 
 /* миничат 2 */
 [dir] .FCPanel__expanderIcon{fill:var(--c1)}
-[dir] .FCPanel{box-shadow:0 0 0 1px var(--c3)}
+[dir] .FCPanel{box-shadow:none}
 [dir] .FCThumb{background:#0000}
 [dir] .FCThumb__link:hover{background:#6464641f}
 [dir] .FCThumb__link:hover .MEAvatar{box-shadow:0 0 0 2px var(--c1)}
@@ -2343,7 +2343,7 @@ body{--page-block-shadow:none}
 [dir] .FCPanel__add:hover,[dir] .FCPanel__add:focus,[dir] .FCPanel__addText:hover,[dir] .FCPanel__addText:focus{background:#6464641f;color:var(--c1)}
 [dir] .FCThumb__unread{background:var(--c2);color:#111;top:1px;left:1px;min-width:12px;min-height:12px}
 [dir] .FCThumb__link:hover .FCThumb__unread{background:var(--c1)}
-[dir] .FCWindow{box-shadow:0 0 0 1px var(--c3);height:424px!important}
+[dir] .FCWindow{box-shadow:none;height:424px!important}
 [dir] .FCConvoList__virtual{height:354px!important}
 [dir] .FCWindow__title{color:var(--c1);padding:0 10px}
 [dir] .FCIconButton{color:var(--c1)}
