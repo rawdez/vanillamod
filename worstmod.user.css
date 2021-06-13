@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210614.1.33
+@version        20210614.1.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2229,8 +2229,8 @@ body{--page-block-shadow:none}
 [dir] .cal_table .day{background-color:#0000!important}
 [dir] .cal_table .day:hover{background:#6464641f!important;color:#ccc!important}
 [dir] .cal_table .next_month_day,[dir] .cal_table .prev_month_day{background-color:#1c1c1c52!important}
-[dir] .cal_table .day.sel{background-color:var(--c1)!important;color:#111!important;opacity:.5;transition:opacity .3s;border-radius:3px}
-[dir] .cal_table .day.sel:hover,[dir] .cal_table:hover .day.sel{opacity:1}
+[dir] .cal_table .day.sel{background-color:var(--c1)!important;color:#111!important;opacity:.5;transition:opacity 3s 7s;border-radius:3px}
+[dir] .cal_table .day.sel:hover,[dir] .cal_table:hover .day.sel{opacity:1;transition:opacity .3s;}
 [dir] .cal_table .month .year{color:var(--c1)}
 [dir] .cal_table .today{box-shadow:inset 0px 0px 0px 1px var(--c2)!important;color:var(--c1)!important;border-radius:3px}
 [dir] .cal_clear{border-top:none;background:#0003!important}
