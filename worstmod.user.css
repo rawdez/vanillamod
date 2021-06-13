@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210613.3.31
+@version        20210613.4.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1587,6 +1587,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .tt_w.like_tt:hover{color:var(--c1)}
 [dir] .like_tt_share::before{filter:brightness(.3)sepia(5)hue-rotate(175deg)var(--magic)}
 [dir] .ms_items_more_wrap.shown .ms_item_more .ms_item_more_label{color:#ccc}
+[dir] .deep_active .replies .reply_fakebox_container .reply_fake_more_attaches{padding:0}
 
 /* фикс ссылок в постах и комментах */
 [dir] .thumbed_link{background-color:#0000!important}
@@ -2501,16 +2502,18 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .article_snippet .article_snippet__action_btn_icon--read{filter:invert(1)}
 [dir] .article_ed_layer .article_ed_layer__close{filter:invert(1)}
 
-/* фильтр лампочки советов по постингу хуйни */ 
+/* фильтр лампочки советов по постингу хуйни */
 [dir] .SitpostingEntrypoint__button{filter:var(--magic)brightness(.6)}
 [dir] .SitpostingEntrypoint::before{background-color:var(--c2)}
 
 /* смайлики */
 [dir] .emoji_smile_icon{filter:var(--magic)brightness(1.2)saturate(.8)}
 [dir] .emoji_smile_icon_vector{filter:var(--magic)saturate(.8)}
-.emoji_sprite{filter:invert(.95)saturate(0)brightness(.7)!important}
-.ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,.emoji_cats_title_helper::after{filter:invert(1)}
-.emoji_tabs_r_s,.emoji_tabs_l_s,.emoji_shop,.emoji_tabs_wrap,.emoji_tab_sel{background:var(--c4)!important}
+[dir] .emoji_sprite{filter:invert(.95)hue-rotate(180deg)var(--magic)}
+[dir] .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom,[dir] .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,[dir] .emoji_cats_title_helper::after{filter:invert(1)}
+[dir] .emoji_tabs_r_s,[dir] .emoji_tabs_l_s{background:var(--c5)}
+[dir] .emoji_tab_sel,[dir] .emoji_tab_sel:hover{background:var(--c5)}
+[dir] .emoji_tab:hover,[dir] .emoji_tabs_r_s:hover,[dir] .emoji_tabs_l_s:hover,[dir] .emoji_shop:hover{background:var(--c4)}
 [dir] .emoji_list_cont{padding-bottom:1px}
 .emoji_cats_title_helper,.emoji_list_cont{padding:0px}
 [dir] .emoji_tt_wrap{width:282px;background-color:#000c!important;border:1px solid var(--c3)}
@@ -2526,7 +2529,6 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 .emoji_expand_shadow, .emoji_expand_shadow_top, .emoji_tabs_l_sc, .emoji_tabs_r_sc, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,.emoji_cats_title_helper:after{display:initial!important}
 .im_rc_emojibtn:active{background:var(--c5);border-radius:2px}
 [dir] .emoji_tabs{background:#0006}
-[dir] .emoji_tab:hover{background:#6464641f}
 [dir] .emoji_tt_wrap.tt_down::after{border-top-color:var(--c4)!important}
 [dir] .emoji_tt_wrap.tt_down::before{border-top-color:var(--c2)!important}
 [dir] .emoji_sticker_item.over,[dir] .emoji_sticker_item:hover{background:var(--c2)}
