@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210613.4.7
+@version        20210613.4.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -791,10 +791,6 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 .page_video_autoplay_tt.eltt_top.eltt_vis::after{border-color:#000000d9 #0000 #0000 #0000}
 .page_video_autoplay_tt.eltt_top.eltt_vis::before{border-color:var(--c3) #0000 #0000 #0000}
 .page_video_autoplay_tt_hide{transform:scale(.75)}
-[dir] .tt_default.tt_up::before{border-bottom-color:var(--c2)!important}
-[dir] .tt_default.tt_up::after{border-bottom-color:var(--c5)!important}
-[dir] .tt_default.tt_down::before{border-top-color:var(--c2)!important}
-[dir] .tt_default.tt_down::after{border-top-color:var(--c5)!important}
 [dir] .wall_tt .like_tt_bottom{background:#0006;border-top:none}
 [dir] .wall_tt .like_tt_bottom:hover{background:#6464641f;border-top:none}
 [dir] .wall_tt .like_tt_bottom a{color:var(--c2);transition:color .3s}
@@ -1039,9 +1035,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .FancyElementTT__icon{filter:var(--magic)}
 [dir] .deep_active .replies .replies_wrap_deep .reply_media_preview{border-bottom:none}
 [dir] .deep_active:not(.closed_comments) .replies .submit_post{background:#0000!important}
-[dir] .tt_default,[dir] .tt_default_right{background:#000c}
-[dir] .tt_default.tt_left::before{border-right-color:var(--c3)}
-[dir] .tt_default.tt_left::after{border-right-color:var(--c4)}
 [dir] .tt_w .tt_text{color:#bbb}
 [dir] .idd_wrap .idd_selected_value{color:var(--c2)}
 [dir] .idd_wrap .idd_selected_value:hover{color:var(--c1)}
@@ -1059,6 +1052,19 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .post_replies_reorder::after{content:'';display:inline-block;background:url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat top!important;margin:0 0 0 4px;width:9px;height:5px;filter:brightness(.5)saturate(2)}
 [dir] #profile_editor input.dark[disabled]{background:#0000;border-color:var(--c3)}
 [dir] .pedit_separator{border-top:1px solid var(--c3)}
+[dir] .tt_default,[dir] .tt_default_right{background:#000c}
+[dir] .tt_default.tt_left::before{border-right-color:var(--c3)}
+[dir] .tt_default.tt_left::after{border-right-color:var(--c4)}
+[dir] .tt_default_right.tt_up::before{border-bottom-color:var(--c2)}
+[dir] .tt_default_right.tt_up::after{border-bottom-color:var(--c5)}
+[dir] .tt_default.tt_right::before{border-left-color:var(--c2)}
+[dir] .tt_default.tt_right::after{border-left-color:var(--c5)}
+[dir] .tt_default.tt_up::before{border-bottom-color:var(--c2)!important}
+[dir] .tt_default.tt_up::after{border-bottom-color:var(--c5)!important}
+[dir] .tt_default.tt_down::before{border-top-color:var(--c2)!important}
+[dir] .tt_default.tt_down::after{border-top-color:var(--c5)!important}
+[dir] .tt_default_right.tt_down::before{border-top-color:var(--c2)}
+[dir] .tt_default_right.tt_down::after{border-top-color:var(--c5)}
 
 /* поиск */
 [dir] .fans_rows.wall_module .like_cont,[dir] .search_results.wall_module.page_block .like_cont{border-color:var(--c3)}
@@ -1472,8 +1478,6 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [dir] .pages_history_header_wrap{background:#0000;border-bottom:1px solid var(--c3)}
 [dir] .pages_history_row{border-bottom:1px solid var(--c3)}
 [dir] .pages_bottom_preview{border-top:1px solid var(--c3)}
-[dir] .tt_default.tt_right::before{border-left-color:var(--c2)}
-[dir] .tt_default.tt_right::after{border-left-color:var(--c5)}
 
 /* друзья в паблосе */
 .group_friends_image{border:1px solid #222;width:25px;height:25px;margin-left:3px}
@@ -1587,7 +1591,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .tt_w.like_tt:hover{color:var(--c1)}
 [dir] .like_tt_share::before{filter:brightness(.3)sepia(5)hue-rotate(175deg)var(--magic)}
 [dir] .ms_items_more_wrap.shown .ms_item_more .ms_item_more_label{color:#ccc}
-[dir] .deep_active .replies .reply_fakebox_container .reply_fake_more_attaches{padding:0}
+[dir] .deep_active .replies .reply_fakebox_container .reply_fake_more_attaches{padding:1px 0 0 0!important}
 
 /* фикс ссылок в постах и комментах */
 [dir] .thumbed_link{background-color:#0000!important}
