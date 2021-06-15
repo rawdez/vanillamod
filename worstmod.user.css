@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210614.1.37
+@version        20210615.10.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2808,9 +2808,9 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 [dir] .mv_info_narrow_column{border-left:1px solid var(--c3)}
 .PostButtonReactions--post .PostButtonReactions__title,.like_button_label{display:none}
 #mv_pl_tt .checkbox{color:#aaa}
-.like_wrap .ui_actions_menu_more{color:var(--c2)}
-.like_wrap .ui_actions_menu_more:hover{color:var(--c1)}
-.like_wrap .ui_actions_menu_more::after{filter:var(--magic)}
+[dir] .like_wrap .ui_actions_menu_more{color:var(--c2)}
+[dir] .like_wrap .ui_actions_menu_more:hover{color:var(--c1)}
+[dir] .like_wrap .ui_actions_menu_more::after{filter:var(--magic)}
 [dir] #mv_pl_tt .mv_tt_add_playlist{border:none}
 #mv_pl_tt .mv_tt_playlist_private_icon,#mv_pl_tt .mv_tt_add_playlist:hover{filter:var(--magic)brightness(.7)saturate(1.2)}
 #mv_pl_tt .mv_tt_playlists.with_border{border-top:1px solid #333}
@@ -3545,7 +3545,7 @@ a[href*="telegram.me"] .cell_img{filter:invert(.93)hue-rotate(180deg)saturate(.7
 [dir] .VerticalVideoLayerInfo .flat_button.addpost_button.reply_send_disabled{color:#666!important}
 [dir] .VerticalVideoLayerInfo .flat_button.addpost_button.reply_send_disabled:hover{color:#444!important}
 [dir] .VerticalVideoLayerInfo .like_button_count{color:var(--c2)!important}
-[dir] .VerticalVideoLayerInfo .like_wrap .ui_actions_menu_more{color:#4e6e93}
+[dir] .VerticalVideoLayerInfo .like_wrap .ui_actions_menu_more:after{filter:var(--magic)}
 [dir] .VerticalVideoLayerInfo .active .like_button_count,[dir] .VerticalVideoLayerInfo__authorName{color:var(--c1)!important}
 [dir] .VerticalVideoLayerInfo .VideoLayerInfo__date,[dir] .VerticalVideoLayerInfo .VerticalVideoLayerInfo__date,[dir] .VerticalVideoLayerInfo{color:#999}
 [dir] .VerticalVideoLayerInfo .audio_row .audio_row__title{color:#ccc}
