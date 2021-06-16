@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210615.20.37
+@version        20210616.12.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1726,7 +1726,8 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .audio_w_covers .audio_row .audio_row__cover{background:#0000}
 [dir] .audio_pl_edit_box .ape_audio_item_wrap .ape_attach{color:var(--c2);transition:color .3s}
 [dir] .audio_pl_edit_box .ape_audio_item_wrap:hover .ape_attach{color:var(--c1)}
-[dir] .audio_pl_edit_box .ape_list_header{background-color:#0000;padding:0px 10px 12px;color:#999;}
+[dir] .audio_pl_edit_box .ape_list_header{background-color:#0000;padding:0px 10px 12px;color:#999}
+[dir] .audio_progress{border:1px solid var(--c1)}
 
 /* треклист / плееры */
 [dir] .audio_layer_container .audio_friend:hover{background-color:#6464641f}
@@ -2815,9 +2816,6 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 #mv_pl_tt .mv_tt_playlist_private_icon,#mv_pl_tt .mv_tt_add_playlist:hover{filter:var(--magic)brightness(.7)saturate(1.2)}
 #mv_pl_tt .mv_tt_playlists.with_border{border-top:1px solid #333}
 
-/* фикс загрузка аудио */
-.audio_progress{border:1px solid var(--c1)}
-  
 /* загрузка аудио-видео */
 #audio_new_error .error,.error{background:#171717 url("https://vk.com/images/icons/msg_error.png") no-repeat scroll 12px 12px;border-color:#2A2A2A}
 .mv_is_in_progress{color:var(--c6);background-color:var(--c4)}
@@ -2831,6 +2829,9 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 .video_choose_upload_area:hover,.video_add_external:hover{background:#0f0f0fbf!important}
 .video_add_external_icon,.video_choose_upload_area{color:#aaa!important;filter:var(--magic)}
 .video_add_external_icon:hover,.video_choose_upload_area:hover{color:#7290ab!important}
+[dir] .video_choose_upload_separator{background-color:var(--c3)}
+[dir] .video_choosebox_bottom {background-color: rgba(0,0,0,/*[[headopaque]]*/);border-top:none}
+[dir] #video_choosebox_attach_btn:hover b{color:var(--c1)!important}
 
 /* говнософт */
 .apps_cat_header_icon{background:#292929 url("https://vk.com/images/icons/apps_catalog_icons.png") repeat scroll 0px -420px}
