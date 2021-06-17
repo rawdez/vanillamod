@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210617.5.27
+@version        20210617.5.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2552,7 +2552,7 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .profile_closed_wall_dummy::before{filter:brightness(.4)var(--magic)}
 
 /* фотки */
-[dir] #layer_wrap{z-index:10000}
+[dir] #layer_wrap,[dir] #mv_layer_wrap{z-index:10000}
 [dir] #box_layer_bg{z-index:10400}
 [dir] #box_layer_wrap{z-index:10500}
 [dir] #notifiers_wrap{z-index:11000}
@@ -2764,6 +2764,7 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 #mv_subscribed_btn::before{filter:var(--magic)}
 
 /* видосы и клипы */
+[dir] .mv_info::before{background:var(--c5)}
 [dir] input#video_search_input.ui_search_field{filter:none;color:#ccc}
 [dir] .ui_search_new .ui_search_params_button{filter:var(--magic)}
 [dir] .VideoPlaylistItem__thumbWrap,[dir] .VideoRestriction__boxWrap{background-color:#1c1c1c}
