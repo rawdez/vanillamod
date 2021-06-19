@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210619.3.11
+@version        20210619.8.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -347,8 +347,8 @@ darkasfuck "для совсем сумрачных личностей" <<<EOT /*
  EOT;
 }
 
-@advanced dropdown minichat "Миничат:" {
-minichatcool "прозрачный*" <<<EOT /* миничат (прозрачный) *\/
+@advanced dropdown minichat "Миничат стиль:" {
+minichatcool "прозрачный" <<<EOT /* миничат (прозрачный) *\/
 [dir] .FCPanel{background:rgba(0,0,0,/*[[headopaque]]*\/)}
 [dir] .FCComposer{background:#0006}
 [dir] .FCWindow{background:rgba(0,0,0,/*[[headopaque]]*\/)}
@@ -357,6 +357,18 @@ EOT;
 minichatsimple "вариант для сумрачных личностей" <<<EOT /* миничат (непрозрачный) *\/
 [dir] .FCPanel,[dir] .FCComposer{background:var(--c4)}
 [dir] .FCWindow{background:var(--c3)}
+EOT;
+}
+
+@advanced dropdown minichatzindex "Миничат окна:" {
+minichatzindexdown "снизу" <<<EOT /* миничат снизу *\/
+[dir] #layer_wrap,[dir] #mv_layer_wrap{z-index:10000}
+[dir] #box_layer_bg{z-index:10400}
+[dir] #box_layer_wrap{z-index:10500}
+[dir] #notifiers_wrap{z-index:11000}
+EOT;
+
+minichatzindexup "наверх" <<<EOT 
 EOT;
 }
 
@@ -2393,6 +2405,7 @@ body{--page-block-shadow:none}
 [dir] .FCWindow .AttachAudio__artist{color:var(--c2)}
 [dir] .FCWindow .AttachAudio__durationIn{color:#aaa}
 /*[[minichat]]*/
+/*[[minichatzindex]]*/
 
 /* всплывающая плашка результата действий влево вверх */
 [dir] .top_result_baloon:not([style*="width:470px;"]){position:fixed;top:54px;left:10px;box-shadow:0px 2px 15px var(--c2);color:#CCC;opacity:.8}
@@ -2562,10 +2575,6 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .profile_closed_wall_dummy::before{filter:brightness(.4)var(--magic)}
 
 /* фотки */
-[dir] #layer_wrap,[dir] #mv_layer_wrap{z-index:10000}
-[dir] #box_layer_bg{z-index:10400}
-[dir] #box_layer_wrap{z-index:10500}
-[dir] #notifiers_wrap{z-index:11000}
 [dir] .ui_search{border-bottom:none}
 [dir] #pv_box{background:var(--c5)}
 [dir] .pv_cont .narrow_column{background:var(--c3)!important}
