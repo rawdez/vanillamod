@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210619.8.7
+@version        20210619.8.17
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1771,7 +1771,7 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 .audio_inline_player .slider .slider_slide,.audio_page_player2 .audio_page_player_track_slider.slider.slider_size_1 .slider_slide{background-color:#151515!important}
 .audio_page_player2 .audio_page_player_title_song{color:#ccc}
 .audio_page_player2 .btn_icon{filter:var(--magic)}
-.audio_page_player2 .icon{filter:var(--magic)brightness(1.3)saturate(.3)}
+[dir] .audio_page_player2 .icon{filter:var(--magic)brightness(1.6)saturate(.6)}
 .audio_layer_container .audio_page__footer_now_playing_link{color:var(--c2);transition:color .3s}
 .audio_layer_container .audio_page__footer_now_playing_link:hover{color:var(--c1)}
 .audio_page_player_btn_enabled{filter:none!important}
@@ -2207,8 +2207,8 @@ body{--page-block-shadow:none}
 [dir] .mv_comments_summary:hover{color:#aaa}
 
 /* чат фикс кнопки отправки и прикрепления */
-[dir] .im-page .ms_items_more_wrap.ms_items_more_wrap_vector .ms_item_more_label{margin-left:6px;margin-top:-16px}
-[dir] .ms_items_more_wrap.shown .ms_item_more{filter:var(--magic)}
+[dir] .im-page .ms_items_more_wrap .ms_item_more_label{margin-left:6px;margin-top:-16px}
+[dir] .ms_items_more_wrap .ms_item_more{filter:var(--magic)}
 [dir] .ms_items_more{border:1px solid var(--c4)}
 [dir] .media_selector .ms_items_more .ms_item:hover{background-color:#6464641f}
 [dir] .im-chat-input .im-chat-input--send{margin-top:-9px!important}
