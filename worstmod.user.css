@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210619.2.37
+@version        20210619.3.11
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2521,11 +2521,19 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 /* смайлики */
 [dir] .emoji_smile_icon{filter:var(--magic)brightness(1.2)saturate(.8)}
 [dir] .emoji_smile_icon_vector{filter:var(--magic)saturate(.8)}
-[dir] .emoji_sprite{filter:invert(.95)hue-rotate(180deg)var(--magic)}
+[dir] .emoji_sprite:not(.emoji_shop_icon):not(.emoji_tabs_r_sc):not(.emoji_tabs_l_sc){filter:invert(.95)hue-rotate(180deg)var(--magic)}
+[dir] .emoji_sprite.emoji_shop_icon{opacity:.7;transition:opacity .3s}
+[dir] .emoji_shop:hover .emoji_sprite.emoji_shop_icon{opacity:1}
+[dir] .emoji_shop_icon_badge{border:none!important;padding:1px 3px;background:var(--c2);color:#111}
 [dir] .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom,[dir] .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,[dir] .emoji_cats_title_helper::after{filter:invert(1)}
-[dir] .emoji_tabs_r_s,[dir] .emoji_tabs_l_s{background:var(--c5)}
+[dir] .emoji_tabs_r_s,[dir] .emoji_tabs_l_s{background:#000c}
+[dir] .emoji_tabs_r_sc,[dir] .emoji_tabs_l_sc{filter:invert(1)brightness(0)}
+[dir] .emoji_tabs_r_s:hover,[dir] .emoji_tabs_l_s:hover{background:var(--c4)}
+[dir] .emoji_tabs_r_s:hover .emoji_tabs_r_sc,[dir] .emoji_tabs_l_s:hover .emoji_tabs_l_sc{filter:invert(.9)}
+[dir] .emoji_tabs_wrap{width:214px}
+[dir] .emoji_tabs_r_s {margin-left:234px}
 [dir] .emoji_tab_sel,[dir] .emoji_tab_sel:hover{background:var(--c5)}
-[dir] .emoji_tab:hover,[dir] .emoji_tabs_r_s:hover,[dir] .emoji_tabs_l_s:hover,[dir] .emoji_shop:hover{background:var(--c4)}
+[dir] .emoji_tab:hover,[dir] .emoji_shop:hover{background:var(--c4)}
 [dir] .emoji_list_cont{padding-bottom:1px}
 .emoji_cats_title_helper,.emoji_list_cont{padding:0px}
 [dir] .emoji_tt_wrap{width:282px;background-color:#000c!important;border:1px solid var(--c3)}
