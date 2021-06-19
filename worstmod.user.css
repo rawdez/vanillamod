@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210619.15.37
+@version        20210619.16.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -3205,7 +3205,12 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .StickerPackPreview__gift::before{filter:invert(.9)}
 [dir] .StickerPackPreview__styles{background:#6464641f}
 [dir] .StickerStylesMenuItem--added:hover{box-shadow: inset 0 0 0 2px var(--c1),0 2px 20px var(--c1)}
-[dir] .StickerStylesMenuItem--added{box-shadow:inset 0 0 0 2px var(--c2)}
+[dir] .StickerStylesMenuItem--added{box-shadow:inset 0 0 0 2px var(--c2);background:var(--c1)}
+[dir] .StickerStylesMenuItem--added .StickerStylesMenuItem__notice,[dir] .StickerStylesMenuItem--added .StickerStylesMenuItem__titleLastWord{color:#fff}
+[dir] .StickerStylesMenuItem--added .StickerStylesMenuItem__titleLastWord::after{background:#fff!important}
+[dir] .StickerStylesMenuItem--new .StickerStylesMenuItem__titleLastWord::after{background:var(--c1)}
+[dir] .StickerStylesMenuItem:hover{background:var(--c2)}
+[dir] .StickerStylesMenuItem:hover .StickerStylesMenuItem__title,[dir] .StickerStylesMenuItem:hover .StickerStylesMenuItem__notice{color:#fff}
 [dir] .Tooltip--light .Tooltip__in{background:#000000d9;border:solid 1px var(--c4);color:#c4c4c4}
 [dir] .Tooltip--b .Tooltip__in::before{border-bottom-color:#222!important}
 [dir] .Tooltip--b .Tooltip__in::after{border-bottom-color:#000000d9!important}
