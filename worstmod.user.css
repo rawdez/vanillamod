@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210619.8.17
+@version        20210619.8.27
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2192,6 +2192,7 @@ body{--page-block-shadow:none}
 [dir] .im-chat-input .im-chat-input--attach{bottom:initial!important}
 [dir] .im-chat-input .im-chat-input--smile-wrap{bottom:initial!important}
 [dir] .im-chat-input .im-chat-input--smile-wrap .emoji_smile{padding:6px 6px 0px 3px}
+[dir] .im-chat-input .emoji_tt_wrap.tt_down::after{margin:0 5px}
 [dir] .im-chat-input ::-webkit-scrollbar{width:6px!important;height:6px!important}
 [dir] .im-chat-input .im-chat-input--textarea:not(.im-chat-input_open-keyboard):not(.im-chat-input_close-keyboard):not(.im-chat-input--textarea_show-templates) .im-chat-input--text{padding-right:66px}
 [dir] .im-chat-input .im-chat-input--selector{bottom:initial!important;top:3px}
