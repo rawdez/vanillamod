@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210619.8.27
+@version        20210619.15.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1631,6 +1631,11 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .MiniAppsSnippetBottomFields__title{color:var(--c2)}
 [dir] .media_link__subtitle{color:var(--c2);transition:color .3s}
 [dir] .thumbed_link__thumb{background-color:#0000004d}
+[dir] .wall_module .media_desc .lnk .lnk_mail_title{color:var(--c1);transition:color .3s}
+[dir] .wall_module .media_desc .lnk .lnk_mail_title:hover{color:#fff;text-decoration-color:var(--c1)}
+[dir] .wall_module .media_desc .lnk.lnk_mail{border-left:2px solid var(--c1)}
+[dir] .wall_module .media_desc .lnk .lnk_mail_domain{color:#999}
+[dir] .wall_module .media_desc:hover .lnk .lnk_mail_domain{color:#ccc}
 
 /* фикс аудио раздела */
 [dir] input#audio_search.ui_search_field{filter:none;color:#ccc}
