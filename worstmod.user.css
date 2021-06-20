@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210619.16.37
+@version        20210620.5.9
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2795,8 +2795,14 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 [dir] .ui_search_new .ui_search_params_button{filter:var(--magic)}
 [dir] .VideoPlaylistItem__thumbWrap,[dir] .VideoRestriction__boxWrap{background-color:#1c1c1c}
 [dir] .video_item .video_delete_progress{background-color:#000000ab}
-[dir] #mv_pl_tt .mv_tt_private_only + .mv_tt_playlists{border:none}
-[dir] .upload_progress_wrap {background:#6464641f;border:1px solid var(--c3)}
+[dir] #mv_pl_tt .mv_tt_private_only + .mv_tt_playlists{border:none!important}
+[dir] #mv_pl_tt .mv_tt_private_only{color:var(--c1)}
+[dir] #mv_pl_tt .mv_tt_add_playlist{background-color:#000000ab!important}
+[dir] #mv_pl_tt .mv_tt_add_playlist:hover{background:#6464641f!important;color:#fff}
+[dir] #mv_pl_tt .mv_tt_add_playlist .mv_tt_plus_icon{filter:var(--magic)}
+[dir] #mv_pl_tt .mv_tt_add_playlist{border:none}
+[dir] #mv_pl_tt .mv_tt_playlist_private_icon{filter:var(--magic)brightness(.7)saturate(1.2)}
+[dir] .upload_progress_wrap{background:#6464641f;border:1px solid var(--c3)}
 [dir] .video_upload__thumb_chooser_wrap .video_tc_item{background-color:#00000040}
 [dir] .video_upload__thumb_chooser_wrap .video_tc_item:hover{background-color:#00000080}
 [dir] .video_upload__thumb_chooser_wrap .video_tc_upload_btn{filter:var(--magic)}
@@ -2847,9 +2853,6 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 [dir] .like_wrap .ui_actions_menu_more{color:var(--c2)}
 [dir] .like_wrap .ui_actions_menu_more:hover{color:var(--c1)}
 [dir] .like_wrap .ui_actions_menu_more::after{filter:var(--magic)}
-[dir] #mv_pl_tt .mv_tt_add_playlist{border:none}
-#mv_pl_tt .mv_tt_playlist_private_icon,#mv_pl_tt .mv_tt_add_playlist:hover{filter:var(--magic)brightness(.7)saturate(1.2)}
-#mv_pl_tt .mv_tt_playlists.with_border{border-top:1px solid #333}
 
 /* загрузка аудио-видео */
 #audio_new_error .error,.error{background:#171717 url("https://vk.com/images/icons/msg_error.png") no-repeat scroll 12px 12px;border-color:#2A2A2A}
