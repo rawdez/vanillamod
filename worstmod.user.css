@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210620.5.9
+@version        20210621.17.12
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1346,7 +1346,8 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [dir] .deep_active .replies .reply_form_user_image .checkbox_official::before{background:#0000!important}
 [dir] .deep_active .replies .reply_form_user_image .checkbox_official::after{filter:var(--magic)brightness(.5)}
 [dir] .deep_active .replies .reply_form_user_image:hover .checkbox_official::after{filter:var(--magic)brightness(1)}
-[dir] #wk_box.landing_wk_box_group_week_stat,[dir] .landing_wk_wrap_group_week_stat .landing_author_guide_header__background{background-color:#0000!important}
+[dir] #wk_box.landing_wk_box_group_week_stat{background-color:#0009!important}
+[dir] .landing_wk_wrap_group_week_stat .landing_author_guide_header__background{background-color:#0000!important}
 [dir] .landing_author_guide_content{background:#0000004d!important}
 [dir] .trending_stats_title_group__title,[dir] .trending_stats_subtitle_group{color:var(--c1)}
 [dir] .WeekStatGrid__ItemLabel,[dir] .WeekStatLegendTable__ItemTitle,[dir] .WeekStatLegendTable__ItemValue,[dir] .WeekStatAgeSexGraphItem__AgeLabel,[dir] .trending_stats_int_item__title,[dir] .trending_stats_title_group__subtitle{color:#aaa}
