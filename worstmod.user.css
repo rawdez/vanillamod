@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210621.17.12
+@version        20210623.1.37
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -507,34 +507,36 @@ countsfoldoff "выкл" <<<EOT  EOT;
 }
 @advanced dropdown editmenumod "★ Мод меню картинок:" {
 editmenumodон "вкл" <<<EOT /* мод меню редактирования фоток *\/
-#pv_more_act_download.pv_more_act_item:not([href="#"]):before{transform:rotate(180deg)translateY(2px)}
-.pv_more_acts{display:flex;flex-direction:row;justify-content:center}
+[dir] #pv_more_act_download.pv_more_act_item:not([href="#"]):before{transform:rotate(180deg)translateY(2px)}
+[dir] .pv_more_acts{display:flex;flex-direction:row;justify-content:center}
 [dir] #pv_more_acts_tt .pv_more_act_item_sep{display:none}
 [dir] #pv_more_acts_tt .pv_more_acts_hidden{border-bottom:none;margin-bottom:5px}
-[dir] #pv_more_acts_tt .pv_more_act_item{width:0px;overflow:hidden;padding:2px 24px 2px 4px}
-[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{width:204px!important}
+[dir] #pv_more_acts_tt :not(.pv_more_acts_hidden) .pv_more_act_item{font-size:0;width:24px;overflow:hidden;padding:3px 4px}
+[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{font-size:12px!important;width:214px!important}
 [dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item:before{width:0px!important}
-[dir] #pv_more_acts_tt{min-width:60px}
-[dir] #pv_more_acts_tt .pv_more_act_item:before{width:18px}
-    
+[dir] #pv_more_acts_tt{min-width:60px!important}
+[dir] #pv_more_acts_tt .pv_more_act_item::before{width:20px!important;margin:4px!important}
+[dir] #pv_more_acts_tt .pv_more_act_item_icon{margin:4px}
+[dir] #pv_more_acts_tt{padding:1px}
+
 [dir] #pv_more_acts_tt #pv_more_act_pe:before{background-position:0 -99px}
 [dir] #pv_more_acts_tt #pv_more_act_spe::before{background-position:1px -1px!important}
-#pv_more_act_rotate_ccw{order:1}
-#pv_more_act_rotate_cw{order:2}
-#pv_more_act_spe{order:3}
-#pv_more_act_pe{order:4}
-#pv_more_act_move_to{order:5}
-#pv_more_act_download{order:6}
-#pv_more_act_to_profile{order:7}
-#pv_more_act_place{order:8}
-#pv_more_act_market{order:9}
-#pv_more_act_as_title{order:10}
-#pv_more_act_spam{order:11}
+[dir] #pv_more_act_rotate_ccw{order:1}
+[dir] #pv_more_act_rotate_cw{order:2}
+[dir] #pv_more_act_spe{order:3}
+[dir] #pv_more_act_pe{order:4}
+[dir] #pv_more_act_move_to{order:5}
+[dir] #pv_more_act_download{order:6}
+[dir] #pv_more_act_to_profile{order:7}
+[dir] #pv_more_act_place{order:8}
+[dir] #pv_more_act_market{order:9}
+[dir] #pv_more_act_as_title{order:10}
+[dir] #pv_more_act_spam{order:11}
   
 /* мод меню редактирования фоток - подсказки *\/
-#pv_more_act_rotate_ccw:after,#pv_more_act_rotate_cw:after,#pv_more_act_move_to:after,#pv_more_act_pe:after,#pv_more_act_spe:after,#pv_more_act_place:after,#pv_more_act_to_profile:after,#pv_more_act_as_title:after,#pv_more_act_download:after,#pv_more_act_spam:after,#pv_more_act_to_dialog:after,#pv_more_act_market:after{color:#888;display:none;background:var(--c4);border:1px solid #222;padding:3px;margin:-46px -5px}
-#pv_more_act_rotate_ccw:hover:after,#pv_more_act_rotate_cw:hover:after,#pv_more_act_move_to:hover:after,#pv_more_act_pe:hover:after,#pv_more_act_spe:hover:after,#pv_more_act_place:hover:after,#pv_more_act_to_profile:hover:after,#pv_more_act_as_title:hover:after,#pv_more_act_download:hover:after,#pv_more_act_spam:hover:after,#pv_more_act_to_dialog:hover:after,#pv_more_act_market:hover:after{display:block;position:absolute}
-    
+[dir] #pv_more_act_rotate_ccw:after,[dir] #pv_more_act_rotate_cw:after,[dir] #pv_more_act_move_to:after,[dir] #pv_more_act_pe:after,[dir] #pv_more_act_spe:after,[dir] #pv_more_act_place:after,[dir] #pv_more_act_to_profile:after,[dir] #pv_more_act_as_title:after,[dir] #pv_more_act_download:after,[dir] #pv_more_act_spam:after,[dir] #pv_more_act_to_dialog:after,[dir] #pv_more_act_market:after{color:#888;display:none;background:var(--c4);border:1px solid #222;padding:3px;margin:-66px -5px!important}
+[dir] #pv_more_act_rotate_ccw:hover:after,[dir] #pv_more_act_rotate_cw:hover:after,[dir] #pv_more_act_move_to:hover:after,[dir] #pv_more_act_pe:hover:after,[dir] #pv_more_act_spe:hover:after,[dir] #pv_more_act_place:hover:after,[dir] #pv_more_act_to_profile:hover:after,[dir] #pv_more_act_as_title:hover:after,[dir] #pv_more_act_download:hover:after,[dir] #pv_more_act_spam:hover:after,[dir] #pv_more_act_to_dialog:hover:after,[dir] #pv_more_act_market:hover:after{display:block;position:absolute;font-size:14px!important;bottom:32px;margin: 0 !important}
+
 #pv_more_act_rotate_ccw:after{content:"поворот влево"}/*ROTATE LEFT*\/
 #pv_more_act_rotate_cw:after{content:"поворот вправо"}/*ROTATE RIGHT*\/
 #pv_more_act_move_to:after{content:"в альбом"}/*MOVE TO ALBUM*\/
