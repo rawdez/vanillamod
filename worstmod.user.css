@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210623.1.37
+@version        20210623.1.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -512,8 +512,8 @@ editmenumodон "вкл" <<<EOT /* мод меню редактирования 
 [dir] #pv_more_acts_tt .pv_more_act_item_sep{display:none}
 [dir] #pv_more_acts_tt .pv_more_acts_hidden{border-bottom:none;margin-bottom:5px}
 [dir] #pv_more_acts_tt :not(.pv_more_acts_hidden) .pv_more_act_item{font-size:0;width:24px;overflow:hidden;padding:3px 4px}
-[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{font-size:12px!important;width:214px!important}
-[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item:before{width:0px!important}
+[dir] #pv_more_acts_tt .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{font-size:12px!important;width:216px!important}
+[dir] #pv_more_acts_tt .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item:before{width:0px!important}
 [dir] #pv_more_acts_tt{min-width:60px!important}
 [dir] #pv_more_acts_tt .pv_more_act_item::before{width:20px!important;margin:4px!important}
 [dir] #pv_more_acts_tt .pv_more_act_item_icon{margin:4px}
