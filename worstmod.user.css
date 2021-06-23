@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210623.2.7
+@version        20210623.19.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -845,6 +845,8 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 .subheader,h4.subheader{color:#777;transition:color .3s}
 [dir] .msg,[dir] .box_msg,[dir] .box_msg_gray{background-color: #6464641f;color:#aaa;border:none}
 .wall_module .wd_lnk{color:#666;transition:color .3s}
+[dir] .wall_reasons_item{color:#999}
+[dir] .wall_reasons_item:hover{color:#ccc}
 
 /* выбрать цвет индикатора онлайн */
 .feed_asc_user_thumb._online.online:not(.mobile)::after,.post_image._online.online:not(.mobile)::after, .wddi_thumb._online.online:not(.mobile)::after,.nim-peer.online:not(.mobile)::after, .chat_tab_imgcont.online:not(.mobile)::after,span.fc_contact_photo.online:not(.mobile)::after, .online:not(.mobile)::after,.ts_contact_photo.online:not(.mobile)::after, .ui_zoom_wrap .online:not(.mobile)::after,.im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,.group_u_photo._online.online:not(.mobile)::after,.MEAvatar__online{background-color:/*[[onlinecolorselect]]*/!important}
