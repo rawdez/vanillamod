@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210627.14.7
+@version        20210627.19.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1026,6 +1026,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] #post_field,[dir] #post_field.submit_post_field.dark.submit_post_inited,[dir] .wall_module .reply_form .reply_field.submit_post_field,[dir] .wr_header,.feed_filters_wrap,.right_list_header,[dir] #feed_wall .wall_module .reply_fakebox,[dir] #feed_wall .wall_module .reply_box_inner_wrap,[dir] #profile_wall .reply_fakebox,[dir] #profile_wall .reply_box_inner_wrap,[dir] .reply_fakebox_wrap,[dir] .audio_friends_list_wrap,[dir] ._audio_additional_block._audio_additional_block_friends,[dir] .audio_friends_list_wrap,[dir] .audio_friends_list._audio_friends_list,[dir] .replies_open,#side_bar ol li,[dir] .wall_module .reply_fakebox,[dir] .profile_info_header,[dir] .profile_info_edit,[dir] #side_bar li span,.im-page.im-page_classic .im-page--dcontent,[dir] .im-mess::before,#friends_search_input_wrap,[dir] .ui_search_custom input,[dir] .ui_search,[dir] .im-create.im-create_classic.im-create_material,[dir] .im-page.im-page_classic.im-page_creating,[dir] .im-create .im-create--chat-name .ui_search_input_block,[dir] .pv_cont .pv_reply_form_wrap,[dir] .search_filters_minimized_text,[dir] .wk_history_tabs,[dir] .wall_module .reply_box,[dir] .submit_post,.wall_module div.page_media_link_desc_wrap,[dir] .im-page.im-page_classic .im-page--chat-body-wrap-inner,[dir] .video_desktop_live_intro_wrap,[dir] .box_body.box_no_buttons,[dir] .mail_box_cont,[dir] .box_title_wrap.box_grey,[dir] .box_title_wrap.box_grey .box_title,[dir] .box_title_wrap,[dir] .box_title,.box_controls,[dir] .deep_active:not(.closed_comments) .replies .reply_field_wrap .reply_field{background-color:#0000!important}
 [dir] .like_share_wrap{background-color:#00000080!important}
 [dir] .feed_updates .wall_module .feed_row .post{border-top:1px solid var(--c4)}
+[dir] .feed_wrap .post .feed_ignore_label.feed_ignore_item .feed_post_report{border-bottom:1px solid var(--c4)}
 
 [dir] #all_shown{color:var(--c1)!important;background:rgba(0,0,0,/*[[opaque]]*/);border:1px solid var(--c3)}
 [dir] #all_shown:hover{color:#111!important;background:var(--c2);border:1px solid var(--c5)}
