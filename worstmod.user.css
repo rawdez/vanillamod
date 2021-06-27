@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210624.20.24
+@version        20210627.13.57
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1260,7 +1260,6 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [dir] .PhotoRecognizeBlock__title {color:var(--c2);transition:color .3s}
 [dir] .PhotoRecognizeBlock__title:hover{color:#ccc}
 [dir] .PhotoRecognizeBlockItemButton{background:#00000026!important}
-[dir] .PhotoRecognizeBlockItemButton:hover{background:var(--c2)!important}
 [dir] .PhotoTag::after{border:2px solid #0000005c}
 [dir] .photo_tooltip .photo_tooltip__content::after{transform:none;background:#0000}
 .suggested_tag_user .suggested_tag_user__actions button.yes,[dir] .PhotoRecognizeBlockLinkBtn{color:var(--c2)}
