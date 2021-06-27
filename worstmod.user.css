@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210627.13.57
+@version        20210627.14.7
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1254,7 +1254,7 @@ input[style$="1);"],input[style$="2);"],input[style$="3);"],input[style$="4);"],
 [src="/images/market_camera.png"]{filter:invert(.98)hue-rotate(180deg)saturate(.3)}
 
 /* помогаем Путе с ФСБ-шниками шпионить: подтвердить отметку на фото */ 
-[dir] .PhotoRecognizeBlockItem__footer{background:#00000080!important}
+[dir] .PhotoRecognizeBlockItem__footer{background:#0004!important}
 .PhotoRecognizeBlockItem__caption{max-height:50px}
 [dir] .PhotoRecognizeBlockItem__ava{width:50px;height:50px}
 [dir] .PhotoRecognizeBlock__title {color:var(--c2);transition:color .3s}
