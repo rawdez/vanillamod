@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210627.19.7
+@version        20210628.14.57
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2914,7 +2914,7 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .selector_container td.selector .token span.x{filter:saturate(0)brightness(.3)}
 
 /* страница проверена */
-.page_verified,.nim-dialog--verfifed,.im-page--header-verified{filter:saturate(0)invert(1)contrast(2)}
+.page_verified,.nim-dialog--verfifed,.im-page--header-verified{filter:var(--magic)saturate(.6)}
 
 /* настройки приватности списки доступа */
 [dir] .privacy_dropdown{border:1px solid var(--c3)}
