@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210702.17.2
+@version        20210702.17.3
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -2748,7 +2748,7 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 [dir] .wddi{background:#00000080!important;border-top:1px solid var(--c3)}
 [dir] .wddi_over{background:#6464641f;border-top:1px solid var(--c3)}
 [dir] div.wdd.wdd_focused{border-color:var(--c3)}
-[dir] .wdd_list{background:#000c!important;border:solid var(--c3)!important;border-width:0 1px 1px}
+[dir] .wdd_list{background:#000c!important;border:solid var(--c3);border-width:0 1px 1px}
 [dir] .composer_wdd .wdd_list{border:1px solid var(--c5)!important}
 [dir] .wddi_data:hover{background:#6464641f}
 [dir] .wddi_data .wddi_sub{color:#aaa}
