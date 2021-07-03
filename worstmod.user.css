@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210702.17.3
+@version        20210703.22.22
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -1616,6 +1616,9 @@ a.artist_page_button:hover .artist_page_button_icon{filter:var(--magic)brightnes
 [dir] .like_tt_share::before{filter:brightness(.3)sepia(5)hue-rotate(175deg)var(--magic)}
 [dir] .ms_items_more_wrap.shown .ms_item_more .ms_item_more_label{color:#ccc}
 [dir] .deep_active .replies .reply_fakebox_container .reply_fake_more_attaches{padding:1px 0 0 0!important}
+[dir] .SitpostingEntrypoint::before{background-color:var(--c2)}
+[dir] .media_selector .MediaSelector__mediaIcon{color:var(--c1);transition:color .3s}
+[dir] .media_selector .MediaSelector__mediaIcon:hover{color:#fff}
 
 /* фикс ссылок в постах и комментах */
 [dir] .thumbed_link{background-color:#0000!important}
@@ -2223,6 +2226,7 @@ body{--page-block-shadow:none}
 /* чат фикс кнопки отправки и прикрепления */
 [dir] .im-page .ms_items_more_wrap .ms_item_more_label{margin-left:6px;margin-top:-16px}
 [dir] .ms_items_more_wrap .ms_item_more{filter:var(--magic)}
+[dir] .ms_items_more_wrap .ms_item_more .ms_item_more_label{color:#9abbe2}
 [dir] .ms_items_more{border:1px solid var(--c4)}
 [dir] .media_selector .ms_items_more .ms_item:hover{background-color:#6464641f}
 [dir] .im-chat-input .im-chat-input--send{margin-top:-9px!important}
@@ -2540,10 +2544,6 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 [dir] .article_snippet .article_snippet__action_btn:hover{background:var(--c1)!important;color:#111;opacity:1}
 [dir] .article_snippet .article_snippet__action_btn_icon--read{filter:invert(1)}
 [dir] .article_ed_layer .article_ed_layer__close{filter:invert(1)}
-
-/* фильтр лампочки советов по постингу хуйни */
-[dir] .SitpostingEntrypoint__button{filter:var(--magic)brightness(.6)}
-[dir] .SitpostingEntrypoint::before{background-color:var(--c2)}
 
 /* смайлики */
 [dir] .emoji_smile_icon{filter:var(--magic)brightness(1.2)saturate(.8)}
