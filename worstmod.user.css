@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210708.15.47
+@version        20210709.2.24
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -983,6 +983,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [dir] .flat_button.button_disabled{color:#333!important;background:#6464641f!important}
 [dir] .button_action_light{color:#999}
 [dir] .button_action_light:hover{color:var(--c1)}
+[dir] .round_button.round_button_large_white{background-color:#0003}
+[dir] .round_button.round_button_large_white:hover{background-color:#0006}
 
 /* делаем блоки чёрными и прозрачными */
 .page_block{background:rgba(0,0,0,/*[[opaque]]*/)!important;border-radius:4px;box-shadow:0 1px 0 0 #151515,0 0 0 1px #151515!important}
