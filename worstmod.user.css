@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210708.2.17
+@version        20210708.15.47
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -3196,6 +3196,9 @@ a .app_widget_tiles_title{color:#bbb}
 .token.token_selected .token_inner{background:var(--c3)!important}
 
 /* стикеры/подарки */
+[dir] .StickerPackSettings__styles,[dir] .StickerPackSettings__stylePreview{background:#0000}
+[dir] .StickerPackSettings__footer{background:#000c;border-top:none}
+[dir] .StickerStylesMenu__nav::before{background-color:#000c;filter:var(--magic)}
 [dir] .im_stickers_promo_banner,[dir] .im_stickers_bl_wrap{background:#0000}
 [dir] .im_stickers_store_wrap .ui_tabs_fixed .ui_tabs{background:rgba(0,0,0,/*[[headopaque]]*/)!important}
 [dir] .page_block .im_stickers_bl_wrap{background:#0000}
