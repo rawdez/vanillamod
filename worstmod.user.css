@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Vanilla Dead VK Revamp
-@version        20210709.2.24
+@version        20210712.7.20
 @namespace      github
 @author         awesome_doze
 @homepageURL    https://github.com/rawdez/vanillamod
@@ -847,6 +847,9 @@ body,div[contenteditable="true"],.profile_info .labeled,.page_list_module .group
 .wall_module .wd_lnk{color:#666;transition:color .3s}
 [dir] .wall_reasons_item{color:#999}
 [dir] .wall_reasons_item:hover{color:#ccc}
+[dir] .feed_updates .explain{color:#ccc}
+[dir] .post_date,[dir] .post_date .post_link,[dir] .post_date .wall_text_name_explain_promoted_post{color:#777;transition:color 3s 3s}
+[dir] .post_date:hover,[dir] .post_date .post_link:hover,[dir] .post_date .wall_text_name_explain_promoted_post:hover{color:#ccc;transition:color .3s}
 
 /* выбрать цвет индикатора онлайн */
 .feed_asc_user_thumb._online.online:not(.mobile)::after,.post_image._online.online:not(.mobile)::after, .wddi_thumb._online.online:not(.mobile)::after,.nim-peer.online:not(.mobile)::after, .chat_tab_imgcont.online:not(.mobile)::after,span.fc_contact_photo.online:not(.mobile)::after, .online:not(.mobile)::after,.ts_contact_photo.online:not(.mobile)::after, .ui_zoom_wrap .online:not(.mobile)::after,.im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,.group_u_photo._online.online:not(.mobile)::after,.MEAvatar__online{background-color:/*[[onlinecolorselect]]*/!important}
